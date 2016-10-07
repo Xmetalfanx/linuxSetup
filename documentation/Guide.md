@@ -29,7 +29,7 @@
 
 ## OpenSuse Leap Script
 
-1. Upgrade OpenSuse-based Distro
+1. Update OpenSuse-based Distro
 2. Add Packman Repositories
 3. Setup Multimedia/Codecs
 4. Install Google Chrome
@@ -55,3 +55,10 @@
     4. Install Google Chrome
     5. Install Libre Office
     6. Install WPS Office
+
+6.  [For 16.10 or higher release] Add Budgie-Remix PPA to add some SolMMate (Mate on Solus)-like Themeing
+
+7.  [ElementaryOS Specific] Adds a few tools to ElementaryOS
+    -  Synaptic Package Manager, Gnome Tweak, and Gdebit
+
+8.  [Ubuntu Mate Specific] Add Ubuntu Mate Dev PPA for newer Mate version and other Mate related apps/ packages
