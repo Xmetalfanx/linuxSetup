@@ -9,29 +9,34 @@
 
 rootdir=$basedir
 
+commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+$commonFunctions
+
 postInstallsDir="$rootdir"/postInstalls
 themeDir="$rootdir"/tasks/themes
 
-functUbuntu= . "$postInstallsDir"/functions/f_ubuntu.cfg
-$functUbuntu
 
-commonFunctions= . "$rootdir"/tasks/f_common.cfg
-$commonFunctions
+ubuntuFunctInclude= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
+$ubuntuFunctInclude
 
 ###################################################################################################
 x=1
 
 while [[ $x=1 ]]; do
 
-clear
-			echo -e   "Xmetal's Ubuntu 14.04 Trusty based,  Post-Installation Script \n\n"
+			echo -e   "Xmetal's Ubuntu 14.04 Trusty based,  Post-Installation Script \n"
 			echo -e   "Please Select Task \n"
 
 			echo -e   "1. \t Update System"
 			echo -e   "\v2. \t Adds Theme PPAs (Ravenfinity, Moka, Noobslab's Icon Repo (both), \n \t Noobslab's Theme Repo, Numix, and snwh's (Paper Theme) )"
+
 			echo -e   "\v3. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
+
 			echo -e   "\v4. \t Add Themes via Github (Themes may not all look right)"
-			echo -e   "5. \t Add Software"
+			echo -e   "\v5. \t Add Various Software"
+			echo -e  	"\v6. \t [16.10 based+ ] Install Budgie-Remix PPA [Ads SolMate LIKE Theming]"
+			echo -e 	"\v7. \t [ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
+			echo -e 	"\v8.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
 
 			echo -e   "m. \tReturn to Main Menu"
 			echo -e		"q. \tExit to Prompt \n\n"
@@ -41,29 +46,42 @@ clear
 		case $trustySelection in
 
 		  1) aptUpgrade
-				 x=1
-				;;
+				 x=1	;;
 
 		  2) addThemePPAs
-				 x=1
-				;;
+				 x=1	;;
 
 		  3) installPPAThemes
-				 x=1
-				 ;;
+				 x=1 ;;
 
      4) # Sub-menus
-		    bash "$themeDir"/batchGitThemes.sh  ;;
+		    bash "$themeDir"/github/githubThemes.sh  ;;
 
-		  5) # This is a sub-menu
-   			bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
-			  ;;
+		5) # This is a sub-menu
+   			bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh ;;
 
-		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
+		6) budgieRemixPPA
+		   x=1 ;;
+
+		7) InstallLokiAdditions
+		 	 x=1	 ;;
+
+		8) addUMateDevPPA
+				x=1		;;
+
+		[aA]) aptUpdate
+					addThemePPAs
+					installPPAThemes
+					bash "$themeDir"/github/githubThemes.sh
+					bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
+
+					x=1
 					;;
 
-		[qQ]) quitScript
-					;;
+		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh	;;
+
+		[qQ]) quitScript	;;
+
 
 		esac
 

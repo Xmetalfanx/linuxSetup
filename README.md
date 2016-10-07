@@ -13,9 +13,6 @@ While The main distributions listed are meant to be "Distro family bases", not A
 2.  I then decided that this could be useful for anyone and decided to (eventually) make two branches ... one for me which is more customized for me and another branch which is more generic but anyone could use
 3.  By doing this project, I can not only help others, but also learn more bash AND git / github
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 ## Thanks
 - Too many to list them all
 -  While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
@@ -25,22 +22,15 @@ While The main distributions listed are meant to be "Distro family bases", not A
 ## Disclaimer
 -  Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur
 
-
-=======
->>>>>>> e52f814... Updated README again
-=======
->>>>>>> a1f9ad1... Rolling back
-
 ## Thanks
-- Too many to list them all
--  While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
-- Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes.
+	- Too many to list them all
+	-  While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
 
+	- Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes.
+---
 
 ## Disclaimer
 -  Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur
-
-
 
 ---
 
@@ -83,4 +73,5 @@ In a Terminal run
       - OpenSuse
       - Arch
       - Fedora
+      
 2. When I have things done, there may be a branch for me and a more generic branch for others to use ... the generic branch would not have all the specific addition software sources, or it may not install all the same apps, though it will get many users "on their feet" after a base install  

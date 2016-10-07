@@ -7,12 +7,14 @@
 #Version: v0.5
 #Usage 	: bash
 
-rootdir=$(pwd)
+rootdir=$basedir
 
-functFedora= . $rootdir/postInstalls/functions/f_fedora.cfg
+functFedora= . $rootdir/tasks/functions/f_fedora.cfg
 $functFedora
 
-commonFunctions= . "$rootdir"/tasks/f_common.cfg
+commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+$commonFunctions
+
 #######################################################################################
 x=1
 
@@ -22,12 +24,14 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's Fedora based,  Post-Installation Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e 	"1. \t Upgrade Fedora"
+	echo -e 	"1. \t Update Fedora"
 	echo -e   "2. \t Add RPM Fusion Repositories"
 	echo -e   "3. \t Add Fedy"
 	echo -e   "4. \t Perform Common Fedy Tasks"
 	echo -e   "5. \t Add Extra Software"
-	echo -e   "6. \t Install The Arc Theme"
+	echo -e   "6. \tInstall The Arc Theme"
+  echo -e 	"a.	All Tasks [UNTESTED]"
+
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q.	 Exit to Prompt \n\n"
@@ -49,7 +53,7 @@ while [[ $x=1 ]]; do
 				;;
 
 			4) echo "Performing comming tasks of Fedy "
-			   bash "$rootdir"/tasks/fedora/fedytasks.sh
+			   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
 				  x=1
 			 		;;
 
@@ -61,11 +65,19 @@ while [[ $x=1 ]]; do
 		    	 x=1
 					;;
 
+
+				[aA]) UpdateFedora
+			      	AddRPMFusion
+				      InstallFedy
+				      InstallExtraSoftware
+							fedoraAddArcTheme
+							x=1
+							;;
+
 			[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 						;;
 
-		 [qQ]) $commonFunctions
-	 				 	 quitScript
+		 [qQ]) quitScript
 	 				 	;;
 
 					esac
