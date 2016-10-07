@@ -1,57 +1,4 @@
 
-echo "Optimizing Mirrors"
-sudo pacman-mirrors -g
-echo "Pacman Mirrors Optimized.   Press [Enter] to continue"
-read
-
-echo "Installing Git"
-sudo pacman -S git
-
-# Add Yaourt and support for the AUR
-echo "Setting Up Yaourt"
-sudo git clone https://aur.archlinux.org/package-query.git
-
-sudo chown -R $(whoami) /home/user/package-query
-sudo chmod 775 /home/user/package-query
-
-cd package-query
-makepkg -si
-cd ..
-
-# Cleanup
-rm -rf package-query
-echo "package-query installed"
-
-sudo git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
-rm -rf yaourt
-echo "Yaourt installed"
-read
-
-echo "refreshing keys "
-sudo rm -r /etc/pacman.d/gnupg
-sudo pacman-key --init
-sudo pacman-key --populate archlinux
-sudo pacman-key --refresh-keys
-sudo pacman -S archlinux-keyring
-sudo pacman -S seahorse
-sudo pacman -Syyu
-
-
-# Get an up to date Mirrorlist here:
-
-# https://www.archlinux.org/mirrorlist/
-
-#add New Mirror list to /etc/pacman.d/mirrorlist
-#sudo mousepad /etc/pacman.d/mirrorlist
-
-echo "Installing Packer"
-yaourt -s packer
-
-___________________________________________________________________________________
-
 echo "Install Pamac - GUI Frontend to pacman"
 
 yaourt -S pamac-aur
@@ -69,34 +16,6 @@ sudo pacman -S opendesktop-fonts
 yaourt -S fontconfig-ttf-ms-fonts
 
 yaourt -S ttf-google-fonts-git
-
-__________________________________________________________________________
-# Sound Support
-bash /tasks/arch/sound.sh
-
-# Add archive support
-bash /tasks/arch/archiveSupport.sh
-
-_________________________________________________________________
-
-#Install all XFCE extras
-#sudo pacman -S xfce4-goodies
-__________________________________________________________________________
-
-
-Bluetooth Support Arch Linux
-
-sudo pacman -S bluez bluez-cups bluez-utils
-
-Enable Driver
-
-sudo modprobe btusb
-sudo systemctl start bluetooth
-sudo systemctl enable bluetooth
-
-Install Bluetooth Manager
-
-yaourt -S blueman
 
 _________________________________________________________________________
 

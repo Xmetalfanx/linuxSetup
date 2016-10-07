@@ -27,7 +27,7 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's OpenSuse Leap,  Post-Installation Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e 	"1. \t Upgrade OpenSuse-based Distro"
+	echo -e 	"1. \t Update OpenSuse-based Distro"
 	echo -e     "2. \t Add Packman Repositories"
 	echo -e     "3. \t Setup Multimedia/Codecs"
 	echo -e     "4. \t Install Google Chrome"
@@ -44,17 +44,17 @@ while [[ $x=1 ]]; do
 				  1) updateOpenSuse
 						 x=1 ;;
 
-				  2) installPackmanRepoLeap
+				  2) installPackmanRepoTWdid i h
 						 x=1	;;
 
-				  3) setupMultimediaLeap
+				  3) ## Setup Multimedia
 							x=1	;;
 
 				  4) installGoogleChrome
-					  	x=1 ;;
+					  	x=1		 ;;
 
 				  5) SuseAddArcTheme
-					  	x=1	;;
+					  	x=1 ;;
 
 				  6) installCommonSoftware
 						 x=1	 ;;
@@ -68,12 +68,14 @@ while [[ $x=1 ]]; do
 							x=1
 							;;
 
+
 				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 								;;
 
-				[qQ]) quitScript ;;
+				[qQ]) quitScript	;;
 
 				* ) invalidSection ;;
+
 
 		esac
 
