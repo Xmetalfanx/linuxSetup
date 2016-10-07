@@ -8,14 +8,14 @@
 #Usage 	: bash addSoftwareApt.sh
 
 rootdir=$basedir
-clear
 
 ubuntuSoftFunc= . "$rootdir"/postInstalls/ubuntu/software/f_ubuntuSoftware.cfg
 $ubuntuSoftFunc
 ubuntuFunct= . "$rootdir"/postInstalls/functions/f_ubuntu.cfg
 $ubuntuFunct
 
-commonFunctions= . "$rootdir"/tasks/f_common.cfg
+commonFunctions= . "$rootdir"tasks/f_common.cfg
+$commonFunctions
 #############################################################################
 clear
 x=1
@@ -65,7 +65,7 @@ echo -e "Please Select Task\n"
 			 ;;
 
 	  5) $ubuntuSoftFunc
-		   bash "$rootDir"/postInstalls/functions/ubuntu/software/installLibreoffice.sh
+		   bash "$rootDir"/postInstalls/ubuntu/software/installLibreoffice.sh
 			 x=1
 			 ;;
 
@@ -77,8 +77,7 @@ echo -e "Please Select Task\n"
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
 
-  	[qQ]) $commonFunctions
-	 		 	 quitScript
+  	[qQ]) quitScript
 	 		 	;;
 
 	esac

@@ -6,15 +6,15 @@
 #Version: v0.5
 #Usage 	: bash archLinuxPostInstall.sh
 
-rootdir=$(pwd)
+rootdir=$basedir
 
-functArch=  . $rootdir/postInstalls/functions/f_arch.cfg
+functArch=  . $rootdir/tasks/functions/f_arch.cfg
 $functArch
 
 commonFunctions= . "$rootdir"/tasks/f_common.cfg
-
+$commonFunctions
 ###############################################################################
-x= 1
+x=1
 
 while [[ $x=1 ]]; do
 
@@ -33,33 +33,51 @@ while [[ $x=1 ]]; do
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e		"q. \t Exit to Prompt\n\n"
 
-	read -p "Your Choice?:"    archSelection
+	read -p 	"Your Choice?:"  archSelection
 
      case $archSelection in
           1) # Update via Pacman
-           sudo pacman -Syyu  ;;
+					  clear
+						echo "Updating Arch"
+					  sudo pacman -Syyu
+						x=1
+					 ;;
 
-          2)  OptimizeMirrors  ;;
+          2)  OptimizeMirrors
+							 x=1	;;
 
-          3)  addYaourt  ;;
+          3)  addYaourt
+							 x=1	;;
 
-          4)  SoundSupport ;;
+          4)  SoundSupport
+							 x=1	;;
 
-          5) archiveSupport ;;
+          5) archiveSupport
+							 x=1 		;;
 
-          6) archInstallArc ;;
+          6) archInstallArc
+							 x=1	;;
 
           7) ## This needs TESTING
             yaourt -s packer
-            ;;
+							 x=1      ;;
+
+				 [aA]) sudo pacman -Syyu
+				       OptimizeMirrors
+							 addYaourt
+							 SoundSupport
+							 archiveSupport
+							 archInstallArc
+							 yaourt -s packer
+							 x=1
+							 ;;
 
 				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 						  ;;
 
-				[qQ]) $commonFunctions
+				[qQ])  quitScript   ;;
 
-               quitScript
-               ;;
+				* ) invalidSection ;;
 
     esac
 
