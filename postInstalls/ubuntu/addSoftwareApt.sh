@@ -9,13 +9,9 @@
 
 rootdir=$basedir
 
-ubuntuSoftFunc= . "$rootdir"/postInstalls/ubuntu/software/f_ubuntuSoftware.cfg
-$ubuntuSoftFunc
-ubuntuFunct= . "$rootdir"/postInstalls/functions/f_ubuntu.cfg
-$ubuntuFunct
+overallUbuntu= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
+$overallUbuntu
 
-commonFunctions= . "$rootdir"tasks/f_common.cfg
-$commonFunctions
 #############################################################################
 clear
 x=1
@@ -48,24 +44,20 @@ echo -e "Please Select Task\n"
 	  2)  # Note to Self: Add Custom instructions on getting latest deadbeef working, later
 
 	    echo "Installing DeadBeef Media Player"
-	    $ubuntuFunct
-			getDebsPPA
+		getDebsPPA
 	    sudo apt install deadbeef
 			x=1
 	    ;;
 
-	  3) $ubuntuSoftFunc
-		   InstallAtom
+	  3) installAtom
 			 x=1
 			 ;;
 
-	  4) $ubuntuSoftFunc
-		   installChrome
+	  4) installChrome
 			 x=1
 			 ;;
 
-	  5) $ubuntuSoftFunc
-		   bash "$rootDir"/postInstalls/ubuntu/software/installLibreoffice.sh
+	  5)  bash "$rootDir"/postInstalls/ubuntu/software/installLibreoffice.sh
 			 x=1
 			 ;;
 
