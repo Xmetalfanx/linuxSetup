@@ -12,13 +12,20 @@ export basedir
 
 rootdir=$basedir
 
+
 postInstallsDir="$rootdir"/postInstalls
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
+
 ########################################################################
 x=1
+checkDistro
+clear
+echo "It appears you MAY be running" $distro
+echo -e "\n\n"
+
 
 while [[ $x=1 ]]; do
 
@@ -54,7 +61,7 @@ while [[ $x=1 ]]; do
 
         [qQ]) quitScript      ;;
 
-        * ) invalidSection ;; 
+        * ) invalidSection ;;
 
 
         esac
