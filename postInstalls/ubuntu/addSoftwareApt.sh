@@ -12,6 +12,9 @@ rootdir=$basedir
 overallUbuntu= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $overallUbuntu
 
+softtwareFunction= . "$rootdir"/postInstalls/ubuntu/software/f_ubuntuSoftware.cfg
+$softtwareFunction
+
 #############################################################################
 clear
 x=1
@@ -27,6 +30,7 @@ echo -e "Please Select Task\n"
 	echo -e     "4. \t Install Google Chrome"
 	echo -e     "5. \t Install Libre Office"
 	echo -e     "6. \t Install WPS Office"
+	echo -e 		"7. \t Install Filebot (64bit version), for media Meta Info Fetching"
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q. \t Exit to Prompt\n\n"
@@ -44,7 +48,7 @@ echo -e "Please Select Task\n"
 	  2)  # Note to Self: Add Custom instructions on getting latest deadbeef working, later
 
 	    echo "Installing DeadBeef Media Player"
-		getDebsPPA
+	      getDebsPPA
 	    sudo apt install deadbeef
 			x=1
 	    ;;
@@ -61,9 +65,11 @@ echo -e "Please Select Task\n"
 			 x=1
 			 ;;
 
-	  6) $ubuntuSoftFunc
-		  installWPSOffice
+	  6)  installWPSOffice
 			x=1
+		;;
+		7) installFilebot
+			 x=1
 			;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
