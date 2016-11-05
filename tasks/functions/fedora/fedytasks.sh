@@ -50,6 +50,17 @@ clear
 
       5) fontRendering
          x=1   ;;
+<<<<<<< HEAD:tasks/functions/fedora/fedytasks.sh
+         
+     [aA]) archSupport
+           msFonts
+           fedyCodecs
+           themeEngines
+           fontRendering
+           x=1
+           ;; 
+=======
+>>>>>>> 38621a6... maintenance:tasks/functions/fedora/fedytasks.sh
 
     [mM])	bash "$rootdir"/xmetalLinuxScripts.sh
             ;;

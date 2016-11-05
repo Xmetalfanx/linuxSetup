@@ -7,6 +7,8 @@
 #Version: v0.5
 #Usage 	: bash OpenSuseLeapPostInstall.sh
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 rootdir=$basedir
 
 functLeap= . "$rootdir"/tasks/functions/f_oSuseLeap.cfg
@@ -16,6 +18,25 @@ suseCommon= . "$rootdir"/tasks/functions/f_oSuse.cfg
 $suseCommon
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+=======
+rootdir=$(pwd)
+x=1
+=======
+rootdir=$basedir
+>>>>>>> 38621a6... maintenance
+
+functLeap= . "$rootdir"/tasks/functions/f_oSuseLeap.cfg
+$functLeap
+
+suseCommon= . "$rootdir"/tasks/functions/f_oSuse.cfg
+$suseCommon
+
+<<<<<<< HEAD
+commonFunctions= . "$rootdir"/tasks/f_common.cfg
+>>>>>>> 69ac26b... moving ubuntu functions around and adding Xenial
+=======
+commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+>>>>>>> 38621a6... maintenance
 $commonFunctions
 ####################################################################################################
 
@@ -42,6 +63,8 @@ while [[ $x=1 ]]; do
 				case $openSuseSelection in
 
 				  1) updateOpenSuse
+<<<<<<< HEAD
+<<<<<<< HEAD
 						 x=1 ;;
 
 				  2) installPackmanRepoLeap
@@ -58,6 +81,33 @@ while [[ $x=1 ]]; do
 
 				  6) installCommonSoftware
 						 x=1	 ;;
+=======
+						 x=1
+						 ;;
+=======
+						 x=1 ;;
+>>>>>>> 38621a6... maintenance
+
+				  2) installPackmanRepoLeap
+						 x=1	;;
+
+				  3) setupMultimediaLeap
+							x=1	;;
+
+				  4) installGoogleChrome
+					  	x=1		 ;;
+
+				  5) SuseAddArcTheme
+					  	x=1 ;;
+
+				  6) installCommonSoftware
+<<<<<<< HEAD
+						 x=1
+						 ;;
+>>>>>>> 69ac26b... moving ubuntu functions around and adding Xenial
+=======
+						 x=1	 ;;
+>>>>>>> 38621a6... maintenance
 
 				[aA]) updateOpenSuse
 
@@ -72,10 +122,21 @@ while [[ $x=1 ]]; do
 				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 								;;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 38621a6... maintenance
 				[qQ]) quitScript	;;
 
 				* ) invalidSection ;;
 
+<<<<<<< HEAD
+=======
+				[qQ]) quitScript
+						 	;;
+>>>>>>> 69ac26b... moving ubuntu functions around and adding Xenial
+=======
+>>>>>>> 38621a6... maintenance
 
 		esac
 

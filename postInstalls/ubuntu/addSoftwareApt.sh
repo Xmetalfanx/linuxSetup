@@ -11,6 +11,12 @@ rootdir=$basedir
 
 overallUbuntu= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $overallUbuntu
+<<<<<<< HEAD
+
+softtwareFunction= . "$rootdir"/postInstalls/ubuntu/software/f_ubuntuSoftware.cfg
+$softtwareFunction
+=======
+>>>>>>> 38621a6... maintenance
 
 softtwareFunction= . "$rootdir"/postInstalls/ubuntu/software/f_ubuntuSoftware.cfg
 $softtwareFunction
@@ -48,7 +54,15 @@ echo -e "Please Select Task\n"
 	  2)  # Note to Self: Add Custom instructions on getting latest deadbeef working, later
 
 	    echo "Installing DeadBeef Media Player"
+<<<<<<< HEAD
+<<<<<<< HEAD
 	      getDebsPPA
+=======
+		getDebsPPA
+>>>>>>> 38621a6... maintenance
+=======
+	      getDebsPPA
+>>>>>>> 719107e... Changed common tasks to variables
 	    sudo apt install deadbeef
 			x=1
 	    ;;

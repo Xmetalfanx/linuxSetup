@@ -75,10 +75,21 @@ while [[ $x=1 ]]; do
 				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 						  ;;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 38621a6... maintenance
 				[qQ])  quitScript   ;;
 
 				* ) invalidSection ;;
 
+<<<<<<< HEAD
+=======
+				[qQ])  quitScript
+               ;;
+>>>>>>> 69ac26b... moving ubuntu functions around and adding Xenial
+=======
+>>>>>>> 38621a6... maintenance
     esac
 
 done
