@@ -12,7 +12,6 @@ export basedir
 
 rootdir=$basedir
 
-
 postInstallsDir="$rootdir"/postInstalls
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,15 +53,12 @@ $commonFunctions
 >>>>>>> 719107e... Changed common tasks to variables
 ########################################################################
 x=1
-checkDistro
 clear
-echo "It appears you MAY be running" $distro
-echo -e "\n\n"
-
+checkDistro2
 
 while [[ $x=1 ]]; do
 
-      clear
+      #clear
 
       echo -e "Xmetal's Linux Script \n"
       echo -e "Please Select your Distrobution family \n"

@@ -16,9 +16,12 @@ postInstallsDir="$rootdir"/postInstalls
 themeDir="$rootdir"/tasks/themes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 38621a6... maintenance
+=======
+>>>>>>> 6ccdd50... Started Changing way distro base is detected
 ubuntuFunctInclude= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $ubuntuFunctInclude
 
