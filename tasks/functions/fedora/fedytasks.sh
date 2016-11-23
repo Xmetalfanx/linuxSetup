@@ -50,7 +50,10 @@ clear
 
       5) fontRendering
          x=1   ;;
+<<<<<<< HEAD
 <<<<<<< HEAD:tasks/functions/fedora/fedytasks.sh
+=======
+>>>>>>> 7f01fde... removing some theming scripts (moved to other scripts I have)
          
      [aA]) archSupport
            msFonts
@@ -59,8 +62,11 @@ clear
            fontRendering
            x=1
            ;; 
+<<<<<<< HEAD
 =======
 >>>>>>> 38621a6... maintenance:tasks/functions/fedora/fedytasks.sh
+=======
+>>>>>>> 7f01fde... removing some theming scripts (moved to other scripts I have)
 
     [mM])	bash "$rootdir"/xmetalLinuxScripts.sh
             ;;
