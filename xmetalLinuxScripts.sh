@@ -41,6 +41,7 @@ while [[ $x=1 ]]; do
 
       echo -e   "5. \t Fedora"
       echo -e   "6. \t [*UNTESTED] Github Themes and Icons"
+<<<<<<< HEAD
 =======
 commonFunctions= . "$rootdir"/tasks/f_common.cfg
 =======
@@ -84,6 +85,8 @@ while [[ $x=1 ]]; do
       echo -e   "5. \t Fedora"
       echo -e   "6. \t [*UNTESTED] Github Themes and Icons"
       echo -e   "7. \t[UNTESTED] Manjaro-fy"
+=======
+>>>>>>> 59e7e5e... removed Manjarofy menu option
 
 >>>>>>> 38621a6... maintenance
       echo -e   "q. \t Exit to Prompt \n\n"
@@ -103,6 +106,7 @@ while [[ $x=1 ]]; do
 
         5) bash   "$postInstallsDir"/fedora24PostInstall.sh  ;;
         6) bash   "$rootdir"/tasks/themes/github/githubThemes.sh ;;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         [qQ]) quitScript      ;;
@@ -125,6 +129,8 @@ while [[ $x=1 ]]; do
 >>>>>>> 69ac26b... moving ubuntu functions around and adding Xenial
 =======
         7) bash   "$rootdir"/tasks/themes/github/manjarofy.sh ;;
+=======
+>>>>>>> 59e7e5e... removed Manjarofy menu option
 
         [qQ]) quitScript      ;;
 
