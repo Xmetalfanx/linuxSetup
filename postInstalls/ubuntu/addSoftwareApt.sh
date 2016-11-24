@@ -47,13 +47,14 @@ echo -e "Please Select Task\n"
 
 	  1) # note to self: Check "variey" and make SURE it's the wallpaper app
 		  echo -e "Installing MPV, Audacious, Filezilla, VLC, Geany. "
-		  sudo apt install mpv audacious audacious-plugins filezilla vlc geany
+		  aptUpdate mpv audacious audacious-plugins filezilla vlc geany
 			x=1
 		  ;;
 
 	  2)  # Note to Self: Add Custom instructions on getting latest deadbeef working, later
 
 	    echo "Installing DeadBeef Media Player"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	      getDebsPPA
@@ -64,6 +65,10 @@ echo -e "Please Select Task\n"
 	      getDebsPPA
 >>>>>>> 719107e... Changed common tasks to variables
 	    sudo apt install deadbeef
+=======
+	    getDebsPPA
+	    aptUpdate deadbeef
+>>>>>>> 1a0d4d8... fix after a commit rebase goofup
 			x=1
 	    ;;
 

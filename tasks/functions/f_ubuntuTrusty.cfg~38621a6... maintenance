@@ -3,32 +3,12 @@ function AddAppPPAs
     clear
     ## Add Application PPAs
     echo "Adding Application/Program PPA "
-    autoAddRepo ppa:costales/anoise && autoAddRepo ppa:danielrichter2007/grub-customizer && autoAddRepo ppa:gnumdk/lollypop && autoAddRepo ppa:heyarje/makemkv-beta && autoAddRepo ppa:kvibes/mediaelch
-    autoAddRepo ppa:libreoffice/ppa && autoAddRepo ppa:linvinus/altyo && autoAddRepo ppa:nathandyer/vocal-daily && autoAddRepo ppa:dimula73/krita && autoAddRepo ppa:peterlevi/ppa
+    addPPA ppa:costales/anoise && addPPA ppa:danielrichter2007/grub-customizer && addPPA ppa:gnumdk/lollypop && addPPA ppa:heyarje/makemkv-beta && addPPA ppa:kvibes/mediaelch
+    addPPA ppa:libreoffice/ppa && addPPA ppa:linvinus/altyo && addPPA ppa:nathandyer/vocal-daily && addPPA ppa:dimula73/krita && addPPA ppa:peterlevi/ppa
 
     GetDebsPPA
 
-    ## sudo add-apt-repository ppa:peterlevi/ppa is for Variety
-}
-
-
-function aptUpdate
-{
-  clear
-  echo -e "Refreshing Repo List"
-  read -p "Press a key to continue "
-  sudo apt update
-  echo "Repos Refreshed"
-}
-
-function aptUpgrade
-{
-  aptUpdate
-  clear
-  echo "Upgrading (with a prompt to the user)"
-  read -p "Press a key to continue "
-  sudo apt upgrade
-  read -p
+    ## addPPA ppa:peterlevi/ppa is for Variety
 }
 
 function getDebsPPA
@@ -36,7 +16,7 @@ function getDebsPPA
   wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
   sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
   clear
-  sudo apt update
+  aptUpdate
 
 }
 
@@ -57,10 +37,10 @@ function addThemePPAs
 
     echo "Adding Theme and Icon Pack, next ... Press [Enter] key to continue"
     read
-    autoAddRepo ppa:ravefinity-project/ppa && autoAddRepo ppa:moka/stable && autoAddRepo ppa:noobslab/icons && autoAddRepo ppa:noobslab/icons2  && autoAddRepo ppa:noobslab/themes && autoAddRepo ppa:numix/ppa && autoAddRepo ppa:snwh/pulp
+    addPPA ppa:ravefinity-project/ppa && addPPA ppa:moka/stable && addPPA ppa:noobslab/icons && addPPA ppa:noobslab/icons2  && addPPA ppa:noobslab/themes && addPPA ppa:numix/ppa && addPPA ppa:snwh/pulp
     clear
 
-    sudo apt-get update
+    aptUpdate
     echo  "PPAs/ Repositories added for Themes and Icons.  Press [Enter] key to continue"
     read
     clear
@@ -72,7 +52,7 @@ function installPPAThemes
 
   clear
   echo -e "Installing the Ambiance, Radiance, Numix, Vertex, Moka, kawaiki, and Arc Themes via PPA"
-  read -p "Press a Key to continue"
+  aptUpdate
 
 
   ## Install Themes from PPAs Added
