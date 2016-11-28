@@ -41,7 +41,7 @@ while [[ $x=1 ]]; do
         1) bash "$postInstallsDir"/ubuntuTrustyPostInstall.sh  ;;
         2) bash  "$postInstallsDir"/archLinuxPostInstall.sh ;;
         3) bash  "$postInstallsDir"/openSuseLeapPostInstall.sh  ;;
-        4) bash  "$postInstallsDir"/fedora24PostInstall.sh  ;;
+        4) bash  "$postInstallsDir"/fedoraPostInstall.sh  ;;
         5) bash "$postInstallsDir"/elementaryOSLokiPostInstall.sh  ;;
         6) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
 

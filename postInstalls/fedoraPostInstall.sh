@@ -15,7 +15,12 @@ $functFedora
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
+## needed a way to detect if your on Fedora 24 or 25 and then use that info to help determine which rpmfusion and united Rpm repo urls to use  ~~~>  ??? rpm -E %fedora
+
+## Idea: have a "add rpm fusion" option, "add United RPM" and a third option for both
+
 #######################################################################################
+detectVersion
 x=1
 
 while [[ $x=1 ]]; do
