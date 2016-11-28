@@ -12,25 +12,12 @@ rootdir=$basedir
 functLeap= . "$rootdir"/tasks/functions/f_oSuseLeap.cfg
 $functLeap
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 suseCommon= . "$rootdir"/tasks/functions/f_oSuse.cfg
 $suseCommon
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
-=======
-suseCommon= . $rootdir/postInstalls/functions/f_oSuseCommon.cfg
-$suseCommon
-
-commonFunctions= . "$rootdir"/tasks/f_common.cfg
->>>>>>> 69ac26b... moving ubuntu functions around and adding Xenial
-=======
-suseCommon= . "$rootdir"/tasks/functions/f_oSuse.cfg
-$suseCommon
-
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
->>>>>>> 38621a6... maintenance
 $commonFunctions
+
 ####################################################################################################
 
 x=1
