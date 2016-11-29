@@ -20,34 +20,32 @@ $commonFunctions
 ########################################################################
 x=1
 clear
-checkDistro2
+checkDistro
 
 while [[ $x=1 ]]; do
 
       echo -e "Xmetal's Linux Script \n"
       echo -e "Please Select your Distrobution family \n"
 
-      echo -e   "1. \t Ubuntu 14.04 LTS based"
-      echo -e   "2. \t Arch-based"
+      echo -e   "1. \t Arch-based"
+      echo -e   "2. \t Fedora"
       echo -e   "3. \t OpenSUSE 42.1 Leap"
-      echo -e   "4. \t Fedora"
-      echo -e   "5. \t (Ubuntu based) ElementaryOS"
-      echo -e   "6. \n [*UNTESTED] Themes and Icons from Github"
+      echo -e   "4. \t Ubuntu 14.04 LTS based"
+
+      echo -e   "5. \t [*UNTESTED] Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
       read -p   "Your Choice?:" mainSelection
 
       case $mainSelection in
 
-        1) bash "$postInstallsDir"/ubuntuTrustyPostInstall.sh  ;;
-        2) bash  "$postInstallsDir"/archLinuxPostInstall.sh ;;
+        1) bash  "$postInstallsDir"/archLinuxPostInstall.sh ;;
+        2) bash  "$postInstallsDir"/fedoraPostInstall.sh  ;;
         3) bash  "$postInstallsDir"/openSuseLeapPostInstall.sh  ;;
-        4) bash  "$postInstallsDir"/fedoraPostInstall.sh  ;;
-        5) bash "$postInstallsDir"/elementaryOSLokiPostInstall.sh  ;;
-        6) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
+        4) bash "$postInstallsDir"/ubuntuTrustyPostInstall.sh  ;;
+        5) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
 
         [qQ]) quitScript
                ;;
-
 
         [qQ]) quitScript      ;;
 

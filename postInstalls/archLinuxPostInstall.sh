@@ -8,11 +8,14 @@
 
 rootdir=$basedir
 
-functArch=  . $rootdir/tasks/functions/f_arch.cfg
+functArch=  . "$rootdir"/tasks/functions/f_arch.cfg
 $functArch
 
-commonFunctions= . "$rootdir"/tasks/f_common.cfg
+commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
+
+Packages= . "$rootdir"/tasks/functions/f_packageManager.cfg
+$Packages
 ###############################################################################
 x=1
 
@@ -49,7 +52,7 @@ while [[ $x=1 ]]; do
           3)  addYaourt
 							 x=1	;;
 
-          4)  SoundSupport
+          4)  soundSupport
 							 x=1	;;
 
           5) archiveSupport

@@ -9,15 +9,11 @@
 
 rootdir=$basedir
 
-functFedora= . $rootdir/tasks/functions/f_fedora.cfg
+functFedora= . "$rootdir"/tasks/functions/f_fedora.cfg
 $functFedora
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
-
-## needed a way to detect if your on Fedora 24 or 25 and then use that info to help determine which rpmfusion and united Rpm repo urls to use  ~~~>  ??? rpm -E %fedora
-
-## Idea: have a "add rpm fusion" option, "add United RPM" and a third option for both
 
 #######################################################################################
 detectVersion
@@ -25,18 +21,17 @@ x=1
 
 while [[ $x=1 ]]; do
 
-	clear
+	#clear
 	echo -e "Xmetal's Fedora based,  Post-Installation Script \n"
 	echo -e "Please Select your Choice \n"
 
 	echo -e 	"1. \t Update Fedora"
-	echo -e   "2. \t Add RPM Fusion Repositories"
+	echo -e   "2. \t Add RPM Fusion and/or UnitedRPM Repositories"
 	echo -e   "3. \t Add Fedy"
 	echo -e   "4. \t Perform Common Fedy Tasks"
 	echo -e   "5. \t Add Extra Software"
 	echo -e   "6. \tInstall The Arc Theme"
   echo -e 	"a.	All Tasks [UNTESTED]"
-
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q.	 Exit to Prompt \n\n"
@@ -49,7 +44,7 @@ while [[ $x=1 ]]; do
 			   x=1
 				;;
 
-	  2) AddRPMFusion
+	  2) ExtraRepos
 				x=1
 				;;
 
@@ -60,31 +55,30 @@ while [[ $x=1 ]]; do
 			4) echo "Performing comming tasks of Fedy "
 			   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
 				  x=1
-			 		;;
+			 	 ;;
 
 			5) InstallExtraSoftware
 			   x=1
-				  ;;
+				;;
 
 		  6) fedoraAddArcTheme
 		    	 x=1
 					;;
 
+		 [aA]) UpdateFedora
+			     AddRPMFusion
+				   InstallFedy
+				   InstallExtraSoftware
+					 fedoraAddArcTheme
+					 x=1
+					 ;;
 
-				[aA]) UpdateFedora
-			      	AddRPMFusion
-				      InstallFedy
-				      InstallExtraSoftware
-							fedoraAddArcTheme
-							x=1
-							;;
-
-			[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
+		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 						;;
 
 		 [qQ]) quitScript
 	 				 	;;
 
-					esac
+		esac
 
 done
