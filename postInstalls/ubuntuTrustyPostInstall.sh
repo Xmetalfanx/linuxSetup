@@ -21,6 +21,7 @@ $ubuntuFunctInclude
 ###################################################################################################
 x=1
 
+clear
 while [[ $x=1 ]]; do
 
 			echo -e   "Xmetal's Ubuntu 14.04 Trusty based,  Post-Installation Script \n"
