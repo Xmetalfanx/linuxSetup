@@ -28,7 +28,7 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's OpenSuse Leap,  Post-Installation Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e 	"1. \t Upgrade OpenSuse-based Distro"
+	echo -e 	"1. \t Update OpenSuse-based Distro"
 	echo -e     "2. \t Add Packman Repositories"
 	echo -e     "3. \t Setup Multimedia/Codecs"
 	echo -e     "4. \t Install Google Chrome"
