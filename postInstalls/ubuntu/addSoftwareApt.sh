@@ -24,56 +24,55 @@ while [[ $x=1 ]]; do
 echo -e "Xmetal's Ubuntu-based Software Script  \n\n"
 echo -e "Please Select Task\n"
 
-	echo -e 	 "1. \t Install MPV, Audacious, Filezilla, \n Variety (Wallpaper Changer), and Geany"
-	echo -e     "2. \t Install DeadBeef (Media Player)"
-	echo -e     "3. \t Install Atom Text/Code Editor"
-	echo -e     "4. \t Install Google Chrome"
-	echo -e     "5. \t Install Libre Office"
-	echo -e     "6. \t Install WPS Office"
-	echo -e 		"7. \t Install Filebot (64bit version), for media Meta Info Fetching"
+	echo -e 	"1. Install Multimedia Programs"
+	echo -e 	 "2. \t Install Filezilla, \n Variety (Wallpaper Changer), and Geany"
+	echo -e     "3. \t Install DeadBeef (Media Player)"
+	echo -e     "4. \t Install Atom Text/Code Editor"
+	echo -e     "5. \t Install Google Chrome"
+	echo -e     "6. \t Install Libre Office"
+	echo -e     "7. \t Install WPS Office"
+	echo -e 	 "8. Install Various Productivity/Office Programs "
+	## Install Productivity Apps - Geany (menu for the two office suites), atom.io,
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q. \t Exit to Prompt\n\n"
 	read -p "Your Choice?: " addSoftwareSelection
 
 	case $addSoftwareSelection in
+		1) echo -e "Installing Multimedia Programs"
+			 aptUpdate
+			 aptInstall mpv audacious audacious-plugins mpv easytag
 
+			 # Install Filebot
+	 		installFilebot
 
-	  1) # note to self: Check "variey" and make SURE it's the wallpaper app
+	 		## Install Deadbeef
+	 		installDeadBeef
+
+	 		x=1
+	 		;;
+
+	  2) # note to self: Check "variey" and make SURE it's the wallpaper app
 		  echo -e "Installing MPV, Audacious, Filezilla, VLC, Geany. "
-		  aptUpdate mpv audacious audacious-plugins filezilla vlc geany
-			x=1
-		  ;;
+		  aptUpdate filezilla vlc geany
 
-	  2)  # Note to Self: Add Custom instructions on getting latest deadbeef working, later
 
-	    echo "Installing DeadBeef Media Player"
 
-	      getDebsPPA
-
-	    aptInstall deadbeef
-			x=1
-	    ;;
-
-	  3) installAtom
+	  4) installAtom
 			 x=1
 			 ;;
 
-	  4) installChrome
+	  5) installChrome
 			 x=1
 			 ;;
 
-	  5)  bash "$rootDir"/postInstalls/ubuntu/software/installLibreoffice.sh
+	  6)  bash "$rootDir"/postInstalls/ubuntu/software/installLibreoffice.sh
 			 x=1
 			 ;;
 
-	  6)  installWPSOffice
+	  7)  installWPSOffice
 			x=1
 	  	;;
-
-		7) installFilebot
-			 x=1
-			;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
