@@ -32,14 +32,12 @@ while [[ $x=1 ]]; do
 
 			echo -e   "\v3. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
 
-			echo -e   "\v4. \t Add Themes via Github (Themes may not all look right)"
+			echo -e   "\v4. \t Add Various Software"
+			echo -e  	"5. \t [16.10 based+ ] Install Budgie-Remix PPA [Ads SolMate LIKE Theming]"
+			echo -e 	"6. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
+			echo -e 	"7.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
 
-			echo -e   "\v5. \t Add Various Software"
-			echo -e  	"\v6. \t [16.10 based+ ] Install Budgie-Remix PPA [Ads SolMate LIKE Theming]"
-			echo -e 	"\v7. \t [ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
-			echo -e 	"\v8.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
-
-			echo -e   "m. \tReturn to Main Menu"
+			echo -e   "\vm. \tReturn to Main Menu"
 			echo -e		"q. \tExit to Prompt \n\n"
 
 			read -p "Your Choice?: " trustySelection
@@ -55,25 +53,20 @@ while [[ $x=1 ]]; do
 		  3) installPPAThemes
 				 x=1 ;;
 
-     4) # Sub-menus
-		    bash "$themeDir"/github/githubThemes.sh  ;;
+		  4) bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh ;;
 
-		5) # This is a sub-menu
-   			bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh ;;
+		  5) budgieRemixPPA
+		   		x=1 ;;
 
-		6) budgieRemixPPA
-		   x=1 ;;
+		  6) InstallLokiAdditions
+		 	 		x=1	 ;;
 
-		7) InstallLokiAdditions
-		 	 x=1	 ;;
-
-		8) addUMateDevPPA
-				x=1		;;
+	   	7) addUMateDevPPA
+					x=1		;;
 
 		[aA]) aptUpdate
 					addThemePPAs
 					installPPAThemes
-					bash "$themeDir"/github/githubThemes.sh
 					bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
 
 					x=1

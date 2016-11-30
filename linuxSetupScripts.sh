@@ -32,7 +32,7 @@ while [[ $x=1 ]]; do
       echo -e   "3. \t OpenSUSE 42.1 Leap"
       echo -e   "4. \t Ubuntu 14.04 LTS based"
 
-      echo -e   "5. \t [*UNTESTED] Themes and Icons from Github"
+      echo -e   "5. \t Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
       read -p   "Your Choice?:" mainSelection
 
