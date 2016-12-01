@@ -14,8 +14,6 @@ $functArch
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
-Packages= . "$rootdir"/tasks/functions/f_packageManager.cfg
-$Packages
 ###############################################################################
 x=1
 

@@ -12,6 +12,9 @@ rootdir=$basedir
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
+postInstallsDir="$rootdir"/postInstalls
+themeDir="$rootdir"/tasks/themes
+
 ubuntuFunctInclude= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $ubuntuFunctInclude
 
