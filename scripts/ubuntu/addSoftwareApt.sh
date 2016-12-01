@@ -26,9 +26,8 @@ echo -e "Please Select Task\n"
 
 	echo -e 	"1. \t Install Multimedia Programs"
 	echo -e 	"2. \t Install Filezilla, \n Variety (Wallpaper Changer), and Geany"
-	echo -e   "3. \t Install Office Suite (Sub-menu)"
-	echo -e   "4. \t Install Atom Text/Code Editor"
-	echo -e   "5. \t Install Google Chrome"
+	echo -e   "3. \t Install Office Suite [Sub-menu]"
+	echo -e   "5. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
 	echo -e   "8. \t Install Various Productivity/Office Programs "
 
 	echo -e 	"m. \t Return to Main Menu"
@@ -43,19 +42,23 @@ echo -e "Please Select Task\n"
 	  2) # note to self: Check "variey" and make SURE it's the wallpaper app
 		  echo -e "Installing Filezilla, Geany. "
 		  aptUpdate
-			aptInstall filezilla vlc geany
+			aptInstall filezilla vlc
 
-			3) officeSuiteMenu
+	 3) officeSuiteMenu
 				 x=1
 				 ;;
 
-	  4) installAtom
-			 x=1
-			 ;;
 
 	  5) installChrome
 			 x=1
 			 ;;
+
+
+		8) aptUpdate
+		   sudo aptInstall geany
+			 installAtom
+	 		 x=1
+	 		 ;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;

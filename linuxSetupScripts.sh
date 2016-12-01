@@ -12,7 +12,7 @@ export basedir
 
 rootdir=$basedir
 
-postInstallsDir="$rootdir"/postInstalls
+scriptsDir="$rootdir"/scripts
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
@@ -38,16 +38,13 @@ while [[ $x=1 ]]; do
 
       case $mainSelection in
 
-        1) bash  "$postInstallsDir"/archLinuxPostInstall.sh ;;
-        2) bash  "$postInstallsDir"/fedoraPostInstall.sh  ;;
-        3) bash  "$postInstallsDir"/openSuseLeapPostInstall.sh  ;;
-        4) bash "$postInstallsDir"/ubuntuTrustyPostInstall.sh  ;;
+        1) bash  "$scriptsDir"/archLinuxPostInstall.sh ;;
+        2) bash  "$scriptsDir"/fedoraPostInstall.sh  ;;
+        3) bash  "$scriptsDir"/openSuseLeapPostInstall.sh  ;;
+        4) bash "$scriptsDir"/ubuntuTrustyPostInstall.sh  ;;
         # 5) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
 
-        [qQ]) quitScript
-               ;;
-
-        [qQ]) quitScript      ;;
+        [qQ]) quitScript  ;;
 
         * ) invalidSection ;;
 
