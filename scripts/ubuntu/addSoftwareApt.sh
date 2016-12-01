@@ -25,10 +25,9 @@ echo -e "Xmetal's Ubuntu-based Software Script  \n\n"
 echo -e "Please Select Task\n"
 
 	echo -e 	"1. \t Install Multimedia Programs"
-	echo -e 	". \t Install Various Useful Apps "
 	echo -e   "2. \t Install Office Suite [Sub-menu]"
 	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
-
+	echo -e 	"4. \t Install Various Useful Apps "
 
 
 	echo -e 	"m. \t Return to Main Menu"
