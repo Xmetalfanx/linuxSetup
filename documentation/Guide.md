@@ -2,18 +2,18 @@
 
 ## Arch Script
 
-1. Update Arrch
+1. Update Arch
 2. Optimize Mirrors
 3. Add Yaourt
 4. Add Sound Support
 5. Add Archive Support
-6. Adds The Arc Theme and Icon Pack from the AUR
-7. Adds Packer CLI package tool
+6. Add The Arc Theme and Icon Pack from the AUR
+7. Add Packer (AUR and Pacman combined)
 
 ## Fedora Script
 
 1. Upgrade Fedora
-2. Add RPM Fusion Repositories
+2. Add RPM Fusion and/or UnitedRPM Repositories (Submenu)
 3. Add Fedy
 4. Perform Common Fedy Tasks
 
@@ -45,10 +45,8 @@
 3. Install PPA Themes/Icons
   - Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons
 
-4. Add Themes via Github (Themes may not all look right)
-
-5. Add Software
-  - Software Included
+4. Add Software
+  - Software Included (This below the way it is, IS IN FACT out of date .. I will update this as I have things more organized)
     1. Install MPV, Audacious, Filezilla, Variety (Wallpaper Changer), and Geany
     2. Install DeadBeef (Media Player)
     3. Install Atom Text/Code Editor
@@ -56,9 +54,9 @@
     5. Install Libre Office
     6. Install WPS Office
 
-6.  [For 16.10 or higher release] Add Budgie-Remix PPA to add some SolMMate (Mate on Solus)-like Themeing
+5.  [For 16.10 or higher release] Add Budgie-Remix PPA to add some SolMMate (Mate on Solus)-like Themeing
 
-7.  [ElementaryOS Specific] Adds a few tools to ElementaryOS
+6.  [ElementaryOS Specific] Adds a few tools to ElementaryOS
     -  Synaptic Package Manager, Gnome Tweak, and Gdebit
 
-8.  [Ubuntu Mate Specific] Add Ubuntu Mate Dev PPA for newer Mate version and other Mate related apps/ packages
+7.  [Ubuntu Mate Specific] Add Ubuntu Mate Dev PPA for newer Mate version and other Mate related apps/ packages

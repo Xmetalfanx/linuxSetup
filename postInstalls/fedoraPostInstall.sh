@@ -30,8 +30,9 @@ while [[ $x=1 ]]; do
 	echo -e   "3. \t Add Fedy"
 	echo -e   "4. \t Perform Common Fedy Tasks"
 	echo -e   "5. \t Add Extra Software"
-	echo -e   "6. \tInstall The Arc Theme"
-  echo -e 	"a.	All Tasks [UNTESTED]"
+	echo -e   "6. \t Install The Arc Theme"
+
+	echo -e 	"a.	All Tasks [UNTESTED]"
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q.	 Exit to Prompt \n\n"
