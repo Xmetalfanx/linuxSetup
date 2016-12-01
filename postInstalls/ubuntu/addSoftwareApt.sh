@@ -24,39 +24,30 @@ while [[ $x=1 ]]; do
 echo -e "Xmetal's Ubuntu-based Software Script  \n\n"
 echo -e "Please Select Task\n"
 
-	echo -e 	"1. Install Multimedia Programs"
-	echo -e 	 "2. \t Install Filezilla, \n Variety (Wallpaper Changer), and Geany"
-	echo -e     "3. \t Install DeadBeef (Media Player)"
-	echo -e     "4. \t Install Atom Text/Code Editor"
-	echo -e     "5. \t Install Google Chrome"
-	echo -e     "6. \t Install Libre Office"
-	echo -e     "7. \t Install WPS Office"
-	echo -e 	 "8. Install Various Productivity/Office Programs "
-	## Install Productivity Apps - Geany (menu for the two office suites), atom.io,
+	echo -e 	"1. \t Install Multimedia Programs"
+	echo -e 	"2. \t Install Filezilla, \n Variety (Wallpaper Changer), and Geany"
+	echo -e   "3. \t Install Office Suite (Sub-menu)"
+	echo -e   "4. \t Install Atom Text/Code Editor"
+	echo -e   "5. \t Install Google Chrome"
+	echo -e   "8. \t Install Various Productivity/Office Programs "
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q. \t Exit to Prompt\n\n"
 	read -p "Your Choice?: " addSoftwareSelection
 
 	case $addSoftwareSelection in
-		1) echo -e "Installing Multimedia Programs"
-			 aptUpdate
-			 aptInstall mpv audacious audacious-plugins mpv easytag
-
-			 # Install Filebot
-	 		installFilebot
-
-	 		## Install Deadbeef
-	 		installDeadBeef
-
+		1) multimediaAppsInstall
 	 		x=1
 	 		;;
 
 	  2) # note to self: Check "variey" and make SURE it's the wallpaper app
-		  echo -e "Installing MPV, Audacious, Filezilla, VLC, Geany. "
-		  aptUpdate filezilla vlc geany
+		  echo -e "Installing Filezilla, Geany. "
+		  aptUpdate
+			aptInstall filezilla vlc geany
 
-
+			3) officeSuiteMenu
+				 x=1
+				 ;;
 
 	  4) installAtom
 			 x=1
@@ -65,14 +56,6 @@ echo -e "Please Select Task\n"
 	  5) installChrome
 			 x=1
 			 ;;
-
-	  6)  bash "$rootDir"/postInstalls/ubuntu/software/installLibreoffice.sh
-			 x=1
-			 ;;
-
-	  7)  installWPSOffice
-			x=1
-	  	;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
