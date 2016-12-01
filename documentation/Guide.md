@@ -47,16 +47,15 @@
 
 4. Add Software
   - Software Included (This below the way it is, IS IN FACT out of date .. I will update this as I have things more organized)
-    1. Install MPV, Audacious, Filezilla, Variety (Wallpaper Changer), and Geany
-    2. Install DeadBeef (Media Player)
-    3. Install Atom Text/Code Editor
-    4. Install Google Chrome
-    5. Install Libre Office
-    6. Install WPS Office
+    1. Install Multimedia Programs
+    2. Install Install Office Suite
+    3. Install Web Browsers [Submenu]
+        - Google Chrome, Chromium, Firefox, and/or Vivaldi
+    4. Install Various Useful Apps
 
 5.  [For 16.10 or higher release] Add Budgie-Remix PPA to add some SolMMate (Mate on Solus)-like Themeing
 
 6.  [ElementaryOS Specific] Adds a few tools to ElementaryOS
-    -  Synaptic Package Manager, Gnome Tweak, and Gdebit
+    -  Synaptic Package Manager, Gnome Tweak, and Gdebi
 
 7.  [Ubuntu Mate Specific] Add Ubuntu Mate Dev PPA for newer Mate version and other Mate related apps/ packages
