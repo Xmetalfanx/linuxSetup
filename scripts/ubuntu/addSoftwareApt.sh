@@ -25,10 +25,11 @@ echo -e "Xmetal's Ubuntu-based Software Script  \n\n"
 echo -e "Please Select Task\n"
 
 	echo -e 	"1. \t Install Multimedia Programs"
-	echo -e 	"2. \t Install Filezilla, \n Variety (Wallpaper Changer), and Geany"
-	echo -e   "3. \t Install Office Suite [Sub-menu]"
-	echo -e   "5. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
-	echo -e   "8. \t Install Various Productivity/Office Programs "
+	echo -e 	". \t Install Various Useful Apps "
+	echo -e   "2. \t Install Office Suite [Sub-menu]"
+	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
+
+
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q. \t Exit to Prompt\n\n"
@@ -39,26 +40,23 @@ echo -e "Please Select Task\n"
 	 		x=1
 	 		;;
 
-	  2) # note to self: Check "variey" and make SURE it's the wallpaper app
-		  echo -e "Installing Filezilla, Geany. "
-		  aptUpdate
-			aptInstall filezilla vlc
-
-	 3) officeSuiteMenu
+	 2) officeSuiteMenu
 				 x=1
 				 ;;
 
-
-	  5) installChrome
+	  3) browserMenu
 			 x=1
 			 ;;
 
+		4)  echo -e "Installing Common (Various). "
+	 		  aptUpdate
 
-		8) aptUpdate
-		   sudo aptInstall geany
-			 installAtom
-	 		 x=1
-	 		 ;;
+				## ? Include QBittorrent too?
+	 			aptInstall filezilla deluge gparted bleachbit
+
+				## Make function for etcher.io
+
+	 			;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
