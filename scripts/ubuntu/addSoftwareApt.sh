@@ -28,6 +28,7 @@ echo -e "Please Select Task\n"
 	echo -e   "2. \t Install Office Suite [Sub-menu]"
 	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
 	echo -e 	"4. \t Install Various Useful Apps "
+	echo -e 	"5. \t Install Etcher to put ISOs on USB drives"
 
 
 	echo -e 	"m. \t Return to Main Menu"
@@ -48,14 +49,20 @@ echo -e "Please Select Task\n"
 			 ;;
 
 		4)  echo -e "Installing Common (Various). "
+				clear
+				echo -e "About to install Filezilla, Deluge, Gparted, Bleachbit, and Etcher"
+				userPrompt
+
 	 		  aptUpdate
 
 				## ? Include QBittorrent too?
 	 			aptInstall filezilla deluge gparted bleachbit
 
-				## Make function for etcher.io
-
+				etcherInstall
 	 			;;
+
+		5) 	etcherInstall
+			;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
