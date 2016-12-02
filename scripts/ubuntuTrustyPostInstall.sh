@@ -12,9 +12,6 @@ rootdir=$basedir
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
-postInstallsDir="$rootdir"/postInstalls
-themeDir="$rootdir"/tasks/themes
-
 ubuntuFunctInclude= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $ubuntuFunctInclude
 
@@ -53,7 +50,7 @@ while [[ $x=1 ]]; do
 		  3) installPPAThemes
 				 x=1 ;;
 
-		  4) bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh ;;
+		  4) bash "$rootdir"/scripts/ubuntu/addSoftwareApt.sh ;;
 
 		  5) budgieRemixPPA
 		   		x=1 ;;

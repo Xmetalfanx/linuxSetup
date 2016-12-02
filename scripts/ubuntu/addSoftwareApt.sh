@@ -12,9 +12,6 @@ rootdir=$basedir
 overallUbuntu= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $overallUbuntu
 
-softtwareFunction= . "$rootdir"/postInstalls/ubuntu/software/f_ubuntuSoftware.cfg
-$softtwareFunction
-
 #############################################################################
 clear
 x=1
@@ -29,6 +26,7 @@ echo -e "Please Select Task\n"
 	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
 	echo -e 	"4. \t Install Various Useful Apps "
 	echo -e 	"5. \t Install Etcher to put ISOs on USB drives"
+    echo -e     "6. \t Install Atom Editor"
 
 
 	echo -e 	"m. \t Return to Main Menu"
@@ -56,13 +54,16 @@ echo -e "Please Select Task\n"
 	 		  aptUpdate
 
 				## ? Include QBittorrent too?
-	 			aptInstall filezilla deluge gparted bleachbit
+	 			aptInstall filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
 
-				etcherInstall
+                # Function call
+                #etcherInstall
 	 			;;
 
 		5) 	etcherInstall
 			;;
+
+        6) installAtom ;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
