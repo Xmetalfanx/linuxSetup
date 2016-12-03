@@ -30,7 +30,10 @@ while [[ $x=1 ]]; do
 			echo -e   "\v3. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
 
 			echo -e   "\v4. \t Add Various Software"
+
 			echo -e  	"5. \t [16.10 based+ ] Install Budgie-Remix PPA [Ads SolMate LIKE Theming]"
+
+
 			echo -e 	"6. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
 			echo -e 	"7.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
 
