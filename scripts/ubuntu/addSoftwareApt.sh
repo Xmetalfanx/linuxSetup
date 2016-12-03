@@ -26,7 +26,8 @@ echo -e "Please Select Task\n"
 	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
 	echo -e 	"4. \t Install Various Useful Apps "
 	echo -e 	"5. \t Install Etcher to put ISOs on USB drives"
-    echo -e     "6. \t Install Atom Editor"
+  echo -e    "6. \t Install Atom Editor"
+	echo -e 	 "7. \t Install\Update MPV from PPA - Newer version"
 
 
 	echo -e 	"m. \t Return to Main Menu"
@@ -63,7 +64,10 @@ echo -e "Please Select Task\n"
 		5) 	etcherInstall
 			;;
 
-        6) installAtom ;;
+    6) installAtom ;;
+
+		7) updatedMPV
+		;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 					;;
