@@ -1,8 +1,4 @@
 # Updates
 
-## October 8, 2016
--  Adding function file for the OpenSuse Tumbleweed script and combining common OpenSuse Leap and Tumbleweed functions into a single config file instead of having duplicates in both
-
-## October 6, 2016
-- Refreshed Commit List on github
-- Changelog was far behind what I was doing anyway
+## December 3, 2016
+- Starting with a fresh Changlog as I have changed so much since I last remembered to update it

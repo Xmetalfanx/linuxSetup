@@ -52,6 +52,10 @@
     3. Install Web Browsers [Submenu]
         - Google Chrome, Chromium, Firefox, and/or Vivaldi
     4. Install Various Useful Apps
+    5. Install Etcher from Etcher.io
+    6. Install the Atom "text/programming" Editor
+    7. Install/Update MPV via a PPA to get a newer version than in default distro repos
+    8. Install Wine and PlayOnLinux
 
 5.  [For 16.10 or higher release] Add Budgie-Remix PPA to add some SolMMate (Mate on Solus)-like Themeing
 
