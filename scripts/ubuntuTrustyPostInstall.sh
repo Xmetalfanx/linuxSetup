@@ -67,7 +67,7 @@ while [[ $x=1 ]]; do
 		[aA]) aptUpdate
 					addThemePPAs
 					installPPAThemes
-					bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
+					#bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
 
 					x=1
 					;;
