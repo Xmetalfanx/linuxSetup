@@ -19,9 +19,14 @@ $ubuntuFunctInclude
 x=1
 
 clear
+checkDistro
+
+
 while [[ $x=1 ]]; do
 
-			echo -e   "Xmetal's Ubuntu 14.04 Trusty based,  Post-Installation Script \n"
+			echo -e   "Xmetal's Ubuntu based,  Post-Installation Script \n"
+			echo -e 	"Your Ubuntu vesion codename is: $ubuntuName"
+
 			echo -e   "Please Select Task \n"
 
 			echo -e   "1. \t Update System"
