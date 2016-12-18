@@ -28,11 +28,10 @@ while [[ $x=1 ]]; do
       echo -e "It APPEARS your distro family is: $distro"
       echo -e "Please Select your Distrobution family \n"
 
-
       echo -e   "1. \t Arch-based"
       echo -e   "2. \t Fedora"
-      echo -e   "3. \t OpenSUSE 42.1 Leap"
-      echo -e   "4. \t Ubuntu 14.04 LTS based"
+      echo -e   "3. \t OpenSUSE"
+      echo -e   "4. \t Ubuntu based"
 
       #echo -e   "5. \t Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
@@ -40,10 +39,10 @@ while [[ $x=1 ]]; do
 
       case $mainSelection in
 
-        1) bash  "$scriptsDir"/archLinuxPostInstall.sh ;;
-        2) bash  "$scriptsDir"/fedoraPostInstall.sh  ;;
-        3) bash  "$scriptsDir"/openSuseLeapPostInstall.sh  ;;
-        4) bash "$scriptsDir"/ubuntuTrustyPostInstall.sh  ;;
+        1) bash  "$scriptsDir"/archLinuxScripts.sh ;;
+        2) bash  "$scriptsDir"/fedoraScripts.sh  ;;
+        3) bash  "$scriptsDir"/openSuseScripts.sh  ;;
+        4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
         # 5) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
 
         [qQ]) quitScript  ;;
