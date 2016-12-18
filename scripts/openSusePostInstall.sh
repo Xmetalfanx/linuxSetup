@@ -5,20 +5,18 @@
 #Author : Xmetalfanx / Xmetal
 #Date 	: 2016-09-10
 #Version: v0.5
-#Usage 	: bash OpenSuseTWPostInstall.sh
+#Usage 	: bash OpenSuseLeapPostInstall.sh
 
+rootdir=$basedir
 
-rootdir=$(pwd)
-x=1
+functLeap= . "$rootdir"/tasks/functions/f_oSuseLeap.cfg
+$functLeap
 
 suseCommon= . "$rootdir"/tasks/functions/f_oSuse.cfg
 $suseCommon
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
-
-functLeap= . "$rootdir"/tasks/functions/f_oSuseLeap.cfg
-$functLeap
 
 ####################################################################################################
 
@@ -30,12 +28,16 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's OpenSuse Leap,  Post-Installation Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e 	"1. \t Upgrade OpenSuse-based Distro"
+	echo -e 	"1. \t Update OpenSuse-based Distro"
 	echo -e     "2. \t Add Packman Repositories"
 	echo -e     "3. \t Setup Multimedia/Codecs"
 	echo -e     "4. \t Install Google Chrome"
 	echo -e     "5. \t Install Arc Theme"
 	echo -e   	"6. \t Add/Install Extra Software "
+	echo -e   	"7. \t Add Cimmamon for Leap 42.1"
+	echo -e   	"8. \t Add Cimmamon for Leap 42.2 "
+	echo -e   	"9. \t Add Cimmamon for Leap Tumbleweed "
+
 
   echo -e 		"m. \t Return to Main Menu"
 	echo -e     "q. \t Exit to Prompt  \n\n"
@@ -54,14 +56,19 @@ while [[ $x=1 ]]; do
 							x=1	;;
 
 				  4) installGoogleChrome
-					  	x=1		 ;;
-
-				  5) SuseAddArcTheme
 					  	x=1 ;;
 
+				  5) SuseAddArcTheme
+					  	x=1	;;
+
 				  6) installCommonSoftware
-						 x=1
-						 ;;
+						 x=1	 ;;
+
+					7) cinnamonRepoSuseZypperLeap421 ;;
+
+					8) cinnamonRepoSuseZypperLeap422 ;;
+
+					9) cinnamonRepoSuseZypperTW ;;
 
 				[aA]) updateOpenSuse
 
@@ -75,7 +82,7 @@ while [[ $x=1 ]]; do
 				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 								;;
 
-				[qQ]) quitScript	;;
+				[qQ]) quitScript ;;
 
 				* ) invalidSection ;;
 
