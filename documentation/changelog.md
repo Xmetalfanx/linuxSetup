@@ -12,6 +12,7 @@
     - Say ... instead of having three current Ubuntu based branches (14.04, 16.04, and now 16.10)... JUST HAVE ONE Ubuntu theme branch/function/whatever and present options BASED on what version you are on which is done FOR YOU (takes the guess work out of it for newbies)
 - Adding support for native installs of the Arc theme.   Instead of one function that just downloads from github.. this new feature will do stuff native to  Fedora, OpenSuse, Ubuntu, or Arch ... if that is not possible .. THEN it goes and gets the theme and icon pack from github.
 - [FEATURE] Adding overall better support for OpenSuse (any branch that is current)
+- [???] Adding start of an idea where the useful App additions in all distro base menus will be the same and I can just change the WAY they are installed.   
 
 
 ## December 3, 2016
