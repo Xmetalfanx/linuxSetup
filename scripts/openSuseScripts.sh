@@ -9,23 +9,25 @@
 
 rootdir=$basedir
 
-functLeap= . "$rootdir"/tasks/functions/f_oSuseLeap.cfg
-$functLeap
-
-suseCommon= . "$rootdir"/tasks/functions/f_oSuse.cfg
-$suseCommon
-
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
-$commonFunctions
+cumlOSuse= . "$rootdir"/tasks/functions/includeOpenSuseFunctions.cfg
+$cumlOSuse
 
 ####################################################################################################
 
 x=1
 
+
 while [[ $x=1 ]]; do
 
+	#clear
+	suseTest=sudo cat /etc/os-release |grep PRETTY_NAME
+	echo -e "${suseTest}"
+
+	userPrompt
+
 	clear
-	echo -e "Xmetal's OpenSuse Leap,  Post-Installation Script \n"
+
+	echo -e "Xmetal's OpenSuse Script \n"
 	echo -e "Please Select your Choice \n"
 
 	echo -e 	"1. \t Update OpenSuse-based Distro"
