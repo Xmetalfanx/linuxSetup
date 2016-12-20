@@ -22,7 +22,7 @@ x=1
 while [[ $x=1 ]]; do
 
 	#clear
-	echo -e "Xmetal's Fedora based,  Post-Installation Script \n"
+	echo -e "Xmetal's Fedora based Script \n"
 	echo -e "Please Select your Choice \n"
 
 	echo -e 	"1. \t Update Fedora"
@@ -42,15 +42,15 @@ while [[ $x=1 ]]; do
 	case $fedoraSelection in
 
 		1) UpdateFedora
-			   x=1
-				;;
+		   x=1
+		   ;;
 
 	  2) ExtraRepos
-				x=1
-				;;
+		  x=1
+		  ;;
 
 		3) InstallFedy
-				x=1
+		   x=1
 				;;
 
 			4) echo "Performing comming tasks of Fedy "
