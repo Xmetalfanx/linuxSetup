@@ -32,6 +32,7 @@ while [[ $x=1 ]]; do
       echo -e   "2. \t Fedora"
       echo -e   "3. \t OpenSUSE"
       echo -e   "4. \t Ubuntu based"
+      echo -e   "5, \t (Test only ) Display distro's PRETTY_NAME function"
 
       #echo -e   "5. \t Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
@@ -43,7 +44,9 @@ while [[ $x=1 ]]; do
         2) bash  "$scriptsDir"/fedoraScripts.sh  ;;
         3) bash  "$scriptsDir"/openSuseScripts.sh  ;;
         4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
-        # 5) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
+        5) stripName ;; 
+
+        # 6) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
 
         [qQ]) quitScript  ;;
 
