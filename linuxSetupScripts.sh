@@ -19,8 +19,8 @@ $commonFunctions
 
 ########################################################################
 x=1
-#clear
-#checkDistro
+clear
+checkDistro
 
 while [[ $x=1 ]]; do
 
@@ -45,8 +45,7 @@ while [[ $x=1 ]]; do
         3) bash  "$scriptsDir"/openSuseScripts.sh  ;;
         4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
         5) guessDistro
-            installApp filezilla mpv vlc pinta  ;;
-
++            installApp filezilla mpv vlc pinta  ;;
         # 6) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
 
         [qQ]) quitScript  ;;

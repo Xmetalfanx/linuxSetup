@@ -1,0 +1,51 @@
+Does Korora use /etc/fedora-release" ?
+
+
+[xmetal@antergos NIKITA_SEASON_2_DISC_5]$ cat /etc/os-release
+NAME="Antergos Linux"
+ID="antergos"
+ID_LIKE="arch"
+PRETTY_NAME="Antergos Linux"
+
+
+
+NAME="Linux Mint"
+VERSION="18.1 (Serena)"
+ID=linuxmint
+ID_LIKE=ubuntu
+PRETTY_NAME="Linux Mint 18.1"
+VERSION_ID="18.1"
+HOME_URL="http://www.linuxmint.com/"
+SUPPORT_URL="http://forums.linuxmint.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/linuxmint/"
+VERSION_CODENAME=serena
+UBUNTU_CODENAME=xenial
+
+
+tumbleweed for some reason is coming up "Arch"
+
+
+NAME="Solus"
+VERSION=1.2.1
+ID=solus
+VERSION_ID=1.2.1
+PRETTY_NAME="Solus 1.2.1"
+ANSI_COLOR="1;34"
+HOME_URL="https://www.solus-project.com"
+SUPPORT_URL="https://www.solus-project.com/forums/"
+BUG_REPORT_URL="https://dev.solus-project.com/"
+
+
+Ubuntu Mate below
+
+NAME="Ubuntu"
+VERSION="16.04.1 LTS (Xenial Xerus)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 16.04.1 LTS"
+VERSION_ID="16.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+VERSION_CODENAME=xenial
+UBUNTU_CODENAME=xenial
