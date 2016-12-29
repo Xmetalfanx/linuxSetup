@@ -25,7 +25,17 @@ checkDistro
 while [[ $x=1 ]]; do
 
       echo -e "Xmetal's Linux Script \n"
-      echo -e "It APPEARS your distro family is: $distro"
+      echo -e "It APPEARS your distro base is:"
+      capsFirst $distroBase
+      #echo -e "Your distro is detected as: $distro"
+
+      #echo -e "Test one"
+      #capsFirst $distroBase
+
+      #echo -e "Test Two"
+      #capsSED $distroBase
+
+
       echo -e "Please Select your Distrobution family \n"
 
       echo -e   "1. \t Arch-based"
