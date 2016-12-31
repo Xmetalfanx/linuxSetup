@@ -9,10 +9,10 @@
 
 rootdir=$basedir
 
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+commonFunctions= . $functionfolder/f_common.cfg
 $commonFunctions
 
-ubuntuFunctInclude= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
+ubuntuFunctInclude= . $functionfolder/includeUbuntuFunctions.cfg
 $ubuntuFunctInclude
 
 ###################################################################################################
@@ -25,7 +25,7 @@ checkDistro
 while [[ $x=1 ]]; do
 
 			echo -e   "Xmetal's Ubuntu based,  Post-Installation Script \n"
-			echo -e 	"Your Ubuntu vesion codename is: $ubuntuName"
+			#echo -e 	"Your Ubuntu vesion codename is: $ubuntuName"
 
 			echo -e   "Please Select Task \n"
 
