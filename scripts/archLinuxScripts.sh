@@ -20,7 +20,8 @@ x=1
 while [[ $x=1 ]]; do
 
 	clear
-	echo -e "Xmetal's Arch Linux based,  Post-Installation Script \n\n"
+	echo -e "Xmetal's Arch Linux based,  Post-Installation Script \n"
+	echo -e "Please NOTE: Many of these tasks are predone on distros such as Antergos \n\n"
 	echo -e "Please Select task: \n"
 
 	echo -e 	"1. \t Update System"
