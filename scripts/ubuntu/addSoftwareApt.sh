@@ -9,10 +9,16 @@
 
 rootdir=$basedir
 
-overallUbuntu= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
-$overallUbuntu
+ubuntuFunction= . $rootdir/tasks/functions/ubuntu/f_ubuntu.cfg
+$ubuntuFunction
 
-## I SHOULDN'T need this these next two
+UbuntuSoftwareFunction= . $rootdir/tasks/functions/ubuntu/f_ubuntuSoftware.cfg
+$UbuntuSoftwareFunction
+
+UbuntuMenusFunction= . $rootdir/tasks/functions/ubuntu/f_ubuntuMenus.cfg
+$UbuntuMenusFunction
+
+
 
 #############################################################################
 clear
