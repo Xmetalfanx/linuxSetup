@@ -9,12 +9,8 @@
 
 rootdir=$basedir
 
-commonFunctions= . $functionfolder/f_common.cfg
+commonFunctions= . $rootdir/tasks/functions/f_common.cfg
 $commonFunctions
-
-ubuntuFunctInclude= . $functionfolder/includeUbuntuFunctions.cfg
-$ubuntuFunctInclude
-
 ###################################################################################################
 x=1
 
