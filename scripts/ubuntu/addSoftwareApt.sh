@@ -9,16 +9,8 @@
 
 rootdir=$basedir
 
-ubuntuFunction= . $rootdir/tasks/functions/ubuntu/f_ubuntu.cfg
-$ubuntuFunction
-
-UbuntuSoftwareFunction= . $rootdir/tasks/functions/ubuntu/f_ubuntuSoftware.cfg
+UbuntuSoftwareFunction= . "$rootdir"/tasks/functions/ubuntu/f_ubuntuSoftware.cfg
 $UbuntuSoftwareFunction
-
-UbuntuMenusFunction= . $rootdir/tasks/functions/ubuntu/f_ubuntuMenus.cfg
-$UbuntuMenusFunction
-
-
 
 #############################################################################
 clear
@@ -34,8 +26,8 @@ echo -e "Please Select Task\n"
 	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
 	echo -e 	"4. \t Install Various Useful Apps "
 	echo -e 	"5. \t Install Etcher to put ISOs on USB drives"
-  echo -e    "6. \t Install Atom Editor"
-	echo -e 	 "7. \t Install\Update MPV from PPA"
+  echo -e   "6. \t Install Atom Editor"
+	echo -e 	"7. \t Install\Update MPV from PPA"
 	echo -e 	"8. \t Install Wine and PlayOnLinux"
 
 
@@ -49,41 +41,40 @@ echo -e "Please Select Task\n"
 	 		;;
 
 	 2) officeSuiteMenu
-				 x=1
-				 ;;
-
-	  3) browserMenu
-			 x=1
-			 ;;
-
-		4)  echo -e "Installing Common (Various). "
-				clear
-				echo -e "About to install Filezilla, Deluge, Gparted, Bleachbit, and Etcher"
-				userPrompt
-
-	 		  aptUpdate
-
-				## ? Include QBittorrent too?
-	 			aptInstall filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
-
-                # Function call
-                #etcherInstall
-	 			;;
-
-		5) 	etcherInstall
+			x=1
 			;;
+
+  3) browserMenu
+		 x=1
+		 ;;
+
+	4)  echo -e "Installing Common (Various). "
+			clear
+			echo -e "About to install Filezilla, Deluge, Gparted, Bleachbit, and Etcher"
+			userPrompt
+			
+ 		  aptUpdate
+
+			## ? Include QBittorrent too?
+ 			aptInstall filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
+
+          # Function call
+          #etcherInstall
+ 			;;
+
+		5) 	etcherInstall ;;
 
     6) installAtom ;;
 
-		7) updatedMPV ;;
+		7) updatedPPAMPV ;;
 
 		8) wineInstall ;;
 
-		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-					;;
+		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh ;;
 
-  	[qQ]) quitScript
-	 		 	;;
+  	[qQ]) quitScript	;;
+
+		* ) invalidSection ;;
 
 	esac
 done
