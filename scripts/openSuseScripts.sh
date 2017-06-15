@@ -16,7 +16,6 @@ $cumlOSuse
 
 x=1
 
-
 while [[ $x=1 ]]; do
 
 	#clear
@@ -46,47 +45,47 @@ while [[ $x=1 ]]; do
 
 	read -p "Your Choice?:" openSuseSelection
 
-				case $openSuseSelection in
+		case $openSuseSelection in
 
-				  1) updateOpenSuse
-						 x=1 ;;
+		  1) updateOpenSuse
+				 x=1 ;;
 
-				  2) installPackmanRepoLeap
-						 x=1	;;
+		  2) installPackmanRepoLeap
+				 x=1	;;
 
-				  3) setupMultimediaLeap
-							x=1	;;
+		  3) setupMultimediaLeap
+					x=1	;;
 
-				  4) installGoogleChrome
-					  	x=1 ;;
+		  4) installGoogleChrome
+			  	x=1 ;;
 
-				  5) SuseAddArcTheme
-					  	x=1	;;
+		  5) SuseAddArcTheme
+			  	x=1	;;
 
-				  6) installCommonSoftware
-						 x=1	 ;;
+		  6) installCommonSoftware
+				 x=1	 ;;
 
-					7) cinnamonRepoSuseZypperLeap421 ;;
+			7) cinnamonRepoSuseZypperLeap421 ;;
 
-					8) cinnamonRepoSuseZypperLeap422 ;;
+			8) cinnamonRepoSuseZypperLeap422 ;;
 
-					9) cinnamonRepoSuseZypperTW ;;
+			9) cinnamonRepoSuseZypperTW ;;
 
-				[aA]) updateOpenSuse
+			[aA]) updateOpenSuse
 
-							setupMultimediaLeap
-							installGoogleChrome
-							SuseAddArcTheme
+					setupMultimediaLeap
+					installGoogleChrome
+					SuseAddArcTheme
 
-							x=1
+					x=1
+					;;
+
+			[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 							;;
 
-				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-								;;
+			[qQ]) quitScript ;;
 
-				[qQ]) quitScript ;;
-
-				* ) invalidSection ;;
+			* ) invalidSection ;;
 
 		esac
 

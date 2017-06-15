@@ -62,40 +62,35 @@ while [[ $x=1 ]]; do
 
 	case $fedoraSelection in
 
-		  1) solusUpdate
-		     x=1
-		     ;;
+	  1) solusUpdate
+	     x=1 ;;
 
-			2) ## Adds Unstable repo and disables stable in one shot
-			   addUnstableRepo
-				 disableRepo Solus ;;
+		2) ## Adds Unstable repo and disables stable in one shot
+		   addUnstableRepo
+			 disableRepo Solus ;;
 
+		3) disableRepo Unstable
+			 enableRepo Stable ;;
 
-			3) disableRepo Unstable
-				 enableRepo Stable ;;
+    4) disableRepo Solus
+	    x=1 ;;
 
+	  5) addUnstableRepo
+	     x=1 ;;
 
-	    4) disableRepo Solus
-		    x=1
-		    ;;
+		6) enableRepo Unstable
+		   x=1	;;
 
-		  5) addUnstableRepo
-		     x=1
-				;;
+    7) disableRepo Unstable
+			 x=1 ;;
 
-			6) enableRepo Unstable
-			  	x=1
-			 	;;
-
-      7) disableRepo Unstable
-				 x=1
-				 ;;
-
-		[mM] )	bash "$rootdir"/xmetalLinuxScripts.sh
+		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 						;;
 
-		 [qQ]) quitScript
-	 				 	;;
+		[qQ]) quitScript 	;;
+
+		* ) invalidSection ;;
+
 
 		esac
 
