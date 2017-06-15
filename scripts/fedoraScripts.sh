@@ -55,15 +55,15 @@ while [[ $x=1 ]]; do
 
 			4) echo "Performing comming tasks of Fedy "
 			   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
-				  x=1
+				 x=1
 			 	 ;;
 
 			5) InstallExtraSoftware
 			   x=1
-				;;
+				 ;;
 
 		  6) fedoraAddArcTheme
-		    	 x=1
+		     x=1
 					;;
 
 		 [aA]) UpdateFedora
@@ -77,8 +77,11 @@ while [[ $x=1 ]]; do
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
 						;;
 
-		 [qQ]) quitScript
-	 				 	;;
+		 [qQ]) quitScript	;;
+
+
+		 * ) invalidSection ;;
+
 
 		esac
 

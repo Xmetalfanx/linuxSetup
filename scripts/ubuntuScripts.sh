@@ -11,12 +11,15 @@ rootdir=$basedir
 
 commonFunctions= . $rootdir/tasks/functions/f_common.cfg
 $commonFunctions
+
+ubuntuFunctions= . $rootdir/tasks/functions/includeUbuntuFunctions.cfg
+$ubuntuFunctions
+
 ###################################################################################################
 x=1
 
 clear
 checkDistro
-
 
 while [[ $x=1 ]]; do
 
@@ -32,7 +35,7 @@ while [[ $x=1 ]]; do
 
 			echo -e   "\v4. \t Add Various Software"
 
-			echo -e  	"5. \t [16.10 based+ ] Install Budgie-Remix PPA [Ads SolMate LIKE Theming]"
+			echo -e  	"5. \t [16.10 based+ ] Install Budgie-Remix Theming [Adds Solus Mate like Theming ]"
 
 
 			echo -e 	"6. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
@@ -57,6 +60,7 @@ while [[ $x=1 ]]; do
 		  4) bash "$rootdir"/scripts/ubuntu/addSoftwareApt.sh ;;
 
 		  5) budgieRemixPPA
+				 budgieTheme
 		   		x=1 ;;
 
 		  6) InstallLokiAdditions
@@ -76,6 +80,8 @@ while [[ $x=1 ]]; do
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh	;;
 
 		[qQ]) quitScript	;;
+
+		* ) invalidSection ;;
 
 		esac
 
