@@ -20,6 +20,9 @@ $commonFunctions
 software= . $functionfolder/f_software.cfg
 $software
 
+distroCheckFunction= . $functionfolder/f_distroCheck.cfg
+$distroCheckFunction
+
 ########################################################################
 x=1
 clear

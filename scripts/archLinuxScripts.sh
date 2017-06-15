@@ -37,50 +37,49 @@ while [[ $x=1 ]]; do
 
 	read -p 	"Your Choice?:"  archSelection
 
-     case $archSelection in
-          1) # Update via Pacman
-					  clear
-						echo "Updating Arch"
-					  sudo pacman -Syyu
-						x=1
+    case $archSelection in
+      1) # Update via Pacman
+			  clear
+				echo "Updating Arch"
+			  sudo pacman -Syyu
+				x=1
+			 ;;
+
+      2)  OptimizeMirrors
+					 x=1	;;
+
+      3)  addYaourt
+					 x=1	;;
+
+      4)  soundSupport
+					 x=1	;;
+
+      5) archiveSupport
+					 x=1 		;;
+
+      6) archInstallArc
+					 x=1	;;
+
+      7) ## This needs TESTING
+        yaourt -s packer
+					 x=1      ;;
+
+		 [aA]) sudo pacman -Syyu
+		       OptimizeMirrors
+					 addYaourt
+					 SoundSupport
+					 archiveSupport
+					 archInstallArc
+					 yaourt -s packer
+					 x=1
 					 ;;
 
-          2)  OptimizeMirrors
-							 x=1	;;
+		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
+				  ;;
 
-          3)  addYaourt
-							 x=1	;;
+		[qQ])  quitScript   ;;
 
-          4)  soundSupport
-							 x=1	;;
-
-          5) archiveSupport
-							 x=1 		;;
-
-          6) archInstallArc
-							 x=1	;;
-
-          7) ## This needs TESTING
-            yaourt -s packer
-							 x=1      ;;
-
-				 [aA]) sudo pacman -Syyu
-				       OptimizeMirrors
-							 addYaourt
-							 SoundSupport
-							 archiveSupport
-							 archInstallArc
-							 yaourt -s packer
-							 x=1
-							 ;;
-
-				[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-						  ;;
-
-				[qQ])  quitScript   ;;
-
-				* ) invalidSection ;;
-
+		* ) invalidSection ;;
 
     esac
 
