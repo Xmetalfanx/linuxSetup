@@ -17,11 +17,15 @@ scriptsDir="$rootdir"/scripts
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
-software= . $functionfolder/f_software.cfg
-$software
-
 distroCheckFunction= . $functionfolder/f_distroCheck.cfg
 $distroCheckFunction
+
+####################################################################
+# Try at doing an array
+
+# FOR NOW this is the way I am trying this ... I plan to change this to a loop where it doesn't need any numbers
+
+declare -A usefulApps=(mpv hexchat geany filezilla deadbeef smplayer pinta);
 
 ########################################################################
 x=1
@@ -50,6 +54,7 @@ while [[ $x=1 ]]; do
       echo -e   "4. \t Ubuntu based"
       echo -e   "5. \t Solus"
       echo -e   "6, \t (Test only ) New way of Installing "
+      echo -e   "7. \t (Test only ) Display usefulApps array"
 
       #echo -e   "5. \t Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
@@ -65,6 +70,10 @@ while [[ $x=1 ]]; do
 
         6) installApp filezilla mpv vlc pinta  ;;
         # 7) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
+        7) clear
+        echo "Test"
+        echo -e ${usefulApps[*]}
+        ;;
 
         [qQ]) quitScript  ;;
 
