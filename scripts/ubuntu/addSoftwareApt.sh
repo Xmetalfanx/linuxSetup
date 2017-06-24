@@ -52,23 +52,31 @@ echo -e "Please Select Task\n"
 			clear
 			echo -e "About to install Filezilla, Deluge, Gparted, Bleachbit, and Etcher"
 			userPrompt
-			
+
  		  aptUpdate
 
 			## ? Include QBittorrent too?
  			aptInstall filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
 
-          # Function call
-          #etcherInstall
- 			;;
+        # Function call
+        #etcherInstall
+				x=1
+	 	 		;;
 
-		5) 	etcherInstall ;;
+		5) 	etcherInstall
+				x=1
+			  ;;
 
-    6) installAtom ;;
+    6) installAtom
+				x=1
+ 	 			;;
+		7) updatedPPAMPV
+				x=1
+ 	 		;;
 
-		7) updatedPPAMPV ;;
-
-		8) wineInstall ;;
+		8) wineInstall
+			x=1
+ 	 		;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh ;;
 
