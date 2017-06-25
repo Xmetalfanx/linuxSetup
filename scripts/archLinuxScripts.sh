@@ -46,19 +46,19 @@ while [[ $x=1 ]]; do
 			 ;;
 
       2)  OptimizeMirrors
-					 x=1	;;
+					x=1	;;
 
       3)  addYaourt
-					 x=1	;;
+					x=1	;;
 
       4)  soundSupport
-					 x=1	;;
+					x=1	;;
 
       5) archiveSupport
-					 x=1 		;;
+					x=1 ;;
 
       6) archInstallArc
-					 x=1	;;
+					x=1	;;
 
       7) ## This needs TESTING
         yaourt -s packer
