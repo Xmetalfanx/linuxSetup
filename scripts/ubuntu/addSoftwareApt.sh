@@ -56,7 +56,7 @@ echo -e "Please Select Task\n"
  		  aptUpdate
 
 			## ? Include QBittorrent too?
- 			aptInstall filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
+ 			installApp filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
 
         # Function call
         #etcherInstall
@@ -68,15 +68,16 @@ echo -e "Please Select Task\n"
 			  ;;
 
     6) installAtom
-				x=1
- 	 			;;
+			 x=1
+ 	 		 ;;
+
 		7) updatedPPAMPV
-				x=1
- 	 		;;
+			 x=1
+ 	 		 ;;
 
 		8) wineInstall
-			x=1
- 	 		;;
+			 x=1
+ 	 		 ;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh ;;
 
