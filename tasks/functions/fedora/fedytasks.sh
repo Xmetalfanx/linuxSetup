@@ -43,15 +43,15 @@ clear
          x=1  ;;
 
       3) fedyCodecs
-          x=1    ;;
+          x=1  ;;
 
       4) themeEngines
-          x=1  ;;
+         x=1  ;;
 
       5) fontRendering
          x=1   ;;
 
-     [aA]) archSupport
+      [aA]) archSupport
            msFonts
            fedyCodecs
            themeEngines
@@ -59,11 +59,11 @@ clear
            x=1
            ;;
 
-    [mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-            ;;
+      [mM])	bash "$rootdir"/xmetalLinuxScripts.sh
+          ;;
 
-     [qQ])  quitScript
-        	 	;;
+      [qQ])  quitScript
+        		;;
     esac
 
 done
