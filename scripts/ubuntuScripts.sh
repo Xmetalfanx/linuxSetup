@@ -40,6 +40,7 @@ while [[ $x=1 ]]; do
 
 			echo -e 	"6. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
 			echo -e 	"7.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
+			echo -e "8. (TEST) Compile Gparted from git source "
 
 			echo -e   "\vm. \tReturn to Main Menu"
 			echo -e		"q. \tExit to Prompt \n\n"
@@ -68,6 +69,9 @@ while [[ $x=1 ]]; do
 
 	   	7) addUMateDevPPA
 					x=1		;;
+
+		 	8) gpartedFromSource
+				 x=1  ;; 
 
 		[aA]) aptUpdate
 					addThemePPAs
