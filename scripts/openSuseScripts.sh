@@ -35,9 +35,7 @@ while [[ $x=1 ]]; do
 	echo -e     "4. \t Install Google Chrome"
 	echo -e     "5. \t Install Arc Theme"
 	echo -e   	"6. \t Add/Install Extra Software "
-	echo -e   	"7. \t Add Cimmamon for Leap 42.1"
-	echo -e   	"8. \t Add Cimmamon for Leap 42.2 "
-	echo -e   	"9. \t Add Cimmamon for Leap Tumbleweed "
+	echo -e   	"7. \t Add Cimmamon to OpenSuse"
 
 
   echo -e 		"m. \t Return to Main Menu"
@@ -65,11 +63,7 @@ while [[ $x=1 ]]; do
 		  6) installCommonSoftware
 				 x=1	 ;;
 
-			7) cinnamonRepoSuseZypperLeap421 ;;
-
-			8) cinnamonRepoSuseZypperLeap422 ;;
-
-			9) cinnamonRepoSuseZypperTW ;;
+			7)  ;;
 
 			[aA]) updateOpenSuse
 
