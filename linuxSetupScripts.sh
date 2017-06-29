@@ -15,15 +15,8 @@ rootdir=$basedir
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
-distroCheckFunction= . $functionfolder/f_distroCheck.cfg
-$distroCheckFunction
-
-####################################################################
-# Try at doing an array
-
-# FOR NOW this is the way I am trying this ... I plan to change this to a loop where it doesn't need any numbers
-
-declare -A usefulApps=(mpv hexchat geany filezilla deadbeef smplayer pinta);
+includeUbuntuFuncions= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
+$includeUbuntuFuncions
 
 ########################################################################
 x=1
@@ -42,7 +35,6 @@ while [[ $x=1 ]]; do
 
       #echo -e "Test Two"
       #capsSED $distroBase
-
 
       echo -e "Please Select your Distrobution family \n"
 
@@ -66,7 +58,7 @@ while [[ $x=1 ]]; do
         4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
         5) bash  "$scriptsDir"/solusScripts.sh ;;
 
-        6) installApp filezilla mpv vlc pinta  ;;
+        6) installApp ${usefulApps[*]}  ;;
         # 7) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
         7) clear
         echo "Test"
