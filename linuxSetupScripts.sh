@@ -43,8 +43,7 @@ while [[ $x=1 ]]; do
       echo -e   "3. \t OpenSUSE"
       echo -e   "4. \t Ubuntu based"
       echo -e   "5. \t Solus"
-      echo -e   "6, \t (Test only ) New way of Installing "
-      echo -e   "7. \t (Test only ) Display usefulApps array"
+      echo -e   "6. \t (Test only ) Display usefulApps array"
 
       #echo -e   "5. \t Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
@@ -58,12 +57,7 @@ while [[ $x=1 ]]; do
         4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
         5) bash  "$scriptsDir"/solusScripts.sh ;;
 
-        6) installApp ${usefulApps[*]}  ;;
-        # 7) bash "$rootdir"/tasks/themes/github/githubThemes.sh ;;
-        7) clear
-        echo "Test"
-        echo -e ${usefulApps[*]}
-        ;;
+        6) testArray ${usefulApps[*]}  ;;
 
         [qQ]) quitScript  ;;
 
