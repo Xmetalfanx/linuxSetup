@@ -18,6 +18,10 @@ $commonFunctions
 includeUbuntuFuncions= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $includeUbuntuFuncions
 
+## Testing
+appListFunctions= . "$rootdir"/tasks/functions/universal/f_applist.cfg
+$appListFunctions
+
 ########################################################################
 x=1
 clear
@@ -58,6 +62,9 @@ while [[ $x=1 ]]; do
         5) bash  "$scriptsDir"/solusScripts.sh ;;
 
         6) testArray ${usefulApps[*]}  ;;
+
+
+        7) installAppList googleChrome ;; 
 
         [qQ]) quitScript  ;;
 
