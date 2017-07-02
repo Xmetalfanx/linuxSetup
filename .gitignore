@@ -1,6 +1,7 @@
-*.zip
-*.key
-*.tar.gz
-*.t*z
-.pub
-.git/
+**/*.zip
+**/*.key
+**/*.tar.gz
+**/*.t*z
+**/*.pub
+**/*.deb
+**/*.rpm
