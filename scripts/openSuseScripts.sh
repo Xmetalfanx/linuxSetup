@@ -63,7 +63,8 @@ while [[ $x=1 ]]; do
 		  6) installCommonSoftware
 				 x=1	 ;;
 
-			7)  ;;
+			7) totalCinnZypper
+			  	x=1 ;;
 
 			[aA]) updateOpenSuse
 
