@@ -1,5 +1,7 @@
 # Updates
 
+## July 10, 2017 - LONG OUT OF DATE Changelog
+
 ## December 9, 2015 - Update to Development branch
 - Updated Guide (slightly) and the main README file
 - [IMPROVEMENTS]Consolidated the separate browser .sh file into a function that handles the same thing.
