@@ -33,12 +33,10 @@ while [[ $x=1 ]]; do
 	echo -e     "2. \t Add Packman Repositories"
 	echo -e     "3. \t Setup Multimedia/Codecs"
 	echo -e     "4. \t Install Google Chrome"
-	echo -e     "5. \t Install Arc Theme"
-	echo -e   	"6. \t Add/Install Extra Software "
-	echo -e   	"7. \t Add Cimmamon to OpenSuse"
+	echo -e     "5. \t Add/Install Extra Software"
+	echo -e   	"6. \t Add Cimmamon to OpenSuse"
 
-
-  echo -e 		"m. \t Return to Main Menu"
+  	echo -e 	"m. \t Return to Main Menu"
 	echo -e     "q. \t Exit to Prompt  \n\n"
 
 	read -p "Your Choice?:" openSuseSelection
@@ -57,26 +55,22 @@ while [[ $x=1 ]]; do
 		  4) installGoogleChrome
 			  	x=1 ;;
 
-		  5) SuseAddArcTheme
+		  5) installCommonSoftware
 			  	x=1	;;
 
-		  6) installCommonSoftware
+		  6) totalCinnZypper
 				 x=1	 ;;
 
-			7) totalCinnZypper
-			  	x=1 ;;
 
-			[aA]) updateOpenSuse
+		[aA]) updateOpenSuse
+				setupMultimediaLeap
+				installGoogleChrome
 
-					setupMultimediaLeap
-					installGoogleChrome
-					SuseAddArcTheme
-
-					x=1
-					;;
+				x=1
+				;;
 
 			[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-							;;
+					;;
 
 			[qQ]) quitScript ;;
 

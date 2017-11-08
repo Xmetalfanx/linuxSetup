@@ -30,7 +30,8 @@ while [[ $x=1 ]]; do
 	echo -e   "3. \t Add Fedy"
 	echo -e   "4. \t Perform Common Fedy Tasks"
 	echo -e   "5. \t Add Extra Software"
-	echo -e   "6. \t Install The Arc Theme"
+	
+	#echo -e   "6. \t Install The Arc Theme"
 
 	echo -e 	"a.	All Tasks [UNTESTED]"
 
@@ -53,29 +54,24 @@ while [[ $x=1 ]]; do
 		   x=1
 				;;
 
-			4) echo "Performing comming tasks of Fedy "
-			   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
-				 x=1
-			 	 ;;
+		4) echo "Performing comming tasks of Fedy "
+		   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
+			 x=1
+		 	 ;;
 
-			5) InstallExtraSoftware
-			   x=1
-				 ;;
-
-		  6) fedoraAddArcTheme
-		     x=1
-					;;
+		5) InstallExtraSoftware
+		   x=1
+			 ;;
 
 		 [aA]) UpdateFedora
-			     AddRPMFusion
-				   InstallFedy
-				   InstallExtraSoftware
-					 fedoraAddArcTheme
-					 x=1
-					 ;;
+			    AddRPMFusion
+				InstallFedy
+				InstallExtraSoftware
+				x=1
+				;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-						;;
+				;;
 
 		 [qQ]) quitScript	;;
 
