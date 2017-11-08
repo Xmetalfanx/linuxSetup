@@ -40,6 +40,7 @@ while [[ $x=1 ]]; do
 
 			echo -e 	"6. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
 			echo -e 	"7.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
+			
 			echo -e "8. (TEST) Compile Gparted from git source "
 
 			echo -e   "\vm. \tReturn to Main Menu"
