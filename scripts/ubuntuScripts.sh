@@ -62,13 +62,13 @@ while [[ $x=1 ]]; do
 		  4) bash "$rootdir"/scripts/ubuntu/addSoftwareApt.sh ;;
 
 		  5) budgieRemixPPA
-				 budgieTheme
+			budgieTheme
 		   		x=1 ;;
 
 		  6) InstallLokiAdditions
 		 	 		x=1	 ;;
 
-	   	7) addUMateDevPPA
+	   		7) addUMateDevPPA
 					x=1		;;
 
 		 	8) gpartedFromSource
