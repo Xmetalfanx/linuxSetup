@@ -21,14 +21,14 @@ while [[ $x=1 ]]; do
 echo -e "Xmetal's Ubuntu-based Software Script  \n\n"
 echo -e "Please Select Task\n"
 
-	echo -e 	"1. \t Install Multimedia Programs"
-	echo -e   "2. \t Install Office Suite [Sub-menu]"
-	echo -e   "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
-	echo -e 	"4. \t Install Various Useful Apps "
-	echo -e 	"5. \t Install Etcher to put ISOs on USB drives"
-  echo -e   "6. \t Install Atom Editor"
-	echo -e 	"7. \t Install\Update MPV from PPA"
-	echo -e 	"8. \t Install Wine and PlayOnLinux"
+	echo -e "1. \t Install Multimedia Programs"
+	echo -e "2. \t Install Office Suite [Sub-menu]"
+	echo -e "3. \t Install Web Browser [Submenu] (Chrome, Chromium, Firefox, or Vivaldi)"
+	echo -e "4. \t Install Various Useful Apps "
+	echo -e "5. \t Install Etcher to put ISOs on USB drives"
+  	echo -e "6. \t Install Atom Editor"
+	echo -e "7. \t Install\Update MPV from PPA"
+	echo -e "8. \t Install Wine and PlayOnLinux"
 
 
 	echo -e 	"m. \t Return to Main Menu"
