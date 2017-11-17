@@ -17,7 +17,7 @@ while [[ $x=1 ]]; do
 
     echo -e   "What Theme would you like to install?\n "
     echo -e   "1) \t Arc Theme and Icons Pack (includes Openbox Support)"
-    echo -e   "2) \t Mint-y Theme and Icon Pack"
+    echo -e   "2) \t Mint-y Icon Pack"
     echo -e   "A) \t Arc and Mint-y Themes and Icons "
 
     echo -e 	"\nM) \t Return to Main Menu"
@@ -30,20 +30,19 @@ while [[ $x=1 ]]; do
         1)  gitArcThemes
             gitArcIcons
             gitArcOpenBox
-					  echo "installed Arc"
+			echo "installed Arc"
             x=1
             ;;
 
-        2) MintyThemes
+        2) 
            MintyIcons
-					 echo "installed Minty"
+			echo "Installed Mint-y Icon Pack"
            x=1
            ;;
 
         [aA]) gitArcThemes
             gitArcIcons
             gitArcOpenBox
-            MintyThemes
             MintyIcons
             x=1
 
