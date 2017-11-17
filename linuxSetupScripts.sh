@@ -10,10 +10,12 @@
 readonly basedir=$(pwd)
 export basedir
 
+########################################################################
 rootdir=$basedir
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
+
 
 includeUbuntuFuncions= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $includeUbuntuFuncions
@@ -24,21 +26,26 @@ $appListFunctions
 
 ########################################################################
 x=1
+
+#Clears Screen
 clear
-checkDistro
+
+#Function is ran to get some guesses/info about the distro 
+## I am working on a function that INCLUDES This below and a few other things ... passing to THAT function may be done in the future 
+osreleaseInfo 
+
+
+# Displays some guesses/info about the distro pre-menus 
+mainDisplayDistroInfo
+
+
+# Idea - Spaces 
+echo 
+echo 
 
 while [[ $x=1 ]]; do
 
       echo -e "Xmetal's Linux Script \n"
-      echo -e "It APPEARS your distro base is:"
-      capsFirst $distroBase
-      #echo -e "Your distro is detected as: $distro"
-
-      #echo -e "Test one"
-      #capsFirst $distroBase
-
-      #echo -e "Test Two"
-      #capsSED $distroBase
 
       echo -e "Please Select your Distrobution family \n"
 
