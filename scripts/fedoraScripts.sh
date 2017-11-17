@@ -1,22 +1,15 @@
 #!/bin/bash
 
-#Title : Xmetal's Fedora Setup Script
-#Description : This script will setup some common things afer a fresh install of Fedora
-#Author : Xmetalfanx / Xmetal
-#Date 	: 2016-09-10
-#Version: v0.5
-#Usage 	: bash
-
 rootdir=$basedir
 
-functFedora= . "$rootdir"/tasks/functions/f_fedora.cfg
+functFedora= . "$rootdir"/tasks/functions/fedora/f_fedora.cfg
 $functFedora
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
 #######################################################################################
-detectVersion
+clear 
 x=1
 
 while [[ $x=1 ]]; do
