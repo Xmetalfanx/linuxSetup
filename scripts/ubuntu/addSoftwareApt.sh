@@ -1,16 +1,12 @@
 #!/bin/bash
 
-#Title : Xmetal's Adding Software to Ubuntu
-#Description : Xmetal's Adding Software to Ubuntu based distros
-#Author : Xmetalfanx / Xmetal
-#Date 	: 2016-09-06
-#Version: v0.5
-#Usage 	: bash addSoftwareApt.sh
-
 rootdir=$basedir
 
-UbuntuSoftwareFunction= . "$rootdir"/tasks/functions/ubuntu/f_ubuntuSoftware.cfg
-$UbuntuSoftwareFunction
+commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+$commonFunctions
+
+UbuntuCulmFunction= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
+$UbuntuCulmFunction
 
 #############################################################################
 clear

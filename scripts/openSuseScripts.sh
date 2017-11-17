@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#Title : Xmetal's Leap Setup Script
-#Description : This script will setup some common things afer a fresh install of Leap
-#Author : Xmetalfanx / Xmetal
-#Date 	: 2016-09-10
-#Version: v0.5
-#Usage 	: bash OpenSuseLeapPostInstall.sh
-
 rootdir=$basedir
 
 cumlOSuse= . "$rootdir"/tasks/functions/includeOpenSuseFunctions.cfg
