@@ -7,32 +7,32 @@ $commonFunctions
 #######################################################################################
 function solusUpdate
 {
-	   echo -e "About to Update Solus via command line, NOT TYPICALLY recommended by Solus Team"
-		 read -p "Do you want to continue? (Press any key for YES, Control + Z for NO )"
-		 sudo eopkg up
+   echo -e "About to Update Solus via command line, NOT TYPICALLY recommended by Solus Team"
+	 read -p "Do you want to continue? (Press any key for YES, Control + Z for NO )"
+	 sudo eopkg up
 
 }
 
 function addUnstableRepo
 {
-	   sudo eopkg add-repo Unstable https://packages.solus-project.com/unstable/eopkg-index.xml.xz
-		 clear
-		 echo -e "Unstable Solus repo added and enabled"
-		 echo -e "*** IMPORTANT **** "
-		 echo -e "Check with the Solus Team to see if they warn against updating Unstable"
-		 echo -e "From time to time they say \" Don't Update if your on Unstable until futher notice \"  "
-		 userPrompt
+   sudo eopkg add-repo Unstable https://packages.solus-project.com/unstable/eopkg-index.xml.xz
+	 clear
+	 echo -e "Unstable Solus repo added and enabled"
+	 echo -e "*** IMPORTANT **** "
+	 echo -e "Check with the Solus Team to see if they warn against updating Unstable"
+	 echo -e "From time to time they say \" Don't Update if your on Unstable until futher notice \"  "
+	 userPrompt
 
 }
 
 function disableRepo
 {
-			sudo eopkg disable-repo $1
+	sudo eopkg disable-repo $1
 }
 
 function enableRepo
 {
-   		sudo eopkg enable-repo $1
+	sudo eopkg enable-repo $1
 }
 
 
@@ -66,22 +66,22 @@ while [[ $x=1 ]]; do
 	     x=1 ;;
 
 		2) ## Adds Unstable repo and disables stable in one shot
-		   addUnstableRepo
-			 disableRepo Solus ;;
+			addUnstableRepo
+			disableRepo Solus ;;
 
-		3) disableRepo Unstable
-			 enableRepo Stable ;;
+		3)	disableRepo Unstable
+			enableRepo Stable ;;
 
-    4) disableRepo Solus
-	    x=1 ;;
+    	4) disableRepo Solus
+	    	x=1 ;;
 
-	  5) addUnstableRepo
-	     x=1 ;;
+	  	5) addUnstableRepo
+	     	x=1 ;;
 
 		6) enableRepo Unstable
 		   x=1	;;
 
-    7) disableRepo Unstable
+    	7) disableRepo Unstable
 			 x=1 ;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
