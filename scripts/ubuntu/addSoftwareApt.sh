@@ -40,15 +40,15 @@ echo -e "Please Select Task\n"
 	 		x=1
 	 		;;
 
-	 2) officeSuiteMenu
+		2) officeSuiteMenu
 			x=1
 			;;
 
-  3) browserMenu
-		 x=1
-		 ;;
+		3) browserMenu
+				 x=1
+				 ;;
 
-	4)  echo -e "Installing Common (Various). "
+		4)  echo -e "Installing Common (Various). "
 			clear
 			echo -e "About to install Filezilla, Deluge, Gparted, Bleachbit, and Etcher"
 			userPrompt
