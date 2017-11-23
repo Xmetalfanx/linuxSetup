@@ -13,9 +13,11 @@ export basedir
 ########################################################################
 rootdir=$basedir
 
+distroCheck= . "$rootdir"/tasks/f_distroCheck.cfg
+$distroCheck
+
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
-
 
 includeUbuntuFuncions= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $includeUbuntuFuncions
@@ -32,7 +34,8 @@ clear
 
 #Function is ran to get some guesses/info about the distro 
 ## I am working on a function that INCLUDES This below and a few other things ... passing to THAT function may be done in the future 
-osreleaseInfo 
+osreleaseInfo
+idCheck
 
 
 # Displays some guesses/info about the distro pre-menus 
@@ -41,9 +44,9 @@ mainDisplayDistroInfo
 
 # Idea - Spaces 
 echo 
-echo 
 
 while [[ $x=1 ]]; do
+    
 
       echo -e "Xmetal's Linux Script \n"
 
@@ -54,9 +57,8 @@ while [[ $x=1 ]]; do
       echo -e   "3. \t OpenSUSE"
       echo -e   "4. \t Ubuntu based"
       echo -e   "5. \t Solus"
-      echo -e   "6. \t (Test only ) Display usefulApps array"
+      echo -e   "6. \t (Test only) Install Useful Apps"
 
-      #echo -e   "5. \t Themes and Icons from Github"
       echo -e   "q. \t Exit to Prompt \n\n"
       read -p   "Your Choice?:" mainSelection
 
@@ -68,10 +70,7 @@ while [[ $x=1 ]]; do
         4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
         5) bash  "$scriptsDir"/solusScripts.sh ;;
 
-        6) testArray ${usefulApps[*]}  ;;
-
-
-        7) installAppList googleChrome ;; 
+        6) usefulAppInstall  ;;
 
         [qQ]) quitScript  ;;
 
