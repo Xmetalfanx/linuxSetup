@@ -10,21 +10,19 @@
 readonly basedir=$(pwd)
 export basedir
 
+
+
 ########################################################################
 rootdir=$basedir
+functionsdir="$rootdir"/tasks/functions
 
-distroCheck= . "$rootdir"/tasks/f_distroCheck.cfg
-$distroCheck
-
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
+commonFunctions= . $functionsdir/f_common.cfg
 $commonFunctions
 
-includeUbuntuFuncions= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
-$includeUbuntuFuncions
 
 ## Testing
-appListFunctions= . "$rootdir"/tasks/functions/universal/f_applist.cfg
-$appListFunctions
+#appListFunctions= . $functionsdir/universal/f_applist.cfg
+#$appListFunctions
 
 ########################################################################
 x=1
@@ -32,11 +30,7 @@ x=1
 #Clears Screen
 clear
 
-#Function is ran to get some guesses/info about the distro 
-## I am working on a function that INCLUDES This below and a few other things ... passing to THAT function may be done in the future 
-osreleaseInfo
-idCheck
-
+completeDistroCheck
 
 # Displays some guesses/info about the distro pre-menus 
 mainDisplayDistroInfo

@@ -25,6 +25,7 @@ echo -e "Please Select Task\n"
   	echo -e "6. \t Install Atom Editor"
 	echo -e "7. \t Install\Update MPV from PPA"
 	echo -e "8. \t Install Wine and PlayOnLinux"
+	echo -e "9. \t Install Sublime Text"
 
 
 	echo -e 	"m. \t Return to Main Menu"
@@ -49,15 +50,15 @@ echo -e "Please Select Task\n"
 			echo -e "About to install Filezilla, Deluge, Gparted, Bleachbit, and Etcher"
 			userPrompt
 
- 		  aptUpdate
+ 		  	aptUpdate
 
 			## ? Include QBittorrent too?
  			installApp filezilla deluge gparted bleachbit plank radiotray gpodder pinta htop
 
-        # Function call
-        #etcherInstall
-				x=1
-	 	 		;;
+	        # Function call
+	        #etcherInstall
+					x=1
+		 	 		;;
 
 		5) 	etcherInstall
 				x=1
@@ -74,6 +75,10 @@ echo -e "Please Select Task\n"
 		8) wineInstall
 			 x=1
  	 		 ;;
+
+		9) sublimetextInstall
+		x=1
+		;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh ;;
 
