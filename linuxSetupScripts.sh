@@ -28,20 +28,17 @@ $commonFunctions
 x=1
 
 #Clears Screen
-clear
+clear 
 
-completeDistroCheck
+osreleaseInfo
+#idCheck
 
 # Displays some guesses/info about the distro pre-menus 
 mainDisplayDistroInfo
 
 
-# Idea - Spaces 
-echo 
-
 while [[ $x=1 ]]; do
     
-
       echo -e "Xmetal's Linux Script \n"
 
       echo -e "Please Select your Distrobution family \n"
