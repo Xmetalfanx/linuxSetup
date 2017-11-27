@@ -3,9 +3,6 @@
 #Title :          Xmetal's Linux Post Setup Script
 #Description :    This script will setup some common things afer a fresh install of various Linux distros
 #Author :         Xmetalfanx / Xmetal
-#Date 	:         2016-09-25
-#Version:         v0.6
-#Usage 	:         bash xmetalLinuxScripts.sh
 
 readonly basedir=$(pwd)
 export basedir
@@ -19,7 +16,6 @@ functionsdir="$rootdir"/tasks/functions
 commonFunctions= . $functionsdir/f_common.cfg
 $commonFunctions
 
-
 ## Testing
 #appListFunctions= . $functionsdir/universal/f_applist.cfg
 #$appListFunctions
@@ -31,7 +27,8 @@ x=1
 clear 
 
 osreleaseInfo
-#idCheck
+
+completeDistroCheck
 
 # Displays some guesses/info about the distro pre-menus 
 mainDisplayDistroInfo
