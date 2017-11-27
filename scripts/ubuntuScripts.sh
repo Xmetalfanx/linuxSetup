@@ -1,11 +1,8 @@
 #!/bin/bash
 
-#Title : Ubuntu Trusty Tar -based Setup
-#Description : This script installs the Arc Theme and Icon Packs used
+#Title : Ubuntu -based Setup
+#Description : 
 #Author : Xmetalfanx / Xmetal
-#Date 	: 2016-09-06
-#Version: v0.5
-#Usage 	: bash ubuntuTrustyPostInstall.sh
 
 rootdir=$basedir
 
@@ -19,7 +16,6 @@ $ubuntuFunctions
 x=1
 
 clear
-checkDistro
 
 while [[ $x=1 ]]; do
 
