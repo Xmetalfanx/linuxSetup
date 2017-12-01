@@ -35,9 +35,9 @@ while [[ $x=1 ]]; do
 
 
 			echo -e 	"6. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
-			echo -e 	"7.	[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
+			echo -e 	"7.	\t[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
 			
-			echo -e "8. (TEST) Compile Gparted from git source "
+			echo -e 	"8. \t (TEST) Compile Gparted from git source "
 
 			echo -e   "\vm. \tReturn to Main Menu"
 			echo -e		"q. \tExit to Prompt \n\n"
@@ -46,7 +46,7 @@ while [[ $x=1 ]]; do
 
 		case $trustySelection in
 
-		  1) aptUpgrade
+		  1) universalUpgrade
 				 x=1	;;
 
 		  2) addThemePPAs
@@ -62,23 +62,25 @@ while [[ $x=1 ]]; do
 		   		x=1 ;;
 
 		  6) InstallLokiAdditions
-		 	 		x=1	 ;;
+		 	 	x=1	 ;;
 
 	   		7) addUMateDevPPA
-					x=1		;;
+				x=1		;;
 
 		 	8) gpartedFromSource
 				 x=1  ;; 
 
 		[aA]) aptUpdate
-					addThemePPAs
-					installPPAThemes
-					#bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
+				addThemePPAs
+				installPPAThemes
+				#bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
 
-					x=1
-					;;
+				x=1
+				;;
 
-		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh	;;
+		[mM])	clear 
+				exit
+				;;
 
 		[qQ]) quitScript	;;
 

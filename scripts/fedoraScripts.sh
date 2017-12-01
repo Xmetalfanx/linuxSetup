@@ -63,7 +63,8 @@ while [[ $x=1 ]]; do
 				x=1
 				;;
 
-		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
+		[mM])	clear 
+				exit
 				;;
 
 		 [qQ]) quitScript	;;
