@@ -13,9 +13,9 @@ while [[ $x=1 ]]; do
 
 	clear
 
-	suseversion= cat /etc/os-release | grep ^NAME= | sed 's/^NAME="//g' | sed 's/"$//g'
+	echo  "It appears your version of OpenSuse is:"
 
-	echo  "It appears your version of OpenSuse is: ${suseversion}"
+	suseversion= cat /etc/os-release | grep ^NAME= | sed 's/^NAME="//g' | sed 's/"$//g'
 
 	echo
 	echo 
@@ -24,7 +24,7 @@ while [[ $x=1 ]]; do
 
 	echo -e 	"1. \t Update OpenSuse-based Distro"
 	echo -e     "2. \t Add Packman Repositories"
-	echo -e     "3. \t Setup Multimedia/Codecs"
+	#echo -e     "3. \t Setup Multimedia/Codecs"
 	echo -e     "4. \t Install Google Chrome"
 	echo -e     "5. \t Add/Install Extra Software"
 	echo -e   	"6. \t Add Cimmamon to OpenSuse"
@@ -36,10 +36,10 @@ while [[ $x=1 ]]; do
 
 		case $openSuseSelection in
 
-		  1) updateOpenSuse
+		  1) universalUpgrade
 				x=1 ;;
 
-		  2) installPackmanRepoLeap
+		  2) packmanRepoSuse
 				x=1	;;
 
 		  3) setupMultimediaLeap
@@ -51,11 +51,11 @@ while [[ $x=1 ]]; do
 		  5) installCommonSoftware
 			  	x=1	;;
 
-		  6) totalCinnZypper
+		  6) cinnamonSuseRepo
 				x=1	 ;;
 
 
-		[aA]) updateOpenSuse
+			[aA]) universalUpgrade
 			  setupMultimediaLeap
 			  installGoogleChrome
 			   x=1
