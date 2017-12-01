@@ -11,14 +11,14 @@ x=1
 
 while [[ $x=1 ]]; do
 
-	#clear
-	suseTest=sudo cat /etc/os-release |grep PRETTY_NAME
-	echo -e "${suseTest}"
-
-	userPrompt
-
 	clear
 
+	suseversion= cat /etc/os-release | grep ^NAME= | sed 's/^NAME="//g' | sed 's/"$//g'
+
+	echo  "It appears your version of OpenSuse is: ${suseversion}"
+
+	echo
+	echo 
 	echo -e "Xmetal's OpenSuse Script \n"
 	echo -e "Please Select your Choice \n"
 
@@ -37,13 +37,13 @@ while [[ $x=1 ]]; do
 		case $openSuseSelection in
 
 		  1) updateOpenSuse
-				 x=1 ;;
+				x=1 ;;
 
 		  2) installPackmanRepoLeap
-				 x=1	;;
+				x=1	;;
 
 		  3) setupMultimediaLeap
-					x=1	;;
+				x=1	;;
 
 		  4) installGoogleChrome
 			  	x=1 ;;
@@ -52,19 +52,19 @@ while [[ $x=1 ]]; do
 			  	x=1	;;
 
 		  6) totalCinnZypper
-				 x=1	 ;;
+				x=1	 ;;
 
 
 		[aA]) updateOpenSuse
-				setupMultimediaLeap
-				installGoogleChrome
+			  setupMultimediaLeap
+			  installGoogleChrome
+			   x=1
+			   ;;
 
-				x=1
+			[mM])	
+				clear 
+				exit
 				;;
-
-			[mM])	clear 
-					exit
-					;;
 
 			[qQ]) quitScript ;;
 
