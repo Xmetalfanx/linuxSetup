@@ -26,8 +26,6 @@ x=1
 #Clears Screen
 clear 
 
-osreleaseInfo
-
 completeDistroCheck
 
 # Displays some guesses/info about the distro pre-menus 

@@ -52,7 +52,7 @@ while [[ $x=1 ]]; do
 	echo -e 	'Individual Tasks below'
 	echo -e   "4. \t Disable Stable Repo"
 	echo -e   "5. \t Add UNStable Repo"
-  echo -e   "6. \t Enable UNStable Repo (you must have it added first)"
+  echo -e   	"6. \t Enable UNStable Repo (you must have it added first)"
 	echo -e   "7. \t Disable UNStable Repo (useful for when the Solus Team says \"Dont Update Unstable, now\")"
 
 	echo -e 	"m. \t Return to Main Menu"
@@ -84,8 +84,10 @@ while [[ $x=1 ]]; do
     	7) disableRepo Unstable
 			 x=1 ;;
 
-		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh
-						;;
+		[mM])	clear 
+				exit
+			
+				;;
 
 		[qQ]) quitScript 	;;
 
