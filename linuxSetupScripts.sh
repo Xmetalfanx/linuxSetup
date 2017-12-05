@@ -38,25 +38,28 @@ while [[ $x=1 ]]; do
 
       echo -e "Please Select your Distrobution family \n"
 
-      echo -e   "1. \t Arch-based"
-      echo -e   "2. \t Fedora"
-      echo -e   "3. \t OpenSUSE"
-      echo -e   "4. \t Ubuntu based"
-      echo -e   "5. \t Solus"
-      echo -e   "6. \t (Test only) Install Useful Apps"
+      echo -e   "1. Update your System"      
+      echo -e   "2. \t Arch-based"
+      echo -e   "3. \t Fedora"
+      echo -e   "4. \t OpenSUSE"
+      echo -e   "5. \t Ubuntu based"
+      echo -e   "6. \t Solus"
+     
+      echo -e   "7. \t (Test only) Install Useful Apps"
 
       echo -e   "q. \t Exit to Prompt \n\n"
       read -p   "Your Choice?:" mainSelection
 
       case $mainSelection in
 
-        1) bash  "$scriptsDir"/archLinuxScripts.sh ;;
-        2) bash  "$scriptsDir"/fedoraScripts.sh  ;;
-        3) bash  "$scriptsDir"/openSuseScripts.sh  ;;
-        4) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
-        5) bash  "$scriptsDir"/solusScripts.sh ;;
+        1) universalUpgrade ;;
+        2) bash  "$scriptsDir"/archLinuxScripts.sh ;;
+        3) bash  "$scriptsDir"/fedoraScripts.sh  ;;
+        4) bash  "$scriptsDir"/openSuseScripts.sh  ;;
+        5) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
+        6) bash  "$scriptsDir"/solusScripts.sh ;;
 
-        6) usefulAppInstall  ;;
+        7) usefulAppInstall  ;;
 
         [qQ]) quitScript  ;;
 
