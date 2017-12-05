@@ -18,13 +18,12 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's Fedora based Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e 	"1. \t Update Fedora"
-	echo -e   "2. \t Add RPM Fusion and/or UnitedRPM Repositories"
-	echo -e   "3. \t Add Fedy"
-	echo -e   "4. \t Perform Common Fedy Tasks"
-	echo -e   "5. \t Add Extra Software"
+	echo -e   "1. \t Add RPM Fusion and/or UnitedRPM Repositories"
+	echo -e   "2. \t Add Fedy"
+	echo -e   "3. \t Perform Common Fedy Tasks"
+	echo -e   "4. \t Add Extra Software"
 	
-	#echo -e   "6. \t Install The Arc Theme"
+	#echo -e   "5. \t Install The Arc Theme"
 
 	echo -e 	"a.	All Tasks [UNTESTED]"
 
@@ -35,22 +34,18 @@ while [[ $x=1 ]]; do
 
 	case $fedoraSelection in
 
-		1) UpdateFedora
-		   x=1
-		   ;;
-
-	  2) ExtraRepos
+	  	2) ExtraRepos
 		  x=1
 		  ;;
 
 		3) InstallFedy
 		   x=1
-				;;
+		   ;;
 
 		4) echo "Performing comming tasks of Fedy "
 		   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
-			 x=1
-		 	 ;;
+			x=1
+		 	;;
 
 		5) InstallExtraSoftware
 		   x=1
@@ -67,10 +62,10 @@ while [[ $x=1 ]]; do
 				exit
 				;;
 
-		 [qQ]) quitScript	;;
+		[qQ]) quitScript	;;
 
 
-		 * ) invalidSection ;;
+		* ) invalidSection ;;
 
 
 		esac
