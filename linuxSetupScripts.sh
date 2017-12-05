@@ -16,6 +16,10 @@ functionsdir="$rootdir"/tasks/functions
 commonFunctions= . $functionsdir/f_common.cfg
 $commonFunctions
 
+ubuntuScipts= . $functionsdir/includeUbuntuFunctions.cfg
+$ubuntuScript 
+
+
 ## Testing
 #appListFunctions= . $functionsdir/universal/f_applist.cfg
 #$appListFunctions
@@ -38,7 +42,7 @@ while [[ $x=1 ]]; do
 
       echo -e "Please Select your Distrobution family \n"
 
-      echo -e   "1. Update your System"      
+      echo -e   "1. \t Update your System"      
       echo -e   "2. \t Arch-based"
       echo -e   "3. \t Fedora"
       echo -e   "4. \t OpenSUSE"
