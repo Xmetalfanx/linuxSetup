@@ -45,15 +45,14 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's Solus Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e 	"1. \t Update Solus via Commandline"
-	echo -e 	"2.	\t Switch from Stable to Unstable Repos"
-	echo -e 	"3. \t Switch from Unstable to Stable Repos"
+	echo -e 	"1.	\t Switch from Stable to Unstable Repos"
+	echo -e 	"2. \t Switch from Unstable to Stable Repos"
 
-	echo -e 	'Individual Tasks below'
-	echo -e   "4. \t Disable Stable Repo"
-	echo -e   "5. \t Add UNStable Repo"
-  echo -e   	"6. \t Enable UNStable Repo (you must have it added first)"
-	echo -e   "7. \t Disable UNStable Repo (useful for when the Solus Team says \"Dont Update Unstable, now\")"
+	echo -e 	"Individual Tasks below"
+	echo -e   	"3. \t Disable Stable Repo"
+	echo -e   	"4. \t Add UNStable Repo"
+  	echo -e   	"5. \t Enable UNStable Repo (you must have it added first)"
+	echo -e   	"6. \t Disable UNStable Repo (useful for when the Solus Team says \"Dont Update Unstable, now\")"
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e 	"q.	 Exit to Prompt \n\n"
@@ -62,34 +61,31 @@ while [[ $x=1 ]]; do
 
 	case $fedoraSelection in
 
-	  1) solusUpdate
-	     x=1 ;;
 
-		2) ## Adds Unstable repo and disables stable in one shot
+		1) ## Adds Unstable repo and disables stable in one shot
 			addUnstableRepo
 			disableRepo Solus ;;
 
-		3)	disableRepo Unstable
+		2)	disableRepo Unstable
 			enableRepo Stable ;;
 
-    	4) disableRepo Solus
+    	3) disableRepo Solus
 	    	x=1 ;;
 
-	  	5) addUnstableRepo
+	  	4) addUnstableRepo
 	     	x=1 ;;
 
-		6) enableRepo Unstable
+		5) enableRepo Unstable
 		   x=1	;;
 
-    	7) disableRepo Unstable
+    	6) disableRepo Unstable
 			 x=1 ;;
 
 		[mM])	clear 
 				exit
-			
 				;;
 
-		[qQ]) quitScript 	;;
+		[qQ]) quitScript ;;
 
 		* ) invalidSection ;;
 
