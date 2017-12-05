@@ -15,19 +15,15 @@ while [[ $x=1 ]]; do
 
 	echo  "It appears your version of OpenSuse is:"
 
-	suseversion= cat /etc/os-release | grep ^NAME= | sed 's/^NAME="//g' | sed 's/"$//g'
-
-	echo
 	echo 
-	echo -e "Xmetal's OpenSuse Script \n"
-	echo -e "Please Select your Choice \n"
+	echo -e 	"Xmetal's OpenSuse Script \n"
+	echo -e 	"Please Select your Choice \n"
 
-	echo -e 	"1. \t Update OpenSuse-based Distro"
-	echo -e     "2. \t Add Packman Repositories"
-	#echo -e     "3. \t Setup Multimedia/Codecs"
-	echo -e     "4. \t Install Google Chrome"
-	echo -e     "5. \t Add/Install Extra Software"
-	echo -e   	"6. \t Add Cimmamon to OpenSuse"
+	echo -e     "1. \t Add Packman Repositories"
+	#echo -e    "2. \t Setup Multimedia/Codecs"
+	echo -e     "3. \t Install Google Chrome"
+	echo -e     "4. \t Add/Install Extra Software"
+	echo -e   	"5. \t Add Cimmamon to OpenSuse"
 
   	echo -e 	"m. \t Return to Main Menu"
 	echo -e     "q. \t Exit to Prompt  \n\n"
@@ -36,22 +32,19 @@ while [[ $x=1 ]]; do
 
 		case $openSuseSelection in
 
-		  1) universalUpgrade
-				x=1 ;;
-
-		  2) packmanRepoSuse
+		  1) packmanRepoSuse
 				x=1	;;
 
-		  3) setupMultimediaLeap
+		  2) setupMultimediaLeap
 				x=1	;;
 
-		  4) installGoogleChrome
+		  3) installGoogleChrome
 			  	x=1 ;;
 
-		  5) installCommonSoftware
+		  4) installCommonSoftware
 			  	x=1	;;
 
-		  6) cinnamonSuseRepo
+		  5) cinnamonSuseRepo
 				x=1	 ;;
 
 
