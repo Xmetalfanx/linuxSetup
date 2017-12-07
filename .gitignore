@@ -5,3 +5,4 @@
 **/*.pub
 **/*.deb
 **/*.rpm
+.git-write/*

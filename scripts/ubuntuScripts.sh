@@ -30,7 +30,6 @@ while [[ $x=1 ]]; do
 		echo -e  	"4. \t [16.10 based+ ] Install Budgie-Remix Theming [Adds Solus Mate like Theming ]"
 		echo -e 	"5. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
 		echo -e 	"6.	\t[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
-		#echo -e 	"7. \t (TEST) Compile Gparted from git source "
 
 
 		echo -e   	"\v m. \tReturn to Main Menu"
@@ -58,7 +57,7 @@ while [[ $x=1 ]]; do
 	   		6) addUMateDevPPA
 				x=1		;;
 
-		 	#7) gpartedFromSource
+		 7)
 				 x=1  ;; 
 
 			[aA]) aptUpdate
