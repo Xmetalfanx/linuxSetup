@@ -19,10 +19,8 @@ $commonFunctions
 ubuntuScipts= . $functionsdir/includeUbuntuFunctions.cfg
 $ubuntuScript 
 
-
-## Testing
-#appListFunctions= . $functionsdir/universal/f_applist.cfg
-#$appListFunctions
+universalFunctions= . $functionsdir/includeUniversalFunctions.cfg
+$universalFunctions
 
 ########################################################################
 x=1
