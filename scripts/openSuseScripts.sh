@@ -5,7 +5,7 @@ rootdir=$basedir
 cumlOSuse= . "$rootdir"/tasks/functions/includeOpenSuseFunctions.cfg
 $cumlOSuse
 
-universalFunctions= . $functionsdir/includeUniversalFunctions.cfg
+universalFunctions= . "$rootdir"/tasks/functions/includeUniversalFunctions.cfg
 $universalFunctions
 
 ####################################################################################################

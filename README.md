@@ -1,3 +1,7 @@
+# NOTE: THIS is under heavy construction
+
+### I have merged alot of changes into the master branch as of December 6th 2017.   Things are broken and I know it.
+
 # Xmetal's Linux Scripts
 
 *IF you see any github scripts in my script, that I forgot to disable, please do not use them... they  are not all broken, though the themes themselves do not seem to look correct/as intended... I will fix that later*
