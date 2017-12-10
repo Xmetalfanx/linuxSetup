@@ -26,7 +26,7 @@ $universalFunctions
 x=1
 
 #Clears Screen
-clear 
+#clear 
 
 completeDistroCheck
 
