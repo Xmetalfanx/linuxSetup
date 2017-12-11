@@ -26,7 +26,7 @@ $universalFunctions
 x=1
 
 #Clears Screen
-#clear 
+clear 
 
 completeDistroCheck
 
@@ -62,8 +62,7 @@ while [[ $x=1 ]]; do
         4) bash  "$scriptsDir"/openSuseScripts.sh  ;;
         5) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
         6) bash  "$scriptsDir"/solusScripts.sh ;;
-
-        7) usefulAppInstall  ;;
+        7) installApp $usefulApps  ;;
 
         [qQ]) quitScript  ;;
 
