@@ -17,8 +17,6 @@ while [[ $x=1 ]]; do
 
     echo -e   "What Theme would you like to install?\n "
     echo -e   "1) \t Arc Theme and Icons Pack (includes Openbox Support)"
-    echo -e   "2) \t Mint-y Icon Pack"
-    echo -e   "A) \t Arc and Mint-y Themes and Icons "
 
     echo -e 	"\nM) \t Return to Main Menu"
     echo -e		"Q) \t Exit to Prompt\n\n"
@@ -30,22 +28,8 @@ while [[ $x=1 ]]; do
         1)  gitArcThemes
             gitArcIcons
             gitArcOpenBox
-			echo "installed Arc"
+			     echo "installed Arc"
             x=1
-            ;;
-
-        2) 
-           MintyIcons
-			echo "Installed Mint-y Icon Pack"
-           x=1
-           ;;
-
-        [aA]) gitArcThemes
-            gitArcIcons
-            gitArcOpenBox
-            MintyIcons
-            x=1
-
             ;;
 
         [mM])	bash "$rootdir"/xmetalLinuxScripts.sh
