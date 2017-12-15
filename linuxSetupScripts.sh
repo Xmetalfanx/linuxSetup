@@ -30,12 +30,10 @@ clear
 
 completeDistroCheck
 
-
 # Displays some guesses/info about the distro pre-menus 
 mainDisplayDistroInfo
 
 checkSupportStatus
-
 
 while [[ $x=1 ]]; do
     
