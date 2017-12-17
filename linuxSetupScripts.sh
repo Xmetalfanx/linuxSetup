@@ -7,8 +7,6 @@
 readonly basedir=$(pwd)
 export basedir
 
-
-
 ########################################################################
 rootdir=$basedir
 functionsdir="$rootdir"/tasks/functions
