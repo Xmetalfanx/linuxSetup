@@ -38,11 +38,12 @@ while [[ $x=1 ]]; do
 		  1) packmanRepoSuse
 				x=1	;;
 
-		  2) setupMultimediaLeap
-				x=1	;;
+		  #2) setupMultimediaLeap
+			#	x=1	;;
 
-		  3) installGoogleChrome
-			  	x=1 ;;
+		 ## Where did this go? ... Universal functions? 
+		  #3) installGoogleChrome
+			#  	x=1 ;;
 
 		  4) installCommonSoftware
 			  	x=1	;;
