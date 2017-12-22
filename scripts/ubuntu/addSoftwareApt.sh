@@ -5,6 +5,10 @@ rootdir=$basedir
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
 
+universalFunctions= . "$rootdir"/tasks/functions/includeUniversalFunctions.cfg
+$universalFunctions
+
+
 UbuntuCulmFunction= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $UbuntuCulmFunction
 
@@ -28,8 +32,8 @@ echo -e "Please Select Task\n"
 	echo -e "9. \t Install Sublime Text"
 
 
-	echo -e 	"m. \t Return to Main Menu"
-	echo -e 	"q. \t Exit to Prompt\n\n"
+	echo -e "m. \t Return to Main Menu"
+	echo -e "q. \t Exit to Prompt\n\n"
 	read -p "Your Choice?: " addSoftwareSelection
 
 	case $addSoftwareSelection in
@@ -42,8 +46,8 @@ echo -e "Please Select Task\n"
 			;;
 
 		3) browserMenu
-				 x=1
-				 ;;
+			x=1
+			;;
 
 		4)  echo -e "Installing Common (Various). "
 			clear
@@ -57,28 +61,29 @@ echo -e "Please Select Task\n"
 
 	        # Function call
 	        #etcherInstall
-					x=1
-		 	 		;;
+			x=1
+		 	;;
 
-		5) 	etcherInstall
+		5) 	# in Universal 
+			etcherInstall
+			x=1
+			;;
+
+	    6) installAtom
 				x=1
-			  ;;
-
-    6) installAtom
-			 x=1
- 	 		 ;;
+	 	 		;;
 
 		7) updatedPPAMPV
-			 x=1
- 	 		 ;;
+			x=1
+ 	 		;;
 
 		8) wineInstall
-			 x=1
- 	 		 ;;
+			x=1
+ 	 		;;
 
 		9) sublimetextInstall
-		x=1
-		;;
+			x=1
+			;;
 
 		[mM])	bash "$rootdir"/xmetalLinuxScripts.sh ;;
 
