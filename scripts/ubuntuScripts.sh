@@ -27,9 +27,9 @@ while [[ $x=1 ]]; do
 		echo -e   "\v1. \t Adds Theme PPAs (Ravenfinity, Moka, Noobslab's Icon Repo (both), \n \t Noobslab's Theme Repo, Numix, and snwh's (Paper Theme) )"
 		echo -e   "\v2. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
 		echo -e   "\v3. \t Add Various Software"
-		echo -e  	"4. \t [16.10 based+ ] Install Budgie-Remix Theming [Adds Solus Mate like Theming ]"
-		echo -e 	"5. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
-		echo -e 	"6.	\t[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
+		echo -e  	"\v4. \t [16.10 based+ ] Install Budgie-Remix Theming [Adds Solus Mate like Theming ]"
+		echo -e 	"\v5. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
+		echo -e 	"\v6.	\t[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
 
 
 		echo -e   	"\v m. \tReturn to Main Menu"
