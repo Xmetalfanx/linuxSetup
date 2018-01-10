@@ -40,7 +40,7 @@ mainDisplayDistroInfo
 
 while [[ $x=1 ]]; do
     
-      echo -e "Xmetal's Linux Script \n"
+      echo -e "${bold}Xmetal's Linux Script ${normal} \n"
 
       echo -e "Please Select your Distrobution family \n"
 
