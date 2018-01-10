@@ -11,6 +11,12 @@ export basedir
 rootdir=$basedir
 functionsdir="$rootdir"/tasks/functions
 
+specificChecks= . "$basedir"/tasks/functions/f_specificDistroChecks.cfg
+$specificChecks
+
+distroCheck= . $functionsdir/f_distroCheck.cfg
+$distroCheck
+
 commonFunctions= . $functionsdir/f_common.cfg
 $commonFunctions
 
@@ -31,7 +37,6 @@ completeDistroCheck
 # Displays some guesses/info about the distro pre-menus 
 mainDisplayDistroInfo
 
-checkSupportStatus
 
 while [[ $x=1 ]]; do
     
