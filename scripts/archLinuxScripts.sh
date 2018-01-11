@@ -30,13 +30,15 @@ while [[ $x=1 ]]; do
 	echo -e  	"4. \t Adds Archive Support"
 	echo -e  	"5. \t Adds Arc Theme and Icon Pack"
 	echo -e   	"6. \t Add Packer (AUR and Pacman combined)"
+	echo -e 	"7.	[Sub-Menu] Manjaro specific"
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e		"q. \t Exit to Prompt\n\n"
 
 	read -p 	"Your Choice?:"  archSelection
 
-
+	case $archSelection in
+    
       1)  OptimizeMirrors
 			x=1	;;
 
@@ -55,6 +57,10 @@ while [[ $x=1 ]]; do
       6) 	## This needs TESTING
         	yaourt -s packer
 			x=1  ;;
+
+			# Why is this coming up as "not found" ? 	  
+	  7)	manjaroMenu
+			x=1 ;; 
 
 	 [aA]) sudo pacman -Syyu
 	       OptimizeMirrors
