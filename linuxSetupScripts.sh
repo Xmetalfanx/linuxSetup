@@ -39,40 +39,42 @@ mainDisplayDistroInfo
 
 
 while [[ $x=1 ]]; do
+
+    echo -e "test only: $ubuntuName"
     
-      echo -e "${bold}Xmetal's Linux Script ${normal} \n"
+    echo -e "${bold}Xmetal's Linux Script ${normal} \n"
 
-      echo -e "Please Select your Distrobution family \n"
+    echo -e "Please Select your Distrobution family \n"
 
-      echo -e   "1. \t Update your System" 
-      echo -e   "2. \t Install Software"     
+    echo -e   "1. \t Update your System" 
+    echo -e   "2. \t Install Software"     
+    
+    echo -e   "3. \t Arch-based"
+    echo -e   "4. \t Fedora"
+    echo -e   "5. \t OpenSUSE"
+    echo -e   "6. \t Ubuntu based"
+    echo -e   "7. \t Solus"
+   
+
+    echo -e   "q. \t Exit to Prompt \n\n"
+    read -p   "Your Choice?:" mainSelection
+
+    case $mainSelection in
+
+      1) universalUpgrade ;;
       
-      echo -e   "3. \t Arch-based"
-      echo -e   "4. \t Fedora"
-      echo -e   "5. \t OpenSUSE"
-      echo -e   "6. \t Ubuntu based"
-      echo -e   "7. \t Solus"
-     
+        ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
+      2) universalSoftwareFunction ;; 
+      
+      3) bash  "$scriptsDir"/archLinuxScripts.sh ;;
+      4) bash  "$scriptsDir"/fedoraScripts.sh  ;;
+      5) bash  "$scriptsDir"/openSuseScripts.sh  ;;
+      6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
+      7) bash  "$scriptsDir"/solusScripts.sh ;;
 
-      echo -e   "q. \t Exit to Prompt \n\n"
-      read -p   "Your Choice?:" mainSelection
+      [qQ]) quitScript  ;;
 
-      case $mainSelection in
+      * ) invalidSection ;;
 
-        1) universalUpgrade ;;
-        
-          ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
-        2) universalSoftwareFunction ;; 
-        
-        3) bash  "$scriptsDir"/archLinuxScripts.sh ;;
-        4) bash  "$scriptsDir"/fedoraScripts.sh  ;;
-        5) bash  "$scriptsDir"/openSuseScripts.sh  ;;
-        6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
-        7) bash  "$scriptsDir"/solusScripts.sh ;;
-
-        [qQ]) quitScript  ;;
-
-        * ) invalidSection ;;
-
-        esac
+      esac
 done
