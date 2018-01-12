@@ -18,43 +18,42 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's Fedora based Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e   "1. \t Add RPM Fusion and/or UnitedRPM Repositories"
+	echo -e   "1. \t [Submenu] Add RPM Fusion and/or UnitedRPM Repositories"
 	echo -e   "2. \t Add Fedy"
 	echo -e   "3. \t Perform Common Fedy Tasks"
 	echo -e   "4. \t Add Extra Software"
 	
-	#echo -e   "5. \t Install The Arc Theme"
 
-	echo -e 	"a.	All Tasks [UNTESTED]"
+	echo -e   "a.	All Tasks [UNTESTED]"
 
-	echo -e 	"m. \t Return to Main Menu"
-	echo -e 	"q.	 Exit to Prompt \n\n"
+	echo -e   "m. \t Return to Main Menu"
+	echo -e   "q.Exit to Prompt \n\n"
 
   read -p "Your Choice?:" fedoraSelection
 
 	case $fedoraSelection in
 
-	  	2) ExtraRepos
+	  	1) ExtraRepos
 		  x=1
 		  ;;
 
-		3) InstallFedy
+		2) InstallFedy
 		   x=1
 		   ;;
 
-		4) echo "Performing comming tasks of Fedy "
-		   bash "$rootdir"/tasks/functions/fedora/fedytasks.sh
+		3) echo "Performing comming tasks of Fedy "
+		   
+			## Wait ... shouldn't this not be a .sh file and just a list of functions? 
+		   
 			x=1
 		 	;;
 
-		5) InstallExtraSoftware
-		   x=1
-			 ;;
 
 		 [aA]) UpdateFedora
-			    AddRPMFusion
 				InstallFedy
-				InstallExtraSoftware
+				AddRPMFusion
+				## Do not install UnitedRPM here 
+				#InstallExtraSoftware
 				x=1
 				;;
 
