@@ -34,7 +34,7 @@ while [[ $x=1 ]]; do
 	echo -e  	"4. \t Adds Archive Support"
 	echo -e  	"5. \t Adds Arc Theme and Icon Pack"
 	echo -e   	"6. \t Add Packer (AUR and Pacman combined)"
-	echo -e 	"7.	\t [Sub-Menu] Manjaro specific"
+	echo -e 	"7.	[Sub-Menu] Manjaro specific"
 
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e		"q. \t Exit to Prompt\n\n"
