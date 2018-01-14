@@ -24,9 +24,7 @@ while [[ $x=1 ]]; do
 
 	echo -e     "1. \t Add Packman Repositories"
 	#echo -e    "2. \t Setup Multimedia/Codecs"
-	echo -e     "3. \t Install Google Chrome"
-	echo -e     "4. \t Add/Install Extra Software"
-	echo -e   	"5. \t Add Cimmamon to OpenSuse"
+	echo -e   	"3. \t Add Cimmamon to OpenSuse"
 
   	echo -e 	"m. \t Return to Main Menu"
 	echo -e     "q. \t Exit to Prompt  \n\n"
@@ -41,14 +39,7 @@ while [[ $x=1 ]]; do
 		  #2) setupMultimediaLeap
 			#	x=1	;;
 
-		 ## Where did this go? ... Universal functions? 
-		  #3) installGoogleChrome
-			#  	x=1 ;;
-
-		  4) installCommonSoftware
-			  	x=1	;;
-
-		  5) cinnamonSuseRepo
+		  3) cinnamonSuseRepo
 				x=1	 ;;
 
 
