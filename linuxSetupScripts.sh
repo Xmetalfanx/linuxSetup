@@ -40,7 +40,7 @@ mainDisplayDistroInfo
 
 while [[ $x=1 ]]; do
 
-    echo -e "test only: $ubuntuName"
+    #echo -e "test only: $ubuntuName"
     
     echo -e "${bold}Xmetal's Linux Script ${normal} \n"
 
@@ -54,6 +54,7 @@ while [[ $x=1 ]]; do
     echo -e   "5. \t OpenSUSE"
     echo -e   "6. \t Ubuntu based"
     echo -e   "7. \t Solus"
+    echo -e   "t. \t Test - Tiny Media Manager install"
    
 
     echo -e   "q. \t Exit to Prompt \n\n"
@@ -71,6 +72,8 @@ while [[ $x=1 ]]; do
       5) bash  "$scriptsDir"/openSuseScripts.sh  ;;
       6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
       7) bash  "$scriptsDir"/solusScripts.sh ;;
+
+      t) tinyMediaManagerInstall ;; 
 
       [qQ]) quitScript  ;;
 
