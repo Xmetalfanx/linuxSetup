@@ -29,10 +29,7 @@ while [[ $x=1 ]]; do
 		echo -e   "\v3. \t [Submenu] Add Various Software"
 		
 		# Consider putting #5 and #6 in #4's submenu 
-		echo -e  	"\v4. \t [16.10 based+ ] Install Budgie-Remix Theming [Adds Solus Mate like Theming ]"
-		echo -e 	"\v5. \t[ElementaryOS] Add PPA Support, Synaptic, and Gnome-tweak Tool"
-		echo -e 	"\v6.	\t[Ubuntu Mate] Add the Ubuntu Mate Development PPA"
-
+	
 
 		echo -e   	"\v m. \tReturn to Main Menu"
 		echo -e		"q. \tExit to Prompt \n\n"
@@ -49,16 +46,7 @@ while [[ $x=1 ]]; do
 
 		  3) bash "$rootdir"/scripts/ubuntu/addSoftwareApt.sh ;;
 
-		  4) budgieRemixPPA
-			 budgieTheme
-		   	 x=1 ;;
-
-		  5) InstallLokiAdditions
-		 	 	x=1	 ;;
-
-	   		6) addUMateDevPPA
-				x=1		;;
-
+		 
 		 7)
 				 x=1  ;; 
 
