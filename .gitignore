@@ -6,3 +6,4 @@
 **/*.deb
 **/*.rpm
 .git-write/*
+tmm/*
