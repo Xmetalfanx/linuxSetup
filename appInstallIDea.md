@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,7 +43,15 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="D998:7550:D3BF1:158BE5:5A5E50A9" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="1390400" name="octolytics-actor-id" /><meta content="Xmetalfanx" name="octolytics-actor-login" /><meta content="85b966f6ce775c10d873a71c01b456673b002cabb3b8c489e1429ee61d6d2752" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" />
+<meta content="github" name="octolytics-app-id" />
+<meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" />
+<meta content="D998:7550:D3BF1:158BE5:5A5E50A9" name="octolytics-dimension-request_id" />
+<meta content="iad" name="octolytics-dimension-region_edge" />
+<meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="1390400" name="octolytics-actor-id" />
+<meta content="Xmetalfanx" name="octolytics-actor-login" />
+<meta content="85b966f6ce775c10d873a71c01b456673b002cabb3b8c489e1429ee61d6d2752" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
