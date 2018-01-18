@@ -35,8 +35,9 @@ clear
 completeDistroCheck
 
 # Displays some guesses/info about the distro pre-menus 
-mainDisplayDistroInfo
+#mainDisplayDistroInfo
 
+displayInfoTest
 
 while [[ $x=1 ]]; do
 
