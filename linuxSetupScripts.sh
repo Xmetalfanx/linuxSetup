@@ -11,17 +11,11 @@ export basedir
 rootdir=$basedir
 functionsdir="$rootdir"/tasks/functions
 
-specificChecks= . "$basedir"/tasks/functions/f_specificDistroChecks.cfg
-$specificChecks
-
 distroCheck= . $functionsdir/f_distroCheck.cfg
 $distroCheck
 
 commonFunctions= . $functionsdir/f_common.cfg
 $commonFunctions
-
-ubuntuScipts= . $functionsdir/includeUbuntuFunctions.cfg
-$ubuntuScript 
 
 universalFunctions= . $functionsdir/includeUniversalFunctions.cfg
 $universalFunctions
@@ -32,15 +26,15 @@ x=1
 #Clears Screen
 clear 
 
+# Gets info about distro 
+# This is located in the f_distoCheck.cfg file b
 completeDistroCheck
 
 # Displays some guesses/info about the distro pre-menus 
 mainDisplayDistroInfo
 
-## This is for a test only 
-#displayInfoTest
 
-while [[ $x=1 ]]; do
+while [ $x=1 ]; do
 
     #echo -e "test only: $ubuntuName"
     
