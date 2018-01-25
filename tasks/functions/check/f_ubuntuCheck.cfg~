@@ -17,25 +17,13 @@ function ubuntuCheck
       # Not sure if this is the best place to put this function call
       ## Function that checks EOL info 
       
-      # if the detected versions is 14.04 or 16.04 - Supported LTS versions      
-      if [ "$ubuntuName" == 'trusty' ] || [ "$ubuntuName" == 'xenial' ]; then
+      # if the detected versions is 14.04 or 16.04 - Supported LTS versions      if [ "$ubuntuName" == 'trusty' ] || [ "$ubuntuName" == 'xenial' ]; then
         supported="yes"
         ubuntuLTS="yes"
 
-            ## This needs to have osreleaseinfo ran first   
-            if [ "$ubuntuLTS" == 'yes' ]; then
-              echo 
-              echo -e "You are currently on a ${bold}Long Term Supported Version ${normal}of Ubuntu"
 
-            elif [ "$ubuntuLTS" == 'no' ]; then 
-              echo 
-              echo -e "You are ${bold}NOT on a long term supported release of Ubuntu"
-
-            fi
-
-
-      # If  17.10, is detected.  17.04 should be removed soon I think 
-      elif [ "$ubuntuName" == 'artful' ] || [ "$ubuntuName" == 'loki' ]; then
+      # If 17.04 or 17.10, is detected.  17.04 should be removed soon I think 
+      elif [ "$ubuntuName" == 'artful' ]; then
         supported="yes"
         ubuntuLTS="no"
       else
@@ -45,6 +33,16 @@ function ubuntuCheck
 
       # if the detected versions is 14.04 or 16.04 ... either of the current LTS versions
           
+        ## This needs to have osreleaseinfo ran first   
+        if [ "$ubuntuLTS" == 'yes' ]; then
+          echo 
+          echo -e "You are currently on a ${bold}Long Term Supported Version ${normal}of Ubuntu"
+
+        elif [ "$ubuntuLTS" == 'no' ]; then 
+          echo 
+          echo -e "You are ${bold}NOT on a long term supported release of Ubuntu"
+
+        fi
 
   fi
 
