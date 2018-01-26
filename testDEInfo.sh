@@ -3,13 +3,13 @@
 
 function testDEinfo
 {
-	clear
 
-	test=`inxi -S | grep Desktop | cut -d ':' -f 2`
+	inxiTest=$(inxi -S | grep Desktop | cut -d " " -f 13)
 
-	echo -e "TEST: \t $test"
+	#inxiTest2='${inxiTest%%Distro*}'
+
+	echo -e "TEST: \t $inxiTest"
 
 }
 
-
-########################################################################
+testDEinfo
