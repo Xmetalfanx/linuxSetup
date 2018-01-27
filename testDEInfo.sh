@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 function testDEinfo
 {
 
@@ -8,7 +7,8 @@ function testDEinfo
 
 	#inxiTest2='${inxiTest%%Distro*}'
 
-	echo -e "TEST: \t $inxiTest"
+	#echo -e "TEST: \t $inxiTest"
+	echo -e "$inxiTest"
 
 }
 
