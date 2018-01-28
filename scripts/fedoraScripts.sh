@@ -2,8 +2,8 @@
 
 rootdir=$basedir
 
-functFedora= . "$rootdir"/tasks/functions/fedora/f_fedora.cfg
-$functFedora
+functMassFedora= . "$rootdir"/tasks/functions/includeFedoraFunctions.cfg
+$functMassFedora
 
 commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
 $commonFunctions
@@ -23,9 +23,6 @@ while [[ $x=1 ]]; do
 	echo -e   "3. \t Perform Common Fedy Tasks"
 	echo -e   "4. \t Add Extra Software"
 	
-
-	echo -e   "a.	All Tasks [UNTESTED]"
-
 	echo -e   "m. \t Return to Main Menu"
 	echo -e   "q.Exit to Prompt \n\n"
 
@@ -43,19 +40,29 @@ while [[ $x=1 ]]; do
 
 		3) echo "Performing comming tasks of Fedy "
 		   
-			## Wait ... shouldn't this not be a .sh file and just a list of functions? 
-		   
+			# Adds Archive Support
+			archSupport
+
+			# Adds MS Fonts 
+			msFonts
+			
+			## I really need to check this one to see if i need to update it 
+			# Install Codecs 
+			fedyCodecs
+
+			# Improve Font Rendering 
+			fedoraFontRenderinng
+
+			# 
+
+
+			#
+
+
+
+
 			x=1
 		 	;;
-
-
-		 [aA]) UpdateFedora
-				InstallFedy
-				AddRPMFusion
-				## Do not install UnitedRPM here 
-				#InstallExtraSoftware
-				x=1
-				;;
 
 		[mM])	clear 
 				exit
@@ -63,10 +70,7 @@ while [[ $x=1 ]]; do
 
 		[qQ]) quitScript	;;
 
-
 		* ) invalidSection ;;
 
-
 		esac
-
 done
