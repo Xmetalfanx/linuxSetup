@@ -11,20 +11,19 @@ function universalSoftwareFunction
 			echo -e   "\v1. \t Adds Common Software (Ones I always Add) "
 			echo -e   "\v2. \t [Sub-Menu] Specific tasks for certain distrobutions or version of said-distros"
 			echo -e   "\v3. \t [Sub-Menu] Web Browsers"
-			
+
+			echo -e "4. \t Download tinyMediaManager for multimedia manager"
 			echo -e "5. \t Install Etcher to put ISOs on USB drives"
 		  	echo -e "6. \t Install Atom Editor"
 			echo -e "7. \t Install Wine and PlayOnLinux"
 			echo -e "8. \t Install Sublime Text"
 
-
 			echo -e  "\v m. \tReturn to Main Menu"
 			echo -e	"q. \tExit to Prompt \n\n"
 
-	
-			read -p "Your Choice?: " ubuntuSelection
+			read -p "Your Choice?: " softwareSelection
 
-			case $ubuntuSelection in
+			case $softwareSelection in
 
 			  	1) installApps $usefulApps
 					x=1	;;
@@ -35,11 +34,20 @@ function universalSoftwareFunction
 			  	3) browserMenu
 				 	x=1 ;;
 
+				4) tinyMediaManagerInstall
+					x=1;; 
 
-				[aA]) 
-					x=1
-					;;
+				5) etcherInstall
+					x=1;; 
 
+				6) AtomInstall
+					x=1;; 
+
+				7) wineInstall
+					x=1;; 
+
+				8) sublimetextInstall
+					x=1;; 
 				
 				[mM]) clear 
 					  exit
