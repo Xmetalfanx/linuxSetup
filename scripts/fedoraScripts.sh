@@ -30,7 +30,7 @@ while [[ $x=1 ]]; do
 
 	case $fedoraSelection in
 
-	  	1) ExtraRepos
+	  	1) ExtraRepos $fedoraSupported
 		  x=1
 		  ;;
 
