@@ -1,0 +1,17 @@
+
+Work on bugfixes in the Fedora Section 
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch development
+# Changes to be committed:
+#	modified:   scripts/fedoraScripts.sh
+#	modified:   tasks/functions/check/f_fedoraSupportCheck.cfg
+#	modified:   tasks/functions/f_distroCheck.cfg
+#	modified:   tasks/functions/f_getInfo.cfg
+#	modified:   tasks/functions/fedora/f_fedoraExtraRepos.cfg
+#	modified:   tasks/functions/fedora/f_fedoraMenus.cfg
+#	modified:   tasks/functions/opensuse/f_openSuseExtraRepos.cfg
+#	modified:   tasks/functions/universal/software/f_productivitySoftware.cfg
+#
