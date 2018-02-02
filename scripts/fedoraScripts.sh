@@ -26,7 +26,7 @@ while [[ $x=1 ]]; do
 	echo -e   "m. \t Return to Main Menu"
 	echo -e   "q.Exit to Prompt \n\n"
 
-  read -p "Your Choice?:" fedoraSelection
+    read -p "Your Choice?:" fedoraSelection
 
 	case $fedoraSelection in
 
@@ -38,31 +38,11 @@ while [[ $x=1 ]]; do
 		   x=1
 		   ;;
 
-		3) echo "Performing comming tasks of Fedy "
-		   
-			# Adds Archive Support
-			archSupport
+		3) 
+		   massFedyTasks
 
-			# Adds MS Fonts 
-			msFonts
-			
-			## I really need to check this one to see if i need to update it 
-			# Install Codecs 
-			fedyCodecs
-
-			# Improve Font Rendering 
-			fedoraFontRenderinng
-
-			# 
-
-
-			#
-
-
-
-
-			x=1
-		 	;;
+		   x=1
+		   ;;
 
 		[mM])	clear 
 				exit
@@ -72,5 +52,6 @@ while [[ $x=1 ]]; do
 
 		* ) invalidSection ;;
 
-		esac
+	esac
+	
 done
