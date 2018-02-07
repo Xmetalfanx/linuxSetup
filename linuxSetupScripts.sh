@@ -19,8 +19,7 @@ $commonFunctions
 
 universalFunctions= . $functionsdir/includeUniversalFunctions.cfg
 $universalFunctions
-functMassFedora= . "$rootdir"/tasks/functions/includeFedoraFunctions.cfg
-$functMassFedora
+
 
 ########################################################################
 x=1
@@ -53,9 +52,11 @@ while [ $x=1 ]; do
     echo -e   "6. \t Ubuntu based"
     echo -e   "7. \t Solus"
     echo -e   "8. \t Test - Fedora test if a pacakge is installed"
+    echo -e   "9. \t Test - get Plasma info"
+
+
     echo -e   "t. \t Test - Tiny Media Manager install"
    
-
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
 
@@ -72,6 +73,9 @@ while [ $x=1 ]; do
       6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
       7) bash  "$scriptsDir"/solusScripts.sh ;;
       8) dnfCheckPkgInstalled hexchat ;;
+
+      9) displayPlasmaInfo ;;
+
 
       ## Located in universal software config file 
       t) tinyMediaManagerInstall ;; 
