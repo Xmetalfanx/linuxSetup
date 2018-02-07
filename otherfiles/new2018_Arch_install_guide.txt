@@ -2,8 +2,7 @@
 ## Link to source found on: https://www.youtube.com/watch?v=6c3aZabI8uU
 
 
-
-
+#############################################################################################
 
 Before installing Arch Linux, make sure your computer is connected to the internet.
 
