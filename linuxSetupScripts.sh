@@ -74,7 +74,7 @@ while [ $x=1 ]; do
       7) bash  "$scriptsDir"/solusScripts.sh ;;
       8) dnfCheckPkgInstalled hexchat ;;
 
-      9) displayPlasmaInfo ;;
+      9) getPlasmaInfo $plasmaDEVersion $plasmaFrameworkVersion;;
 
 
       ## Located in universal software config file 
