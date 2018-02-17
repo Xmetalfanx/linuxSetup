@@ -8,7 +8,6 @@ $commonFunctions
 universalFunctions= . "$rootdir"/tasks/functions/includeUniversalFunctions.cfg
 $universalFunctions
 
-
 UbuntuCulmFunction= . "$rootdir"/tasks/functions/includeUbuntuFunctions.cfg
 $UbuntuCulmFunction
 

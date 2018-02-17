@@ -1,1 +1,4 @@
-This folder is where I put test stuff when I am learning new ways to do things in bash ... most users can ignore the contents of this folder if i forget to clear it before a commit 
+This folder is where I put test stuff when I am learning new ways to do things in bash ... most users can ignore the contents of this folder if i forget to clear it before a commit.
+
+
+the idea here at the moment, is to have a file that lists (a user custom editing this file would be a problem if the program they add is not in the repo for a distro and needs a custom "install") of programs I find that I often install on all distro AND are in most distro's repos.   There may be more to the list but these in the .list file should be ok to where there are no special steps to add to install these 
