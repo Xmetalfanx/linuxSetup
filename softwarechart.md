@@ -7,23 +7,28 @@
 
 #### Arch, Fedora, and Solus related - Combined to save space
 
-| Program Name    | Arch    | Fedora 26    | Fedora 27    | Solus
-|-----------------|---------|--------------|--------------|-------------|
-| Deadbeef        | Default | NOT Default  | NOT Default  | Default     |
-| Filezilla       | Default | Default      | Default      | Default     |
-| Smplayer        | Default | NOT Default  | NOT Default  | Default     |
-| git             | Default |              |              | Default     |
-| bleachbit       | Default | Default      | Default      | Default     |
-| Makemkv         | AUR     | NOT Default  | NOT Default  | Default     |
-| Pinta           | Default | Default      | Default      | Default     |
-| Atom            | Default | RPM Download | RPM Download | Default     |
-| Filebot         | AUR     | NOT Default  | NOT Default  | Snap        |
-| Sublime Text    |         |              |              | Third-Party |
-| CatFish         |         |              |              | Default     |
-| Sound Juicer    |         |              |              | Default     |
-| Sound Converter |         |              |              | Default     |
-| Variety         |         |              |              | Default     |
-| TMM             | TB+Run  | TB+Run       | TB+Run       | TB+Run    |
+| Program Name     | Arch    | Fedora 26    | Fedora 27    | Solus       |
+| ---------------- | ------- | ------------ | ------------ | ----------- |
+| Deadbeef         | Default | NOT Default  | NOT Default  | Default     |
+| Filezilla        | Default | Default      | Default      | Default     |
+| Smplayer         | Default | NOT Default  | NOT Default  | Default     |
+| git              | Default |              |              | Default     |
+| bleachbit        | Default | Default      | Default      | Default     |
+| Makemkv          | AUR     | NOT Default  | NOT Default  | Default     |
+| Pinta            | Default | Default      | Default      | Default     |
+| Atom             | Default | RPM Download | RPM Download | Default     |
+| Filebot          | AUR     | NOT Default  | NOT Default  | Snap        |
+| Sublime Text     |         | NOT Default  | NOT Default  | Third-Party |
+| CatFish    *     |         | Default      | Default      | Default     |
+| Sound Juicer *   |         | Default      | Default      | Default     |
+| Sound Converter* |         | Default      | Default      | Default     |
+| Variety          |         |              |              | Default     |
+| TMM              | TB+Run  | TB+Run       | TB+Run       | TB+Run      |
+
+Fedora Message:
+* = I do not see a listing for Fedora 27, though using logic if they are in the 25 and 26 repos, they "should" be in the Fedora 27 Repos
+
+"Not Default" in Fedora will probably change as I look at RPM Fusion repos ... the status for those Not Default lists should switch to the free or nonfree RPM Fusion repos if the app is found there.
 
 ---
 
