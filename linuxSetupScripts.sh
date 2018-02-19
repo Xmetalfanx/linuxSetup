@@ -48,9 +48,6 @@ while [ $x=1 ]; do
     echo -e   "8. \t Test - Fedora test if a pacakge is installed"
     echo -e   "9. \t Test - get Plasma info"
 
-
-    echo -e   "t. \t Test - Tiny Media Manager install"
-
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
 
@@ -69,10 +66,6 @@ while [ $x=1 ]; do
       8) dnfCheckPkgInstalled hexchat ;;
 
       9) getPlasmaInfo $plasmaDEVersion $plasmaFrameworkVersion;;
-
-      ## Located in universal software config file
-      t) tinyMediaManagerInstall ;;
-
 
       [qQ]) quitScript  ;;
 
