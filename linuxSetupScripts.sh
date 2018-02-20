@@ -56,7 +56,7 @@ while [ $x=1 ]; do
       1) universalUpgrade ;;
 
         ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
-      2) universalSoftwareFunction ;;
+      2) universalSoftwareMenu ;;
 
       3) bash  "$scriptsDir"/archLinuxScripts.sh ;;
       4) bash  "$scriptsDir"/fedoraScripts.sh  ;;
