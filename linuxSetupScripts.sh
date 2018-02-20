@@ -33,9 +33,7 @@ mainDisplayDistroInfo
 
 while [ $x=1 ]; do
 
-    echo -e "${bold}Xmetal's Linux Script ${normal} \n"
-
-    echo -e "Please Select your Distrobution family \n"
+    echo -e "${bold}Xmetal's Linux Scripts ${normal} \n"
 
     echo -e   "1. \t Update your System"
     echo -e   "2. \t Install Software"
@@ -45,8 +43,8 @@ while [ $x=1 ]; do
     echo -e   "5. \t OpenSUSE"
     echo -e   "6. \t Ubuntu based"
     echo -e   "7. \t Solus"
-    echo -e   "8. \t Test - Fedora test if a pacakge is installed"
-    echo -e   "9. \t Test - get Plasma info"
+
+    echo -e   "T. \t Tests Menus - (not for regular users)"
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
@@ -63,10 +61,10 @@ while [ $x=1 ]; do
       5) bash  "$scriptsDir"/openSuseScripts.sh  ;;
       6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
       7) bash  "$scriptsDir"/solusScripts.sh ;;
-      8) dnfCheckPkgInstalled hexchat ;;
 
-      9) getPlasmaInfo $plasmaDEVersion $plasmaFrameworkVersion;;
+      [tT]) bash "$rootdir"/tests.sh ;; 
 
+  
       [qQ]) quitScript  ;;
 
       * ) invalidSection ;;
