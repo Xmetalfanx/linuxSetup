@@ -66,7 +66,6 @@ while [[ $x=1 ]]; do
 
 	case $fedoraSelection in
 
-
 		1) enableUnstableRepo 
 			x=1 ;;
 
