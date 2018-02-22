@@ -4,7 +4,6 @@
 
 # Xmetal's Linux Scripts
 
-*IF you see any github scripts in my script, that I forgot to disable, please do not use them... they  are not all broken, though the themes themselves do not seem to look correct/as intended... I will fix that later*
 
 ## Introduction
 
@@ -55,6 +54,8 @@ In a Terminal run
 ---
 ## Youtube Playlist showing off scripts as I go along
 
+#### I know this is out-dated 
+
 - [Xmetal Script Preview PLAYLIST, on Youtube](https://www.youtube.com/playlist?list=PLrh2y86lvcJd7or3jWalRLbQk4mWZQHeM)
 
 
@@ -67,4 +68,10 @@ In a Terminal run
       - Arch
       - Fedora
 
-2. When I have things done, there may be a branch for me and a more generic branch for others to use ... the generic branch would not have all the specific addition software sources, or it may not install all the same apps, though it will get many users "on their feet" after a base install  
+--- 
+## Links to other useful projects similar to this 
+### [Mr Sam Hewitt's Main Page and Scripts](https://github.com/snwh)
+
+####[Fedora Post Install Scripts](https://github.com/snwh/fedora-post-install)
+####[Solus Post Install Scripts](https://github.com/snwh/solus-post-install)
+####[Ubuntu Post Install Scripts](https://github.com/snwh/ubuntu-post-install)
