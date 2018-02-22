@@ -1,4 +1,4 @@
-# NOTE: THIS is under heavy construction
+### NOTE: THIS is under heavy construction
 
 ### I have merged alot of changes into the master branch as of December 6th 2017.   Things are broken and I know it.
 
@@ -53,7 +53,6 @@ In a Terminal run
 
 ---
 ## Youtube Playlist showing off scripts as I go along
-
 #### I know this is out-dated 
 
 - [Xmetal Script Preview PLAYLIST, on Youtube](https://www.youtube.com/playlist?list=PLrh2y86lvcJd7or3jWalRLbQk4mWZQHeM)
@@ -72,6 +71,6 @@ In a Terminal run
 ## Links to other useful projects similar to this 
 ### [Mr Sam Hewitt's Main Page and Scripts](https://github.com/snwh)
 
-####[Fedora Post Install Scripts](https://github.com/snwh/fedora-post-install)
-####[Solus Post Install Scripts](https://github.com/snwh/solus-post-install)
-####[Ubuntu Post Install Scripts](https://github.com/snwh/ubuntu-post-install)
+- [Fedora Post Install Scripts](https://github.com/snwh/fedora-post-install)
+- [Solus Post Install Scripts](https://github.com/snwh/solus-post-install)
+- [Ubuntu Post Install Scripts](https://github.com/snwh/ubuntu-post-install)
