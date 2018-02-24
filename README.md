@@ -1,6 +1,6 @@
-### NOTE: THIS is under heavy construction
+#### NOTE: THIS is under heavy construction
 
-### I have merged alot of changes into the master branch as of December 6th 2017.   Things are broken and I know it.
+#### I have merged alot of changes into the master branch as of December 6th 2017.   Things are broken and I know it.
 
 # Xmetal's Linux Scripts
 
