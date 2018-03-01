@@ -2,9 +2,22 @@ universalFunctions= . "$rootdir"/tasks/functions/includeUniversalFunctions.cfg
 $universalFunctions
 
 ###################################################################
+function packageSearch
+{
+  installedValue=$(sudo apt-cache policy mpv | grep Installed | sed 's/^.*Installed://g;s/\s//g')
+
+  if [ $installedValue == '(none)' ]; then
+    
+    echo "Package does NOT exists"
+  else
+    echo "Package exists"
+  fi 
+}
+
+
 function getGitName
 {
-  url="https://release.tinymediamanager.org/dist/tmm_2.9.8_6644bb9_linux.tar.gz"
+  url="https://github.com/linuxmint/mint-y-icons.git"
   packageName=${url/*\//}
 
   clear
@@ -17,12 +30,13 @@ function getGitName
 
 while [ $x=1 ]; do
 
-   
+    clear
     echo -e   "1. \t Test - Fedora test if a pacakge is installed"
     echo -e   "2. \t Test - get Plasma info"
     echo -e   "3. \t Test - Univeral Install usefulApps function"
     echo -e   "4. \t Test - get name of github repo"
-
+    echo -e   "5. \t Test - PackageSearch VLC"
+    echo -e   "6. \t Test - PackageSearch mpv "
 
 
     echo -e   "q. \t Exit to Prompt \n\n"
@@ -40,7 +54,14 @@ while [ $x=1 ]; do
          x=1 ;;
 
       4) getGitName 
-          x=1 ;; 
+        x=1 ;;
+
+      5) packageSearch VLC
+        x=1 ;;
+
+      6) packageSearch mpv
+        x=1 ;; 
+
 
       [qQ]) quitScript  ;;
 
