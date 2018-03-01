@@ -1,0 +1,8 @@
+note:
+
+Anarchy (formerly Arch Anywhere)
+
+https://anarchy-linux.org/news/Anarchy-Linux-replaces-Arch-Anywhere/
+
+ID=anarchy
+ID_LIKE=anarchylinux
