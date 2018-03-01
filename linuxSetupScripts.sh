@@ -27,7 +27,7 @@ clear
 # This is located in the f_distoCheck.cfg file b
 completeDistroCheck
 
-# Displays some guesses/info about the distro pre-menus
+# Displays some info about the distro used 
 mainDisplayDistroInfo
 
 
