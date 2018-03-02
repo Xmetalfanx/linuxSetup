@@ -16,9 +16,6 @@ while [[ $x=1 ]]; do
 
 	clear
 
-	echo  "It appears your version of OpenSuse is:"
-
-	echo 
 	echo -e 	"Xmetal's OpenSuse Script \n"
 	echo -e 	"Please Select your Choice \n"
 
@@ -33,7 +30,7 @@ while [[ $x=1 ]]; do
 
 		case $openSuseSelection in
 
-		  1) packmanRepoSuse
+		  1) packmanSuseRepo
 				x=1	;;
 
 		  #2) setupMultimediaLeap
@@ -41,13 +38,6 @@ while [[ $x=1 ]]; do
 
 		  3) cinnamonSuseRepo
 				x=1	 ;;
-
-
-			[aA]) universalUpgrade
-			  setupMultimediaLeap
-			  installGoogleChrome
-			   x=1
-			   ;;
 
 			[mM])	
 				clear 

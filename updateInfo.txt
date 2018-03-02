@@ -8,3 +8,4 @@ Last Upgraded:	 solus 3 	  02/20/18	:02:08:21 PM
 Last Upgraded:	 solus 3 	02/20/18	:02:08:45 PM
 Last Upgraded:	 ubuntu 18.04 LTS (Bionic Beaver) 	02/21/18	:12:37:54 PM
 Last Upgraded:	 opensuse  	02/22/18	:12:43:27 PM
+Last Upgraded:	 opensuse Tumbleweed 	03/01/18	:10:14:35 PM
