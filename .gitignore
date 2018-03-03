@@ -7,4 +7,4 @@
 **/*.rpm
 .git-write/*
 tmm/*
-
+updateinfo.txt
