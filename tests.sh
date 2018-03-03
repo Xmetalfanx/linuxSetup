@@ -7,13 +7,11 @@ function packageSearch
   installedValue=$(sudo apt-cache policy mpv | grep Installed | sed 's/^.*Installed://g;s/\s//g')
 
   if [ $installedValue == '(none)' ]; then
-    
     echo "Package does NOT exists"
   else
     echo "Package exists"
   fi 
 }
-
 
 function getGitName
 {
@@ -27,7 +25,6 @@ function getGitName
 }
 
 
-
 while [ $x=1 ]; do
 
     clear
@@ -37,7 +34,6 @@ while [ $x=1 ]; do
     echo -e   "4. \t Test - get name of github repo"
     echo -e   "5. \t Test - PackageSearch VLC"
     echo -e   "6. \t Test - PackageSearch mpv "
-
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" testsSelection
@@ -61,7 +57,6 @@ while [ $x=1 ]; do
 
       6) packageSearch mpv
         x=1 ;; 
-
 
       [qQ]) quitScript  ;;
 
