@@ -20,7 +20,7 @@ function packageSearch
     echo "Package does NOT exists"
   else
     echo "Package exists"
-  fi 
+  fi
 }
 
 function getGitName
@@ -49,23 +49,26 @@ while [ $x=1 ]; do
 
     case $testsSelection in
 
-      1) dnfCheckPkgInstalled hexchat 
-          x=1 ;; 
+      1) dnfCheckPkgInstalled hexchat
+          x=1 ;;
 
-      2) getPlasmaInfo $plasmaDEVersion $plasmaFrameworkVersion 
-          x=1 ;; 
+      2) getPlasmaInfo
+        clear 
+        echo "KDE Desktop Version: $plasmaDEVersion"
+        echo "KDE Framework Version: $plasmaFrameworkVersion"
+          x=1 ;;
 
-      3) massInstallUsefulApps 
+      3) massInstallUsefulApps
          x=1 ;;
 
-      4) getGitName 
+      4) getGitName
         x=1 ;;
 
       5) detectPackageInstalled VLC
         x=1 ;;
 
       6) detectPackageInstalled xmetal
-        x=1 ;; 
+        x=1 ;;
 
       [qQ]) quitScript  ;;
 
