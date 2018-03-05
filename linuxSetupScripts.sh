@@ -24,7 +24,7 @@ x=1
 clear
 
 # Gets info about distro
-# This is located in the f_distoCheck.cfg file b
+# This is located in the f_distoCheck.cfg file
 completeDistroCheck
 
 # Displays some info about the distro used 
