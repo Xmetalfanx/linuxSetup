@@ -1,16 +1,15 @@
 #!/bin/sh
-rootdir=$basedir
 
-commonFunctions= . $rootdir/tasks/functions/f_common.cfg
-$commonFunctions
+# Import Functions 
+readonly dir=$(eval pwd)
+readonly functionsdir=$(eval pwd)/tasks/functions/
 
-gitFunction= . $rootdir/tasks/themes/github/functions/gitFunctions.cfg
-$gitFunction
+. $dir/tasks/functions/f_common.cfg
+. $dir/tasks/themes/github/functions/gitFunctions.cfg
 
 #######################################################################
 x=1
 clear
-
 
 while [[ $x=1 ]]; do
 
@@ -28,7 +27,7 @@ while [[ $x=1 ]]; do
         1)  gitArcThemes
             gitArcIcons
             gitArcOpenBox
-			     echo "installed Arc"
+			echo "installed Arc"
             x=1
             ;;
 

@@ -1,12 +1,8 @@
 #!/bin/bash
 
-rootdir=$basedir
-
-cumlOSuse= . "$rootdir"/tasks/functions/includeOpenSuseFunctions.cfg
-$cumlOSuse
-
-universalFunctions= . "$rootdir"/tasks/functions/includeUniversalFunctions.cfg
-$universalFunctions
+## include files with functions 
+. $functionsdir/includeUniversalFunctions.cfg
+. $functionsdir/opensuse/includeOpenSuseFunctions.cfg
 
 ####################################################################################################
 

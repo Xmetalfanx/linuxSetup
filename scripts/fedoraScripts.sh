@@ -1,12 +1,9 @@
 #!/bin/bash
 
-rootdir=$basedir
+## include files with functions 
 
-functMassFedora= . "$rootdir"/tasks/functions/includeFedoraFunctions.cfg
-$functMassFedora
-
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
-$commonFunctions
+. $functionsdir/f_common.cfg
+. $functionsdir/fedora/includeFedoraFunctions.cfg
 
 #######################################################################################
 clear 

@@ -1,21 +1,17 @@
 #!/bin/bash
 
-#Title : Xmetal's Arc Linux Setup Script
-#Description : This script will setup some common things afer a fresh install of Arch Linux
-#Author : Xmetalfanx / Xmetal
+# Title : Xmetal's Arc Linux Setup Script
+# Description : This script will setup some common things afer a fresh install of Arch Linux
+# Author : Xmetalfanx / Xmetal
+
 ################################################################################
-
-rootdir=$basedir
-
-functArch=  . "$rootdir"/tasks/functions/arch/f_arch.cfg
-$functArch
-
-functManjaro=  . "$rootdir"/tasks/functions/arch/f_manjaro.cfg
-$functManjaro
+## include files with functions 
 
 
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
-$commonFunctions
+. $functionsdir/f_common.cfg
+
+. $functionsdir/arch/f_arch.cfg
+. $functionsdir/arch/f_manjaro.cfg
 
 ###############################################################################
 x=1

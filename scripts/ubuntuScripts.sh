@@ -4,13 +4,11 @@
 #Description : 
 #Author : Xmetalfanx / Xmetal
 
-rootdir=$basedir
+####################################################################################
+## include files with functions 
 
-commonFunctions= . $rootdir/tasks/functions/f_common.cfg
-$commonFunctions
-
-ubuntuFunctions= . $rootdir/tasks/functions/includeUbuntuFunctions.cfg
-$ubuntuFunctions
+. $functionsdir/f_common.cfg
+. $functionsdir/ubuntu/includeUbuntuFunctions.cfg
 
 ###################################################################################################
 x=1
@@ -27,10 +25,7 @@ while [[ $x=1 ]]; do
 		echo -e   "\v1. \t Adds Theme PPAs (Ravenfinity, Moka, Noobslab's Icon Repo (both), \n \t Noobslab's Theme Repo, Numix, and snwh's (Paper Theme) )"
 		echo -e   "\v2. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
 		echo -e   "\v3. \t [Submenu] Add Various Software"
-		
-		# Consider putting #5 and #6 in #4's submenu 
-	
-
+			
 		echo -e   	"\v m. \tReturn to Main Menu"
 		echo -e		"q. \tExit to Prompt \n\n"
 
@@ -39,7 +34,7 @@ while [[ $x=1 ]]; do
 		case $ubuntuSelection in
 
 		  1) addThemePPAs
-			 x=1	;;
+			 x=1 ;;
 
 		  2) installPPAThemes
 			 x=1 ;;
@@ -47,8 +42,7 @@ while [[ $x=1 ]]; do
 		  3) bash "$rootdir"/scripts/ubuntu/addSoftwareApt.sh ;;
 
 		 
-		 7)
-				 x=1  ;; 
+
 
 			[aA]) aptUpdate
 				addThemePPAs
