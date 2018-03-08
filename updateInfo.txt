@@ -1,2 +1,2 @@
-
 Last Upgraded:	 opensuse Tumbleweed 	03/01/18	:10:14:35 PM
+Last Upgraded:	 ubuntu 18.04 LTS (Bionic Beaver) 	03/08/18	:04:36:17 AM

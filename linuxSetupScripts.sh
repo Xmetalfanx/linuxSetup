@@ -4,18 +4,15 @@
 #Description :    This script will setup some common things afer a fresh install of various Linux distros
 #Author :         Xmetalfanx / Xmetal
 
-readonly basedir=$(pwd)
-export basedir
 
 ########################################################################
-rootdir=$basedir
-functionsdir="$rootdir"/tasks/functions
+# Import Functions 
+readonly dir=$(eval pwd)
+readonly functionsdir=$(eval pwd)/tasks/functions/
 
-commonFunctions= . $functionsdir/f_common.cfg
-$commonFunctions
+. $functionsdir/f_common.cfg
+. $functionsdir/includeUniversalFunctions.cfg
 
-universalFunctions= . $functionsdir/includeUniversalFunctions.cfg
-$universalFunctions
 
 ########################################################################
 x=1

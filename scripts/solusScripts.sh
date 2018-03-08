@@ -1,8 +1,5 @@
 #!/bin/bash
 
-rootdir=$basedir
-
-
 #######################################################################################
 
 solusUnstableRepo="https://packages.solus-project.com/unstable/eopkg-index.xml.xz"
