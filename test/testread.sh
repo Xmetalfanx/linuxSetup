@@ -1,24 +1,30 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-file="defaultrepoapps.list"
+. testfunctions.cfg 
 
-
-index=0
-while read line
-do
-	usefulProgs[index]="$line"
-	index=$index+1
-
-done < $file
-
-echo "sudo eopkg install ${usefulProgs[@]}"
+########################################################
 
 
+# Test installs 
+function installTest
+{
+	echo -e "sudo apt install ${program[*]}"
+}
 
 
-################################
-#while read -r line
-#do
-#    multimediaprogs="$line"
-#    echo "sudo eopkg $multimediaprogs"
-#done  < "$file"
+## Get list of apps from file 
+function getPrograms
+{
+	file="defaultRepoApps.list"
+
+	progNum=0
+	while read -r program[progNum]; do
+		((progNum++))
+	done < $file 
+}
+
+
+getPrograms
+
+## Installs list of programs read by file 
+installTest program[@]
