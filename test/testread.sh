@@ -13,7 +13,7 @@ function installTest
 
 
 ## Get list of apps from file 
-function getPrograms
+function getListPrograms
 {
 	file="defaultRepoApps.list"
 
@@ -24,7 +24,7 @@ function getPrograms
 }
 
 
-getPrograms
+getListPrograms
 
 ## Installs list of programs read by file 
 installTest program[@]
