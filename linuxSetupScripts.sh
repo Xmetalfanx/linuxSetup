@@ -42,6 +42,7 @@ while [ $x=1 ]; do
     echo -e   "7. \t Solus"
 
     echo -e   "T. \t Tests Menus - (not for regular users)"
+    echo -e   "Q. \t Different TEST only MENU"
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
@@ -60,7 +61,10 @@ while [ $x=1 ]; do
       6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
       7) bash  "$scriptsDir"/solusScripts.sh ;;
 
-      [tT]) bash "$rootdir"/tests.sh ;; 
+      [tT]) . tests.sh ;; 
+      [qQ]) . $dir/test/testread.sh ;; 
+
+      
 
   
       [qQ]) quitScript  ;;
