@@ -1,20 +1,16 @@
-rootdir=$basedir
+readonly dir=$(eval pwd)
+readonly functionsdir=$(eval pwd)/tasks/functions/
 
-universalFunctions= . "$rootdir"/tasks/functions/includeUniversalFunctions.cfg
-$universalFunctions
-
-commonFunctions= . "$rootdir"/tasks/functions/f_common.cfg
-$commonFunctions
-
-packageDetectionFunctions= . "$rootdir"/tasks/functions/f_packageDetection.cfg
-$packageDetectionFunctions
+. $functionsdir/includeUniversalFunctions.cfg
+. $functionsdir/f_common.cfg
+. $functionsdir/f_packageDetection.cfg
 
 # Gets info about distro
 # This is located in the f_distoCheck.cfg file
 completeDistroCheck
 
 ###################################################################
-function packageSearch
+function ubuntuPackageSearch
 {
   installedValue=$(sudo apt-cache policy mpv | grep Installed | sed 's/^.*Installed://g;s/\s//g')
 
@@ -43,16 +39,17 @@ while [ $x=1 ]; do
     echo -e   "2. \t Test - get Plasma info"
     echo -e   "3. \t Test - Univeral Install usefulApps function"
     echo -e   "4. \t Test - get name of github repo"
-    echo -e   "5. \t Test - detectPackageInstalled VLC"
-    echo -e   "6. \t Test - detectPackageInstalled xmetal (known this couldn't ever be true) "
-    echo -e   '7. \t Test - Detect GTK 3 version with universal function (vs old inxi way)'
+    echo -e   "5. \t Test - checkPackage VLC"
+    echo -e   "6. \t Test - checkPackage xmetal (known this couldn't ever be true) "
+    echo -e   "7. \t Test - checkPackage firefox"
+    echo -e   '8. \t Test - Detect GTK 3 version with universal function (vs old inxi way)'
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" testsSelection
 
     case $testsSelection in
 
-      1) dnfCheckPkgInstalled hexchat
+      1) detectPackageStatus hexchat
           x=1 ;;
 
       2) getPlasmaInfo
@@ -67,13 +64,16 @@ while [ $x=1 ]; do
       4) getGitName
         x=1 ;;
 
-      5) detectPackage VLC
+      5) checkPackage vlc
         x=1 ;;
 
-      6) detectPackage xmetal
+      6) checkPackage xmetal
         x=1 ;;
 
-      7) detectPackage libgtk-3-0
+      7) checkPackage firefox
+        x=1 ;; 
+
+      8) checkPackage libgtk-3-0
         x=1 ;;
 
       [qQ]) quitScript  ;;
