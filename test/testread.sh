@@ -28,5 +28,7 @@ test1=$dir/data/testlist1.list
 ## Pass what list you want to function  
 getListPrograms $test1
 
+## ?? Check if installed goes here? 
+
 ## Installs list of programs read by file 
 installTest program[@]
