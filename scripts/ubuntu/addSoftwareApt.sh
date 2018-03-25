@@ -23,8 +23,8 @@ echo -e "Please Select Task\n"
 	echo -e "1. \t Install Multimedia Programs"
 	echo -e "2. \t Install Office Suite [Sub-menu]"
 	echo -e "3. \t Install\Update MPV from PPA"
-	echo -e "\t Install GetDebs Game PPA for Game downloads"
-	echo -e "\t Install My picks of PPA for software or the LATEST versions of certain softwares"
+	echo -e "4. \t Install GetDebs Game PPA for Game downloads"
+	echo -e "5. \t Install My picks of PPA for software or the LATEST versions of certain softwares"
 
 
 	echo -e "m. \t Return to Main Menu"
@@ -35,6 +35,7 @@ echo -e "Please Select Task\n"
 		1) multimediaAppsInstall
 	 		x=1
 	 		;;
+
 
 		2) officeSuiteMenu
 			x=1
