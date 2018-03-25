@@ -39,9 +39,7 @@ while [[ $x=1 ]]; do
 		  2) installPPAThemes
 			 x=1 ;;
 
-		  3) bash "$rootdir"/scripts/ubuntu/addSoftwareApt.sh ;;
-
-		 
+		  3) . $scriptsDir/ubuntu/addSoftwareApt.sh ;;
 
 
 			[aA]) aptUpdate
