@@ -9,6 +9,7 @@
 # Import Functions 
 readonly dir=$(eval pwd)
 readonly functionsdir=$(eval pwd)/tasks/functions/
+readonly scriptsDir=$(eval pwd)/scripts/
 
 . $functionsdir/f_common.cfg
 . $functionsdir/includeUniversalFunctions.cfg
@@ -58,11 +59,11 @@ while [ $x=1 ]; do
         ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       2) universalSoftwareMenu ;;
 
-      3) bash  "$scriptsDir"/archLinuxScripts.sh ;;
-      4) bash  "$scriptsDir"/fedoraScripts.sh  ;;
-      5) bash  "$scriptsDir"/openSuseScripts.sh  ;;
-      6) bash  "$scriptsDir"/ubuntuScripts.sh  ;;
-      7) bash  "$scriptsDir"/solusScripts.sh ;;
+      3) . "$scriptsDir"/archLinuxScripts.sh ;;
+      4) . "$scriptsDir"/fedoraScripts.sh  ;;
+      5) . "$scriptsDir"/openSuseScripts.sh  ;;
+      6) . "$scriptsDir"/ubuntuScripts.sh  ;;
+      7) . "$scriptsDir"/solusScripts.sh ;;
 
       [tT]) . tests.sh ;; 
       [qQ]) . $dir/test/testread.sh ;; 
