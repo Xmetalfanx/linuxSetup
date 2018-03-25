@@ -20,13 +20,12 @@ x=1
 #Clears Screen
 clear
 
-
 # Gets info about distro
 # This is located in the f_distoCheck.cfg file
 completeDistroCheck
 
 # Check if inxi is installed and install if not 
-checkPackage inxi 
+#checkPackage inxi 
 
 # Displays some info about the distro used 
 mainDisplayDistroInfo
