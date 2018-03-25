@@ -1,5 +1,26 @@
 # Xmetal Linux Script
 
+
+## Main Menu 
+1.   Update your System
+  - Updates the system via the commandline 
+2.   [Menu] Install Software
+  - Menu item to install different software 
+
+3.   [Menu] Arch-based
+4.   [Menu] Fedora
+5.   [Menu] OpenSUSE
+6.   [Menu] Ubuntu based
+7.   [Menu] Solus
+  - 3 to 7 - specific tasks, related to the distro base in question 
+
+T.   Tests Menus - (not for regular users)
+Q.   Different TEST only MENU
+q.   Exit to Prompt
+
+
+
+
 ## Arch Script
 
 1. Update Arch
