@@ -20,18 +20,19 @@ while [[ $x=1 ]]; do
 
 	clear
 	echo -e "Xmetal's Arch Linux based,  Post-Installation Script \n"
-	echo -e "Please NOTE: Many of these tasks are predone on distros such as Antergos \n\n"
+	echo -e "Please NOTE: Many of these tasks are predone on distros such as Antergos or Manjaro \n\n"
+	echo -e "In some installs like Anarchy Linux's, they are also done already, if you installed that way"
+	echo 
 	echo -e "Please Select task: \n"
 
-
-	echo -e 	"1. \t Optimize Mirrors"
-	echo -e 	"2. \t Add Yaourt"
-	echo -e 	"3. \t Add Sound Support"
-	echo -e  	"4. \t Adds Archive Support"
-	echo -e  	"5. \t Adds Arc Theme and Icon Pack"
-	echo -e   	"6. \t Add Packer (AUR and Pacman combined)"
-	echo -e 	"7.	[Sub-Menu] Manjaro specific"
-
+	echo -e 	"1.	[Sub-Menu] Manjaro specific"
+	echo -e 	"2. \t Optimize Mirrors"
+	echo -e 	"3. \t Add Yaourt"
+	echo -e 	"4. \t Add Sound Support"
+	echo -e  	"5. \t Adds Archive Support"
+	echo -e  	"6. \t Adds Arc Theme and Icon Pack"
+	echo -e   	"7. \t Add Packer (AUR and Pacman combined)"
+	
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e		"q. \t Exit to Prompt\n\n"
 
@@ -39,28 +40,29 @@ while [[ $x=1 ]]; do
 
 	case $archSelection in
     
-      1)  OptimizeMirrors
+     
+	 1)	manjaroMenu
+		x=1 ;; 
+
+     2)  OptimizeMirrors
 			x=1	;;
 
-      2)  addYaourt
+      3)  addYaourt
 			x=1	;;
 
-      3)  soundSupport
+      4)  soundSupport
 			x=1	;;
 
-      4) archiveSupport
+      5) archiveSupport
 			x=1 ;;
 
-      5) archInstallArc
+      6) archInstallArc
 			x=1	;;
 
-      6) 	## This needs TESTING
+      7) 	## This needs TESTING
         	yaourt -s packer
 			x=1  ;;
 
-			# Why is this coming up as "not found" ? 	  
-	  7)	manjaroMenu
-			x=1 ;; 
 
 	 [aA]) sudo pacman -Syyu
 	       OptimizeMirrors

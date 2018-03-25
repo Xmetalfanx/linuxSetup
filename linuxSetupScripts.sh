@@ -7,14 +7,12 @@
 
 ########################################################################
 # Import Functions 
+
 readonly dir=$(eval pwd)
 readonly functionsdir=$(eval pwd)/tasks/functions/
-readonly scriptsDir=$(eval pwd)/scripts/
 
 . $functionsdir/f_common.cfg
 . $functionsdir/includeUniversalFunctions.cfg
-
-
 ########################################################################
 x=1
 
@@ -26,7 +24,7 @@ clear
 completeDistroCheck
 
 # Check if inxi is installed and install if not 
-#checkPackage inxi 
+checkPackage inxi 
 
 # Displays some info about the distro used 
 mainDisplayDistroInfo
