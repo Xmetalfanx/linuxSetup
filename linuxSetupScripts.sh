@@ -43,8 +43,14 @@ while [ $x=1 ]; do
     echo -e   "6. \t Ubuntu based"
     echo -e   "7. \t Solus"
 
-    echo -e   "T. \t Tests Menus - (not for regular users)"
-    echo -e   "Q. \t Different TEST only MENU"
+    ## Not sure if I will keep this in this section/location
+    echo -e   "T. \t Theming"
+
+    # for a "space"
+    echo 
+
+    #echo -e   "W. \t Tests Menus - (not for regular users)"
+    #echo -e   "Q. \t Different TEST only MENU"
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
@@ -63,7 +69,10 @@ while [ $x=1 ]; do
       6) . "$scriptsDir"/ubuntuScripts.sh  ;;
       7) . "$scriptsDir"/solusScripts.sh ;;
 
-      [tT]) . tests.sh ;; 
+      [tT])  universalThemingMenu ;; 
+
+
+      [wW]) . tests.sh ;; 
       [qQ]) . $dir/test/testread.sh ;; 
 
       
