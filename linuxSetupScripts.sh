@@ -13,6 +13,11 @@ readonly functionsdir=$(eval pwd)/tasks/functions/
 
 . $functionsdir/f_common.cfg
 . $functionsdir/includeUniversalFunctions.cfg
+
+# For testing code
+# FORMERLY another shell .sh file 
+. $dir/tests.cfg 
+
 ########################################################################
 x=1
 
@@ -63,17 +68,18 @@ while [ $x=1 ]; do
         ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       2) universalSoftwareMenu ;;
 
-      3) . "$scriptsDir"/archLinuxScripts.sh ;;
-      4) . "$scriptsDir"/fedoraScripts.sh  ;;
-      5) . "$scriptsDir"/openSuseScripts.sh  ;;
-      6) . "$scriptsDir"/ubuntuScripts.sh  ;;
-      7) . "$scriptsDir"/solusScripts.sh ;;
+      3) . $scriptsDir/archLinuxScripts.sh ;;
+      4) . $scriptsDir/fedoraScripts.sh  ;;
+      5) . $scriptsDir/openSuseScripts.sh  ;;
+      6) . $scriptsDir/ubuntuScripts.sh  ;;
+      7) . $scriptsDir/solusScripts.sh ;;
 
       [tT])  universalThemingMenu ;; 
 
+      ## Menu for testing things on the dev end of the scripts 
+      [wW]) testMenu2 ;; 
 
-      [wW]) . tests.sh ;; 
-      [qQ]) . $dir/test/testread.sh ;; 
+      [zZ]) . $dir/test/testread.sh ;; 
 
       
 
