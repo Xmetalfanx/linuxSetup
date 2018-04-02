@@ -44,7 +44,7 @@ while [[ $x=1 ]]; do
 	 1)	manjaroMenu
 		x=1 ;; 
 
-     2)  OptimizeMirrors
+     2)  optimizeArchMirrors
 			x=1	;;
 
       3)  addYaourt
