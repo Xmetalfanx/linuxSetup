@@ -37,7 +37,9 @@ mainDisplayDistroInfo
 
 while [ $x=1 ]; do
 
-    echo -e "${bold}Xmetal's Linux Scripts ${normal} \n"
+    printf "%*s" $COLUMNS |tr " " "="   
+
+    echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
     echo -e   "1. \t Update your System"
     echo -e   "2. \t Install Software"
