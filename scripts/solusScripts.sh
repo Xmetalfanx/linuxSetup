@@ -53,11 +53,11 @@ while [[ $x=1 ]]; do
 	echo -e 	"2. \tSwitch from Unstable to Stable Repos"
 
 	echo -e 	"\nIndividual Tasks below"
-	echo -e   	"3. \tAdd Unstable Repo (DOES NOT disable the default repo or ENABLE Unstable repos"
+	echo -e   	"3. \tAdd Unstable Repo (DOES NOT disable the default repo or ENABLE Unstable repos)"
 	echo -e   	"4. \tDisable UNStable Repo (useful for when the Solus Team says \"Dont Update, if your on the Unstable, now\")"
 
-	echo -e 	"m. \t Return to Main Menu"
-	echo -e 	"q.	 Exit to Prompt \n\n"
+	echo -e 	"m. \tReturn to Main Menu"
+	echo -e 	"q.	Exit to Prompt \n\n"
 
   read -p "Your Choice?:" fedoraSelection
 
