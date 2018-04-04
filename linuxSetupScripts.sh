@@ -19,25 +19,43 @@ readonly functionsdir=$(eval pwd)/tasks/functions/
 . $dir/tests.cfg 
 
 ########################################################################
+function intialTasks()
+{
+  ## Intial tasks to run before even displaying the menu 
+
+
+  # Gets info about distro
+  # This is located in the f_distoCheck.cfg file
+  clear 
+
+  printf "Getting Info about distro..\n"
+  completeDistroCheck
+
+  # Check if inxi is installed and install if not 
+  printf "\nChecking to see if inxi is installed.."
+  checkPackage inxi 
+
+  clear
+
+  # Displays some info about the distro used 
+  mainDisplayDistroInfo
+
+}
+
+
+
+########################################################################
 x=1
 
 #Clears Screen
 clear
 
-# Gets info about distro
-# This is located in the f_distoCheck.cfg file
-completeDistroCheck
-
-# Check if inxi is installed and install if not 
-checkPackage inxi 
-
-# Displays some info about the distro used 
-mainDisplayDistroInfo
+intialTasks
 
 
 while [ $x=1 ]; do
 
-    printf "%*s" $COLUMNS |tr " " "="   
+    paddingBorder  
 
     echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
