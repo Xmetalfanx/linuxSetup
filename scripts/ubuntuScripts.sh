@@ -18,13 +18,12 @@ clear
 while [[ $x=1 ]]; do
 
 		echo -e   "Xmetal's Ubuntu based,  Post-Installation Script \n"
-		#echo -e 	"Your Ubuntu vesion codename is: $ubuntuName"
 
 		echo -e   "Please Select Task \n"
 
 		echo -e   "\v1. \t Adds Theme PPAs (Ravenfinity, Moka, Noobslab's Icon Repo (both), \n \t Noobslab's Theme Repo, Numix, and snwh's (Paper Theme) )"
 		echo -e   "\v2. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
-		echo -e   "\v3. \t [Submenu] Add Various Software"
+		echo -e   "\v3. \t ${bglightblue}[Submenu]${completeReset} Add Various Software"
 			
 		echo -e   	"\v m. \tReturn to Main Menu"
 		echo -e		"q. \tExit to Prompt \n\n"

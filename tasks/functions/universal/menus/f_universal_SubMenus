@@ -1,0 +1,77 @@
+###########################################
+
+function universalThemingMenu
+{
+	# The idea is to have basic theme stuff here but not too much ... maybe my top 2 or 3 favorites .... I DO have my theming git repo that i plan to "fill out" with themes but this is for a few really good themes so people can do it from inside of these scripts/"this git repo" and not have to go do the other one for some of (my OPINION) THE BEST themes 
+
+		clear
+		x=1
+
+		while [[ $x=1 ]]; do
+
+			echo -e "Menu "
+			echo -e  "1. \t Install Adapta GTK Theme"
+
+
+			read -p  "Your Choice?:" themingSelection
+
+			case $themingSelection in
+
+
+			  1) adaptaThemeMetaInstall
+				x=1
+				;;
+
+
+			esac
+
+		done
+
+}
+
+###############################################################
+
+# I changed the name fron browserMenu, so I am sure something broke, but not sure where yet ... 
+# I will fix that later 
+function universalBrowserMenu()
+{
+	clear
+	x=1
+
+	while [[ $x=1 ]]; do
+
+		echo -e "Web Browser Software Menu "
+		echo -e  "1. \t Install Google Chrome"
+		echo -e  "2. \t Install Chromium"
+		echo -e  "3. \t Install Firefox"
+		echo -e  "4. \t Install Vivaldi\n\n"
+
+		read -p  "Your Choice?:" browserSelection
+
+		case $browserSelection in
+
+
+		   	 ## Inside the f_universalSoftware.cfg file
+		  1) chromeInstall
+				 x=1
+				 ;;
+
+
+			 # This should be in all repos (openSuse, Fedora, ubuntu, solus, and arch's pacman repo )
+		  2) installApp chromium-browser
+				x=1
+				;;
+
+		  3) installApp firefox
+				x=1
+				;;
+
+		  4) installApp vivaldi
+				x=1
+				;;
+
+		esac
+
+	done
+}
+

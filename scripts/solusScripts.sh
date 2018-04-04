@@ -46,15 +46,15 @@ x=1
 while [[ $x=1 ]]; do
 
 	clear
-	echo -e 	"Xmetal's Solus Script \n"
+	echo -e 	"${bold}${underline}Xmetal's Solus Script${completeReset}\n"
 	echo -e 	"Please Select your Choice \n"
 
-	echo -e 	"1.	Switch from Stable to Unstable Repos"
-	echo -e 	"2. \tSwitch from Unstable to Stable Repos"
+	echo -e 	"1.	Switch from the ${italics}Stable Repo${completeReset} to Unstable Repos${completeReset}"
+	echo -e 	"2. \tSwitch from the ${italics}Unstable Repo${completeReset} to Stable Repos${completeReset}"
 
-	echo -e 	"\nIndividual Tasks below"
-	echo -e   	"3. \tAdd Unstable Repo (DOES NOT disable the default repo or ENABLE Unstable repos)"
-	echo -e   	"4. \tDisable UNStable Repo (useful for when the Solus Team says \"Dont Update, if your on the Unstable, now\")"
+	echo -e 	"\n${underline}Individual Tasks below${completeReset}\n"
+	echo -e   	"3. \tAdd Unstable Repo ${italics}(DOES NOT disable the default repo or ENABLE Unstable repos)${completeReset}"
+	echo -e   	"4. \tDisable the UnStable Repo ${italics}(useful for when the Solus Team says \"Dont Update, if you're using the Unstable Repo\")${completeReset}"
 
 	echo -e 	"m. \tReturn to Main Menu"
 	echo -e 	"q.	Exit to Prompt \n\n"
