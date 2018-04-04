@@ -25,13 +25,13 @@ while [[ $x=1 ]]; do
 	echo 
 	echo -e "Please Select task: \n"
 
-	echo -e 	"1.	[Sub-Menu] Manjaro specific"
-	echo -e 	"2. \t Optimize Mirrors"
-	echo -e 	"3. \t Add Yaourt"
-	echo -e 	"4. \t Add Sound Support"
-	echo -e  	"5. \t Adds Archive Support"
-	echo -e  	"6. \t Adds Arc Theme and Icon Pack"
-	echo -e   	"7. \t Add Packer (AUR and Pacman combined)"
+	echo -e 	"1.\t ${bold}[Sub-Menu] Manjaro specific${completeReset}"
+	echo -e 	"2.\t Optimize Mirrors"
+	echo -e 	"3.\t Add Yaourt"
+	echo -e 	"4.\t Add Sound Support"
+	echo -e  	"5.\t Adds Archive Support"
+	echo -e  	"6.\t Adds Arc Theme and Icon Pack"
+	echo -e   	"7.\t Add Packer (AUR and Pacman combined)"
 	
 	echo -e 	"m. \t Return to Main Menu"
 	echo -e		"q. \t Exit to Prompt\n\n"
