@@ -23,6 +23,8 @@ function intialTasks()
 {
   ## Intial tasks to run before even displaying the menu 
 
+  ## Issue I see ... the issue is I need to use inxi to get info to see what the distroBase is; HOWEVER, if inxi is NOT INSTALLED, the detection will have issues ... so "which comes first?"
+
 
   # Gets info about distro
   # This is located in the f_distoCheck.cfg file
@@ -34,7 +36,6 @@ function intialTasks()
   # Check if inxi is installed and install if not 
   printf "\nChecking to see if inxi is installed.."
   checkPackage inxi 
-
   clear
 
   # Displays some info about the distro used 
@@ -69,10 +70,7 @@ while [ $x=1 ]; do
     echo -e   "7. \t Solus"
 
     ## Not sure if I will keep this in this section/location
-    echo -e   "T. \t Theming"
-
-    # for a "space"
-    echo 
+    echo -e   "T. \t Theming\n\n"
 
     #echo -e   "W. \t Tests Menus - (not for regular users)"
     #echo -e   "Q. \t Different TEST only MENU"
@@ -88,11 +86,11 @@ while [ $x=1 ]; do
         ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       2) universalSoftwareMenu ;;
 
-      3) . $scriptsDir/archLinuxScripts.sh ;;
-      4) . $scriptsDir/fedoraScripts.sh  ;;
-      5) . $scriptsDir/openSuseScripts.sh  ;;
-      6) . $scriptsDir/ubuntuScripts.sh  ;;
-      7) . $scriptsDir/solusScripts.sh ;;
+      3) . $menusDir/archLinuxScripts.sh ;;
+      4) . $menusDir/fedoraScripts.sh  ;;
+      5) . $menusDir/openSuseScripts.sh  ;;
+      6) . $menusDir/ubuntuScripts.sh  ;;
+      7) . $menusDir/solusScripts.sh ;;
 
       [tT])  universalThemingMenu ;; 
 
