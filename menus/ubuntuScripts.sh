@@ -23,7 +23,6 @@ while [[ $x=1 ]]; do
 
 		echo -e   "\v1. \t Adds Theme PPAs (Ravenfinity, Moka, Noobslab's Icon Repo (both), \n \t Noobslab's Theme Repo, Numix, and snwh's (Paper Theme) )"
 		echo -e   "\v2. \t Install PPA Themes/Icons \n \t (Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, \n \t Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons "
-		echo -e   "\v3. \t ${bglightblue}[Submenu]${completeReset} Add Various Software"
 			
 		echo -e   	"\v m. \tReturn to Main Menu"
 		echo -e		"q. \tExit to Prompt \n\n"
@@ -37,17 +36,6 @@ while [[ $x=1 ]]; do
 
 		  2) installPPAThemes
 			 x=1 ;;
-
-		  3) . $scriptsDir/ubuntu/addSoftwareApt.sh ;;
-
-
-			[aA]) aptUpdate
-				addThemePPAs
-				installPPAThemes
-				#bash "$postInstallsDir"/ubuntu/addSoftwareApt.sh
-
-				x=1
-				;;
 
 		[mM])	clear 
 				exit
