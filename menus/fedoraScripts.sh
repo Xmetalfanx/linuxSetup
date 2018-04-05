@@ -15,7 +15,7 @@ while [[ $x=1 ]]; do
 	echo -e "Xmetal's Fedora based Script \n"
 	echo -e "Please Select your Choice \n"
 
-	echo -e   "1. \t [Submenu] Add RPM Fusion and/or UnitedRPM Repositories"
+	echo -e   "1. \t ${bold}[Submenu] {$completeReset}Add RPM Fusion and/or UnitedRPM Repositories"
 	echo -e   "2. \t Add Fedy"
 	echo -e   "3. \t Perform Common Fedy Tasks"
 	echo -e   "4. \t Add Extra Software"
