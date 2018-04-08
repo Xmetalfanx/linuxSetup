@@ -86,10 +86,13 @@ while [ $x=1 ]; do
         ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       2) universalSoftwareMenu ;;
 
-      3) . $menusDir/archLinuxScripts.sh ;;
-      4) . $menusDir/fedoraScripts.sh  ;;
-      5) . $menusDir/openSuseScripts.sh  ;;
-      6) . $menusDir/ubuntuScripts.sh  ;;
+          # Located in /tasks/functions/f_mainMenus.cfg
+      3) mainArchMenu ;;
+      4) mainFedoraMenu  ;;
+      5) mainOpenSuseMenu  ;;
+      6) mainUbuntuMenu ;; 
+
+
       7) . $menusDir/solusScripts.sh ;;
 
       [tT])  universalThemingMenu ;; 
