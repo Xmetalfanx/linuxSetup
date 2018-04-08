@@ -9,7 +9,7 @@
 # Import Functions 
 
 readonly dir=$(eval pwd)
-readonly functionsdir=$(eval pwd)/tasks/functions/
+readonly functionsdir=$(eval pwd)/functions/
 
 . $functionsdir/f_common.cfg
 . $functionsdir/includeUniversalFunctions.cfg
@@ -25,11 +25,8 @@ function intialTasks()
 
   ## Issue I see ... the issue is I need to use inxi to get info to see what the distroBase is; HOWEVER, if inxi is NOT INSTALLED, the detection will have issues ... so "which comes first?"
 
-
   # Gets info about distro
   # This is located in the f_distoCheck.cfg file
-  clear 
-
   printf "Getting Info about distro..\n"
   completeDistroCheck
 
@@ -44,7 +41,6 @@ function intialTasks()
 }
 
 
-
 ########################################################################
 x=1
 
@@ -56,7 +52,7 @@ intialTasks
 
 while [ $x=1 ]; do
 
-    paddingBorder  
+    #paddingBorder  
 
     echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
