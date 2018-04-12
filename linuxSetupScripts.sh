@@ -8,11 +8,11 @@
 ########################################################################
 # Import Functions 
 
+# This is needed here so my scripts can use this to load other needed things 
 readonly dir=$(eval pwd)
 readonly functionsdir=$(eval pwd)/functions/
 
-. $functionsdir/f_common.cfg
-. $functionsdir/includeUniversalFunctions.cfg
+. $dir/functions/includeBasicConfigs.cfg
 
 # For testing code
 # FORMERLY another shell .sh file 
@@ -48,7 +48,6 @@ x=1
 clear
 
 intialTasks
-
 
 while [ $x=1 ]; do
 
