@@ -19,29 +19,6 @@ readonly functionsdir=$(eval pwd)/functions/
 . $dir/tests.cfg 
 
 ########################################################################
-function intialTasks()
-{
-  ## Intial tasks to run before even displaying the menu 
-
-  ## Issue I see ... the issue is I need to use inxi to get info to see what the distroBase is; HOWEVER, if inxi is NOT INSTALLED, the detection will have issues ... so "which comes first?"
-
-  # Gets info about distro
-  # This is located in the f_distoCheck.cfg file
-  printf "Getting Info about distro..\n"
-  completeDistroCheck
-
-  # Check if inxi is installed and install if not 
-  printf "\nChecking to see if inxi is installed.."
-  checkPackage inxi 
-  clear
-
-  # Displays some info about the distro used 
-  mainDisplayDistroInfo
-
-}
-
-
-########################################################################
 x=1
 
 #Clears Screen
@@ -75,20 +52,18 @@ while [ $x=1 ]; do
 
     case $mainSelection in
 
-        ## Located in: 
+      # Located in: 
       1) universalUpgrade ;;
 
-        ## Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
+      # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       2) universalSoftwareMenu ;;
 
-          # Located in /tasks/functions/f_mainMenus.cfg
+      # Located in /tasks/functions/f_mainMenus.cfg
       3) mainArchMenu ;;
       4) mainFedoraMenu  ;;
       5) mainOpenSuseMenu  ;;
       6) mainUbuntuMenu ;; 
-
-
-      7) . $menusDir/solusScripts.sh ;;
+      7) mainSolusMenu ;;
 
       [tT])  universalThemingMenu ;; 
 
@@ -96,9 +71,6 @@ while [ $x=1 ]; do
       [wW]) testMenu2 ;; 
 
       [zZ]) . $dir/test/testread.sh ;; 
-
-      
-
   
       [qQ]) quitScript  ;;
 
