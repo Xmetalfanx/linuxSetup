@@ -1,5 +1,7 @@
 #### NOTE: THIS is under heavy construction
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4d8ddc6c4c6544dcb4f37ada88412eba)](https://app.codacy.com/app/Xmetalfanx/linuxSetup?utm_source=github.com&utm_medium=referral&utm_content=Xmetalfanx/linuxSetup&utm_campaign=badger)
+
 #### Things are broken and I know it.
 
 # Xmetal's Linux Scripts
