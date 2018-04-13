@@ -1,6 +1,8 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ad3a390ed44e4ad28b786d760b2dd5f6)](https://www.codacy.com/app/Xmetalfanx/linuxSetup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Xmetalfanx/linuxSetup&amp;utm_campaign=Badge_Grade)
+
 #### NOTE: THIS is under heavy construction
 
-#### Things are broken and I know it.
+- Things are broken and I know it.
 
 # Xmetal's Linux Scripts
 
