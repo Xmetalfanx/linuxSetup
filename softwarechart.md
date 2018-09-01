@@ -51,7 +51,6 @@ Fedora Message:
 | Variety         |           |           |            |
 | TMM             | TB+Run    | TB+Run    | TB+Run     |
 
-
 #### Ubuntu Base Related
 
 | Program Name    | Ubuntu 16.04                 | Ubuntu 17.10   | Ubuntu 17.10   |
@@ -71,9 +70,6 @@ Fedora Message:
 | Sound Converter | Default                      | Default        | Default        |
 | Variety         | Probably a PPA - Not Default | Default        | Default        |
 | TMM             | TB+Run                       | TB+Run         | TB+Run         |
-
-
-
 
 ---
 TMM = Tiny Media Manager ... shortened in the chart for the Markdown Syntax
