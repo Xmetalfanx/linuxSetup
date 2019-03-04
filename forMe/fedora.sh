@@ -6,8 +6,7 @@
 prompt="read -p 'Press [Enter] to continue' "
 rpmInstall="sudo rpm -i"
 dnfInstall="sudo dnf install"
-vscodeURL="https://go.microsoft.com/fwlink/?LinkID=760867"
-software="filezilla picard easytag deluge hexchat firefox deadbeef mpv smplayer"
+software="filezilla picard easytag deluge hexchat firefox deadbeef mpv smplayer variety"
 
 #################################################
 
@@ -96,11 +95,13 @@ function installTheming
 function installVSCodeRPM
 {
 
-# 3 - Install vscode via RPM 
     echo "Installing vscode via RPM "
-    wget -o vscode.rpm $vscodeURL
-    $rpmInstall vscode.rpm
 
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+    sudo dnf check-update
+    sudo dnf install code 
     echo "vscode Installed"
     prompB4proceeding
 
