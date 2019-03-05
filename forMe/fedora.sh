@@ -8,8 +8,6 @@ rpmInstall="sudo rpm -i"
 dnfInstall="sudo dnf install"
 software="filezilla picard easytag deluge hexchat firefox deadbeef mpv smplayer variety"
 
-#################################################
-
 
 #################################################
 # Functions 
@@ -121,7 +119,8 @@ function installCommonSoftware
 
 
 # 1 - Make updates faster 
-echo "fastestmirror=true" >> /etc/dnf/dnf.conf
+su -c 'echo "fastestmirror=true" >> /etc/dnf/dnf.conf'
+
 ########################################################
 
 # 2 - Upgrade system
