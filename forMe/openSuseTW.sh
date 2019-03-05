@@ -1,24 +1,9 @@
 #!/bin/bash
 
-####################################################
-# Variables 
-addRepo="sudo zypper addrepo -f"
-
-prompt="read -p 'Press [Enter] to continue' "
-rpmInstall="sudo rpm -i"
-software="filezilla picard easytag deluge hexchat firefox deadbeef mpv smplayer variety"
-#################################################
+. common.conf
 
 #################################################
 # Functions 
-
-function prompB4proceeding
-{
-    $prompt
-    
-    # Clears Screen before next task 
-    clear
-}
 
 function installVSCode 
 {
@@ -51,7 +36,7 @@ function pacmanRepo
 function installCommonSoftware
 {
     # Install software 
-    sudo zypper install $software
+    $zypperInstall $software
 
     installVSCode
 
@@ -68,8 +53,18 @@ function dupZypper
 }
 
 
-#########################################################
-########################################################
+# End Functions 
+################################################
+################################################
 
+################################################
+### START 
+
+# 1 - Dist Upgrade 
+dupZypper
+
+# 2 - Add Pacman Repo 
 pacmanRepo
+
+# 3 - Install Software 
 installCommonSoftware
