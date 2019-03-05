@@ -1,24 +1,11 @@
 #!/bin/bash
 
-
-#################################################
-## Variables 
-prompt="read -p 'Press [Enter] to continue' "
-rpmInstall="sudo rpm -i"
-dnfInstall="sudo dnf install"
-software="filezilla picard easytag deluge hexchat firefox deadbeef mpv smplayer variety"
-
+. common.conf
 
 #################################################
 # Functions 
 
-function prompB4proceeding
-{
-    $prompt
-    
-    # Clears Screen before next task 
-    clear
-}
+
 
 function distUpgrade 
 {
@@ -63,6 +50,7 @@ function massFedyTasks
         echo "Improve Font Rendoring"
         installApp fedy-font-config
 
+        # I think I am getting errors here ... this MAY no longer be needed anyway
         gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing "rgba"
         gsettings set org.gnome.settings-daemon.plugins.xsettings hinting "slight"
 
@@ -99,7 +87,7 @@ function installVSCodeRPM
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
     sudo dnf check-update
-    sudo dnf install code 
+    sudo $dnfInstall code 
     echo "vscode Installed"
     prompB4proceeding
 
@@ -116,12 +104,13 @@ function installCommonSoftware
 }
 # End Functions 
 ################################################
+################################################
 
 
+################################################
+### START 
 # 1 - Make updates faster 
 su -c 'echo "fastestmirror=true" >> /etc/dnf/dnf.conf'
-
-########################################################
 
 # 2 - Upgrade system
 distUpgrade
@@ -133,3 +122,4 @@ massFedyTasks
 installCommonSoftware
 
 # 5 - Install Theming 
+installTheming
