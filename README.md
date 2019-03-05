@@ -30,6 +30,8 @@ While The main distributions listed are meant to be "Distro family bases", not A
 
 Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
 
+- Also thanks to [Fedora Install Script](https://gist.github.com/KingsleyOmon-Edo/711c0a79c29d532840bb5cae55b7c2d6) for ideas comming in future commits (posted this here to remember to give credit, before hand)
+
 ---
 
 ## How to download via git
