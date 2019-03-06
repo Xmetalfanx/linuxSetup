@@ -1,5 +1,7 @@
 #!/bin/bash
 
+localInstall= $zypperInstall
+
 . common.conf
 
 #################################################
@@ -14,7 +16,7 @@ function installVSCode
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
     sudo zypper refresh
-    sudo zypper install code 
+    $localInstall code 
     echo "vscode Installed"
     prompB4proceeding
 
