@@ -122,6 +122,9 @@ function installCommonSoftware
     # Install software 
     sudo dnf install $software
 
+    # Oh-my-Fish for fish shell
+    ohmyfishInstall
+
     # Install vscode 
     installVSCode
 
