@@ -3,9 +3,7 @@
 . common.conf
 
 #################################################
-# Functions 
-
-
+## Functions 
 
 function distUpgrade 
 {
@@ -35,7 +33,7 @@ function massFedyTasks
         sudo dnf -y groupinstall multimedia
 
         # why this too? ... eh well ... leave it for now 
-        $dnfInstall gstreamer1-libav
+        $localInstall gstreamer1-libav
         echo -e "Codecs are now installed"
 
     #######################################################
@@ -58,6 +56,13 @@ function massFedyTasks
 
 }
 
+
+function arcThene
+{
+    dnf config-manager --add-repo http://download.opensuse.org/repositories/home:Horst3180/Fedora_24/home:Horst3180.repo  
+    dnf install -y arc-theme 
+}
+
 function installTheming
 {
 
@@ -78,7 +83,7 @@ function installTheming
 }
 
 
-function installVSCodeRPM
+function installVSCode
 {
 
     echo "Installing vscode via RPM "
@@ -93,13 +98,40 @@ function installVSCodeRPM
 
 }
 
+function installAtom
+{
+    echo "Installing Atom"
+    wget -O atom.rpm https://atom.io/download/rpm
+    $dnfInstall -y atom.rpm
+    rm -f atom.rpm
+
+}
+
+function installDevTools
+{
+    #Install Development Essentials
+	echo "Installing development tools"
+    $dnfInstall @development-tools
+}
+
+
+
 ## Software I use 
 function installCommonSoftware
 {
     # Install software 
     sudo dnf install $software
 
-    installVSCodeRPM
+    # Install vscode 
+    installVSCode
+
+    # Install Dev Tools
+    installDevTools
+
+    # Install Atom
+    installAtom
+
+
 
 }
 # End Functions 
@@ -115,11 +147,14 @@ su -c 'echo "fastestmirror=true" >> /etc/dnf/dnf.conf'
 # 2 - Upgrade system
 distUpgrade
 
-# 3 - Fedy Tasks 
+# 3 - Add RPM Fusion Repos
+addRPMFusion
+
+# 4 - Fedy Tasks 
 massFedyTasks
 
-# 4 - Install Software 
+# 5 - Install Software 
 installCommonSoftware
 
-# 5 - Install Theming 
+# 6 - Install Theming 
 installTheming
