@@ -1,0 +1,5 @@
+LSB Version:    n/a
+Distributor ID: openSUSE
+Description:    openSUSE Tumbleweed
+Release:        20190310
+Codename:       n/a
