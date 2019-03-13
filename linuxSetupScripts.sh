@@ -14,9 +14,6 @@ readonly functionsdir=$(eval pwd)/functions/
 
 . $dir/functions/includeBasicConfigs.cfg
 
-# For testing code
-# FORMERLY another shell .sh file 
-. $dir/tests.cfg 
 
 ########################################################################
 x=1
@@ -24,6 +21,7 @@ x=1
 #Clears Screen
 clear
 
+# in f_common.cfg 
 intialTasks
 
 while [ $x=1 ]; do
