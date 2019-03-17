@@ -1,5 +1,3 @@
-Does Korora use /etc/fedora-release" ?
-
 
 [xmetal@antergos NIKITA_SEASON_2_DISC_5]$ cat /etc/os-release
 NAME="Antergos Linux"
@@ -22,8 +20,21 @@ VERSION_CODENAME=serena
 UBUNTU_CODENAME=xenial
 
 
-tumbleweed for some reason is coming up "Arch"
+NAME="openSUSE Tumbleweed"
+# VERSION="20190314"
+ID="opensuse-tumbleweed"
+ID_LIKE="opensuse suse"
+VERSION_ID="20190314"
+PRETTY_NAME="openSUSE Tumbleweed"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:tumbleweed:20190314"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
 
+
+
+cat /etc/os-release | grep "^ID_LIKE=" | sed "s/\"//g"| cut -d "=" -f 2 | cut -d " " -f 1 to get "opensuse"
+######################################################################################
 
 NAME="Solus"
 VERSION=1.2.1
@@ -35,6 +46,7 @@ HOME_URL="https://www.solus-project.com"
 SUPPORT_URL="https://www.solus-project.com/forums/"
 BUG_REPORT_URL="https://dev.solus-project.com/"
 
+############################################################
 
 Ubuntu Mate below
 
