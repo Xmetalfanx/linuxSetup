@@ -1,0 +1,38 @@
+outline of how things should go 
+
+Script runs 
+1.) checks for lsb-release and if it is not installed, offer to install it
+    - on Arch, Fedora,  OpenSuse, Solus, and Ubuntu bases
+    - Put this in the documentation README.md file for "requirnments" 
+
+2) noting that some people may select NOT to install lsb-release if they do not have it installed 
+    - For this case the "cat /etc/os-release" fallback is needed 
+
+
+What info I know from lsb_release?
+    - Codename: 
+        - mainly useful with ubuntu releases, detecting the version 
+        - also if some codenames are detected ... say "bionic" here ... it can be safely assumed that you ARE ON an Ubuntu release 
+    
+    -Release: 
+        - some distros like arch have "rolling" 
+        - TW has the date of the snapshot you are on 
+        - ubuntu has say "16.04" or "18.04"^
+
+    -Description:
+        - seems to be like a full label of the distro, release and maybe codename too 
+
+    Dist ID: 
+        - "Ubuntu" "arch" or "opensuse "... this should be a GREAT CHOICE for the primary check to see what distro it is 
+
+#######
+Idea: use lsbDescription for the main ID for detecting the distro with some "backup checks" just in case
+
+
+##############################################################
+
+os-release info/ideas 
+
+if "UBUNTU_CODENAME=" exists (whatever it's value is), it's an Ubuntu based distro 
+
+################################################################################################
