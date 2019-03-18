@@ -19,7 +19,7 @@ readonly functionsdir=$(eval pwd)/functions/
 x=1
 
 #Clears Screen
-clear
+#clear
 
 # in f_common.cfg 
 intialTasks
