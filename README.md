@@ -32,7 +32,7 @@ Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
 
 - Also thanks to [Fedora Install Script](https://gist.github.com/KingsleyOmon-Edo/711c0a79c29d532840bb5cae55b7c2d6) for ideas comming in future commits (posted this here to remember to give credit, before hand)
 
-- More thank yous go to KittyKatt and screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
+- More thankss go to KittyKatt and screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
 ---
 
 ## How to download via git
