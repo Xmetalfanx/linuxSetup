@@ -32,6 +32,7 @@ Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
 
 - Also thanks to [Fedora Install Script](https://gist.github.com/KingsleyOmon-Edo/711c0a79c29d532840bb5cae55b7c2d6) for ideas comming in future commits (posted this here to remember to give credit, before hand)
 
+- More thank yous go to KittyKatt and screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
 ---
 
 ## How to download via git
@@ -58,12 +59,6 @@ In a Terminal run
 1.   Open a Terminal
 2.   Navigate to the root folder you extracted the LinuxScripts archive to
 3.   type `bash xmetalLinuxScripts.sh`
-
----
-## Youtube Playlist showing off scripts as I go along
-#### I know this is out-dated 
-
-- [Xmetal Script Preview PLAYLIST, on Youtube](https://www.youtube.com/playlist?list=PLrh2y86lvcJd7or3jWalRLbQk4mWZQHeM)
 
 
 ---
