@@ -61,3 +61,22 @@ SUPPORT_URL="http://help.ubuntu.com/"
 BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
 VERSION_CODENAME=xenial
 UBUNTU_CODENAME=xenial
+
+
+
+###################################
+Manjaro 18.04
+
+lsb_release =a 
+
+ID: ManjaroLinux
+Description: Manjaro Linux
+Reelease: 18.0.4
+Codename: Illyria 
+
+os-release file 
+
+NAME: "Manjaro Linux" (with quotes)
+ID: manjaro
+ID_LIKE: arch
+Pretty Name: (w/ double quotes like Name) "Manjaro Linux"
