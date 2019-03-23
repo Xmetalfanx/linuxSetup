@@ -80,3 +80,23 @@ NAME: "Manjaro Linux" (with quotes)
 ID: manjaro
 ID_LIKE: arch
 Pretty Name: (w/ double quotes like Name) "Manjaro Linux"
+
+
+
+Anarchy (formerly Arch Anywhere)
+
+https://anarchy-linux.org/news/Anarchy-Linux-replaces-Arch-Anywhere/
+
+ID=anarchy
+ID_LIKE=anarchylinux
+
+################################################################
+
+os-release from Leap 15 
+
+VERSION="15.0 beta" 			# Beta atm anyway
+
+VERSION_ID="15.0"
+
+PRETTY_NAME="openSUSE Leap 15.0 beta"
+
