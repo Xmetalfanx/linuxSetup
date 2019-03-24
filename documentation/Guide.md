@@ -1,5 +1,6 @@
 # Xmetal Linux Script
 - Last Updated: March 24, 2018 
+- NOTE: this is really out of date 
 
 ## Main Menu 
 1.   Update your System

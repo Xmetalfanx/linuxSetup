@@ -1,0 +1,59 @@
+how to do the checks ... ("you are on Xenial, this PPA does not support your current version" ), will come later 
+
+
+function foobarPPA
+{
+    ppaName=""
+    
+    ## main site the ppa is listed on
+    ppaRef=""
+
+    ## the ppa:/foobar-whatever part 
+    ppaSource=""
+
+    #list of Ubuntu bases this PPA currently supports
+    supportedBases=""
+
+    # * even if only one package keep the s in the var name... this is what gets $install (ed) 
+    packageNames=""
+
+
+    # Adding/Installing PPA itself 
+    universalAddRepo $PPASource
+
+}
+
+
+
+function foobarPPA
+{
+    ppaName=""
+    ppaRef=""
+    ppaSource=""
+    supportedBases=""
+    packageNames=""
+
+
+    # Adding/Installing PPA itself 
+    universalAddRepo $PPASource
+
+    # install packageNames
+    $install $packageNames
+
+}
+
+#####################################################
+ideas for check 
+
+# Trusty 14.04 check 
+if [ "$supportedBase = *"trusty"* ]
+
+#########################################################
+another option 
+
+# *foo* would be supportedBases
+case "$string" in 
+  *foo*)
+    # Do stuff
+    ;;
+esac

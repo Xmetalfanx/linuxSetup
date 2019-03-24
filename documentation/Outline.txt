@@ -1,4 +1,4 @@
-outline of how things should go 
+March 2019, outline of how things should go 
 
 Script runs 
 1.) checks for lsb-release and if it is not installed, offer to install it

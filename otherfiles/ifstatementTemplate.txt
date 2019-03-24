@@ -1,0 +1,9 @@
+if [  "$distroBase" = "$ubuntu" ]; then
+    #DEB
+elif if [  "$distroBase" = "fedora" ]; then
+    #RPM 
+elif [  "$distroBase" = "opensuse" ]; then
+    #RPM 
+elif [  "$distroBase" = "$ubuntu" ]; then
+
+fi 
