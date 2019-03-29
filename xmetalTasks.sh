@@ -1,7 +1,10 @@
 readonly dir=$(eval pwd)
-readonly functionsdir=$(eval pwd)/functions/
+readonly functionsdir=$(eval pwd)/functions
 
-. $dir/functions/includeBasicConfigs.cfg
+# includes
+. $functionsdir/universal/includeUniversalFunctions.cfg
+. $functionsdir/includeBasicConfigs.cfg
+
 
 # in f_common.cfg 
 intialTasks
