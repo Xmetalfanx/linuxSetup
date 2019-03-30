@@ -82,7 +82,7 @@ function installTheming
 
 }
 
-
+## March 2019: this code will go in a universal vscode function later 
 function installVSCode
 {
 
@@ -98,14 +98,6 @@ function installVSCode
 
 }
 
-function installAtom
-{
-    echo "Installing Atom"
-    wget -O atom.rpm https://atom.io/download/rpm
-    $dnfInstall -y atom.rpm
-    rm -f atom.rpm
-
-}
 
 function installDevTools
 {
@@ -119,20 +111,13 @@ function installDevTools
 ## Software I use 
 function installCommonSoftware
 {
+    # 2019 idea: call universal install function? 
     # Install software 
-    sudo dnf install $software
 
-    # Oh-my-Fish for fish shell
-    ohmyfishInstall
-
-    # Install vscode 
-    installVSCode
 
     # Install Dev Tools
     installDevTools
 
-    # Install Atom
-    installAtom
 
 }
 # End Functions 
