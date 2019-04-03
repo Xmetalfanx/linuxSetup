@@ -2,12 +2,10 @@
 
 ## 1 - Optimize Repos
 
-```
 - Fedora: search for fastest mirror 
 - Manjaro Rank Mirrors 
 
 - not sure why i dont have this already done but the same SORT OF thing I have for Manjaro, will have an Arch function 
-```
 
 ## 2 - Update System
 
