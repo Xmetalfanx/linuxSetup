@@ -40,7 +40,7 @@ while [ $x=1 ]; do
     echo -e   "7. \t Solus"
 
     ## Not sure if I will keep this in this section/location
-    echo -e   "T. \t Theming\n\n"
+    # echo -e   "T. \t Theming\n\n"
 
     #echo -e   "W. \t Tests Menus - (not for regular users)"
     #echo -e   "Q. \t Different TEST only MENU"
@@ -51,7 +51,7 @@ while [ $x=1 ]; do
     case $mainSelection in
 
       # Located in: 
-      1) universalUpgrade ;;
+      1) universalUpdate ;;
 
       # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       2) universalSoftwareMenu ;;
