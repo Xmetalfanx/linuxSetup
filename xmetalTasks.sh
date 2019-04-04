@@ -9,5 +9,7 @@ readonly functionsdir=$(eval pwd)/functions
 # in f_common.cfg 
 intialTasks
 
-echo -e "Start of my usually done post-install tasks "
+#echo -e "Start of my usually done post-install tasks "
+#metalTasks
+
 xmetalTasks
