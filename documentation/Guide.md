@@ -4,39 +4,50 @@
 
 ## Main Menu 
 1.   Update your System
-      - Updates the system via the commandline 
-2.   [Menu] Install Software
+    - Updates the system via the command-line
+  
+2.  Optmize Repos/Mirrors
+    - Works on Fedora with DNF
+    - Works on Manjaro
+    - [Coming Soon] Will work on Arch
+  
+3. Add Third Party Repos
+   - Universal function is run here
+   - Fedora - Adds both RPM Fusion Repos 
+   - OpenSuse - Adds Pacman Repo(s)
+
+4.  Adds Codecs
+    - Adds needed Codecs on Arch, Fedora, and OpenSuse 
+
+5.  [Menu] Arch-based
+6.  [Menu] Fedora
+7.  [Menu] OpenSUSE
+8.  [Menu] Ubuntu based
+9.  [Menu] Solus
+
+
+s.   [Menu] Install Software
       - Menu item to install different software 
 
-3.   [Menu] Arch-based
-4.   [Menu] Fedora
-5.   [Menu] OpenSUSE
-6.   [Menu] Ubuntu based
-7.   [Menu] Solus
-      - 3 to 7 - specific tasks, related to the distro base in question 
-
+--- 
 
 ## Arch Script
 
-1. Optimize Mirrors
-    - Optmize Pacman mirrors 
-2. Add Yaourt
-    - Install Yaourt for A(rch) U(ser) R(espository) support 
+1. [Sub-Menu] Add AUR Support 
+    - Install yay option
+    - Install trizen option
+2. [Submenu] Manjaro Specific
 3. Add Sound Support
     - Adds sound support 
 4. Add Archive Support
     - Adds support for file archives 
-5. Add The Arc Theme and Icon Pack from the AUR
-6. Add Packer (AUR and Pacman combined)
-    - Adds Packer support 
-7. [Submenu] Manjaro Specific 
+
 
 
 ## Fedora Script
 
-1. [Sub-Menu] Add RPM Fusion and/or UnitedRPM Repositories
-2. Add Fedy
-3. Perform Common Fedy Tasks (all these tasks at once)
+1. Add Fedy
+2. Perform Common Fedy Tasks (all these tasks at once)
 
     - Fedy Tasks
       1. Install Archive Support
@@ -45,18 +56,15 @@
       4. Install Theme Engines
       5. Improve Font Rendering
 
-5. Add Extra Software
-6. Install The Arc Theme
 
 ## OpenSuse Script
 
-1. Add Packman Repositories
-2. Setup Multimedia/Codecs 
-  - Not available at the moment
-3. Add Cinnamon Repo to OpenSuse
+1. Add Cinnamon Repo
+2. Add Plasma 5 Repos
+
 
 ## Ubuntu Script
-
+### April 3, 2019: Info below needs updating 
 1. Adds Theme PPAs
     - Ravenfinity, Moka, Noobslab's Icon Repo (both), Noobslab's Theme Repo, Numix, and Paper Theme
 
@@ -73,7 +81,3 @@
     
     3. Install/Update MPV via a PPA 
       - to get a newer version than in default distro repos
-
-    4. Install GetDebs Games PPA
-      - Has different games that you can install on Linux 
-
