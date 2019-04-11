@@ -81,3 +81,9 @@ Removed most content now that things are moving to Universal functions
 
 --- 
 ## Theming Scripts 
+
+1. Install Adapta Theme
+2. Install Arc Theme
+3. Install Mint-Y Theme
+4. Install Numix Theme
+5. Install Plata Theme

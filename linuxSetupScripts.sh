@@ -42,7 +42,6 @@ while [ $x=1 ]; do
     ## Not sure if I will keep this in this section/location
     # echo -e   "T. \t Theming\n\n"
 
-    #echo -e   "W. \t Tests Menus - (not for regular users)"
     #echo -e   "Q. \t Different TEST only MENU"
 
     echo -e   "q. \t Exit to Prompt \n\n"
@@ -64,11 +63,6 @@ while [ $x=1 ]; do
       7) mainSolusMenu ;;
 
       [tT])  universalThemingMenu ;; 
-
-      ## Menu for testing things on the dev end of the scripts 
-      [wW]) testMenu2 ;; 
-
-      [zZ]) . $dir/test/testread.sh ;; 
   
       [qQ]) quitScript  ;;
 
