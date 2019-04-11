@@ -1,6 +1,5 @@
 # Xmetal Linux Script
-- Last Updated: March 24, 2018 
-- NOTE: this is really out of date 
+
 
 ## Main Menu 
 1.   Update your System
@@ -56,28 +55,29 @@ s.   [Menu] Install Software
       4. Install Theme Engines
       5. Improve Font Rendering
 
-
 ## OpenSuse Script
 
 1. Add Cinnamon Repo
 2. Add Plasma 5 Repos
 
+## Solus Scripts 
+
+1.  Switch from Stable Repo to Unstable Repo
+2.  Switch from Unstable Repo to Stable Repo
+
+### Individual Tasks
+
+3. Add Unstable Repo (DOES NOT disable the default repo or ENABLE Unstable repos)
+
+4. Disable Unstable Repo (useful for when the Solus Team says "Dont Update, if you're using the Unstable Repo")
+   - (note to self: What is the difference between this and #2? .... this seems redundent)
+
 
 ## Ubuntu Script
-### April 3, 2019: Info below needs updating 
-1. Adds Theme PPAs
-    - Ravenfinity, Moka, Noobslab's Icon Repo (both), Noobslab's Theme Repo, Numix, and Paper Theme
 
-2. Install PPA Themes/Icons
-    - Ambiance, Radiance, Moka, The Arc Theme AND Arc Icons, Numix Themes and Icons, Vertex Icons, AND Kawaiki Icons
+Removed most content now that things are moving to Universal functions 
 
-3. Add Software
+- Different tasks like "automatically setting up a number of tasks, post ElementaryOS install, will likely go here
 
-    1. Install Multimedia Programs
-    2. Install Office Suite
-      - Gives the two option to install Libre Office 
-        - from the default repo that your distro uses
-        - from the official PPA that has the lastest version, which in some cases is newer than the default version
-    
-    3. Install/Update MPV via a PPA 
-      - to get a newer version than in default distro repos
+--- 
+## Theming Scripts 
