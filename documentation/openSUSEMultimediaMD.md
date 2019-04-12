@@ -1,25 +1,6 @@
 # Source: http://opensuse-community.org/codecs-kde.ymp
 ---
 
-# Leap 42.2
-
-#Codecs for openSUSE KDE
-## Extra Multimedia Codecs for KDE
-- An easy way to install a selection of popular multimedia codecs.
-
-## Repositories
-
-### Packman Repository
-#### Packman Software Repository
-- Packman build software packages to enable users to easily install and remove software on Linux. More specifically, they do so for software that is not shipped as part of distributions or that are shipped as an outdated version.
-####<url>http://packman.inode.at/suse/openSUSE_Leap_42.2/</url>
-
-### libdvdcss repository
-#### Repository with libdvdcss
-- Encrypted DVD support
-#####<url>http://opensuse-guide.org/repo/openSUSE_Leap_42.2/</url>
-
-
 ## Software
 
 ## libdvdcss2
