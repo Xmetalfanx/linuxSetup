@@ -14,13 +14,14 @@ Install Codecs             |  |           |           |                    |    
 | Add Common Software     |   |                       |           |                    |                 |                   |             |
 | Web Browsers            |   |                       |           |                    |                 |                   |             |
 | Ubuntu Submenu          |   |                       |           |                    |                 |                   |             |
-| Tiny Media Manager      |   | Fail (april 12, 2019) |           |                    |                 |                   |             |
-| Etcher                  |   |                       |           |                    |                 |                   |             |
+| Tiny Media Manager      |   | Pass |           |                    |                 |                   |             |
+| Etcher                  |   |      Pass             |           |                    |                 |                   |             |
 | Atom Editor             |   |                       |           |                    |                 |                   |             |
 | Wine and/or PlayonLinux |   |                       |           |                    |                 |                   |             |
 | vscode **               |   |                       |           |                    |                 |                   |             |
 
 - the ubuntu submenu for now will be just common stuff for elementaryOS but may expand ** not in menus yet
+- There seems to be an issue with the folder name on the extract step but other than that, third party stuff seems to  be working 
 
 ||||||
 
