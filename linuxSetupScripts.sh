@@ -53,7 +53,7 @@ while [ $x=1 ]; do
 
       # Located in: 
       1) universalUpdate ;;
-      2) 
+      2) optimizeRepo ;; 
 
       # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       [sS]) universalSoftwareMenu ;;
