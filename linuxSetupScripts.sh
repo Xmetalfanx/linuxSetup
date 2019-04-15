@@ -38,7 +38,9 @@ while [ $x=1 ]; do
     echo -e   "5. \t OpenSUSE"
     echo -e   "6. \t Ubuntu based"
     echo -e   "7. \t Solus"
-
+    
+    # only for a space 
+    echo -e
     echo -e   "S. \t Install Software"
 
     ## Not sure if I will keep this in this section/location
