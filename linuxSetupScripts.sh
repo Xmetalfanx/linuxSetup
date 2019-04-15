@@ -31,9 +31,7 @@ while [ $x=1 ]; do
     echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
     echo -e   "1. \t Update your System"
-    echo -e   "2. \t Optimizing Mirrors/Repos"
-    
-    echo -e   "S. \t Install Software"
+    echo -e   "2. \t Optimizing Mirrors/Repos",,,,
 
     echo -e   "3. \t Arch-based"
     echo -e   "4. \t Fedora"
@@ -41,10 +39,10 @@ while [ $x=1 ]; do
     echo -e   "6. \t Ubuntu based"
     echo -e   "7. \t Solus"
 
+    echo -e   "S. \t Install Software"
+
     ## Not sure if I will keep this in this section/location
     # echo -e   "T. \t Theming\n\n"
-
-
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
@@ -55,15 +53,15 @@ while [ $x=1 ]; do
       1) universalUpdate ;;
       2) optimizeRepo ;; 
 
-      # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
-      [sS]) universalSoftwareMenu ;;
-
       # Located in /tasks/functions/f_mainMenus.cfg
       3) mainArchMenu ;;
       4) mainFedoraMenu  ;;
       5) mainOpenSuseMenu  ;;
       6) mainUbuntuMenu ;; 
       7) mainSolusMenu ;;
+
+      # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
+      [sS]) universalSoftwareMenu ;;
 
       [tT])  universalThemingMenu ;; 
   
