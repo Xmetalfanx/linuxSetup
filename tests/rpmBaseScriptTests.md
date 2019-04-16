@@ -22,9 +22,11 @@ Fedora 30 is a placeholder for now N/A = Not Applicable
 | Atom Editor             |  | Pass      |           |                    |                 |                   |             |
 | Wine and/or PlayonLinux |  | Pass      |           |                    |                 |                   |             |
 | vscode **               |  |           |           |                    |                 |                   |             |
+| makeMKV                 |  |           |           |                    |                 |                   |             |
 
 
-- the ubuntu submenu for now will be just common stuff for elementaryOS but may expand ** not in menus yet
+
+- the ubuntu submenu for now will be just common stuff for elementaryOS but may expand
 - There seems to be an issue with the folder name on the extract step but other than that, third party stuff seems to  be working 
 
 ||||||
