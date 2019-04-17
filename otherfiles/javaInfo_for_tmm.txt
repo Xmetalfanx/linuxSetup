@@ -1,0 +1,8 @@
+ubuntu 
+
+openjfx
+
+
+openjdk-11-jre 
+
+(11, 12 or 13 atm on Ubuntu 19.04)
