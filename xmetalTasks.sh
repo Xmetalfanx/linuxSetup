@@ -2,14 +2,16 @@ readonly dir=$(eval pwd)
 readonly functionsdir=$(eval pwd)/functions
 
 # includes
-. $functionsdir/universal/includeUniversalFunctions.cfg
-. $functionsdir/includeBasicConfigs.cfg
 
+. $functionsdir/includeBasicConfigs.cfg
+. $functionsdir/includeSpecificDistroCfg.cfg
 
 # in f_common.cfg 
 intialTasks
 
-#echo -e "Start of my usually done post-install tasks "
-#metalTasks
 
-xmetalTasks
+#xmetalTasks
+
+
+### for testing 
+adaptaPPA
