@@ -10,7 +10,6 @@
 
 # This is needed here so my scripts can use this to load other needed things 
 readonly dir=$(eval pwd)
-readonly functionsdir=$(eval pwd)/functions/
 
 . $dir/functions/includeBasicConfigs.cfg
 
@@ -36,8 +35,9 @@ while [ $x=1 ]; do
     echo -e   "3. \t Arch-based"
     echo -e   "4. \t Fedora"
     echo -e   "5. \t OpenSUSE"
-    echo -e   "6. \t Ubuntu based"
-    echo -e   "7. \t Solus"
+    echo -e   "6. \t Solus"
+    echo -e   "7. \t Ubuntu based"
+    
     
     # only for a space 
     echo -e
@@ -59,13 +59,13 @@ while [ $x=1 ]; do
       3) mainArchMenu ;;
       4) mainFedoraMenu  ;;
       5) mainOpenSuseMenu  ;;
-      6) mainUbuntuMenu ;; 
-      7) mainSolusMenu ;;
+      6) mainSolusMenu ;;
+      7) mainUbuntuMenu ;; 
 
       # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       [sS]) universalSoftwareMenu ;;
 
-      [tT])  universalThemingMenu ;; 
+      [tT]) universalThemingMenu ;; 
   
       [qQ]) quitScript  ;;
 
