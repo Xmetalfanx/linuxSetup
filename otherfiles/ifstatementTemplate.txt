@@ -1,9 +1,12 @@
-if [  "$distroBase" = "ubuntu" ]; then
-    #DEB
-elif if [  "$distroBase" = "fedora" ]; then
-    #RPM 
-elif [  "$distroBase" = "opensuse" ]; then
-    #RPM 
-elif [  "$distroBase" = "" ]; then
+
+if [ "$distroBase" = "arch" ]; then
+ 
+elif [ "$distroBase" = "fedora" ]; then
+   
+elif [ "$distroBase" = "opensuse" ]; then
+
+elif [ "$distroBase" = "solus" ]; then 
+  
+elif [ "$distroBase" = "ubuntu" ]; then
 
 fi 
