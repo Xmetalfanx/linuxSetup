@@ -29,9 +29,7 @@ function ppaBranchCheck(){
 # example 
 function PPALatestLibreOffice()
 {
-	PPAName="Libre Office"
-	packageNames="libreoffice"
-	PPASource="ppa:libreoffice/ppa"
+
     supportedBases="trusty xenial"
 		
   	# ppaRepoAddition $PPAName $PPASource
