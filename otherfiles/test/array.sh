@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OSRELEASE_UBUNTU_CODENAME=$(cat /etc/os-release | grep "^UBUNTU_CODENAME=" | cut -d '=' -f 2 | sed 's/\"//g')
+OSRELEASE_UBUNTU_CODENAME=$(grep "^UBUNTU_CODENAME="  /etc/os-release | cut -d '=' -f 2 | sed 's/\"//g')
 lsbOSRelease=$(lsb_release -sc)
 
 function ppaBranchCheck(){
