@@ -41,6 +41,7 @@ while [ $x=1 ]; do
     
     # only for a space 
     echo -e
+    echo -e   "R. \t Install ThirdParty Repos"
     echo -e   "S. \t Install Software"
 
     ## Not sure if I will keep this in this section/location
@@ -63,6 +64,8 @@ while [ $x=1 ]; do
       7) mainUbuntuMenu ;; 
 
       # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
+      [rR]) universalThirdPartyAdditionalRepos ;; 
+      
       [sS]) universalSoftwareMenu ;;
 
       [tT]) universalThemingMenu ;; 
