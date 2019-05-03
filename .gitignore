@@ -7,5 +7,5 @@
 **/*.rpm
 .git-write/*
 tmm/*
-updateinfo.txt
+updateInfo.txt
 getsetup.sh
