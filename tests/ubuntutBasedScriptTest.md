@@ -1,20 +1,19 @@
 
 ## Main Ubuntu Table
 
-Menu Tasks                 |   | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 18.10 | Ubuntu 19.04
----------------------------|---|------------------|------------------|--------------|-------------
-Update System              |   |                  |                  |              |
-Install third party repos* |   |                  |                  |              |
-Install Codecs             |   |                  |                  |              |
-                           |   |                  |                  |              |
+Menu Tasks     |   | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 18.10 | Ubuntu 19.04
+---------------|---|------------------|------------------|--------------|-------------
+Update System  |   | Not Tested       | Not Tested       | Not Tested   |
+Install Codecs |   | Not Tested       | Not Tested       | Not Tested   |
+               |   |                  |                  |              |
 
 # ElementaryOS Table
 **
 
-Menu Tasks                                                     | Test Results |
----------------------------------------------------------------|--------------|--
-Installing PPA Support, Gnome Tweak Tools, GDebi, and Synaptic |              |
-(not included yet) Install elementaryTweakTool                 |              |
+Menu Tasks                                                     | Test Results
+---------------------------------------------------------------|-------------
+Installing PPA Support, Gnome Tweak Tools, GDebi, and Synaptic | Not Tested
+(not included yet) Install elementaryTweakTool                 | Not Tested
 
 
 
