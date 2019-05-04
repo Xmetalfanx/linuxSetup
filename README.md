@@ -81,6 +81,20 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
     - Arch
     - Fedora
 
---------------------------------------------------------------------------------
+---
 
 ## [Xmetal's Task Info](/documentation/xmetalTasks.md)
+
+---
+
+# Early May 2019 Test Results 
+
+## Distro Testing 
+- [Arch Based Task ](tests/archBasedTests.md)
+- [RPM Based Distro  - Fedora and OpenSuse ](tests/rpmBasedTests.md)
+- [Solus Task ](tests/solusTests.md)
+- [Ubuntu Task Testing](test/ubuntuBasedTests.md)
+
+## Software Tests
+- [Theming Testing ](tests/themingTests.md)
+- [Web Browser Installer Tests](tests/browserImstallerTests.md)
