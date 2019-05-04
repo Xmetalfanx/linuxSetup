@@ -14,12 +14,4 @@ intialTasks
 
 
 ### for testing 
-<<<<<<< HEAD
-<<<<<<< HEAD
-plataThemePPA
-=======
-adaptaPPA
->>>>>>> f842daf... Streamlining PPA Support
-=======
-plataThemePPA
->>>>>>> feac615... work on PPA framework
+s

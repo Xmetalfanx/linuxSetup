@@ -41,6 +41,7 @@ while [ $x=1 ]; do
     
     # only for a space 
     echo -e
+    echo -e   "C. \t Install Third Party Codecs"
     echo -e   "R. \t Install ThirdParty Repos"
     echo -e   "S. \t Install Software"
 
@@ -62,6 +63,9 @@ while [ $x=1 ]; do
       5) mainOpenSuseMenu  ;;
       6) mainSolusMenu ;;
       7) mainUbuntuMenu ;; 
+
+
+      [cC]) universalCodecInstall ;; 
 
       # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
       [rR]) universalThirdPartyAdditionalRepos ;; 
