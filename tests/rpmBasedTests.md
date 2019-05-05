@@ -46,25 +46,24 @@
 
 ## Web Browser Installation 
 
-| Menu Items    |   | Fedora 29    | Fedora 30 | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
-|:--------------|:--|:-------------|-----------|--------------------|------------------|--------------------|-------------|
-| Google Chrome |   | Fail         |           |                    |                  |                    |             |
-| Chromium      |   | Not Tested   |           |                    |                  |                    | Fail        |
-| Firefox       |   | Preinstalled |           |                    |                  |                    |             |
-| Vivaldi       |   | Fail         |           |                    |                  |                    | Fail        |
+| Menu Items    |   | Fedora 29    | Fedora 30  | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
+|:--------------|:--|:-------------|------------|--------------------|------------------|--------------------|-------------|
+| Google Chrome |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Chromium      |   | Not Tested   | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
+| Firefox       |   | Preinstalled | Not Tested | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
+| Vivaldi       |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
 
 
 # Theming Installation 
 
 | Menu Items           |   | Fedora 29 | Fedora 30  | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 |:---------------------|:--|:----------|:-----------|:-------------------|:-----------------|:-------------------|:------------|
-| Install Adapta Theme |   | Pass **   | Not Tested |                    |                  |                    | Pass        |
-| Install Arc Theme    |   | Pass      | Not Tested |                    |                  |                    | Pass        |
-| Install Mint Theme   |   | Pass      | Not Tested |                    |                  |                    | Pass        |
-| Install Numix Theme  |   | Pass      | Not Tested |                    |                  |                    | Fail        |
-| Install Plata Theme  |   | Pass      | Not Tested |                    |                  |                    | Fail        |
-| All Listed Themes    |   | Fail      | Not Tested |                    |                  |                    |             |
-
+| Install Adapta Theme |   | Pass **   | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Install Arc Theme    |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Install Mint Theme   |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Install Numix Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
+| Install Plata Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
+| All Listed Themes    |   | Fail      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
 
 
 --- 
