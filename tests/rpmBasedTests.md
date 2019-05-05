@@ -8,7 +8,6 @@
 | Install Codecs             |   | Pass      | Not Tested | Not Tested         | Not Tested  | Not Tested         | Not Tested  |
 
 
-
 # Software Menus
 ## Install/Update for the specific apps
 
@@ -61,8 +60,8 @@
 | Install Adapta Theme |   | Pass **   | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
 | Install Arc Theme    |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
 | Install Mint Theme   |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
-| Install Numix Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
-| Install Plata Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
+| Install Numix Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Install Plata Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
 | All Listed Themes    |   | Fail      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
 
 
