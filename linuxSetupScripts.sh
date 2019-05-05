@@ -30,7 +30,7 @@ while [ $x=1 ]; do
     echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
     echo -e   "1. \t Update your System"
-    echo -e   "2. \t Optimizing Mirrors/Repos",,,,
+    echo -e   "2. \t Optimizing Mirrors/Repos"
 
     echo -e   "3. \t Arch-based"
     echo -e   "4. \t Fedora"
