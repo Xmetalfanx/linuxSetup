@@ -9,20 +9,33 @@
 
 
 
-# Software Menu
+# Software Menus
 ## Install/Update for the specific apps
 
-| Menu Task               |   | Fedora 29  | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
-|:------------------------|:--|:-----------|:-----------|:-------------------|:----------------|:------------------|:------------|
-| Add Common Software     |   | Pass**     | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass **     |
-| Tiny Media Manager      |   | Fail       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail ****   |
-| Etcher                  |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
-| Atom Editor             |   | Fail       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
-| Wine and/or PlayonLinux |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
-| vscode                  |   | Pass       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
-| makeMKV                 |   | Fail       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
-| DeadBeef Media Player   |   | Fail       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
-| XnViewMP                |   | Fail ***   | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail ****   |
+| Menu Task                |   | Fedora 29  | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
+|:-------------------------|:--|:-----------|:-----------|:-------------------|:----------------|:------------------|:------------|
+| Add Common Software      |   | Pass**     | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass **     |
+| Etcher                   |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
+| Wine and/or PlayonLinux  |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
+| Build Essential Packages |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
+
+## Multimedia Apps
+
+| Menu Task             |   | Fedora 29 | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
+|:----------------------|:--|:----------|:-----------|:-------------------|:----------------|:------------------|:------------|
+| Tiny Media Manager    |   | Fail      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail ****   |
+| makeMKV               |   | Fail      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
+| DeadBeef Media Player |   | Fail      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
+| XnViewMP              |   | Fail ***  | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail ****   |
+
+
+## Productivity/Office Apps 
+
+| Menu Task   |   | Fedora 29 | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
+|:------------|:--|:----------|:-----------|:-------------------|:----------------|:------------------|:------------|
+| Atom Editor |   | Fail      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
+| vscode      |   | Pass      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
+
 
 
 ** This passes without a check for third party repos first ... this feature is coming soon 
@@ -36,9 +49,9 @@
 | Menu Items    |   | Fedora 29    | Fedora 30 | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 |:--------------|:--|:-------------|-----------|--------------------|------------------|--------------------|-------------|
 | Google Chrome |   | Fail         |           |                    |                  |                    |             |
-| Chromium      |   | Not Tested   |           |                    |                  |                    |             |
+| Chromium      |   | Not Tested   |           |                    |                  |                    | Fail        |
 | Firefox       |   | Preinstalled |           |                    |                  |                    |             |
-| Vivaldi       |   | Fail         |           |                    |                  |                    |             |
+| Vivaldi       |   | Fail         |           |                    |                  |                    | Fail        |
 
 
 # Theming Installation 
