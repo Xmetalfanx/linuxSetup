@@ -51,7 +51,7 @@
 | Google Chrome |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
 | Chromium      |   | Not Tested   | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
 | Firefox       |   | Preinstalled | Not Tested | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
-| Vivaldi       |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
+| Vivaldi       |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
 
 
 # Theming Installation 
