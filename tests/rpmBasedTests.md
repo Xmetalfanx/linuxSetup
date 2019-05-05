@@ -34,7 +34,7 @@
 | Menu Task   |   | Fedora 29 | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
 |:------------|:--|:----------|:-----------|:-------------------|:----------------|:------------------|:------------|
 | Atom Editor |   | Fail      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
-| vscode      |   | Pass      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
+| vscode      |   | Pass      | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
 
 
 
