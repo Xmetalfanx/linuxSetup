@@ -14,9 +14,12 @@
 | Menu Task                |   | Fedora 29  | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
 |:-------------------------|:--|:-----------|:-----------|:-------------------|:----------------|:------------------|:------------|
 | Add Common Software      |   | Pass**     | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass **     |
-| Etcher                   |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
+| Etcher                   |   | Pass       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
 | Wine and/or PlayonLinux  |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
-| Build Essential Packages |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
+| Build Essential Packages |   | Pass       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
+
+** This passes without a check for third party repos first ... this feature is coming soon 
+
 
 ## Multimedia Apps
 
@@ -37,7 +40,6 @@
 
 
 
-** This passes without a check for third party repos first ... this feature is coming soon 
 
 *** Downloads fine but does not extract
 
