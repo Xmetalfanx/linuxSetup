@@ -13,7 +13,6 @@ readonly dir=$(eval pwd)
 
 . $dir/functions/includeBasicConfigs.cfg
 
-
 ########################################################################
 x=1
 
@@ -68,7 +67,7 @@ while [ $x=1 ]; do
       [cC]) universalCodecInstall ;; 
 
       # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
-      [rR]) universalThirdPartyAdditionalRepos ;; 
+      [rR]) universalExtraRepos ;; 
       
       [sS]) universalSoftwareMenu ;;
 
