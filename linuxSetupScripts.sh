@@ -43,6 +43,7 @@ while [ $x=1 ]; do
     echo -e   "C. \t Install Third Party Codecs"
     echo -e   "R. \t Install ThirdParty Repos"
     echo -e   "S. \t Install Software"
+    echo -e   "T. \t Theming"
 
     ## Not sure if I will keep this in this section/location
     # echo -e   "T. \t Theming\n\n"
@@ -66,8 +67,7 @@ while [ $x=1 ]; do
 
       [cC]) universalCodecInstall ;; 
 
-      # Located in /linuxSetup/tasks/functions/universal/menus/f_universal_menus.cfg
-      [rR]) universalExtraRepos ;; 
+      [rR]) thirdPartyRepoCheck ;; 
       
       [sS]) universalSoftwareMenu ;;
 
