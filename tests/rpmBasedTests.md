@@ -50,7 +50,7 @@
 | Menu Items    |   | Fedora 29    | Fedora 30  | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 |:--------------|:--|:-------------|------------|--------------------|------------------|--------------------|-------------|
 | Google Chrome |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
-| Chromium      |   | Not Tested   | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
+| Chromium      |   | Pass         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Fail        |
 | Firefox       |   | Preinstalled | Not Tested | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
 | Vivaldi       |   | Fail         | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
 
