@@ -37,12 +37,12 @@ Vivaldi       |   | Pass
 
 ## Multimedia Apps
 
-| Menu Task             |   | Solus 4.0 |
-|:----------------------|:--|:----------|
-| Tiny Media Manager    |   | Fail      |
-| makeMKV               |   | Fail      |
-| DeadBeef Media Player |   | Fail      |
-| XnViewMP              |   | Fail ***  |
+| Menu Task             |   | Solus 4.0  |
+|:----------------------|:--|:-----------|
+| Tiny Media Manager    |   | Not Tested |
+| makeMKV               |   | Not Tested |
+| DeadBeef Media Player |   | Pass       |
+| XnViewMP              |   | Not Tested |
 
 
 ## Productivity/Office Apps 
