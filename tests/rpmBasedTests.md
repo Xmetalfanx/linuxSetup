@@ -4,7 +4,7 @@
 | Menu Tasks                 |   | Fedora 29 | Fedora 30  | Opensuse Leap 42.3 | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
 |:---------------------------|:--|:----------|:-----------|:-------------------|:------------|:-------------------|:------------|
 | Update System              |   | Pass      | Not Tested | Not Tested         | Not Tested  | Not Tested         | Pass        |
-| Install third party repos* |   | Pass      | Not Tested | Not Tested         | Not Tested  | Not Tested         | Fail        |
+| Install third party repos* |   | Pass      | Not Tested | Not Tested         | Fail        | Not Tested         | Fail        |
 | Install Codecs             |   | Pass      | Not Tested | Not Tested         | Not Tested  | Not Tested         | Not Tested  |
 
 
@@ -59,11 +59,14 @@
 
 | Menu Items           |   | Fedora 29 | Fedora 30  | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 |:---------------------|:--|:----------|:-----------|:-------------------|:-----------------|:-------------------|:------------|
-| Install Adapta Theme |   | Pass **   | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
-| Install Arc Theme    |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Install Adapta Theme |   | Pass **   | Not Tested | Not Tested         | Pass             | Not Tested         | Pass        |
+| Install Arc Theme    |   | Pass      | Not Tested | Not Tested         | Fail             | Not Tested         | Pass        |
 | Install Mint Theme   |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
-| Install Numix Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
-| Install Plata Theme  |   | Pass      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Pass        |
+| Install Numix Theme  |   | Pass      | Not Tested | Not Tested         | Pass             | Not Tested         | Pass        |
+| Install Plata Theme  |   | Pass      | Not Tested | Not Tested         | Fail/not coded   | Not Tested         | Pass        |
+| Install Misc Icons   |   |           |            |                    |                  |                    |             |
+| Install Misc Themes  |   |           |            |                    |                  |                    |             |
+
 | All Listed Themes    |   | Fail      | Not Tested | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
 
 
