@@ -6,13 +6,9 @@
 
 - Optimize Mirrors
 
-- Add Yaourt
-
 - Add Sound Support
 
 - Add Archive Support
-
-- Add Arc Theme and Icon Pack
 
 ## Fedora Scripts
 
