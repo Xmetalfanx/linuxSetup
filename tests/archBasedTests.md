@@ -25,7 +25,7 @@
 | Menu Items           |   | Arch       | Manjaro    |
 |:---------------------|:--|:-----------|------------|
 | Install Adapta Theme |   | Fail       | Not Tested |
-| Install Arc Theme    |   | Not Tested | Not Tested |
+| Install Arc Theme    |   | Pass       | Not Tested |
 | Install Mint-Y Theme |   | Not Tested | Not Tested |
 | Install Numix Theme  |   | Not Tested | Not Tested |
 | Install Plata Theme  |   | Not Tested | Not Tested |
