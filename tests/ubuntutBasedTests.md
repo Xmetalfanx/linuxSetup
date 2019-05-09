@@ -53,6 +53,24 @@ Firefox       |   | Not Tested       | Not Tested       | Pass
 Vivaldi       |   | Not Tested       | Not Tested       | Fail
 
 
+## Multimedia Apps
+
+| Menu Tasks            |   | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.04 |
+|-----------------------|---|------------------|------------------|--------------|
+| Tiny Media Manager    |   | Not Tested       | Not Tested       | Not Tested   |
+| makeMKV               |   | Not Tested       | Not Tested       | Not Tested   |
+| DeadBeef Media Player |   | Not Tested       | Not Tested       | Not Tested   |
+| XnViewMP              |   | Not Tested       | Not Tested       | Not Tested   |
+
+
+## Productivity/Office Apps 
+
+| Menu Tasks  |   | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.04 |
+|-------------|---|------------------|------------------|--------------|
+| Atom Editor |   | Not Tested       | Not Tested       | Not Tested   |
+| vscode      |   | Not Tested       | Not Tested       | Not Tested   |
+
+
 
 
 ---

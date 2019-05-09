@@ -53,7 +53,6 @@ while [ $x=1 ]; do
 
     case $mainSelection in
 
-      # Located in: 
       1) universalUpdate ;;
       2) optimizeRepo ;; 
 
