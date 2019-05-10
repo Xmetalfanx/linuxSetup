@@ -27,15 +27,16 @@
 
 | Menu Task             |   | Fedora 29 | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
 |:----------------------|:--|:----------|:-----------|:-------------------|:----------------|:------------------|:------------|
-| Tiny Media Manager    |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Fail ****   |
-| makeMKV               |   | Pass      | Not Tested | Not Tested         | Fail      | Not Tested        | Not Tested  |
+| Tiny Media Manager    |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass        |
+| makeMKV               |   | Pass      | Not Tested | Not Tested         | Fail            | Not Tested        | Not Tested  |
 | DeadBeef Media Player |   | Fail      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass        |
-| XnViewMP              |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Fail ****   |
+| XnViewMP              |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass   |
 
 - What it does now is downloads the needed file and extracts it ... in a subfolder in /Downloads (the user's Downloads folder) .. for now i am not going to remove the archive file ... if the users wants to do that, fine 
 
 - not sure about MakeMKV on Leap ... it seemed to go ok .. I did not see any errors and thing worked as normal but not everything compiled 
 
+TinyMM still has the issue of reinstalling java even if it's detected (detecting needs to be fixed)... other than that ... it works 
 
 ## Productivity/Office Apps 
 
