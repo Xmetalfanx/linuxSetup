@@ -4,11 +4,10 @@
 | Menu Tasks                                                |   | Arch       | Manjaro    |
 |:----------------------------------------------------------|:--|:-----------|:-----------|
 | Update System                                             |   | Fail       | Not Tested |
-| Install Codecs                                            |   | Pass** | Not Tested |
+| Install Codecs                                            |   | Pass      | Not Tested |
 | Add Sound Support (different from just installing codecs) |   | Pass       | Not Tested |
 | Add Archive Support                                       |   | Fail       | Not Tested |
 
-**Says one of the gstream packages cant be found 
 
 
 ## Add AUR Support 
