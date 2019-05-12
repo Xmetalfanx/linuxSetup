@@ -4,10 +4,8 @@
 | Menu Tasks                 |   | Fedora 29 | Fedora 30  | Opensuse Leap 42.3 | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
 |:---------------------------|:--|:----------|:-----------|:-------------------|:------------|:-------------------|:------------|
 | Update System              |   | Pass      | Not Tested | Not Tested         | Pass        | Not Tested         | Pass        |
-| Install third party repos* |   | Pass      | Not Tested | Not Tested         | Fail        | Not Tested         | Fail        |
-| Install Codecs             |   | Pass      | Not Tested | Not Tested         | Fail**      | Not Tested         | Not Tested  |
-
-**Failing because the third party repo issue it seems .. I fix the third party repo issue and this will likely fix itself 
+| Install third party repos* |   | Pass      | Not Tested | Not Tested         | Pass        | Not Tested         | Fail        |
+| Install Codecs             |   | Pass      | Not Tested | Not Tested         | Pass       | Not Tested           | Not Tested  |
 
 
 # Software Menus
@@ -15,13 +13,12 @@
 
 | Menu Task                |   | Fedora 29  | Fedora 30  | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
 |:-------------------------|:--|:-----------|:-----------|:-------------------|:----------------|:------------------|:------------|
-| Add Common Software      |   | Pass**     | Not Tested | Not Tested         | Fail***         | Not Tested        | Pass **     |
+| Add Common Software      |   | Pass**     | Not Tested | Not Tested         | Pass**          | Not Tested        | Pass **     |
 | Etcher                   |   | Pass       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
-| Wine and/or PlayonLinux  |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Fail        |
-| Build Essential Packages |   | Pass       | Not Tested | Not Tested         | Not Tested      | Not Tested        | Pass        |
+| Wine and/or PlayonLinux  |   | Not Tested | Not Tested | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
+| Build Essential Packages |   | Pass       | Not Tested | Not Tested         | Pass     | Not Tested        | Pass        |
 
-** This passes without a check for third party repos first ... this feature is coming soon 
-*** Again this is failing due to third party repo issues 
+**Warning about package downgrades due to ffmpeg ... I will let the user decide what to do 
 
 ## Multimedia Apps
 
@@ -30,7 +27,7 @@
 | Tiny Media Manager    |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass        |
 | makeMKV               |   | Pass      | Not Tested | Not Tested         | Fail            | Not Tested        | Not Tested  |
 | DeadBeef Media Player |   | Fail      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass        |
-| XnViewMP              |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass   |
+| XnViewMP              |   | Pass      | Not Tested | Not Tested         | Pass            | Not Tested        | Pass        |
 
 - What it does now is downloads the needed file and extracts it ... in a subfolder in /Downloads (the user's Downloads folder) .. for now i am not going to remove the archive file ... if the users wants to do that, fine 
 
