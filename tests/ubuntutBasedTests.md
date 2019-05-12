@@ -25,10 +25,11 @@ Installing PPA Support, Gnome Tweak Tools, GDebi, and Synaptic | Not Tested
 | Install Mint-Y Theme |   | Not Tested   | Not Tested   | Fail          |
 | Install Numix Theme  |   | Not Tested   | Not Tested   | Pass          |
 | Install Plata Theme  |   | Not Tested   | Not Tested   |               |
+| Install misc Icons   |   |              |              |               |
+| Install misc Themes  |   |              |              |               |
 | **All Listed Themes  |   | Not Tested   | Not Tested   |               |
 |                      |   |              |              |               |
-| miscIcons            |   |              |              |               |
-| miscThemes           |   |              |              |               |
+
 
 *Lubuntu 19.04 tested
 ** in the future put miscIcons and miscThemes here too 
