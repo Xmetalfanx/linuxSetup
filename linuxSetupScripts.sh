@@ -41,6 +41,7 @@ while [ $x=1 ]; do
     # only for a space 
     echo -e
     echo -e   "C. \t Install Third Party Codecs"
+    echo -e   "I. \t Display info detected by the scripts"
     echo -e   "R. \t Install ThirdParty Repos"
     echo -e   "S. \t Install Software"
     echo -e   "T. \t Theming"
@@ -65,6 +66,8 @@ while [ $x=1 ]; do
 
 
       [cC]) universalCodecInstall ;; 
+
+      [iI]) massInfoOutput ;; 
 
       [rR]) thirdPartyRepoCheck ;; 
       
