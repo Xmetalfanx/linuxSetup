@@ -30,24 +30,23 @@ while [ $x=1 ]; do
 
     echo -e   "1. \t Update your System"
     echo -e   "2. \t Optimizing Mirrors/Repos"
-
     echo -e   "3. \t Arch-based"
     echo -e   "4. \t Fedora"
-    echo -e   "5. \t OpenSUSE"
+    
+    # Commented out just for now since there is no point to this menus .. the numbers stay the same 
+    #echo -e   "5. \t OpenSUSE"
+    
     echo -e   "6. \t Solus"
     echo -e   "7. \t Ubuntu based"
     
-    
+
     # only for a space 
-    echo -e
+    echo
     echo -e   "C. \t Install Third Party Codecs"
     echo -e   "I. \t Display info detected by the scripts"
     echo -e   "R. \t Install ThirdParty Repos"
     echo -e   "S. \t Install Software"
     echo -e   "T. \t Theming"
-
-    ## Not sure if I will keep this in this section/location
-    # echo -e   "T. \t Theming\n\n"
 
     echo -e   "q. \t Exit to Prompt \n\n"
     read -p   "Your Choice?:" mainSelection
