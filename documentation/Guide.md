@@ -32,10 +32,8 @@
     - Install trizen option
 2. [Submenu] Manjaro Specific
     - Chroot into Manjaro 
-3.  [for Manjaro AND/OR Arch] Optmize Mirrors 
-    - I may have to do some adjusting on stuff like Anarchy Linux (an arch installer), if funny business crops up s
- 
-4.  Reset to original mirror list
+  
+3.  Reset to original mirror list
     - Resets to the original mirror list before any of my scripts did anything 
       - note to self: put exact name and location here 
 - 
@@ -44,6 +42,7 @@
     - Adds support for file archive formats 
 
 --- 
+
 ## Fedora Script
 
 1. Add Fedy
