@@ -89,7 +89,7 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 ---
 
-# Early May 2019 Test Results 
+# Test Results 
 
 ## Distro Testing 
 - [Arch Based Task ](tests/archBasedTests.md)
