@@ -1,22 +1,22 @@
 # Xmetal Linux Script
 
-
 ## Main Menu 
 1.   Update your System
     - Updates the system via the command-line
   
 2.  Optmize Repos/Mirrors
     - Works on Fedora with DNF
-    - Works on Manjaro
-    - [Coming Soon] Will work on Arch
+    - Works on Manjaro or Arch
+      - Different code (I think) for Manjaro or Arch 
   
 3. Add Third Party Repos
-   - Universal function is run here
-   - Fedora - Adds both RPM Fusion Repos 
-   - OpenSuse - Adds Pacman Repo(s)
+   - Universal function
+     - Fedora - Adds both RPM Fusion Repos 
+     - OpenSuse - Adds Pacman Repo(s)
 
 4.  Adds Codecs
-    - Adds needed Codecs on Arch, Fedora, and OpenSuse 
+    - Adds needed Codecs on Arch, Fedora, and OpenSuse
+      - idea/note to self: only use third party repos if i have to ... just in case the user doesn't want to add them
 
 5.  [Menu] Arch-based
 6.  [Menu] Fedora
@@ -24,38 +24,41 @@
 8.  [Menu] Ubuntu based
 9.  [Menu] Solus
 
-
-s.   [Menu] Install Software
-      - Menu item to install different software 
-
 --- 
-
 ## Arch Script
 
 1. [Sub-Menu] Add AUR Support 
     - Install yay option
     - Install trizen option
 2. [Submenu] Manjaro Specific
-3. Add Sound Support
-    - Adds sound support 
-4. Add Archive Support
-    - Adds support for file archives 
+    - Chroot into Manjaro 
+3.  [for Manjaro AND/OR Arch] Optmize Mirrors 
+    - I may have to do some adjusting on stuff like Anarchy Linux (an arch installer), if funny business crops up s
+ 
+4.  Reset to original mirror list
+    - Resets to the original mirror list before any of my scripts did anything 
+      - note to self: put exact name and location here 
+- 
+5. Add Sound Support
+6. Add Archive Support
+    - Adds support for file archive formats 
 
-
-
+--- 
 ## Fedora Script
 
 1. Add Fedy
+   
 2. Perform Common Fedy Tasks (all these tasks at once)
-
-    - Fedy Tasks
+    - Fedy Tasks -
       1. Install Archive Support
       2. Install Microsoft Fonts
-      3. Install Codecs
-      4. Install Theme Engines
-      5. Improve Font Rendering
+      3. Install Theme Engines
+      4. Improve Font Rendering
 
-## OpenSuse Script
+      - note to self: this all needs testing 
+
+
+## OpenSuse Script - no longer in Menu, but planned for later 
 
 1. Add Cinnamon Repo
 2. Add Plasma 5 Repos
@@ -72,12 +75,46 @@ s.   [Menu] Install Software
 4. Disable Unstable Repo (useful for when the Solus Team says "Dont Update, if you're using the Unstable Repo")
    - (note to self: What is the difference between this and #2? .... this seems redundent)
 
-
+---
 ## Ubuntu Script
 
-Removed most content now that things are moving to Universal functions 
+1. Decide if common (note: not all) apps associated with a particular PPA are installed by default when the PPA is added
+    - Default = No ... nothing is installed when the PPA is added, let the user decide
 
 - Different tasks like "automatically setting up a number of tasks, post ElementaryOS install, will likely go here
+
+--- 
+## Software Menu 
+- When done/working the tasks below should NOT depend on what distro you are running ... just (when done) "is it still supported or not" 
+
+
+1. Install mass software located in the $software variable in the f_variables.cfg file 
+
+2. [Sub-Menu] Web Browsers 
+   1. Google Chrome
+   2. Chromium
+   3. Firefox
+   4. Vivaldi 
+
+3. [Sub-Menu] Office/Productivity/Programming Related Apps
+   1. Atom (Text/Code) Editor
+   2. Microsoft VSCode
+
+4. [Sub-Menu] Multimedia Apps
+   1. Tiny Media Manager 
+   2. MakeMKV
+    -  Currently having issues on Opensuse Leap 
+   3. Audio Recorder 
+   4. XNViewMP 
+   5. Deadbeef Media Player 
+
+    K. Show info (without installing or compiling anything) about MakeMKV Key and when it expires
+        - the app is free but you have to keep changing the key from month to month or on upgrades (I think)
+
+5. [Sub-Menu] Distro Specific tasks
+   1. (Example) setup synaptic, gdebi and stuff like that in ElementaryOS
+   
+   - This is for commonly done tasks that people do post-install, for specific distros 
 
 --- 
 ## Theming Scripts 
@@ -87,3 +124,11 @@ Removed most content now that things are moving to Universal functions
 3. Install Mint-Y Theme
 4. Install Numix Theme
 5. Install Plata Theme
+6. Install Misc. Icons
+7. Install Misc Themes 
+
+A. All of the Above
+
+- Tasks 6 and 7 are customized to each distro base based on what is in the repos and "what i find cool" 
+
+- Should (if available), work on any distro base ... whether I have all the needed packages for "all possible DEs/WMs" ... that is a work in progress
