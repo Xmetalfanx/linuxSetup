@@ -88,6 +88,9 @@
 
 
 1. Install mass software located in the $software variable in the f_variables.cfg file 
+    - Variety Wallpaper Changer/Gnome Note: 
+        - Tip Source: from (Variety/Gnome Github issue)[https://github.com/varietywalls/variety/issues/12]
+        - Install a Gnome Extention such as (KStatusNotifierItem/AppIndicator Support)[https://extensions.gnome.org/extension/615/appindicator-support/].  I can tell you from first-hand experience, this works ... the only issue I see is sometimes when Gnome does a major version update, some extensions break until they can get updated ... you MAY run into that, but overall this solution works 
 
 2. [Sub-Menu] Web Browsers 
    1. Google Chrome
