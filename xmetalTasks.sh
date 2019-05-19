@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 readonly dir=$(eval pwd)
 readonly functionsdir=$(eval pwd)/functions
 
