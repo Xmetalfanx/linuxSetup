@@ -57,7 +57,7 @@
 | Menu Task             |   | Arch    | Manjaro    |
 |-----------------------|---|---------|------------|
 | Tiny Media Manager    |   | Pass    | Not Tested |
-| makeMKV               |   | Pass    | Not Tested |
+| makeMKV               |   | RETEST    | Not Tested |
 | Audio Recorder        |   | Failed* | Not Tested |
 | DeadBeef Media Player |   | Pass    | Not Tested |
 | XnViewMP              |   | Pass    | Not Tested |
