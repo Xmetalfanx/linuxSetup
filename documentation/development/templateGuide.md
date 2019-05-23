@@ -54,3 +54,7 @@ function installAudioRecorderPPA()
 2)  i NEED TO THEN ADD the list of supported bases to each ppa function 
 
 3) I need to go through the list of distros on "supportedBases"  
+
+################################################################################################################
+
+flatpak app installing should call installFlatpakApp which checks for flatpak support, "is flathub enabled" first 
