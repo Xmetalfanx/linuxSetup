@@ -22,19 +22,20 @@
 ## Theming Menu 
 - for theming i am focusing testing on the official flavors vs "theming on Linux Lite" (like Xubuntu anyway), or Linux Mint 
 
-| Menu Items           |   | Ubuntu 16.04 | Ubuntu 18.04 | Ubuntu 19.04* |
-|----------------------|---|--------------|--------------|---------------|
-| Install Adapta Theme |   | Not Tested   | Fail         | Fail          |
-| Install Arc Theme    |   | Not Tested   | Not Tested   | Fail          |
-| Install Mint-Y Theme |   | Not Tested   | Not Tested   | Fail          |
-| Install Numix Theme  |   | Not Tested   | Not Tested   | Pass          |
-| Install Plata Theme  |   | Not Tested   | Not Tested   |               |
-| Install misc Icons   |   |              |              |               |
-| Install misc Themes  |   |              |              |               |
-| **All Listed Themes  |   | Not Tested   | Not Tested   |               |
+| Menu Items           |   | Ubuntu 16.04 | Ubuntu 18.04   | Ubuntu 19.04* |
+|----------------------|---|--------------|----------------|---------------|
+| Install Adapta Theme |   | Not Tested   | Fail           | Fail          |
+| Install Arc Theme    |   | Not Tested   | Pass           | Fail          |
+| Install Mint-Y Theme |   | Not Tested   | Not Coded/Fail | Fail          |
+| Install Numix Theme  |   | Not Tested   | Pass           | Pass          |
+| Install Plata Theme  |   | Not Tested   | Fail           |               |
+| Install misc Icons   |   |              | Fail           |               |
+| Install misc Themes  |   |              |                |               |
+| **All Listed Themes  |   | Not Tested   | Not Tested     |               |
 
 *Lubuntu 19.04 tested
-** in the future put miscIcons and miscThemes here too
+
+- Plata's PPA gets added but the theme doesn't install 
 
 ---
 ## Software Menu
@@ -42,18 +43,19 @@
 | Menu Task                |   | Ubuntu 16.04 | Ubuntu 18.04 | Ubuntu 19.04 |
 |--------------------------|---|--------------|--------------|--------------|
 | Add Common Software      |   | Not Tested   | Pass         | Pass         |
-| Etcher                   |   | Not Tested   | Not Tested   | Not Tested   |
-| Wine and/or PlayonLinux  |   | Not Tested   | Not Tested   | Not Tested   |
+| Etcher                   |   | Not Tested   | Pass         | Not Tested   |
+| Wine and/or PlayonLinux  |   | Not Tested   | Pass         | Not Tested   |
 | Build Essential Packages |   | Not Tested   | Pass         | Pass         |
 
 ---
 
 ## Web Browser Menu 
+
 | Menu Tasks    |   | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.04 |
 |---------------|---|------------------|------------------|--------------|
 | Google Chrome |   | Not Tested       | Pass             | Fail         |
 | Chromium      |   | Not Tested       | Pass             | Pass         |
-| Firefox       |   | Not Tested       | Not Tested       | Pass         |
+| Firefox       |   | Not Tested       | Pass             | Pass         |
 | Vivaldi       |   | Not Tested       | Pass             | Fail         |
 
 - Vivaldi install passes on two tests (two distros tested )
@@ -80,7 +82,6 @@
 | Atom Editor |   | Not Tested       | Fail             | Not Tested   |
 | vscode      |   | Not Tested       | Pass             | Not Tested   |
 
-- Atom DEB downloads but fails to install 
 
 ---
 
