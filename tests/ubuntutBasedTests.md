@@ -80,8 +80,10 @@
 | Atom Editor |   | Not Tested       | Fail             | Not Tested   |
 | vscode      |   | Not Tested       | Pass             | Not Tested   |
 
+- Atom DEB downloads but fails to install 
 
 ---
+
 N/A = Not Applicable
 
 Testing these on all the Ubuntu flavors and variants (Linux Lite, ElementaryOS, ..etc) will be a problem for me... where it says "ubuntu" the test IS FOR Ubuntu
