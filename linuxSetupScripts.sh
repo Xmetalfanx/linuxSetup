@@ -59,7 +59,7 @@ while [ $x=1 ]; do
       # Located in /tasks/functions/f_mainMenus.cfg
       3) mainArchMenu ;;
       4) mainFedoraMenu  ;;
-      5) mainOpenSuseMenu  ;;
+      5) mainOpenSUSEMenu  ;;
       6) mainSolusMenu ;;
       7) mainUbuntuMenu ;; 
 
