@@ -4,11 +4,11 @@
 
 
 ## Main Ubuntu Table
+
 | Menu Tasks     |   | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.04 *   |
 |----------------|---|------------------|------------------|------------------|
 | Update System  |   | Not Tested       | Pass             | Pass             |
-| Install Codecs |   | Not Tested       | Not Tested       | Not Coded/Tested |
-
+| Install Codecs |   | Not Coded/Tested | Not Coded/Tested | Not Coded/Tested |
 ---
 
 ## ElementaryOS Table
@@ -68,8 +68,9 @@
 |-----------------------|---|------------------|------------------|--------------|
 | Tiny Media Manager    |   | Not Tested       | Not Coded        | Not Tested   |
 | makeMKV               |   | Not Tested       | Pass             | Not Tested   |
-| DeadBeef Media Player |   | Not Tested       | Not Coded        | Not Tested   |
-| XnViewMP              |   | Not Tested       | Not Tested       | Not Tested   |
+| DeadBeef Media Player |   | Not Tested       | Pass             | Not Tested   |
+| XnViewMP              |   | Not Tested       | Pass             | Not Tested   |
+| Audio Recorder        |   | Not Tested       | Not Tested       | Not Tested   |
 
 - listing TMM as a fail for now since java is NOT DETECTED but DOESN'T install ... issue is ... it's not that it doesn't work ... I just haven't code "install java" for Ubuntu base yet ... it's not done yet 
 
