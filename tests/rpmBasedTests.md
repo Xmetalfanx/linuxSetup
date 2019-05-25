@@ -24,14 +24,13 @@
 
 ## Multimedia Apps
 
-
 | Menu Task             |   | Fedora 29  | Fedora 30                     | Opensuse Leap 42.3 | OpensuseLeap 15   | OpensuseLeap 15.1 | Opensuse TW |
 |-----------------------|---|------------|-------------------------------|--------------------|-------------------|-------------------|-------------|
 | Tiny Media Manager    |   | Pass       | Fail - Downloads, Doesn't run | Not Tested         | Pass              | Pass              | Pass        |
 | makeMKV               |   | Not Tested | Pass                          | Not Tested         | Not Tested        | Not Tested        | Pass        |
 | DeadBeef Media Player |   | Fail       | Fail                          | Not Tested         | Fail - Dep issues | Not Tested        | Pass        |
-| XnViewMP              |   | Pass       | Not Tested                    | Not Tested         | Pass              | Not Tested        | Pass        |
-
+| XnViewMP              |   | Pass       | Not Tested                    | Not Tested         | Pass              | Pass              | Pass        |
+| Audio Recorder        |   |            |                               |                    |                   |                   |             |
 
 - TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs 
 
