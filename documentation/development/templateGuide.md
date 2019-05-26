@@ -56,5 +56,19 @@ function installAudioRecorderPPA()
 3) I need to go through the list of distros on "supportedBases"  
 
 ################################################################################################################
+# Idea 
+function programFoobar
+{
+    progName=""
+    progTitle=""
+    programHomepage=""
+    debURL=""
+    rpmURL=""
+    snapName=""
+    flatpak=""
+    appImageURL=""
 
-flatpak app installing should call installFlatpakApp which checks for flatpak support, "is flathub enabled" first 
+
+
+
+}
