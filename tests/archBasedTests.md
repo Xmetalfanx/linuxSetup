@@ -8,7 +8,7 @@
 | Add Sound Support (different from just installing codecs) |   | Pass | Not Tested |
 | Add Archive Support                                       |   | Pass | Not Tested |
 
-- The Archive Support fail is likely due to me reoganizing the menu 
+- The Archive Support fail is likely due to me reorganizing the menu 
 
 ---
 ## Add AUR Support 
@@ -57,24 +57,21 @@
 
 ## Multimedia Apps
 
-| Menu Task             |   | Arch    | Manjaro    |
-|-----------------------|---|---------|------------|
-| Tiny Media Manager    |   | Pass    | Not Tested |
-| makeMKV               |   | Pass    | Not Tested |
+| Menu Task             |   | Arch | Manjaro    |
+|-----------------------|---|------|------------|
+| Tiny Media Manager    |   | Pass | Not Tested |
+| makeMKV               |   | Pass | Not Tested |
 | Audio Recorder        |   | Pass | Not Tested |
-| DeadBeef Media Player |   | Pass    | Not Tested |
-| XnViewMP              |   | Pass    | Not Tested |
-
+| DeadBeef Media Player |   | Pass | Not Tested |
+| XnViewMP              |   | Pass | Not Tested |
 
 # Software Menus
 ## Install/Update for the specific apps
 
-| Menu Task                         |   | Arch       | Manjaro    |
-|-----------------------------------|---|------------|------------|
-| Add Common Software               |   | Pass       | Not Tested |
-| Etcher                            |   | Not Tested | Not Tested |
-| Wine and/or PlayonLinux           |   | Pass       | Not Tested |
-| Build Essential Packages          |   | Pass       | Not Tested |
-| Install Fish Shell and Oh-My-Fish |   | Pass       | Pass       |
-
-&&& = Needs the AUR 
+| Menu Task                         |   | Arch | Manjaro    |
+|-----------------------------------|---|------|------------|
+| Add Common Software               |   | Pass | Not Tested |
+| Etcher                            |   | Pass | Not Tested |
+| Wine and/or PlayonLinux           |   | Pass | Not Tested |
+| Build Essential Packages          |   | Pass | Not Tested |
+| Install Fish Shell and Oh-My-Fish |   | Pass | Pass       |
