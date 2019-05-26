@@ -61,11 +61,9 @@
 |-----------------------|---|---------|------------|
 | Tiny Media Manager    |   | Pass    | Not Tested |
 | makeMKV               |   | Pass    | Not Tested |
-| Audio Recorder        |   | Failed* | Not Tested |
+| Audio Recorder        |   | Pass | Not Tested |
 | DeadBeef Media Player |   | Pass    | Not Tested |
 | XnViewMP              |   | Pass    | Not Tested |
-
-*Failing due to snap not being installed 
 
 
 # Software Menus
