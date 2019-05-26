@@ -6,7 +6,7 @@
 | Update System                                             |   | Pass | Not Tested |
 | Install Codecs                                            |   | Pass | Not Tested |
 | Add Sound Support (different from just installing codecs) |   | Pass | Not Tested |
-| Add Archive Support                                       |   | Fail | Not Tested |
+| Add Archive Support                                       |   | Pass | Not Tested |
 
 - The Archive Support fail is likely due to me reoganizing the menu 
 
@@ -60,7 +60,7 @@
 | Menu Task             |   | Arch    | Manjaro    |
 |-----------------------|---|---------|------------|
 | Tiny Media Manager    |   | Pass    | Not Tested |
-| makeMKV               |   | RETEST  | Not Tested |
+| makeMKV               |   | Pass    | Not Tested |
 | Audio Recorder        |   | Failed* | Not Tested |
 | DeadBeef Media Player |   | Pass    | Not Tested |
 | XnViewMP              |   | Pass    | Not Tested |
