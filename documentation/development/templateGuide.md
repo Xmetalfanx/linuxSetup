@@ -64,11 +64,16 @@ function programFoobar
     programHomepage=""
     debURL=""
     rpmURL=""
+
+    # Universal Apps 
     snapName=""
+    snapType=""
     flatpak=""
     appImageURL=""
 
-
-
-
 }
+
+
+it will probably be best clearing out (say removing the rpmURL line of that is not used) when i am using these ... this should stay as complete as possible here so i can copy and paste this later on 
+
+IF there are say DEB RPM, and snaps avaiable ... I say fill out all the info even if only some are used ... I can always switch things later with no effort at all that way 
