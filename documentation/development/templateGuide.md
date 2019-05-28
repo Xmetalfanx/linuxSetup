@@ -1,90 +1,195 @@
-### Idea
 
-#### AUR install 
 
--)  Call 'aurInstall' 
-    1) takes $packageName as an argument
-    2)  pass to a function to check if trizen or yay is installed
-        1)  if both are installed, the user is prompted for a menu for which one they rather use (if you are that advanced, and extra menu isn't that bad ... after all you are on arch)
-            -)  hmm this makes me think ... should I somehow make a default option so if a user has BOTH installed but wants to set one (in my scripts) as default, they can ... that would mean less prompts.
-        2) if one or the other is installed, the right steps are taking (using $packageName)
+# <u>Non-Repo Installs</u>
 
-I can see a name conlusion issue, with me getting goofed up
+## Flatpak and Snap
 
-- installYay and installTrizen = to actually install yay or trizen
+### Flatpaks
+
+- ??? I think i am mixing up the "Add Flatpak Repo" and "Add Flatpak Software that is a FP" here 
+
+
+- *What gets passed*
+
+  - **programName/programTitle**, 
+  - **flatpakInfo**
+  - **flatpakRepo**
+
+  ​
+
+- <u>installFlatpakApp</u>: `flatpak install $flatpakInfo $flatpakRepo` 
+
+- Example 
+
+### Snaps
+
+- *What gets passed*
+
+  - **programName/programTitle**, 
+- **snapName**, and 
+- **snapType** 
+- Function
+  - <u>installSnapApp</u>: `snap install (foobar) $snapName`
+    - the foobar would be `--classic` or `--beta` based on what $snapType is 
+    - *$snapType* has to be passed but the install line is doing what it does BASED ON $snapType ... that is why it is not in the install line 
 
 ---
-## ppafunction Template
-This is the setup for adding a PPA function
 
-### ppaFunction format 
 
-function PPAName
+
+# Tarball, Zip, RPM, DEB, Appimages
+
+- function name: ***metaExternalDownload***
+  - What this function does 
+    - Strips info based on the URL (for use later on)
+    - Downloads any of the file extensions (listed below)
+    - Extracts/Installs
+      - Extract zip, and tar files
+      - Installs RPM (using zypper or dnf vs "rpm -i" since the former handles dependencies better)
+      - Asks if a user wants to "+x" the AppImage
+- Remember: the third party download function(s), handles 
+  - *.tar.gz|.tgz|.tar.bz2|.zip*
+  - *.deb|.rpm|*
+    - "Handle DL" step should install ... .
+    - right now, i switched from "rpm -i" on RPM files to `dnf` or `zypper` because they seems they handle dependencies when rpm -i doesn't do that
+  - *.AppImage*
+    - <u>todo</u>: code to ASK the user if they want the script to +x for them should be in the "extract/handle" step.... NONE of that (or even instructions how to run) should be in individual app locations 
+
+
+---
+
+## Install from the AUR
+
+1. Call 'aurInstall' 
+   - What gets passed
+     - **packageName** 
+2. Pass to a function to check if *trizen* or *yay* is installed
+   - if both are installed, the user is prompted for a menu for which one they rather use (if you are that advanced, and extra menu isn't that bad ... after all you are on arch)
+     - if one or the other is installed, the right steps are taken (using *packageName* )
+
+- function *installYay* and *installTrizen* = to actually install yay or trizen, not apps via those two AUR Helpers
+
+------
+
+## Universal App Function 
+
+- Off the top of my head, the idea should be to use this and ANY OF THE options above should work
+
+IN THEORY, I should be able to pass anything that downloads these formats to *metaExternalDownload* with the right (say "debURL" or "tarballURL") as an argument
+
+The example below is a general guide 
+
+```
+function programFoobar`
 {
-    # The General name of the app or program you are using the PPA for
-	PPAName=""
-
-    # package name or names that will be installed 
-	packageNames=""
-
-    # this is the PPA source in the forum of "ppa:nameOfPPA/ppa" 
-
-}
-
-#### Example 
-
-function installAudioRecorderPPA()
-{
-
-	PPAName="Audio Recorder"
-	PPASource=ppa:audio-recorder/ppa
-
-	packageNames=audio-recorder
-	supportedBase=""
-
-	addPPAFunction $PPAName $PPASource
-
-	$install $packageNames
-
-}
-
-- supported base -  is something I have not put into practice yet, but the idea is to list bases that the ppa is meant to work for and IF you are on some other base, the ppa will not install 
-
-1) I need the name of the distro you are on 
-2)  i NEED TO THEN ADD the list of supported bases to each ppa function 
-
-3) I need to go through the list of distros on "supportedBases"  
-
-################################################################################################################
-# Idea 
-
-
-- Remember: the third party download function(s), handle 
-  - .tar.gz|.tgz|.tar.bz2|.zip|
-  - .deb|.rpm|
-    - "Handle DL" step should install ... .right now i switched from "rpm -i" on RPM files to dnf or zypper because it seems they handle dependencies when rpm -i doesn't do that
-  - .AppImage
-    - code to ASK the user if they want the script to +x for them should be in the "extract/handle" step.... NONE of that (or even instructions how to run) should be in individual app locations 
-
-IN THEORY, I should be able to pass anything that downloads these formats to metaExternalDownload with the right (say "debURL" or "tarballURL" as an argument and it should work )
-
-function programFoobar
-{
-    progName=""
-    progTitle=""
+    progName=""`
+    progTitle=""`
     programHomepage=""
     debURL=""
     rpmURL=""
+    tarURL=""
 
-    # Universal Apps 
+     # Universal Apps 
     snapName=""
     snapType=""
+
     flatpak=""
+
     appImageURL=""
 
+    ## template does not assume two cases are the same 
+    ## if an app is only in one format (Etcher being only an AppImage comes to mind). the case check below is NOT needed.
+
+    case $distroBase in 
+
+        arch) ;; 
+
+        fedora) ;; 
+
+        opensuse) ;; 
+
+        solus) ;;
+
+        ubuntu)  ;; 
+
+    esac
+
 }
+```
 
+- it will probably be best clearing out (say removing the rpmURL line of that is not used) when i am using these ... this should stay as complete as possible here so i can copy and paste this later on 
+- IF there are say DEB RPM, and snaps available ... I say fill out all the info even if only some are used ... I can always switch things later with no effort at all that way 
+- if two of the cases 
 
-it will probably be best clearing out (say removing the rpmURL line of that is not used) when i am using these ... this should stay as complete as possible here so i can copy and paste this later on 
+---
 
-IF there are say DEB RPM, and snaps available ... I say fill out all the info even if only some are used ... I can always switch things later with no effort at all that way 
+## PPA Related
+
+- **ppafunction Template**
+
+This is the setup for adding a PPA function
+
+```
+function NamePPA
+{
+    # The General name of the app or program you are using the PPA for
+    PPAName=""
+
+    # package name or names that will be installed 
+    packageNames=""
+
+    # this is the PPA source in the forum of     "ppa:nameOfPPA/ppa" 
+
+}
+```
+
+#### Example
+
+```
+function installAudioRecorderPPA()
+{
+
+    PPAName="Audio Recorder"
+    PPASource="ppa:audio-recorder/ppa"
+    
+    # new idea at the time of writing this guide
+    # These are seperated by a space
+    PPAPackages="" 
+
+    packageNames=audio-recorder
+	supportedBase="xenial bionic cosmic disco"
+
+    addPPAFunction $PPAName $PPASource
+
+    $install $packageNames
+
+}
+```
+
+- <u>supported base</u> - the list of ubuntu bases the ppa supports 
+  - separate by spaces only
+  - ??? - I think I should have a case/if statement around the install code ... maybe even a var to control that "$ppaInstallApp" or something ... if yes/true ... the app installs ... if not ... it returns to the menu 
+    - apps listed in PPAPackages var 
+
+---
+
+## (Summary) Functions - What to pass/what is needed
+
+- This info is a summary of what is above
+
+  - <u>Snap Installs</u>,
+
+    - First Argument is the snap name  (EXACTLY)
+    - The Second Argument is the snap type 
+      - examples
+        - classic - installs with `snap install --classic`
+        - beta - installs with `snap install --beta` (branch)
+
+  - <u>Flatpak Installs</u>,
+
+  -  <u>Third Party *(DEB, AppImage, Tarballs, ..etc)*</u>
+
+    - the first argument is the appName 
+    - the second argument varies but it is the link to the file, to be downloaded
+
+    ​
