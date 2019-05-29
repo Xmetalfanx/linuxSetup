@@ -42,6 +42,8 @@
 |-------------|---|-----------|-----------|--------------------|-----------------|-------------------|-------------|
 | Atom Editor |   | Fail      | Pass      | Not Tested         | Pass            | Pass              | Fail        |
 | vscode      |   | Pass      | Pass      | Not Tested         | Pass            | Pass              | Pass        |
+| Typora      |   | Pass      | Pass      | Not Tested         | Pass            | Pass              | Pass        |
+
 
 - Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine 
 

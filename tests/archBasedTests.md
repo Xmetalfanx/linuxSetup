@@ -48,6 +48,7 @@
 |-------------|---|--------|------------|
 | Atom Editor |   | Pass** | Not Tested |
 | vscode      |   | Pass   | Not Tested |
+| Typora      |   | Pass   | Not Tested |
 
 **Passes but has some artifacts in output ... look into this 
     - Download is fine 
