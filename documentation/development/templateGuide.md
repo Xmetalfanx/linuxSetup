@@ -12,7 +12,7 @@
 - *What gets passed*
 
   - **programName/programTitle**, 
-  - **flatpakInfo**
+  - **flatpakName**
   - **flatpakRepo**
 
   ​
@@ -20,6 +20,8 @@
 - <u>installFlatpakApp</u>: `flatpak install $flatpakInfo $flatpakRepo` 
 
 - Example 
+
+  - TODO
 
 ### Snaps
 
