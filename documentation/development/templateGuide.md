@@ -6,19 +6,15 @@
 
 ### Flatpaks
 
-- ??? I think i am mixing up the "Add Flatpak Repo" and "Add Flatpak Software that is a FP" here 
-
-
-- *What gets passed*
-
+- *What gets passed* (in order)
   - **programName/programTitle**, 
   - **flatpakName**
   - **flatpakRepo**
 
-  ​
+
+
 
 - <u>installFlatpakApp</u>: `flatpak install $flatpakInfo $flatpakRepo` 
-
 - Example 
 
   - TODO
@@ -57,25 +53,30 @@
   - *.AppImage*
     - <u>todo</u>: code to ASK the user if they want the script to +x for them should be in the "extract/handle" step.... NONE of that (or even instructions how to run) should be in individual app locations 
 
-
 ---
 
 ## Install from the AUR
 
-1. Call 'aurInstall' 
+1. Call *aurAppInstall*
+   
+   - * name of function may change later 
+   
    - What gets passed
      - **packageName** 
-2. Pass to a function to check if *trizen* or *yay* is installed
-   - if both are installed, the user is prompted for a menu for which one they rather use (if you are that advanced, and extra menu isn't that bad ... after all you are on arch)
-     - if one or the other is installed, the right steps are taken (using *packageName* )
+   
+2. what happens in aurAppInstall
 
-- function *installYay* and *installTrizen* = to actually install yay or trizen, not apps via those two AUR Helpers
+   1. Pass to a function to check if *trizen* or *yay* is installed
+
+   - ​	if both are installed, the user is prompted for a menu for which one they rather use (if you are that advanced, and extra menu isn't that bad ... after all you are on arch)
+     - ​	if one or the other is installed, the right steps are taken using that one
+       - (if a user has one but not the other and wants to try the other, this may be an issue i need to address down the line )
+
+- functions *installYay* and *installTrizen* = to actually install yay or trizen, not apps via those two AUR Helpers
 
 ------
 
 ## Universal App Function 
-
-- Off the top of my head, the idea should be to use this and ANY OF THE options above should work
 
 IN THEORY, I should be able to pass anything that downloads these formats to *metaExternalDownload* with the right (say "debURL" or "tarballURL") as an argument
 
@@ -119,9 +120,12 @@ function programFoobar`
 }
 ```
 
-- it will probably be best clearing out (say removing the rpmURL line of that is not used) when i am using these ... this should stay as complete as possible here so i can copy and paste this later on 
-- IF there are say DEB RPM, and snaps available ... I say fill out all the info even if only some are used ... I can always switch things later with no effort at all that way 
-- if two of the cases 
+- **Supported formats**
+  - tar.gz. tgz. tar.bz2, DEB, RPM, AppImage 
+- it will probably be best clearing out (say removing the rpmURL line of that doesn't deal with RPM installs for that app) when i am using these ... 
+  - this should stay as complete as possible here so i can copy and paste this later on 
+- IF there are say DEB RPM, and snaps available ... I say fill out all the info even if only some are used ... I can always switch things later with no effort at all that way
+  - example - this means I may use a DEB for the ubuntu base, but i can then switch later with the snap info for that app already filled out  
 
 ---
 
@@ -181,17 +185,21 @@ function installAudioRecorderPPA()
 
   - <u>Snap Installs</u>,
 
+    - [Idea] Shouldn't i have the first argument as the *progName* (pushing the snap name to second, and *snapType* to third argument)
     - First Argument is the snap name  (EXACTLY)
     - The Second Argument is the snap type 
       - examples
         - classic - installs with `snap install --classic`
-        - beta - installs with `snap install --beta` (branch)
-
-  - <u>Flatpak Installs</u>,
-
+      - beta - installs with `snap install --beta` (branch)
+  
+- <u>Flatpak Installs</u>,
+  
+  1. $flatpakRepo (example "flathub" ... i think)
+    2. $flatpakName - EXACT name of flatpak
+  
   -  <u>Third Party *(DEB, AppImage, Tarballs, ..etc)*</u>
-
-    - the first argument is the appName 
+  
+  - the first argument is progName/progTitle (I haven't decided  yet)
     - the second argument varies but it is the link to the file, to be downloaded
-
-    ​
+  
+    
