@@ -6,9 +6,9 @@
 
 
 ########################################################################
-# Import Functions 
+# Import Functions
 
-# This is needed here so my scripts can use this to load other needed things 
+# This is needed here so my scripts can use this to load other needed things
 readonly dir=$(eval pwd)
 
 . $dir/functions/includeBasicConfigs.cfg
@@ -19,7 +19,7 @@ x=1
 #Clears Screen
 #clear
 
-# in f_common.cfg 
+# in f_common.cfg
 intialTasks
 
 
@@ -29,7 +29,7 @@ function mainMenu()
 
     while [ $x=1 ]; do
 
-        #paddingBorder  
+        #paddingBorder
 
         echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
@@ -37,15 +37,13 @@ function mainMenu()
         echo -e   "2. \t Optimizing Mirrors/Repos"
         echo -e   "3. \t Arch-based"
         echo -e   "4. \t Fedora"
-        
-        # Commented out just for now since there is no point to this menus .. the numbers stay the same 
-        #echo -e   "5. \t OpenSUSE"
-        
+        echo -e   "5. \t OpenSUSE"
+
         echo -e   "6. \t Solus"
         echo -e   "7. \t Ubuntu based"
-        
 
-        # only for a space 
+
+        # only for a space
         echo
         echo -e   "C. \t Install Third Party Codecs"
         echo -e   "I. \t Display info detected by the scripts"
@@ -60,31 +58,31 @@ function mainMenu()
         case $mainSelection in
 
           1) universalUpdate ;;
-          2) optimizeRepo ;; 
+          2) optimizeRepo ;;
 
           # Located in /tasks/functions/f_mainMenus.cfg
           3) mainArchMenu ;;
           4) mainFedoraMenu  ;;
           5) mainOpenSUSEMenu  ;;
           6) mainSolusMenu ;;
-          7) mainUbuntuMenu ;; 
+          7) mainUbuntuMenu ;;
 
 
-          [cC]) universalCodecInstall ;; 
+          [cC]) universalCodecInstall ;;
 
-          [iI]) massInfoOutput ;; 
+          [iI]) massInfoOutput ;;
 
-          [rR]) thirdPartyRepoCheck ;; 
-          
+          [rR]) thirdPartyRepoCheck ;;
+
           [sS]) universalSoftwareMenu ;;
 
-          [tT]) universalThemingMenu ;; 
+          [tT]) universalThemingMenu ;;
 
 
-          [xX]) xmetalTasks ;; 
+          [xX]) xmetalTasks ;;
 
 
-      
+
           [qQ]) quitScript  ;;
 
           * ) invalidSection ;;
@@ -94,5 +92,5 @@ function mainMenu()
 
 }
 
-# Call the main menu 
+# Call the main menu
 mainMenu
