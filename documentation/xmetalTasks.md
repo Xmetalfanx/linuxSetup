@@ -2,12 +2,15 @@
 
 ## 1 - Optimize Repos
 
-- Fedora: search for fastest mirror 
-- Manjaro Rank Mirrors 
+- *Fedora*: search for fastest mirror 
+- *Manjaro Rank Mirrors* 
 
-- not sure why i dont have this already done but the same SORT OF thing I have for Manjaro, will have an Arch function 
+- Arch Linux  is supported too  
 
 ### 2 - Update System
+
+- note: Updates packages ... doesn't do a dist upgrade type of task
+  - exception - OpenSuse Tumbleweed ... a "zypper dup" is done and NOT a "zypper up"
 
 ### 3 - Install third party repos
 
@@ -19,8 +22,14 @@
 ### 5 - Install common software
 
 - list update: April 2, 2019
-- Software: filezilla picard easytag deluge hexchat firefox mpv smplayer variety dconf-editor gparted ffmpeg youtube-dl inxi mediainfo bleachbit fish git menulibre
+- <u>*Software*</u>: filezilla picard easytag deluge hexchat firefox mpv smplayer variety dconf-editor gparted ffmpeg youtube-dl inxi mediainfo bleachbit fish git menulibre
 
-### 6 - Install fish shell + OhMyFish + some extras
+### 6 - Install fish shell + Oh-My-Fish + some extras
 
-- extras: bobthefish theme
+extras: bobthefish theme
+
+7 - Install Theming
+
+ - Theming (Themes/Icons/some cursors):
+   	- Arc, Adapta, Mint-Y, Numix, Plata, Yaru, Breeze (GTK)
+	- there are Various Themes and Icons that vary from distro to distro, that are also installed
