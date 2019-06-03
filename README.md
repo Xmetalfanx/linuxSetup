@@ -20,7 +20,15 @@ While The main distributions listed are meant to be "Distro family bases", not A
 
 - Too many to list them all
 - While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
+
 - Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes.
+
+## Known issues
+
+[Cinnamon is installing on fresh copies of OpenSUSE Leap but while they install, they do not always run properly](https://github.com/Xmetalfanx/linuxSetup/issues/67)
+
+It also seems like Cinnamon devs are MIA in OpenSUSE at the time I am typing this... even Tumbleweed hasn't been updated OFFICIALLY since about September 2018
+
 
 ## Links to other useful projects similar to this
 

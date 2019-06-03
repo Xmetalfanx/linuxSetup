@@ -72,8 +72,6 @@
 | Install Misc Themes  |   | Pass      | Fail      | Not Tested         | Fail             | Pass               | Not Tested  |
 | All Listed Themes    |   | Pass      | Fail      | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
 
-
-
 ---
 
 - Third Party Repo Info
@@ -88,3 +86,23 @@
 
 
 *** I REFORMATTED the OpenSUSE 15.0 VM I had when 15.1 came out ... if something says pass on 15.1 and fail on 15.0, there is a good change that 15.0's code is fixed too, but I will not change the status until i know for sure 
+
+---
+
+## OpenSuse Cinnamon Tests
+
+
+### Install Cinnamon
+
+| Menu Items                                                      |   | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse TW |
+|-----------------------------------------------------------------|---|------------------|--------------------|-------------|
+| Fresh Cinnamon - no Community repo                              |   | Not Tested       | Not Tested         | Pass        |
+| Fresh Cinnamon - Commun Repo Added - Cinn not installed already |   | Not Tested       | Not Tested         | Pass        |
+| Fresh Cinnamon - Commun Repo Added - Cinn already installed     |   | Not Tested       | Not Tested         | Pass        |
+
+
+### Add Repo, without installing
+
+| Menu Items                                                      |   | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse TW |
+|-----------------------------------------------------------------|---|------------------|--------------------|-------------|
+| Add Commun Repo without installing Cinnamon (any source)        |   | Not Tested       | Not Tested         | Not Tested  |
