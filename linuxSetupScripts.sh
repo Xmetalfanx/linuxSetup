@@ -52,6 +52,7 @@ function mainMenu()
         echo -e   "R. \t Install ThirdParty Repos"
         echo -e   "S. \t Install Software"
         echo -e   "T. \t Theming"
+        echo -e   "X. \t Xmetal (Batch) Tasks"
 
         echo -e   "q. \t Exit to Prompt \n\n"
         read -p   "Your Choice?:" mainSelection
@@ -78,6 +79,11 @@ function mainMenu()
           [sS]) universalSoftwareMenu ;;
 
           [tT]) universalThemingMenu ;; 
+
+
+          [xX]) xmetalTasks ;; 
+
+
       
           [qQ]) quitScript  ;;
 
