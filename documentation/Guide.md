@@ -59,8 +59,7 @@
 
 ## OpenSuse Script - no longer in Menu, but planned for later 
 
-1. Add Cinnamon Repo
-2. Add Plasma 5 Repos
+1. Add Cinnamon Repo - for what seems like the stalled out version that are on Cinnamon 3.8.9, even on bleeding edge, Tumbleweed 
 
 ## Solus Scripts 
 
