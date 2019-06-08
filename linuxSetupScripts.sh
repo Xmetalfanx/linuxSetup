@@ -38,7 +38,6 @@ function mainMenu()
         echo -e   "3. \t Arch-based"
         echo -e   "4. \t Fedora"
         echo -e   "5. \t OpenSUSE"
-
         echo -e   "6. \t Solus"
         echo -e   "7. \t Ubuntu based"
 
