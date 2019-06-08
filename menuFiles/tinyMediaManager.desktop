@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec="~/Downloads/tmm/tmm/tinyMediaManager.sh"
+Icon="~/Downloads/tmm/tmm/tmm.png"
+Type=Application
+Terminal=false
+Comment=Tiny Media Manager Media Organizer
+Name=Tiny Media Manager
+GenericName=tinyMediaManager
+StartupNotify=false
+Categories=Video;
