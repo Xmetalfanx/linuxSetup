@@ -33,7 +33,7 @@ function mainMenu()
 
         echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
-        echo -e   "1. \t Update your System"
+        echo -e   "1. \t Update your System (including Snaps and Flatpaks)"
         echo -e   "2. \t Optimizing Mirrors/Repos"
         echo -e   "3. \t Arch-based"
         echo -e   "4. \t Fedora"
@@ -56,37 +56,41 @@ function mainMenu()
 
         case $mainSelection in
 
-          1) universalUpdate ;;
-          2) optimizeRepo ;;
-
-          # Located in /tasks/functions/f_mainMenus.cfg
-          3) mainArchMenu ;;
-          4) mainFedoraMenu  ;;
-          5) mainOpenSUSEMenu  ;;
-          6) mainSolusMenu ;;
-          7) mainUbuntuMenu ;;
+            1) universalUpdate
+               universalAppUpdates
+            ;;
 
 
-          [cC]) universalCodecInstall ;;
+            2) optimizeRepo ;;
 
-          [iI]) massInfoOutput ;;
-
-          [rR]) thirdPartyRepoCheck ;;
-
-          [sS]) universalSoftwareMenu ;;
-
-          [tT]) universalThemingMenu ;;
-
-
-          [xX]) xmetalTasks ;;
+            # Located in /tasks/functions/f_mainMenus.cfg
+            3) mainArchMenu ;;
+            4) mainFedoraMenu  ;;
+            5) mainOpenSUSEMenu  ;;
+            6) mainSolusMenu ;;
+            7) mainUbuntuMenu ;;
 
 
+            [cC]) universalCodecInstall ;;
 
-          [qQ]) quitScript  ;;
+            [iI]) massInfoOutput ;;
 
-          * ) invalidSection ;;
+            [rR]) thirdPartyRepoCheck ;;
 
-          esac
+            [sS]) universalSoftwareMenu ;;
+
+            [tT]) universalThemingMenu ;;
+
+
+            [xX]) xmetalTasks ;;
+
+
+
+            [qQ]) quitScript  ;;
+
+            *) invalidSection ;;
+
+            esac
     done
 
 }
