@@ -4,7 +4,6 @@
 #Description :    This script will setup some common things afer a fresh install of various Linux distros
 #Author :         Xmetalfanx / Xmetal
 
-
 ########################################################################
 # Import Functions
 
@@ -22,10 +21,7 @@ x=1
 # in f_common.cfg
 intialTasks
 
-
-
-function mainMenu()
-{
+function mainMenu() {
 
     while [ $x=1 ]; do
 
@@ -33,64 +29,61 @@ function mainMenu()
 
         echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
-        echo -e   "1. \t Update your System (including Snaps and Flatpaks)"
-        echo -e   "2. \t Optimizing Mirrors/Repos"
-        echo -e   "3. \t Arch-based"
-        echo -e   "4. \t Fedora"
-        echo -e   "5. \t OpenSUSE"
-        echo -e   "6. \t Solus"
-        echo -e   "7. \t Ubuntu based"
-
+        echo -e "1. \t Update your System (including Snaps and Flatpaks)"
+        echo -e "2. \t Optimizing Mirrors/Repos"
+        echo -e "3. \t Arch-based"
+        echo -e "4. \t Fedora"
+        echo -e "5. \t OpenSUSE"
+        echo -e "6. \t Solus"
+        echo -e "7. \t Ubuntu based"
 
         # only for a space
         echo
-        echo -e   "C. \t Install Third Party Codecs"
-        echo -e   "I. \t Display info detected by the scripts"
-        echo -e   "R. \t Install ThirdParty Repos"
-        echo -e   "S. \t Install Software"
-        echo -e   "T. \t Theming"
-        echo -e   "X. \t Xmetal (Batch) Tasks"
+        echo -e "C. \t Install Third Party Codecs"
+        echo -e "I. \t Display info detected by the scripts"
+        echo -e "R. \t Install ThirdParty Repos"
+        echo -e "S. \t Install Software"
+        echo -e "T. \t Theming"
+        echo -e "X. \t Xmetal (Batch) Tasks"
 
-        echo -e   "q. \t Exit to Prompt \n\n"
-        read -p   "Your Choice?:" mainSelection
+        echo -e "q. \t Exit to Prompt \n\n"
+        read -p "Your Choice?:" mainSelection
 
         case $mainSelection in
 
-            1) universalUpdate
-               universalAppUpdates
+        1)
+            universalUpdate
+            universalAppUpdates
             ;;
 
+        2) optimizeRepo ;;
 
-            2) optimizeRepo ;;
+        # Located in /tasks/functions/f_mainMenus.cfg
+        3) mainArchMenu ;;
+        4) mainFedoraMenu ;;
+        5) mainOpenSUSEMenu ;;
+        6) mainSolusMenu ;;
+        7) mainUbuntuMenu ;;
 
-            # Located in /tasks/functions/f_mainMenus.cfg
-            3) mainArchMenu ;;
-            4) mainFedoraMenu  ;;
-            5) mainOpenSUSEMenu  ;;
-            6) mainSolusMenu ;;
-            7) mainUbuntuMenu ;;
+        [cC]) universalCodecInstall ;;
 
+        [iI]) massInfoOutput ;;
 
-            [cC]) universalCodecInstall ;;
+        [rR]) thirdPartyRepoCheck ;;
 
-            [iI]) massInfoOutput ;;
+        [sS]) universalSoftwareMenu ;;
 
-            [rR]) thirdPartyRepoCheck ;;
+        [tT]) universalThemingMenu ;;
 
-            [sS]) universalSoftwareMenu ;;
+        [xX]) xmetalTasks ;;
 
-            [tT]) universalThemingMenu ;;
+        [qQ])
+            quitScript
+            ;;
 
+        *) invalidSection ;;
 
-            [xX]) xmetalTasks ;;
-
-
-
-            [qQ]) quitScript  ;;
-
-            *) invalidSection ;;
-
-            esac
+        esac
     done
 
 }
