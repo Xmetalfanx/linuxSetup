@@ -61,64 +61,7 @@ the package index by pressing the Reload button in the top left
 of synaptic package manager. 
 ______________________________________________________________________________
 
-Adding Backports Repository.
-
-add the following to your /etc/apt/sources.list file. 
-
-deb http://ftp.us.debian.org/debian/ stretch-backports main contrib non-free
-
-run sudo apt-get udpate to refresh package index.
-
-To install an application from the backport repository specify the repo using the following command. 
-
-sudo apt-get -t stretch-backports install <package name>
-_____________________________________________________________________________
-
-Install non-free codecs and other media components. ( Optional )
-
-NOTE: These must be installed seperatly to avoid errors / conflicts.
-
-sudo apt-get install libav-tools 
-
-sudo apt-get install ttf-mscorefonts-installer
-
-sudo apt-get install icedtea-plugin
-
-sudo apt-get install libdvdcss2
-
-sudo apt-get install libdvd-pkg
-
-sudo dpkg-reconfigure libdvd-pkg
-
-sudo apt-get install browser-plugin-vlc
-
-sudo apt-get install libffmpegthumbnailer4
-
-sudo apt-get install ffmpegthumbnailer
-
-sudo apt-get install gstreamer1.0-plugins-bad
-
-sudo apt-get install gstreamer1.0-plugins-ugly
-
-sudo apt-get install gstreamer1.0-libav
-
-sudo apt-get install tumbler-plugins-extra
-______________________________________________________________________________
-
-Install Linux Firmware and base packages:
-
-sudo apt-get install gdebi gksu firmware-linux firmware-linux-nonfree
-______________________________________________________________________________
-
-Install Microcode for Intel Proscessors. ( Optional ) 
-
-sudo apt-get install intel-microcode
-______________________________________________________________________________
-
-Utility Applications:
-
-sudo apt-get install file-roller rar unrar
-______________________________________________________________________________
+_____________________________
 
 Fix QT Themeing on GTK based Desktops.
 
@@ -140,37 +83,7 @@ sudo echo "QT_QPA_PLATFORMTHEME=gtk2" >> /etc/environment
 NOTE: Due to a bug involving a segmentation fault, this dose not work with QT 5.7.0, Upgrade to 5.7.1 or wait for the update to come from upstream.
 
 Log out and back in, or reboot your machine for changes to take effect. 
-___________________________________________________________________________
 
-Install Nvidia Drivers
-
-sudo apt-get install nvidia-detect
-
-Run command:
-
-nvidia-detect
-
-Install the recommended driver shown
-
-Example:
-
-sudo apt-get install linux-headers-$(uname -r) nvidia-legacy-340xx-driver 
-
-Create an Xorg configuration for your gpu
-
-mkdir /etc/X11/xorg.conf.d
-
-nano /etc/X11/xorg.conf.d/20-nvidia.conf
-
-Now add below contents to the file and save
-
-Section "Device"
-Identifier "My GPU"
-Driver "nvidia"
-EndSection
-
-
-Reboot...
 
 __________________________________________________________________________
 
@@ -189,18 +102,7 @@ options b43 allhwsupport=1
 Reboot system for changes to take effect. 
 __________________________________________________________________________
 
-Install Bluetooth packages for XFCE. 
 
-sudo apt-get install bluetooth blueman bluez bluez-firmware bluez-cups bluez-tools 
-
-Reboot system for changes to take effect. 
-__________________________________________________________________________
-
-Enable Notifications for XFCE Mail-Watcher Extention.
-
-Run on click: thunderbird
-Run on New Messages: notify-send "New mail" "You have new messages in your inbox" -i xfce-newmail
-__________________________________________________________________________
 
 To give yourself permissions so virtualbox can access Shared folders and USB devices  use this command, 
 
@@ -247,45 +149,3 @@ Copy and paste the following text into file
 
 Reboot system for changes to take effect. 
 __________________________________________________________________________
-
-Hide Partitions on Boot:
-
-Create a new file /etc/udev/rules.d/99-hide-partitions.rules and add one line per partition you want to hide like so:
-( change "sda*" to match the partition you wish to hide )
-	
-KERNEL=="sda1",ENV{UDISKS_IGNORE}="1"
-KERNEL=="sda2",ENV{UDISKS_IGNORE}="1"
-
-You should be able to dynamically activate it as root:
-
-  # udevadm trigger --verbose
-_____________________________________________________________________________
-_____________________________________________________________________________
-
-Backup / Restore installed APT packages
-
-# Backup your packages list to your home directory
-# Get a packages list
-dpkg --get-selections > ~/Package.list
-
-# Copy list of repositories to your home directory
-sudo cp /etc/apt/sources.list ~/sources.list
-
-# Export repo keys to your home directory
-sudo apt-key exportall > ~/Repo.keys
-
-# Restore packages from your home directory
-sudo apt-key add ~/Repo.keys
-sudo cp ~/sources.list /etc/apt/sources.list
-sudo dpkg --add-architecture i386 
-sudo apt-get update
-sudo apt-get install dselect
-sudo apt-get install $(cat ~/Package.list | awk '{print $1}')
-
-#NOTE: if SUDO is not configured, Simply use root terminal or SU. 
-
-#CRITICAL: Any packages installed using a .DEB file or other source not
-included in your repositories/sources.list, must be removed from Package.list before restoring to avoid errors. These packages will need to be reinstalled manually. 
-
-
-

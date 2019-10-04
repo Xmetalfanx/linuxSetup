@@ -1,0 +1,64 @@
+
+###########################################################################
+# Debian 
+
+Debian Jessie
+PRETTY_NAME="Debian GNU/Linux jessie/sid"
+NAME="Debian GNU/Linux"
+ID=debian
+ANSI_COLOR="1;31"
+HOME_URL="http://www.debian.org/"
+SUPPORT_URL="http://www.debian.org/support/"
+BUG_REPORT_URL="http://bugs.debian.org/"
+
+
+Debian Wheezy
+PRETTY_NAME="Debian GNU/Linux 7 (wheezy)"
+NAME="Debian GNU/Linux"
+VERSION_ID="7"
+VERSION="7 (wheezy)"
+ID=debian
+ANSI_COLOR="1;31"
+HOME_URL="http://www.debian.org/"
+SUPPORT_URL="http://www.debian.org/support/"
+BUG_REPORT_URL="http://bugs.debian.org/"
+
+
+
+lsb_release -a
+
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 9.5 (stretch)
+Release:	9.5
+Codename:	stretch
+
+
+Checking Debian Version using the /etc/issue file
+
+The following cat command will display the contents of the /etc/issue which contains a system identification text:
+
+cat /etc/issue
+
+The output will look something like below:
+
+Debian GNU/Linux 9 \n \l
+
+Checking Debian Version using the /etc/os-release file
+
+/etc/os-release is a file which contains operating system identification data, and can be found only on the newer Debian distributions running systemd.
+
+This method will work only if you have Debian 9 or newer:
+
+cat /etc/os-release
+
+The output will look something like below:
+
+PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+NAME="Debian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
