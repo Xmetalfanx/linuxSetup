@@ -32,10 +32,11 @@ function mainMenu() {
         echo -e "1. \t Update your System (including Snaps and Flatpaks)"
         echo -e "2. \t Optimizing Mirrors/Repos"
         echo -e "3. \t Arch-based"
-        echo -e "4. \t Fedora"
-        echo -e "5. \t OpenSUSE"
-        echo -e "6. \t Solus"
-        echo -e "7. \t Ubuntu based"
+        echo -e "4. \t Debian"
+        echo -e "5. \t Fedora"
+        echo -e "6. \t OpenSUSE"
+        echo -e "7. \t Solus"
+        echo -e "8. \t Ubuntu based"
 
         # only for a space
         echo
@@ -60,10 +61,11 @@ function mainMenu() {
 
         # Located in /tasks/functions/f_mainMenus.cfg
         3) mainArchMenu ;;
-        4) mainFedoraMenu ;;
-        5) mainOpenSUSEMenu ;;
-        6) mainSolusMenu ;;
-        7) mainUbuntuMenu ;;
+        4) mainDebianMenu ;;
+        5) mainFedoraMenu ;;
+        6) mainOpenSUSEMenu ;;
+        7) mainSolusMenu ;;
+        8) mainUbuntuMenu ;;
 
         [cC]) universalCodecInstall ;;
 
