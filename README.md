@@ -89,8 +89,6 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
     - Arch
     - Fedora
 
-
-    - Debian note: I have no added any code related to debian and if these scripts work (at the MOMENT) on Debian, that is because it detects "apt" and think's you are on Ubuntu's base .... DEBIAN SUPPORT IS 100% planned... right now I want to be sure to have what I already have now working correctly (I dont want to "bite off more than i can chew"), first.
 ---
 
 ## [Xmetal's Task Info](/documentation/xmetalTasks.md)
