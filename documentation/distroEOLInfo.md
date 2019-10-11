@@ -23,7 +23,6 @@ End of life Table
 | EOL (End of Life) Date | April 2019     | April 2021         | April 2023     |
 
 
-
 ### Not long term Support releases 
 
 | Release                | (16.10)       | (17.04)       | (17.10)      | Cosmic (18.10) | Disco (19.04) | Eoan (19.10) |
