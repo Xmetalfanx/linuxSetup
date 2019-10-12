@@ -36,12 +36,9 @@
 
 | Menu Task   |     | Stable     | Testing    |
 | ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Not Tested | * Fail |
+| Atom Editor |     | Not Tested | Pass       |
 | vscode      |     | Not Tested | Not Tested |
 | Typora      |     | Not Tested | Not Tested |
-
-The download is fine, but it cant find the DEB file (* is the Ubuntu side screwed up too?) 
-
 
 
 ## Multimedia Apps
@@ -51,8 +48,8 @@ The download is fine, but it cant find the DEB file (* is the Ubuntu side screwe
 | Tiny Media Manager    |     | Not Tested | Pass       |
 | makeMKV               |     | Not Tested | Not Tested |
 | Audio Recorder        |     | Not Tested | Not Tested |
-| DeadBeef Media Player |     | Not Tested | Not Coded |
-| XnViewMP              |     | Not Tested | Pass |
+| DeadBeef Media Player |     | Not Tested | Not Coded  |
+| XnViewMP              |     | Not Tested | Pass       |
 | Celluloid/Gnome-Mpv   |     | Not Tested | Pass       |
 
 - Menus are still an issue with TMM ... and apparently Java was already installed in my test 
@@ -68,7 +65,7 @@ The download is fine, but it cant find the DEB file (* is the Ubuntu side screwe
 | Menu Task                         |     | Stable     | Testing    |
 | --------------------------------- | --- | ---------- | ---------- |
 | Add Common Software               |     | Not Tested | Pass       |
-| Etcher                            |     | Not Tested | Pass |
+| Etcher                            |     | Not Tested | Pass       |
 | Wine and/or PlayonLinux           |     | Not Tested | Not Tested |
 | Build Essential Packages          |     | Not Tested | Pass       |
 | Install Fish Shell and Oh-My-Fish |     | Not Tested | Pass       |
