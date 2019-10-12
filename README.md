@@ -21,7 +21,7 @@ While The main distributions listed are meant to be "Distro family bases", not A
 - Too many to list them all
 - While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
 
-- Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes.
+- Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes. Matthew Moore's Debian install guide also helped me add the Codec section for Debian... credit goes to him for that and figuring out in some cases you need to add some of the packages before others (vs having it all in one big "sudo apt install" line).  Thanks Matt
 
 ## Known issues
 
@@ -29,6 +29,8 @@ While The main distributions listed are meant to be "Distro family bases", not A
 
 It also seems like Cinnamon devs are MIA in OpenSUSE at the time I am typing this... even Tumbleweed hasn't been updated OFFICIALLY since about September 2018
 
+- October 2019 Update - There are new devs for Cinnamon (all branches) in Opensuse so this MAY be a non-issue now ... I will hve to come back to this later and maybe remote this entire message 
+ 
 
 ## Links to other useful projects similar to this
 
