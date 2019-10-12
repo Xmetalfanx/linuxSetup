@@ -36,9 +36,13 @@
 
 | Menu Task   |     | Stable     | Testing    |
 | ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Not Tested | Not Tested |
+| Atom Editor |     | Not Tested | * Fail |
 | vscode      |     | Not Tested | Not Tested |
 | Typora      |     | Not Tested | Not Tested |
+
+The download is fine, but it cant find the DEB file (* is the Ubuntu side screwed up too?) 
+
+
 
 ## Multimedia Apps
 
@@ -47,12 +51,15 @@
 | Tiny Media Manager    |     | Not Tested | Pass       |
 | makeMKV               |     | Not Tested | Not Tested |
 | Audio Recorder        |     | Not Tested | Not Tested |
-| DeadBeef Media Player |     | Not Tested | Not Tested |
-| XnViewMP              |     | Not Tested | Not Tested |
+| DeadBeef Media Player |     | Not Tested | Not Coded |
+| XnViewMP              |     | Not Tested | Pass |
 | Celluloid/Gnome-Mpv   |     | Not Tested | Pass       |
 
 - Menus are still an issue with TMM ... and apparently Java was already installed in my test 
 
+-XnviewMP can use the same DEB as Ubuntu 
+
+- with Audio-Recorder on Debian ... the snap may be the only real options 
 
 # Software Menus
 
