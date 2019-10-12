@@ -37,7 +37,7 @@
 | Menu Task   |     | Stable     | Testing    |
 | ----------- | --- | ---------- | ---------- |
 | Atom Editor |     | Not Tested | Pass       |
-| vscode      |     | Not Tested | Not Tested |
+| vscode      |     | Not Tested | Pass |
 | Typora      |     | Not Tested | Not Tested |
 
 
