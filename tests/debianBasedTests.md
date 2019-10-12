@@ -1,10 +1,10 @@
 ## Main Stable Tasks
 
-| Menu Tasks          |     | Stable           | Testing          |
-| ------------------- | --- | ---------------- | ---------------- |
-| Update System       |     | Not Tested       | Pass             |
-| Install Codecs      |     | Not Tested/Coded | Pass             |
-| Add Archive Support |     | Not Tested/Coded | Not Tested/Coded |
+| Menu Tasks          |     | Stable     | Testing    |
+| ------------------- | --- | ---------- | ---------- |
+| Update System       |     | Not Tested | Pass       |
+| Install Codecs      |     | Not Tested | Pass       |
+| Add Archive Support |     | Not Tested | Not Tested |
 
 ---
 
@@ -12,44 +12,44 @@
 
 ### Browser Installer
 
-| Menu Items    |     | Stable           | Testing          |
-| ------------- | --- | ---------------- | ---------------- |
-| Google Chrome |     | Not Tested/Coded | Not Tested/Coded |
-| Chromium      |     | Not Tested/Coded | Not Tested/Coded |
-| Firefox       |     | Not Tested/Coded | Not Tested/Coded |
-| Vivaldi       |     | Not Coded        | Not Tested/Coded |
+| Menu Items    |     | Stable     | Testing    |
+| ------------- | --- | ---------- | ---------- |
+| Google Chrome |     | Not Tested | Not Tested |
+| Chromium      |     | Not Tested | Not Tested |
+| Firefox       |     | Not Tested | Not Tested |
+| Vivaldi       |     | Not Coded  | Not Tested |
 
-| Menu Items           |     | Stable           | Testing          |
-| -------------------- | --- | ---------------- | ---------------- |
-| Install Adapta Theme |     | Not Tested/Coded | Not Tested/Coded |
-| Install Arc Theme    |     | Not Tested/Coded | Not Tested/Coded |
-| Install Mint-Y Theme |     | Not Coded        | Not Tested/Coded |
-| Install Numix Theme  |     | Not Tested/Coded | Not Tested/Coded |
-| Install Plata Theme  |     | Not Coded        | Not Tested/Coded |
-| Install Misc Themes  |     | Not Tested/Coded | Not Tested/Coded |
-| Install Misc Icons   |     | Not Tested/Coded | Not Tested/Coded |
-| All Listed Themes    |     | Not Tested/Coded | Not Tested/Coded |
+| Menu Items           |     | Stable     | Testing    |
+| -------------------- | --- | ---------- | ---------- |
+| Install Adapta Theme |     | Not Tested | Not Tested |
+| Install Arc Theme    |     | Not Tested | Not Tested |
+| Install Mint-Y Theme |     | Not Coded  | Not Tested |
+| Install Numix Theme  |     | Not Tested | Not Tested |
+| Install Plata Theme  |     | Not Coded  | Not Tested |
+| Install Misc Themes  |     | Not Tested | Not Tested |
+| Install Misc Icons   |     | Not Tested | Not Tested |
+| All Listed Themes    |     | Not Tested | Not Tested |
 
 - if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
 
 ## Productivity/Office Apps
 
-| Menu Task   |     | Stable           | Testing          |
-| ----------- | --- | ---------------- | ---------------- |
-| Atom Editor |     | Not Tested/Coded | Not Tested/Coded |
-| vscode      |     | Not Tested/Coded | Not Tested/Coded |
-| Typora      |     | Not Tested/Coded | Not Tested/Coded |
+| Menu Task   |     | Stable     | Testing    |
+| ----------- | --- | ---------- | ---------- |
+| Atom Editor |     | Not Tested | Not Tested |
+| vscode      |     | Not Tested | Not Tested |
+| Typora      |     | Not Tested | Not Tested |
 
 ## Multimedia Apps
 
-| Menu Task             |     | Stable           | Testing          |
-| --------------------- | --- | ---------------- | ---------------- |
-| Tiny Media Manager    |     | Not Tested/Coded | Pass |
-| makeMKV               |     | Not Tested/Coded | Not Tested/Coded |
-| Audio Recorder        |     | Not Tested/Coded | Not Tested/Coded |
-| DeadBeef Media Player |     | Not Tested/Coded | Not Tested/Coded |
-| XnViewMP              |     | Not Tested/Coded | Not Tested/Coded |
-| Celluloid/Gnome-Mpv   |     | Not Tested       | Pass             |
+| Menu Task             |     | Stable     | Testing    |
+| --------------------- | --- | ---------- | ---------- |
+| Tiny Media Manager    |     | Not Tested | Pass       |
+| makeMKV               |     | Not Tested | Not Tested |
+| Audio Recorder        |     | Not Tested | Not Tested |
+| DeadBeef Media Player |     | Not Tested | Not Tested |
+| XnViewMP              |     | Not Tested | Not Tested |
+| Celluloid/Gnome-Mpv   |     | Not Tested | Pass       |
 
 - Menus are still an issue with TMM ... and apparently Java was already installed in my test 
 
@@ -58,10 +58,10 @@
 
 ## Install/Update for the specific apps
 
-| Menu Task                         |     | Stable           | Testing          |
-| --------------------------------- | --- | ---------------- | ---------------- |
-| Add Common Software               |     | Not Tested/Coded | Pass             |
-| Etcher                            |     | Not Tested/Coded | Not Tested/Coded |
-| Wine and/or PlayonLinux           |     | Not Tested/Coded | Not Tested/Coded |
-| Build Essential Packages          |     | Not Tested/Coded | Not Tested/Coded |
-| Install Fish Shell and Oh-My-Fish |     | Not Tested/Coded | Pass             |
+| Menu Task                         |     | Stable     | Testing    |
+| --------------------------------- | --- | ---------- | ---------- |
+| Add Common Software               |     | Not Tested | Pass       |
+| Etcher                            |     | Not Tested | Pass |
+| Wine and/or PlayonLinux           |     | Not Tested | Not Tested |
+| Build Essential Packages          |     | Not Tested | Pass       |
+| Install Fish Shell and Oh-My-Fish |     | Not Tested | Pass       |
