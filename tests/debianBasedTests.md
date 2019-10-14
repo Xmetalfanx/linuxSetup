@@ -8,7 +8,7 @@
 
 ---
 
-- I am not assuming anything but in some cases it seems (XNViewMP I THINK is one of tt hem ... GitKraken appears to be another) the same DEBs can be used on Debian or Ubuntu ... HOWEVER ... until I know for each app below ... I will assume that is not the case and I know its not a good idea unless the app dev says it to be so.
+- I am not assuming anything but in some cases it seems (XNViewMP I THINK is one of them ... GitKraken appears to be another) the same DEBs can be used on Debian or Ubuntu ... HOWEVER ... until I know for each app below ... I will assume that is not the case and I know its not a good idea unless the app dev says it to be so.
 
 ### Browser Installer
 
