@@ -15,9 +15,6 @@ readonly dir=$(eval pwd)
 ########################################################################
 x=1
 
-#Clears Screen
-#clear
-
 # in f_common.cfg
 intialTasks
 
