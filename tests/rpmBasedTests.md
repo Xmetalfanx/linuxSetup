@@ -29,7 +29,7 @@
 | Menu Task                |     | Fedora 29  | Fedora 30  |
 | ------------------------ | --- | ---------- | ---------- |
 | Add Common Software      |     | Pass       | Pass       |
-| Etcher                   |     | Pass       | Not Tested |
+| Etcher                   |     | Pass       | Pass       |
 | Wine and/or PlayonLinux  |     | Not Tested | Pass       |
 | Build Essential Packages |     | Pass       | Pass       |
 
@@ -54,7 +54,7 @@
 | --------------------- | --- | ---------- | ----------------------------- |
 | Tiny Media Manager    |     | Pass       | Fail - Downloads, Doesn't run |
 | makeMKV               |     | Not Tested | Pass                          |
-| DeadBeef Media Player |     | Not Tested | Fail                          |
+| DeadBeef Media Player |     | Not Tested | Pass                          |
 | XnViewMP              |     | Pass       | Not Tested                    |
 | Audio Recorder        |     | Not Tested | Not Tested                    |
 | Celluloid/Gnome MPV   |     | Not Tested | Pass                          |
