@@ -54,7 +54,7 @@
 | --------------------- | --- | ---------- | ----------------------------- |
 | Tiny Media Manager    |     | Pass       | Fail - Downloads, Doesn't run |
 | makeMKV               |     | Not Tested | Pass                          |
-| DeadBeef Media Player |     | Fail       | Fail                          |
+| DeadBeef Media Player |     | Not Tested | Fail                          |
 | XnViewMP              |     | Pass       | Not Tested                    |
 | Audio Recorder        |     | Not Tested | Not Tested                    |
 | Celluloid/Gnome MPV   |     | Not Tested | Pass                          |
