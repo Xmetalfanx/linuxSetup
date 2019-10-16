@@ -55,11 +55,12 @@
 | Tiny Media Manager    |     | Pass       | Fail - Downloads, Doesn't run |
 | makeMKV               |     | Not Tested | Pass                          |
 | DeadBeef Media Player |     | Not Tested | Pass                          |
-| XnViewMP              |     | Pass       | Not Tested                    |
+| XnViewMP              |     | Pass       | Fail*                     |
 | Audio Recorder        |     | Not Tested | Not Tested                    |
 | Celluloid/Gnome MPV   |     | Not Tested | Pass                          |
 
 - TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs
+- sudo dnf install libnsl needed for XnviewMP on Fedora LXQT test .... passed after installing that ... I just haven't coded that into the scripts yet ...otherwise it's a "Pass" on Fedora 30 
 
 ## OpenSuse 
 
