@@ -5,6 +5,7 @@
 **/*.pub
 **/*.deb
 **/*.rpm
+**/*.AppImage
 .git-write/*
 tmm/*
 updateInfo.txt
