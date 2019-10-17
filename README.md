@@ -2,8 +2,6 @@
 
 # NOTE: THIS is under heavy construction
 
-- Things are broken and I know it.
-
 # Xmetal's Linux Scripts
 
 ## Introduction
@@ -15,6 +13,17 @@ While The main distributions listed are meant to be "Distro family bases", not A
 ## Disclaimer
 
 - Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur
+
+## Requirnmoments
+Some of these are auto-installed when the script is first run ... others I may add to "auto install" later
+
+- `wget`
+- `curl`
+- `lsb` (different package names on different distros ) type packages
+  - so lsb_release * can be run
+- (? if it's autoinstalled or needed) `inxi` 
+  - ... even I am not 100% sure about this one, but for later "DE/Distro" detection, inxi seems needed
+
 
 ## Thanks
 
