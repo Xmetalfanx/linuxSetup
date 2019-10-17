@@ -4,3 +4,4 @@ Last Upgraded:	 debian  	10/08/19	:04:28:15 PM
 Last Upgraded:	 debian  	10/11/19	:01:20:25 PM
 Last Upgraded:	 fedora  	10/14/19	:03:25:09 AM
 Last Upgraded:	 debian  	10/17/19	:12:06:30 AM
+Last Upgraded:	 opensuse  	10/17/19	:04:25:14 PM

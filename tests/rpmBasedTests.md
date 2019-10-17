@@ -177,12 +177,4 @@
 
 | Menu Items                                                      |     | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse TW |
 | --------------------------------------------------------------- | --- | ---------------- | ------------------ | ----------- |
-| Fresh Cinnamon - no Community repo                              |     | Not Tested       | Not Tested         | Pass        |
-| Fresh Cinnamon - Commun Repo Added - Cinn not installed already |     | Not Tested       | Not Tested         | Pass        |
-| Fresh Cinnamon - Commun Repo Added - Cinn already installed     |     | Not Tested       | Not Tested         | Pass        |
-
-### Add Repo, without installing
-
-| Menu Items                                               |     | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse TW |
-| -------------------------------------------------------- | --- | ---------------- | ------------------ | ----------- |
-| Add Commun Repo without installing Cinnamon (any source) |     | Not Tested       | Not Tested         | Not Tested  |
+| Fresh Cinnamon                             |     | Not Tested       | Not Tested         |         |
