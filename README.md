@@ -36,13 +36,8 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 ### Cinnamon and OpenSuse 
 
-[Cinnamon is installing on fresh copies of OpenSUSE Leap but while they install, they do not always run properly](https://github.com/Xmetalfanx/linuxSetup/issues/67)
-
-It also seems like Cinnamon devs are MIA in OpenSUSE at the time I am typing this... even Tumbleweed hasn't been updated OFFICIALLY since about September 2018
-
-- October 2019 Update - There are new devs for Cinnamon (all branches) in Opensuse so this MAY be a non-issue now ... I will hve to come back to this later and maybe remote this entire message 
-
 ### Some RPMs are not being signed by the devs
+
 -  I can not say this is the case for all apps; however, to my knowledge GitKraken and Atom (see [https://github.com/atom/atom/issues/16499](https://github.com/atom/atom/issues/16499) for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea 
 
 ---
