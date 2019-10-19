@@ -14,10 +14,10 @@
 
 | Menu Items    |     | Stable     | Testing    |
 | ------------- | --- | ---------- | ---------- |
-| Google Chrome |     | Not Tested | Pass |
+| Google Chrome |     | Not Tested | Pass       |
 | Chromium      |     | Not Tested | Not Tested |
 | Firefox       |     | Not Tested | Not Tested |
-| Vivaldi       |     | Not Coded  | Not Tested |
+| Vivaldi       |     | Not Coded  | Pass       |
 
 | Menu Items           |     | Stable     | Testing    |
 | -------------------- | --- | ---------- | ---------- |
@@ -38,8 +38,8 @@
 | ----------- | --- | ---------- | ---------- |
 | Atom Editor |     | Not Tested | Pass       |
 | vscode      |     | Not Tested | Pass       |
+| GitKraken   |     | Not Tested | Fail       |
 | Typora      |     | Not Tested | Not Tested |
-
 
 ## Multimedia Apps
 
@@ -48,15 +48,15 @@
 | Tiny Media Manager    |     | Not Tested | Pass       |
 | makeMKV               |     | Not Tested | Not Tested |
 | Audio Recorder        |     | Not Tested | Not Tested |
-| DeadBeef Media Player |     | Not Tested | Not Coded*  |
+| DeadBeef Media Player |     | Not Tested | Not Coded* |
 | XnViewMP              |     | Not Tested | Pass       |
 | Celluloid/Gnome-Mpv   |     | Not Tested | Pass       |
 
-- Menus are still an issue with TMM ... and apparently Java was already installed in my test 
+- Menus are still an issue with TMM ... and apparently Java was already installed in my test
 
-- with Audio-Recorder on Debian ... the snap may be the only real options 
+- with Audio-Recorder on Debian ... the snap may be the only real options
 
-* Deadbeef is in the https://www.deb-multimedia.org/ repo ... not sure I want to go that route ... maybe i could include that option and/or the snap option and give the user the choice/info to choose on their own 
+- * Deadbeef is in the [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/) repo ... not sure I want to go that route ... maybe i could include that option and/or the snap option and give the user the choice/info to choose on their own
 
 # Software Menus
 
