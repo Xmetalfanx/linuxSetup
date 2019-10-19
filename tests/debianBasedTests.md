@@ -14,7 +14,7 @@
 
 | Menu Items    |     | Stable     | Testing    |
 | ------------- | --- | ---------- | ---------- |
-| Google Chrome |     | Not Tested | Not Tested |
+| Google Chrome |     | Not Tested | Pass |
 | Chromium      |     | Not Tested | Not Tested |
 | Firefox       |     | Not Tested | Not Tested |
 | Vivaldi       |     | Not Coded  | Not Tested |
