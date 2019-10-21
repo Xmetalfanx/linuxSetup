@@ -1,5 +1,6 @@
+# Arch Tasks
 
-## Main Arch Tasks 
+## Main Arch Tasks
 
 | Menu Tasks                                                |     | Arch | Manjaro    |
 | --------------------------------------------------------- | --- | ---- | ---------- |
@@ -8,26 +9,20 @@
 | Add Sound Support (different from just installing codecs) |     | Pass | Not Tested |
 | Add Archive Support                                       |     | Pass | Not Tested |
 
-- The Archive Support fail is likely due to me reorganizing the menu 
+- The Archive Support fail is likely due to me reorganizing the menu
 
 ---
-## Add AUR Support 
+
+## Add AUR Support
 
 | Menu Task |     | Arch | Manjaro    |
 | --------- | --- | ---- | ---------- |
 | trizen    |     | Pass | Not Tested |
 | yay       |     | Pass | Not Tested |
 
---- 
-### Browser Installer 
+---
 
-| Menu Items    |     | Arch       | Manjaro |
-| ------------- | --- | ---------- | ------- |
-| Google Chrome |     | Not Tested |         |
-| Chromium      |     | Pass       |         |
-| Firefox       |     | Pass       |         |
-| Vivaldi       |     | Not Coded  |         |
-
+## Theming Menus
 
 | Menu Items           |     | Arch      | Manjaro    |
 | -------------------- | --- | --------- | ---------- |
@@ -42,33 +37,11 @@
 
 - if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
 
-## Productivity/Office Apps 
+---
 
-| Menu Task   |     | Arch   | Manjaro    |
-| ----------- | --- | ------ | ---------- |
-| Atom Editor |     | Pass** | Not Tested |
-| vscode      |     | Pass   | Not Tested |
-| Typora      |     | Pass   | Not Tested |
+## Software Menus
 
-**Passes but has some artifacts in output ... look into this 
-    - Download is fine 
-    - Install works 
-      - issue is during "updating desktop file MIME" ... maybe not related to my scripts 
-
-
-## Multimedia Apps
-
-| Menu Task             |     | Arch | Manjaro    |
-| --------------------- | --- | ---- | ---------- |
-| Tiny Media Manager    |     | Pass | Not Tested |
-| makeMKV               |     | Pass | Not Tested |
-| Audio Recorder        |     | Pass | Not Tested |
-| DeadBeef Media Player |     | Pass | Not Tested |
-| XnViewMP              |     | Pass | Not Tested |
-| Celluloid/Gnome-Mpv   |     | Pass |      Not Tested       |
-
-# Software Menus
-## Install/Update for the specific apps
+### Install/Update for the specific apps
 
 | Menu Task                         |     | Arch | Manjaro    |
 | --------------------------------- | --- | ---- | ---------- |
@@ -77,3 +50,37 @@
 | Wine and/or PlayonLinux           |     | Pass | Not Tested |
 | Build Essential Packages          |     | Pass | Not Tested |
 | Install Fish Shell and Oh-My-Fish |     | Pass | Pass       |
+
+### Browser Installer
+
+| Menu Items    |     | Arch       | Manjaro |
+| ------------- | --- | ---------- | ------- |
+| Google Chrome |     | Not Tested |         |
+| Chromium      |     | Pass       |         |
+| Firefox       |     | Pass       |         |
+| Vivaldi       |     | Not Coded  |         |
+
+### Multimedia Apps
+
+| Menu Task               |     | Arch | Manjaro    |
+| ----------------------- | --- | ---- | ---------- |
+| Tiny Media Manager      |     | Pass | Not Tested |
+| makeMKV                 |     | Pass | Not Tested |
+| Audio Recorder          |     | Pass | Not Tested |
+| DeadBeef Media Player   |     | Pass | Not Tested |
+| XnViewMP                |     | Pass | Not Tested |
+| Celluloid/Gnome-Mpv     |     | Pass | Not Tested |
+| Strawberry Media Player |     | Pass | Not Tested |
+
+### Productivity/Office Apps
+
+| Menu Task   |     | Arch   | Manjaro    |
+| ----------- | --- | ------ | ---------- |
+| Atom Editor |     | Pass** | Not Tested |
+| vscode      |     | Pass   | Not Tested |
+| Typora      |     | Pass   | Not Tested |
+
+**Passes but has some artifacts in output ... look into this
+    - Download is fine
+    - Install works
+      - issue is during "updating desktop file MIME" ... maybe not related to my scripts

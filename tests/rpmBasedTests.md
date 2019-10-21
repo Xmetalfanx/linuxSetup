@@ -1,6 +1,8 @@
-# Main Tasks
+# Main Tasks for RPM Distros, Fedora and OpenSuse
 
-## Fedora 
+## Main Tasks
+
+### Fedora
 
 | Menu Tasks                  |     | Fedora 29 | Fedora 30 |
 | --------------------------- | --- | --------- | --------- |
@@ -8,8 +10,7 @@
 | Install third party repos\* |     | Pass      | Pass      |
 | Install Codecs              |     | Pass      | Pass      |
 
-
-## OpenSuse 
+### OpenSuse
 
 | Menu Tasks                  |     | Opensuse Leap 42.3 | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
 | --------------------------- | --- | ------------------ | ----------- | ------------------ | ----------- |
@@ -17,118 +18,13 @@
 | Install third party repos\* |     | Not Tested         | Pass        | Pass               | Fail        |
 | Install Codecs              |     | Not Tested         | Pass        | Pass               | Not Tested  |
 
-
 ---
 
-# Software Menus
+## Theming Installation
 
-## Install/Update for the specific apps
+- What themes are available for what distro and what "Desktop"/Window Manager makes this hard to test at times
 
-### Fedora 
-
-| Menu Task                |     | Fedora 29  | Fedora 30 |
-| ------------------------ | --- | ---------- | --------- |
-| Add Common Software      |     | Pass       | Pass      |
-| Etcher                   |     | Pass       | Pass      |
-| Wine and/or PlayonLinux  |     | Not Tested | Pass      |
-| Build Essential Packages |     | Pass       | Pass      |
-
-### OpenSuse 
-
-| Menu Task                |     | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
-| ------------------------ | --- | ------------------ | --------------- | ----------------- | ----------- |
-| Add Common Software      |     | Not Tested         | Pass            | Pass              | Pass        |
-| Etcher                   |     | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
-| Wine and/or PlayonLinux  |     | Not Tested         | Not Tested      | Fail              | Not Tested  |
-| Build Essential Packages |     | Not Tested         | Pass            | Pass              | Pass        |
-
-- Wine fails on OpenSuse due to the package "playonlinux" not being usable ..it has to be "PlayOnLinux" and that is screwing that test up
-
---- 
-
-## Multimedia Apps
-
-## Fedora 
-
-| Menu Task             |     | Fedora 29  | Fedora 30                     |
-| --------------------- | --- | ---------- | ----------------------------- |
-| Tiny Media Manager    |     | Pass       | Fail - Downloads, Doesn't run |
-| makeMKV               |     | Not Tested | Pass                          |
-| DeadBeef Media Player |     | Not Tested | Pass                          |
-| XnViewMP              |     | Pass       | Fail*                         |
-| Audio Recorder        |     | Not Tested | Not Tested                    |
-| Celluloid/Gnome MPV   |     | Not Tested | Pass                          |
-
-- TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs
-
-## OpenSuse 
-
-| Menu Task             |     | Opensuse Leap 42.3 | OpensuseLeap 15   | OpensuseLeap 15.1 | Opensuse TW |
-| --------------------- | --- | ------------------ | ----------------- | ----------------- | ----------- |
-| Tiny Media Manager    |     | Not Tested         | Pass              | Pass              | Pass        |
-| makeMKV               |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
-| DeadBeef Media Player |     | Not Tested         | Fail - Dep issues | Not Tested        | Pass        |
-| XnViewMP              |     | Not Tested         | Pass              | Pass              | Pass        |
-| Audio Recorder        |     | Not Tested         | Not Tested        | Not Tested        | Not Tested  |
-| Celluloid/Gnome MPV   |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
-
-
----
-
-## Productivity/Office Apps
-
-- Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
-
-### Fedora
-
-| Menu Task   |     | Fedora 29 | Fedora 30 |
-| ----------- | --- | --------- | --------- |
-| Atom Editor |     | Fail*     | Pass      |
-| vscode      |     | Pass      | Pass      |
-| Typora      |     | Pass      | Pass      |
-
-*Upgraded to Fedora 30 with a fresh install before I could test again 
-
-### OpenSuse 
-
-| Menu Task   |     | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
-| ----------- | --- | ------------------ | --------------- | ----------------- | ----------- |
-| Atom Editor |     | Not Tested         | Pass            | Pass              | Fail        |
-| vscode      |     | Not Tested         | Pass            | Pass              | Pass        |
-| Typora      |     | Not Tested         | Pass            | Pass              | Pass        |
-
----
-
-## Web Browsers
-
-### Fedora 
-
-| Menu Items    |     | Fedora 29    | Fedora 30 |
-| ------------- | --- | ------------ | --------- |
-| Google Chrome |     | Fail         | Pass      |
-| Chromium      |     | Pass         | Pass      |
-| Firefox       |     | Preinstalled | Pass      |
-| Vivaldi       |     | Fail         | Pass      |
-
-## OpenSuse 
-
-| Menu Items    |     | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
-| ------------- | --- | ------------------ | ---------------- | ------------------ | ----------- |
-| Google Chrome |     | Not Tested         | Not Tested       | Pass               | Pass        |
-| Chromium      |     | Not Tested         | Pass             | Pass               | Fail        |
-| Firefox       |     | Not Tested         | Fail             | Not ... Sure       | Not Tested  |
-| Vivaldi       |     | Not Tested         | Not Tested       | Pass               | Pass        |
-
-\*\*\*\* MozillaFirefox is the package name for Opensuse, not "firefox"... until i change this it's a probable fail
-
---- 
-
-# Theming Installation
-
-- What themes are available for what distro and what "Desktop"/Window Manager makes this hard to test at times 
-
-
-## Fedora 
+## Fedora
 
 | Menu Items           |     | Fedora 29 | Fedora 30 |
 | -------------------- | --- | --------- | --------- |
@@ -141,7 +37,7 @@
 | Install Misc Themes  |     | Pass      | Fail      |
 | All Listed Themes    |     | Pass      | Fail      |
 
-## OpenSuse 
+## OpenSuse
 
 | Menu Items           |     | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 | -------------------- | --- | ------------------ | ---------------- | ------------------ | ----------- |
@@ -153,7 +49,6 @@
 | Install Misc Icons   |     | Not Tested         | Not Coded        | Not Coded          | Not Tested  |
 | Install Misc Themes  |     | Not Tested         | Fail             | Pass               | Not Tested  |
 | All Listed Themes    |     | Not Tested         | Not Tested       | Not Tested         | Not Tested  |
-
 
 ---
 
@@ -171,10 +66,105 @@
 
 ---
 
-## OpenSuse Cinnamon Tests
+## Software Menus
 
-### Install Cinnamon
+### Fedora
 
-| Menu Items                                                      |     | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse TW |
-| --------------------------------------------------------------- | --- | ---------------- | ------------------ | ----------- |
-| Fresh Cinnamon                             |     | Not Tested       | Not Tested         |         |
+#### Common/Various Software
+
+| Menu Task                |     | Fedora 29  | Fedora 30 |
+| ------------------------ | --- | ---------- | --------- |
+| Add Common Software      |     | Pass       | Pass      |
+| Etcher                   |     | Pass       | Pass      |
+| Wine and/or PlayonLinux  |     | Not Tested | Pass      |
+| Build Essential Packages |     | Pass       | Pass      |
+
+#### Web Browser
+
+| Menu Items    |     | Fedora 29    | Fedora 30 |
+| ------------- | --- | ------------ | --------- |
+| Google Chrome |     | Fail         | Pass      |
+| Chromium      |     | Pass         | Pass      |
+| Firefox       |     | Preinstalled | Pass      |
+| Vivaldi       |     | Fail         | Pass      |
+
+#### Multimedia Programs
+
+| Menu Task             |     | Fedora 29  | Fedora 30                     |
+| --------------------- | --- | ---------- | ----------------------------- |
+| Tiny Media Manager    |     | Pass       | Fail - Downloads, Doesn't run |
+| makeMKV               |     | Not Tested | Pass                          |
+| DeadBeef Media Player |     | Not Tested | Pass                          |
+| XnViewMP              |     | Pass       | Fail*                         |
+| Audio Recorder        |     | Not Tested | Not Tested                    |
+| Celluloid/Gnome MPV   |     | Not Tested | Pass                          |
+
+- TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs
+
+#### Coding/Office/Productivity Programs
+
+- Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
+
+| Menu Task   |     | Fedora 29 | Fedora 30 |
+| ----------- | --- | --------- | --------- |
+| Atom Editor |     | Fail*     | Pass      |
+| vscode      |     | Pass      | Pass      |
+| Git Kraken  |     |           |           |
+| Typora      |     | Pass      | Pass      |
+
+*Upgraded to Fedora 30 with a fresh install before I could test again
+
+---
+
+### Opensuse
+
+#### Common/Various Software
+
+| Menu Task                |     | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
+| ------------------------ | --- | ------------------ | --------------- | ----------------- | ----------- |
+| Add Common Software      |     | Not Tested         | Pass            | Pass              | Pass        |
+| Etcher                   |     | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
+| Wine and/or PlayonLinux  |     | Not Tested         | Not Tested      | Fail              | Not Tested  |
+| Build Essential Packages |     | Not Tested         | Pass            | Pass              | Pass        |
+
+- Wine fails on OpenSuse due to the package "playonlinux" not being usable ..it has to be "PlayOnLinux" and that is screwing that test up
+
+---
+
+#### Multimedia Programs
+
+| Menu Task               |     | Opensuse Leap 42.3 | OpensuseLeap 15   | OpensuseLeap 15.1 | Opensuse TW |
+| ----------------------- | --- | ------------------ | ----------------- | ----------------- | ----------- |
+| Tiny Media Manager      |     | Not Tested         | Pass              | Pass              | Pass        |
+| makeMKV                 |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
+| DeadBeef Media Player   |     | Not Tested         | Fail - Dep issues | Not Tested        | Pass        |
+| XnViewMP                |     | Not Tested         | Pass              | Pass              | Pass        |
+| Audio Recorder          |     | Not Tested         | Not Tested        | Not Tested        | Not Tested  |
+| Celluloid/Gnome MPV     |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
+| Strawberry Media Player |     |                    |                   |                   |             |
+
+---
+
+#### Coding/Office/Productivity Programs
+
+- Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
+
+| Menu Task   |     | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
+| ----------- | --- | ------------------ | --------------- | ----------------- | ----------- |
+| Atom Editor |     | Not Tested         | Pass            | Pass              | Fail        |
+| vscode      |     | Not Tested         | Pass            | Pass              | Pass        |
+| GitKraken   |     |                    |                 |                   |             |
+| Typora      |     | Not Tested         | Pass            | Pass              | Pass        |
+
+---
+
+#### Web Browsers
+
+| Menu Items    |     | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
+| ------------- | --- | ------------------ | ---------------- | ------------------ | ----------- |
+| Google Chrome |     | Not Tested         | Not Tested       | Pass               | Pass        |
+| Chromium      |     | Not Tested         | Pass             | Pass               | Fail        |
+| Firefox       |     | Not Tested         | Fail             | Not ... Sure       | Not Tested  |
+| Vivaldi       |     | Not Tested         | Not Tested       | Pass               | Pass        |
+
+\*\*\*\* MozillaFirefox is the package name for Opensuse, not "firefox"... until i change this it's a probable fail
