@@ -90,14 +90,15 @@
 
 #### Multimedia Programs
 
-| Menu Task             |     | Fedora 29  | Fedora 30                     |
-| --------------------- | --- | ---------- | ----------------------------- |
-| Tiny Media Manager    |     | Pass       | Fail - Downloads, Doesn't run |
-| makeMKV               |     | Not Tested | Pass                          |
-| DeadBeef Media Player |     | Not Tested | Pass                          |
-| XnViewMP              |     | Pass       | Fail*                         |
-| Audio Recorder        |     | Not Tested | Not Tested                    |
-| Celluloid/Gnome MPV   |     | Not Tested | Pass                          |
+| Menu Task               |     | Fedora 29  | Fedora 30                     |
+| ----------------------- | --- | ---------- | ----------------------------- |
+| Tiny Media Manager      |     | Pass       | Fail - Downloads, Doesn't run |
+| makeMKV                 |     | Not Tested | Pass                          |
+| DeadBeef Media Player   |     | Not Tested | Pass                          |
+| XnViewMP                |     | Pass       | Fail*                         |
+| Audio Recorder          |     | Not Tested | Not Tested                    |
+| Celluloid/Gnome MPV     |     | Not Tested | Pass                          |
+| Strawberry Media Player |     | Not Tested | Not Tested                    |
 
 - TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs
 
@@ -105,12 +106,12 @@
 
 - Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
 
-| Menu Task   |     | Fedora 29 | Fedora 30 |
-| ----------- | --- | --------- | --------- |
-| Atom Editor |     | Fail*     | Pass      |
-| vscode      |     | Pass      | Pass      |
-| Git Kraken  |     |           |           |
-| Typora      |     | Pass      | Pass      |
+| Menu Task   |     | Fedora 29 | Fedora 30  |
+| ----------- | --- | --------- | ---------- |
+| Atom Editor |     | Fail*     | Not Tested |
+| vscode      |     | Pass      | Pass       |
+| Git Kraken  |     |           |            |
+| Typora      |     | Pass      | Pass       |
 
 *Upgraded to Fedora 30 with a fresh install before I could test again
 
@@ -141,19 +142,19 @@
 | XnViewMP                |     | Not Tested         | Pass              | Pass              | Pass        |
 | Audio Recorder          |     | Not Tested         | Not Tested        | Not Tested        | Not Tested  |
 | Celluloid/Gnome MPV     |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
-| Strawberry Media Player |     |                    |                   |                   |             |
+| Strawberry Media Player |     | Not Tested         | Not Tested        | Not Tested        | Fail |
 
 ---
 
 #### Coding/Office/Productivity Programs
 
-- Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
+- Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I **ignore** at that step and it will install just fine
 
 | Menu Task   |     | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
 | ----------- | --- | ------------------ | --------------- | ----------------- | ----------- |
-| Atom Editor |     | Not Tested         | Pass            | Pass              | Fail        |
+| Atom Editor |     | Not Tested         | Not Tested      | Not Tested        | Pass        |
 | vscode      |     | Not Tested         | Pass            | Pass              | Pass        |
-| GitKraken   |     |                    |                 |                   |             |
+| GitKraken   |     | Not Tested         | Not Tested      | Not Tested        | Pass        |
 | Typora      |     | Not Tested         | Pass            | Pass              | Pass        |
 
 ---
@@ -164,7 +165,7 @@
 | ------------- | --- | ------------------ | ---------------- | ------------------ | ----------- |
 | Google Chrome |     | Not Tested         | Not Tested       | Pass               | Pass        |
 | Chromium      |     | Not Tested         | Pass             | Pass               | Fail        |
-| Firefox       |     | Not Tested         | Fail             | Not ... Sure       | Not Tested  |
+| Firefox       |     | Not Tested         | Fail             | Not Tested      | Not Tested  |
 | Vivaldi       |     | Not Tested         | Not Tested       | Pass               | Pass        |
 
 \*\*\*\* MozillaFirefox is the package name for Opensuse, not "firefox"... until i change this it's a probable fail
