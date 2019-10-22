@@ -42,9 +42,11 @@
 | XnViewMP                |     | Not Tested       | Pass             |
 | Audio Recorder          |     | Not Tested       | Not Tested       |
 | Celluloid/Gnome-Mpv     |     | Not Tested       | Not Tested       |
-| Strawberry Media Player |     | Not Tested       | Not Tested       |
+| Strawberry Media Player |     | Not Tested       | Pass             |
 
 - listing TMM as a fail for now since java is NOT DETECTED but DOESN'T install ... issue is ... it's not that it doesn't work ... I just haven't code "install java" for Ubuntu base yet ... it's not done yet
+
+- Strawberry (since there are DEBs for every Ubuntu and Debian branch vs "one for Debian" and "one for Ubuntu")... for now I have decided to use the AppImage for Ubuntu 19.10
 
 ### Productivity/Office Apps
 
