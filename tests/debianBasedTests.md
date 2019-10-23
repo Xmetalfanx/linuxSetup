@@ -80,7 +80,7 @@
 
 | Menu Task   |     | Stable     | Testing    |
 | ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Not Tested | Pass       |
+| Atom Editor |     | Not Tested | Not Tested       |
 | vscode      |     | Not Tested | Pass       |
 | GitKraken   |     | Not Tested | Fail       |
 | Typora      |     | Not Tested | Not Tested |

@@ -47,10 +47,11 @@
 
 ## Productivity/Office Apps
 
-| Menu Task   |     | Solus 4.0 |
-| :---------- | :-- | :-------- |
-| Atom Editor |     | Pass \*\* |
-| vscode      |     | Pass      |
+| Menu Task   |  | Solus 4.0  |
+|:------------|:-|:-----------|
+| Atom Editor |  | Pass \*\*  |
+| GitKraken   |  | Not Tested |
+| vscode      |  | Pass       |
 
 \*\*Seems to have extra output even though it works ...i have to look into that
 
