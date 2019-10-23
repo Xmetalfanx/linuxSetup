@@ -50,8 +50,9 @@
 | Menu Task   |  | Solus 4.0  |
 |:------------|:-|:-----------|
 | Atom Editor |  | Pass \*\*  |
-| GitKraken   |  | Not Tested |
 | vscode      |  | Pass       |
+| GitKraken   |  | Not Tested |
+| Typora      |  |            |
 
 \*\*Seems to have extra output even though it works ...i have to look into that
 

@@ -74,13 +74,13 @@
 
 ### Productivity/Office Apps
 
-| Menu Task   |     | Arch   | Manjaro    |
-| ----------- | --- | ------ | ---------- |
-| Atom Editor |     | Pass** | Not Tested |
-| vscode      |     | Pass   | Not Tested |
-| Typora      |     | Pass   | Not Tested |
+| Menu Task   |  | Arch       | Manjaro    |
+|-------------|--|------------|------------|
+| Atom Editor |  | Pass**     | Not Tested |
+| vscode      |  | Pass       | Not Tested |
+| GitKraken   |  | Not Tested | Not Tested |
+| Typora      |  | Pass       | Not Tested |
 
-**Passes but has some artifacts in output ... look into this
-    - Download is fine
-    - Install works
-      - issue is during "updating desktop file MIME" ... maybe not related to my scripts
+---
+
+I dont want to really include personal comments here but while I have played with different distros and different bases before .. I can never (on actual hardware) get Manjaro working long enough without annoying me so ... I will leave the "not tested" stuff up for Manjaro but I am not sure I can really ever test that due to what I just said 
