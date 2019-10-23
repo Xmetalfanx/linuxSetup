@@ -50,12 +50,12 @@
 
 ### Productivity/Office Apps
 
-| Menu Tasks  |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-| ----------- | --- | ---------------- | ---------------- |
-| Atom Editor |     | Not Tested       | not Tested       |
-| GitKraken   |     | Not Tested       | Not Tested       |
-| vscode      |     | Not Tested       | Pass             |
-| Typora      |     | Not Tested       | Not Tested       |
+| Menu Tasks  |  | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
+|-------------|--|------------------|------------------|
+| Atom Editor |  | Not Tested       | Pass             |
+| GitKraken   |  | Not Tested       | Pass             |
+| vscode      |  | Not Tested       | Pass             |
+| Typora      |  | Not Tested       | Not Tested       |
 
 ---
 
