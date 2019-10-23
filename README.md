@@ -34,11 +34,13 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 ## Known issues
 
-### Cinnamon and OpenSuse 
-
 ### Some RPMs are not being signed by the devs
 
--  I can not say this is the case for all apps; however, to my knowledge GitKraken and Atom (see [https://github.com/atom/atom/issues/16499](https://github.com/atom/atom/issues/16499) for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea 
+-  I can not say this is the case for all apps; however, to my knowledge GitKraken and Atom (see [https://github.com/atom/atom/issues/16499](https://github.com/atom/atom/issues/16499) for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea.
+
+### KDE Neon Updating Output
+
+-  The output of the updating is not as clean as apt-get upgrade or apt upgrade ... not sure if I can really do anything as that is on the way they upgrade via the CLI and has nothing to do with my scripts
 
 ---
 
@@ -100,7 +102,7 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
     - OpenSuse
     - Arch
     - Fedora
-
+s
 ---
 
 ## [Xmetal's Task Info](/documentation/xmetalTasks.md)
