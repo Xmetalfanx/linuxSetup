@@ -91,7 +91,7 @@
 | XnViewMP                |     | Pass       | Fail*                         |
 | Audio Recorder          |     | Not Tested | Not Tested                    |
 | Celluloid/Gnome MPV     |     | Not Tested | Pass                          |
-| Strawberry Media Player |     | Not Tested | Pass                  |
+| Strawberry Media Player |     | Not Tested | Pass                          |
 
 - TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs
 
@@ -144,7 +144,7 @@
 | makeMKV                 |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
 | DeadBeef Media Player   |     | Not Tested         | Fail - Dep issues | Not Tested        | Pass        |
 | XnViewMP                |     | Not Tested         | Pass              | Pass              | Pass        |
-| Audio Recorder          |     | Not Tested         | Not Tested        | Not Tested        | Not Tested  |
+| Audio Recorder          |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
 | Celluloid/Gnome MPV     |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
 | Strawberry Media Player |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
 
@@ -168,8 +168,6 @@
 | Menu Items    |     | OpenSuse Leap 42.3 | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 | ------------- | --- | ------------------ | ---------------- | ------------------ | ----------- |
 | Google Chrome |     | Not Tested         | Not Tested       | Pass               | Pass        |
-| Chromium      |     | Not Tested         | Pass             | Pass               | Fail        |
-| Firefox       |     | Not Tested         | Fail             | Not Tested      | Not Tested  |
+| Chromium      |     | Not Tested         | Pass             | Pass               | Pass        |
+| Firefox       |     | Not Tested         | Fail             | Not Tested         | Pass        |
 | Vivaldi       |     | Not Tested         | Not Tested       | Pass               | Pass        |
-
-\*\*\*\* MozillaFirefox is the package name for Opensuse, not "firefox"... until i change this it's a probable fail
