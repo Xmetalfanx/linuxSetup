@@ -2,14 +2,14 @@
 
 ## Main Arch Tasks
 
-| Menu Tasks                                                |     | Arch | Manjaro    |
-| --------------------------------------------------------- | --- | ---- | ---------- |
-| Update System                                             |     | Pass | Not Tested |
-| Install Codecs                                            |     | Pass | Not Tested |
-| Add Sound Support (different from just installing codecs) |     | Pass | Not Tested |
-| Add Archive Support                                       |     | Pass | Not Tested |
+| Menu Tasks            |     | Arch | Manjaro    |
+| --------------------- | --- | ---- | ---------- |
+| Update System         |     | Pass | Not Tested |
+| Install Codecs        |     | Pass | Not Tested |
+| Add Sound Support (*) |     | Pass | Not Tested |
+| Add Archive Support   |     | Pass | Not Tested |
 
-- The Archive Support fail is likely due to me reorganizing the menu
+- (*) different from just installing codecs
 
 ---
 
@@ -53,12 +53,14 @@
 
 ### Browser Installer
 
-| Menu Items    |     | Arch       | Manjaro |
-| ------------- | --- | ---------- | ------- |
-| Google Chrome |     | Not Tested |         |
-| Chromium      |     | Pass       |         |
-| Firefox       |     | Pass       |         |
-| Vivaldi       |     | Not Coded  |         |
+| Menu Items    |     | Arch       | Manjaro    |
+| ------------- | --- | ---------- | ---------- |
+| Google Chrome |     | Not Tested | Not Tested |
+| Chromium      |     | Pass       | Not Tested |
+| Firefox       |     | Pass       | Not Tested |
+| Vivaldi       |     | Not Coded  | Not Tested |
+
+---
 
 ### Multimedia Apps
 
@@ -72,15 +74,17 @@
 | Celluloid/Gnome-Mpv     |     | Pass | Not Tested |
 | Strawberry Media Player |     | Pass | Not Tested |
 
+---
+
 ### Productivity/Office Apps
 
-| Menu Task   |  | Arch       | Manjaro    |
-|-------------|--|------------|------------|
-| Atom Editor |  | Pass**     | Not Tested |
-| vscode      |  | Pass       | Not Tested |
-| GitKraken   |  | Not Tested | Not Tested |
-| Typora      |  | Pass       | Not Tested |
+| Menu Task   |     | Arch       | Manjaro    |
+| ----------- | --- | ---------- | ---------- |
+| Atom Editor |     | Pass**     | Not Tested |
+| vscode      |     | Pass       | Not Tested |
+| GitKraken   |     | Not Tested | Not Tested |
+| Typora      |     | Pass       | Not Tested |
 
 ---
 
-I dont want to really include personal comments here but while I have played with different distros and different bases before .. I can never (on actual hardware) get Manjaro working long enough without annoying me so ... I will leave the "not tested" stuff up for Manjaro but I am not sure I can really ever test that due to what I just said 
+I dont want to really include personal comments here but while I have played with different distros and different bases before .. I can never (on actual hardware) get Manjaro working long enough without annoying me so ... I will leave the "not tested" stuff up for Manjaro but I am not sure I can really ever test that due to what I just said
