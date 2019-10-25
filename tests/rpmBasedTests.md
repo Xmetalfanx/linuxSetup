@@ -79,14 +79,7 @@
 | Wine and/or PlayonLinux  |     | Not Tested | Pass      |
 | Build Essential Packages |     | Pass       | Pass      |
 
-#### Web Browser
-
-| Menu Items    |     | Fedora 29    | Fedora 30 |
-| ------------- | --- | ------------ | --------- |
-| Google Chrome |     | Fail         | Pass      |
-| Chromium      |     | Pass         | Pass      |
-| Firefox       |     | Preinstalled | Pass      |
-| Vivaldi       |     | Fail         | Pass      |
+---
 
 #### Multimedia Programs
 
@@ -98,7 +91,7 @@
 | XnViewMP                |     | Pass       | Fail*                         |
 | Audio Recorder          |     | Not Tested | Not Tested                    |
 | Celluloid/Gnome MPV     |     | Not Tested | Pass                          |
-| Strawberry Media Player |     | Not Tested | Not Tested                    |
+| Strawberry Media Player |     | Not Tested | Pass                  |
 
 - TMM issue on Fedora - 99.99999% sure it's not installing java first which TMM needs
 
@@ -114,6 +107,17 @@
 | Typora      |     | Pass      | Pass       |
 
 *Upgraded to Fedora 30 with a fresh install before I could test again
+
+---
+
+#### Web Browser
+
+| Menu Items    |     | Fedora 29    | Fedora 30 |
+| ------------- | --- | ------------ | --------- |
+| Google Chrome |     | Fail         | Pass      |
+| Chromium      |     | Pass         | Pass      |
+| Firefox       |     | Preinstalled | Pass      |
+| Vivaldi       |     | Fail         | Pass      |
 
 ---
 
@@ -142,7 +146,7 @@
 | XnViewMP                |     | Not Tested         | Pass              | Pass              | Pass        |
 | Audio Recorder          |     | Not Tested         | Not Tested        | Not Tested        | Not Tested  |
 | Celluloid/Gnome MPV     |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
-| Strawberry Media Player |     | Not Tested         | Not Tested        | Not Tested        | Fail |
+| Strawberry Media Player |     | Not Tested         | Not Tested        | Not Tested        | Pass        |
 
 ---
 
