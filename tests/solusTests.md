@@ -24,7 +24,7 @@
 | Wine and/or PlayonLinux  |     | Not Tested |
 | Build Essential Packages |     | Pass       |
 
-* Downloads but you need to "chmod +x" the appimage
+- Downloads but you need to "chmod +x" the appimage
 
 ## Web Browser Menu
 
@@ -37,24 +37,27 @@
 
 ## Multimedia Apps
 
-| Menu Task             |   | Solus 4.0  |
-| :-------------------- |:-- | :--------- |
-| Tiny Media Manager    |   | Pass       |
-| makeMKV               |   | RETEST     |
-| DeadBeef Media Player |   | Pass       |
-| XnViewMP              |   | Not Tested |
-| Gnome-mpv/Celluloid   |   | Pass       |
+| Menu Task               |     | Solus 4.0  |
+| :---------------------- | :-- | :--------- |
+| Tiny Media Manager      |     | Pass       |
+| makeMKV                 |     | RETEST     |
+| DeadBeef Media Player   |     | Pass       |
+| XnViewMP                |     | Not Tested |
+| Gnome-mpv/Celluloid     |     | Pass       |
+| Strawberry Media Player |     | Not Tested |
 
-## Productivity/Office Apps
+## Coding/Productivity/Office Apps
 
-| Menu Task   |  | Solus 4.0  |
-|:------------|:-|:-----------|
-| Atom Editor |  | Pass \*\*  |
-| vscode      |  | Pass       |
-| GitKraken   |  | Not Tested |
-| Typora      |  |            |
+| Menu Task   |     | Solus 4.0  |
+| :---------- | :-- | :--------- |
+| Atom Editor |     | Pass \*\*  |
+| vscode      |     | Pass       |
+| GitKraken   |     | Not Tested |
+| Typora      |     | Not Tested |
 
 \*\*Seems to have extra output even though it works ...i have to look into that
+
+---
 
 ## Theming Menu
 
@@ -66,11 +69,9 @@
 | Install Numix Theme   |     | Pass                               |
 | Install Plata Theme   |     | Plata is Solus 4.0's default theme |
 | \*\*All Listed Themes |     | Not Tested                         |
-|                       |     |                                    |
 | miscIcons             |     | Pass                               |
 | miscThemes            |     | Pass                               |
 
 ---
 
 NOTE: some of the "fails" may indicated that I just haven't coded it for Solus yet ... I haven't gone back with each test/task i am doing to check
-

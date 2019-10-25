@@ -2,11 +2,23 @@
 
 ## Main Tasks
 
-| Menu Tasks          |     | Stable     | Testing    |
-| ------------------- | --- | ---------- | ---------- |
-| Update System       |     | Not Tested | Pass       |
-| Install Codecs      |     | Not Tested | Pass       |
-| Add Archive Support |     | Not Tested | Not Tested |
+| Menu Tasks     |     | Stable     | Testing |
+| -------------- | --- | ---------- | ------- |
+| Update System  |     | Not Tested | Pass    |
+| Install Codecs |     | Not Tested | Pass    |
+
+---
+
+## Debian Specific Tasks 
+
+- In the Debian submenu, that is
+
+| Menu Tasks                                               |     | Stable     | Testing |
+| -------------------------------------------------------- | --- | ---------- | ------- |
+| Install (Both Free and Non-free) Linux Firmware Packages |     | Not Tested | Pass    |
+| Install Intel Microcode Package                          |     | Not Tested | Pass    |
+| Add Archive Support                                      |     | Not Tested | Pass    |
+
 
 ---
 
@@ -47,12 +59,12 @@
 
 ### Browser Installer
 
-| Menu Items    |     | Stable     | Testing    |
-| ------------- | --- | ---------- | ---------- |
-| Google Chrome |     | Not Tested | Pass       |
-| Chromium      |     | Not Tested | Not Tested |
-| Firefox       |     | Not Tested | Not Tested |
-| Vivaldi       |     | Not Coded  | Pass       |
+| Menu Items    |     | Stable     | Testing |
+| ------------- | --- | ---------- | ------- |
+| Google Chrome |     | Not Tested | Pass    |
+| Chromium      |     | Not Tested | Pass    |
+| Firefox       |     | Not Tested | Pass    |
+| Vivaldi       |     | Not Coded  | Pass    |
 
 ---
 
@@ -66,7 +78,7 @@
 | DeadBeef Media Player   |     | Not Tested | Not Coded* |
 | XnViewMP                |     | Not Tested | Pass       |
 | Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
-| Strawberry Media Player |     | Not Tested |            |
+| Strawberry Media Player |     | Not Tested | Pass       |
 
 - Menus are still an issue with TMM ... and apparently Java was already installed in my test
 
@@ -80,7 +92,7 @@
 
 | Menu Task   |     | Stable     | Testing    |
 | ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Not Tested | Not Tested       |
+| Atom Editor |     | Not Tested | Not Tested |
 | vscode      |     | Not Tested | Pass       |
 | GitKraken   |     | Not Tested | Fail       |
 | Typora      |     | Not Tested | Not Tested |
