@@ -128,8 +128,8 @@
 | Menu Task                |     | Opensuse Leap 42.3 | OpensuseLeap 15 | OpensuseLeap 15.1 | Opensuse TW |
 | ------------------------ | --- | ------------------ | --------------- | ----------------- | ----------- |
 | Add Common Software      |     | Not Tested         | Pass            | Pass              | Pass        |
-| Etcher                   |     | Not Tested         | Not Tested      | Not Tested        | Not Tested  |
-| Wine and/or PlayonLinux  |     | Not Tested         | Not Tested      | Fail              | Not Tested  |
+| Etcher                   |     | Not Tested         | Not Tested      | Not Tested        | Fail        |
+| Wine and/or PlayonLinux  |     | Not Tested         | Not Tested      | Fail              | Pass        |
 | Build Essential Packages |     | Not Tested         | Pass            | Pass              | Pass        |
 
 - Wine fails on OpenSuse due to the package "playonlinux" not being usable ..it has to be "PlayOnLinux" and that is screwing that test up
