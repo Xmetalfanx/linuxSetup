@@ -4,11 +4,12 @@
 
 ### Fedora
 
-| Menu Tasks                  |     | Fedora 29 | Fedora 30 |
-| --------------------------- | --- | --------- | --------- |
-| Update System               |     | Pass      | Pass      |
-| Install third party repos\* |     | Pass      | Pass      |
-| Install Codecs              |     | Pass      | Pass      |
+| Menu Tasks                 |      | Fedora 29  | Fedora 30  |
+| -------------------------- | :--- | ---------- | ---------- |
+| Update System              |      | Pass       | Pass       |
+| Install third party repos* |      | Pass       | Pass       |
+| Install Codecs             |      | Pass       | Pass       |
+| Install Intel-Microcode    |      | Not Tested | Not Tested |
 
 ### OpenSuse
 
@@ -49,8 +50,8 @@
 | Install Numix Theme    |     | Pass             | Not Tested         | Pass        |
 | Install Plata Theme    |     | Fail/not coded   | Not Tested         | Pass        |
 | Install Misc Icons     |     | Not Coded        | Not Coded          | Pass        |
-| Install Breeze Theming |     |                  |                    | | 
-| Install Yaru Theming   |     |                  |                    | | 
+| Install Breeze Theming |     |                  |                    |             |
+| Install Yaru Theming   |     |                  |                    |             |
 | Install Misc Themes    |     | Fail             | Pass               | Not Tested  |
 | All Listed Themes      |     | Not Tested       | Not Tested         | Not Tested  |
 
