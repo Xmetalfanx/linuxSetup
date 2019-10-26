@@ -26,30 +26,33 @@
 
 ## Fedora
 
-| Menu Items           |     | Fedora 29 | Fedora 30 |
-| -------------------- | --- | --------- | --------- |
-| Install Adapta Theme |     | Pass      | Pass      |
-| Install Arc Theme    |     | Pass      | Pass      |
-| Install Mint Theme   |     | Pass      | Pass      |
-| Install Numix Theme  |     | Pass      | Pass      |
-| Install Plata Theme  |     | Pass      | Pass      |
-| Install Misc Icons   |     | Pass      | Pass      |
-| Install Misc Themes  |     | Pass      | Fail      |
-| All Listed Themes    |     | Pass      | Fail      |
+| Menu Items           |     | Fedora 29  | Fedora 30  |
+| -------------------- | --- | ---------- | ---------- |
+| Install Adapta Theme |     | Pass       | Pass       |
+| Install Arc Theme    |     | Pass       | Pass       |
+| Install Mint Theme   |     | Pass       | Pass       |
+| Install Numix Theme  |     | Pass       | Pass       |
+| Install Plata Theme  |     | Pass       | Pass       |
+| Install Breeze Theme |     | Not Tested | Not Tested |
+| Install Yaru Theme   |     | Not Tested | Not Tested |
+| Install Misc Icons   |     | Pass       | Pass       |
+| Install Misc Themes  |     | Pass       | Fail       |
+| All Listed Themes    |     | Pass       | Fail       |
 
 ## OpenSuse
 
-| Menu Items           |     | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
-| -------------------- | --- | ---------------- | ------------------ | ----------- |
-| Install Adapta Theme |     | Fail             | Pass               | Pass        |
-| Install Arc Theme    |     | Fail             | Fail               | Pass        |
-| Install Mint Theme   |     | Not Tested       | Not Tested         | Pass        |
-| Install Numix Theme  |     | Pass             | Not Tested         | Pass        |
-| Install Plata Theme  |     | Fail/not coded   | Not Tested         | Pass        |
-| Install Misc Icons   |     | Not Coded        | Not Coded          | Pass        |
-
-| Install Misc Themes  |     | Fail             | Pass               | Not Tested  |
-| All Listed Themes    |     | Not Tested       | Not Tested         | Not Tested  |
+| Menu Items             |     | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
+| ---------------------- | --- | ---------------- | ------------------ | ----------- |
+| Install Adapta Theme   |     | Fail             | Pass               | Pass        |
+| Install Arc Theme      |     | Fail             | Fail               | Pass        |
+| Install Mint Theme     |     | Not Tested       | Not Tested         | Pass        |
+| Install Numix Theme    |     | Pass             | Not Tested         | Pass        |
+| Install Plata Theme    |     | Fail/not coded   | Not Tested         | Pass        |
+| Install Misc Icons     |     | Not Coded        | Not Coded          | Pass        |
+| Install Breeze Theming |     |                  |                    | | 
+| Install Yaru Theming   |     |                  |                    | | 
+| Install Misc Themes    |     | Fail             | Pass               | Not Tested  |
+| All Listed Themes      |     | Not Tested       | Not Tested         | Not Tested  |
 
 ---
 
