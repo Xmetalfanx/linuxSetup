@@ -2,23 +2,22 @@
 
 ## Main Tasks
 
-| Menu Tasks     |     | Stable     | Testing |
-| -------------- | --- | ---------- | ------- |
-| Update System  |     | Not Tested | Pass    |
-| Install Codecs |     | Not Tested | Pass    |
+| Menu Tasks                      |     | Stable     | Testing |
+| ------------------------------- | --- | ---------- | ------- |
+| Update System                   |     | Not Tested | Pass    |
+| Install Codecs                  |     | Not Tested | Pass    |
+| Install Intel Microcode Package |     | Not Tested | Pass    |
 
 ---
 
 ## Debian Specific Tasks 
 
-- In the Debian submenu, that is
+* In the Debian submenu, that is
 
 | Menu Tasks                                               |     | Stable     | Testing |
 | -------------------------------------------------------- | --- | ---------- | ------- |
 | Install (Both Free and Non-free) Linux Firmware Packages |     | Not Tested | Pass    |
-| Install Intel Microcode Package                          |     | Not Tested | Pass    |
 | Add Archive Support                                      |     | Not Tested | Pass    |
-
 
 ---
 
@@ -35,7 +34,7 @@
 | Install Misc Icons   |     | Not Tested | Not Tested |
 | All Listed Themes    |     | Not Tested | Not Tested |
 
-- if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
+* if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
 
 ---
 
@@ -53,7 +52,7 @@
 
 ---
 
-- I am not assuming anything but in some cases it seems (XNViewMP I THINK is one of them ... GitKraken appears to be another) the same DEBs can be used on Debian or Ubuntu ... HOWEVER ... until I know for each app below ... I will assume that is not the case and I know its not a good idea unless the app dev says it to be so.
+* I am not assuming anything but in some cases it seems (XNViewMP I THINK is one of them ... GitKraken appears to be another) the same DEBs can be used on Debian or Ubuntu ... HOWEVER ...until I know for each app below ... I will assume that is not the case and I know its not a good idea unless the app dev says it to be so.
 
 ---
 
@@ -80,11 +79,11 @@
 | Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
 | Strawberry Media Player |     | Not Tested | Pass       |
 
-- Menus are still an issue with TMM ... and apparently Java was already installed in my test
+* Menus are still an issue with TMM ...and apparently Java was already installed in my test
 
-- with Audio-Recorder on Debian ... the snap may be the only real options
+* with Audio-Recorder on Debian ...the snap may be the only real options
 
-- Deadbeef is in the [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/) repo ... not sure I want to go that route ... maybe i could include that option and/or the snap option and give the user the choice/info to choose on their own
+* Deadbeef is in the [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/) repo ...not sure I want to go that route ...maybe i could include that option and/or the snap option and give the user the choice/info to choose on their own
 
 ---
 
@@ -96,3 +95,4 @@
 | vscode      |     | Not Tested | Pass       |
 | GitKraken   |     | Not Tested | Fail       |
 | Typora      |     | Not Tested | Not Tested |
+

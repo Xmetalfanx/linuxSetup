@@ -2,10 +2,12 @@
 
 ## Common Tasks
 
-| Menu Tasks     |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-| -------------- | --- | ---------------- | ---------------- |
-| Update System  |     | Not Tested       | Pass             |
-| Install Codecs |     | Not Coded/Tested | Not Coded/Tested |
+| Menu Tasks                      |            | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
+| ------------------------------- | ---------- | ---------------- | ---------------- |
+| Update System                   |            | Not Tested       | Pass             |
+| Install Codecs                  |            | Not Coded/Tested | Not Coded/Tested |
+| Install Intel-Microcode package | Not Tested | Not Tested       |
+
 ---
 
 ## Specific spins tasks
@@ -50,12 +52,12 @@
 
 ### Productivity/Office Apps
 
-| Menu Tasks  |  | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-|-------------|--|------------------|------------------|
-| Atom Editor |  | Not Tested       | Pass             |
-| GitKraken   |  | Not Tested       | Pass             |
-| vscode      |  | Not Tested       | Pass             |
-| Typora      |  | Not Tested       | Not Tested       |
+| Menu Tasks  |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
+| ----------- | --- | ---------------- | ---------------- |
+| Atom Editor |     | Not Tested       | Pass             |
+| GitKraken   |     | Not Tested       | Pass             |
+| vscode      |     | Not Tested       | Pass             |
+| Typora      |     | Not Tested       | Not Tested       |
 
 ---
 
