@@ -82,7 +82,7 @@
 | ----------- | --- | ---------- | ---------- |
 | Atom Editor |     | Pass**     | Not Tested |
 | vscode      |     | Pass       | Not Tested |
-| GitKraken   |     | Not Tested | Not Tested |
+| GitKraken   |     | Pass       | Not Tested |
 | Typora      |     | Pass       | Not Tested |
 
 ---
