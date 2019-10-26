@@ -20,6 +20,8 @@
 | trizen    |     | Pass | Not Tested |
 | yay       |     | Pass | Not Tested |
 
+- both aurInstall functions (aka yay's or trizen's complains about having to pick the number)
+
 ---
 
 ## Theming Menus
@@ -58,7 +60,7 @@
 | Google Chrome |     | Not Tested | Not Tested |
 | Chromium      |     | Pass       | Not Tested |
 | Firefox       |     | Pass       | Not Tested |
-| Vivaldi       |     | Not Coded  | Not Tested |
+| Vivaldi       |     | Pass  | Not Tested |
 
 ---
 
