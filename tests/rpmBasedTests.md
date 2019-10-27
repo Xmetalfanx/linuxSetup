@@ -13,11 +13,12 @@
 
 ### OpenSuse
 
-| Menu Tasks                  |     | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
-| --------------------------- | --- | ----------- | ------------------ | ----------- |
-| Update System               |     | Pass        | Pass               | Pass        |
-| Install third party repos\* |     | Pass        | Pass               | Fail        |
-| Install Codecs              |     | Pass        | Pass               | Not Tested  |
+| Menu Tasks                  |  | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
+|-----------------------------|--|-------------|--------------------|-------------|
+| Update System               |  | Pass        | Pass               | Pass        |
+| Install third party repos\* |  | Pass        | Pass               | Fail        |
+| Install Codecs              |  | Pass        | Pass               | Not Tested  |
+| Install Intel-Microcode     |  | Not Tested  | Not Tested         | Not Tested  |
 
 ---
 
@@ -50,8 +51,8 @@
 | Install Numix Theme    |     | Pass             | Not Tested         | Pass        |
 | Install Plata Theme    |     | Fail/not coded   | Not Tested         | Pass        |
 | Install Misc Icons     |     | Not Coded        | Not Coded          | Pass        |
-| Install Breeze Theming |     |                  |                    |             |
-| Install Yaru Theming   |     |                  |                    |             |
+| Install Breeze Theming |     |       Not Tested            |      Not Tested               |             |
+| Install Yaru Theming   |     |       Not Tested            |        Not Tested             |     Pass        |
 | Install Misc Themes    |     | Fail             | Pass               | Not Tested  |
 | All Listed Themes      |     | Not Tested       | Not Tested         | Not Tested  |
 

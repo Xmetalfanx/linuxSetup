@@ -1,12 +1,14 @@
 # Ubuntu (/Ubuntu spins/favors)
 
+- Tests done on the BASE mentioned .. not necessarily "stock" Ubunutu 
+
 ## Common Tasks
 
-| Menu Tasks                      |            | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-| ------------------------------- | ---------- | ---------------- | ---------------- |
-| Update System                   |            | Not Tested       | Pass             |
-| Install Codecs                  |            | Not Coded/Tested | Not Coded/Tested |
-| Install Intel-Microcode package | Not Tested | Not Tested       |
+| Menu Tasks                      | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.10     |
+|---------------------------------|------------------|------------------|------------------|
+| Update System                   | Not Tested       | Pass             | ???              |
+| Install Codecs                  | Not Coded/Tested | Not Coded/Tested | Not Coded/Tested |
+| Install Intel-Microcode package | Not Tested       | Not Tested       | Pass             |
 
 ---
 
