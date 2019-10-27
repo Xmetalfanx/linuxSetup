@@ -3,7 +3,7 @@
 | Menu Tasks                      |      | Solus 4.0  |
 | :------------------------------ | :--- | :--------- |
 | Update System                   |      | Pass       |
-| Install Intel-Microcode package |      | Not Tested |
+| Install Intel-Microcode package |      | Pass       |
 
 ## Solus Submenu
 
@@ -45,18 +45,17 @@
 | DeadBeef Media Player   |      | Pass       |
 | XnViewMP                |      | Not Tested |
 | Gnome-mpv/Celluloid     |      | Pass       |
-| Strawberry Media Player |      | Not Tested |
+| Strawberry Media Player |      | Pass      |
 
 ## Coding/Productivity/Office Apps
 
 | Menu Task   |      | Solus 4.0  |
 | :---------- | :--- | :--------- |
-| Atom Editor |      | Pass \*\*  |
+| Atom Editor |      | Pass       |
 | vscode      |      | Pass       |
-| GitKraken   |      | Not Tested |
+| GitKraken   |      | Pass       |
 | Typora      |      | Not Tested |
 
-\*\*Seems to have extra output even though it works ...i have to look into that
 
 ---
 

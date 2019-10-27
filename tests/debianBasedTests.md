@@ -23,18 +23,20 @@
 
 ### Themeing related
 
-| Menu Items           |     | Stable     | Testing    |
-| -------------------- | --- | ---------- | ---------- |
-| Install Adapta Theme |     | Not Tested | Not Tested |
-| Install Arc Theme    |     | Not Tested | Not Tested |
-| Install Mint-Y Theme |     | Not Coded  | Not Tested |
-| Install Numix Theme  |     | Not Tested | Not Tested |
-| Install Plata Theme  |     | Not Coded  | Not Tested |
-| Install Misc Themes  |     | Not Tested | Not Tested |
-| Install Misc Icons   |     | Not Tested | Not Tested |
-| All Listed Themes    |     | Not Tested | Not Tested |
+| Menu Items          |     | Stable     | Testing    |
+| ------------------- | --- | ---------- | ---------- |
+| Install Adapta      |     | Not Tested | Pass       |
+| Install Arc         |     | Not Tested | Pass       |
+| Install Mint-Y      |     | Not Coded  | Not Coded  |
+| Install Numix       |     | Not Tested | Pass       |
+| Install Plata       |     | Not Coded  | Not Tested |
+| Install Yaru        |     | Not Tested | Not Coded  |
+| Install Breeze      |     | Not Tested | Pass       |
+| Install Misc Themes |     | Not Tested | Pass       |
+| Install Misc Icons  |     | Not Tested | Not Coded  |
+| All Listed Themes   |     | Not Tested | Not Tested |
 
-* if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
+- numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
 
 ---
 

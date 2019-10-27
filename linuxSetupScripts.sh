@@ -51,6 +51,8 @@ function mainMenu() {
 
         1)
             universalUpdate
+
+            ## For updating Snaps and/or Flatpaks 
             universalAppUpdates
             ;;
 
