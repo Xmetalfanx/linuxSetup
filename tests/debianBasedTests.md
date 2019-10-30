@@ -83,7 +83,7 @@
 
 * Menus are still an issue with TMM ...and apparently Java was already installed in my test
 
-* with Audio-Recorder on Debian ...the snap may be the only real options
+* with Audio-Recorder on Debian ...the snap may be the only real option -  Snap also doesn't seem to be installed by default 
 
 * Deadbeef is in the [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/) repo ...not sure I want to go that route ...maybe i could include that option and/or the snap option and give the user the choice/info to choose on their own
 
@@ -93,8 +93,7 @@
 
 | Menu Task   |     | Stable     | Testing    |
 | ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Not Tested | Not Tested |
+| Atom Editor |     | Not Tested | Pass       |
 | vscode      |     | Not Tested | Pass       |
 | GitKraken   |     | Not Tested | Fail       |
 | Typora      |     | Not Tested | Not Tested |
-
