@@ -48,7 +48,7 @@
 | --------------------------------- | --- | ---------- | ---------- |
 | Add Common Software               |     | Not Tested | Pass       |
 | Etcher                            |     | Not Tested | Pass       |
-| Wine and/or PlayonLinux           |     | Not Tested | Not Tested |
+| Wine and/or PlayonLinux           |     | Not Tested | Pass       |
 | Build Essential Packages          |     | Not Tested | Pass       |
 | Install Fish Shell and Oh-My-Fish |     | Not Tested | Pass       |
 
