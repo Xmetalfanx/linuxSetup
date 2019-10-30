@@ -13,12 +13,12 @@
 
 ### OpenSuse
 
-| Menu Tasks                  |  | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
-|-----------------------------|--|-------------|--------------------|-------------|
-| Update System               |  | Pass        | Pass               | Pass        |
-| Install third party repos\* |  | Pass        | Pass               | Fail        |
-| Install Codecs              |  | Pass        | Pass               | Not Tested  |
-| Install Intel-Microcode     |  | Not Tested  | Not Tested         | Not Tested  |
+| Menu Tasks                  |     | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
+| --------------------------- | --- | ----------- | ------------------ | ----------- |
+| Update System               |     | Pass        | Pass               | Pass        |
+| Install third party repos\* |     | Pass        | Pass               | Fail        |
+| Install Codecs              |     | Pass        | Pass               | Not Tested  |
+| Install Intel-Microcode     |     | Not Tested  | Not Tested         | Not Tested  |
 
 ---
 
@@ -51,8 +51,8 @@
 | Install Numix Theme    |     | Pass             | Not Tested         | Pass        |
 | Install Plata Theme    |     | Fail/not coded   | Not Tested         | Pass        |
 | Install Misc Icons     |     | Not Coded        | Not Coded          | Pass        |
-| Install Breeze Theming |     |       Not Tested            |      Not Tested               |             |
-| Install Yaru Theming   |     |       Not Tested            |        Not Tested             |     Pass        |
+| Install Breeze Theming |     | Not Tested       | Not Tested         |             |
+| Install Yaru Theming   |     | Not Tested       | Not Tested         | Pass        |
 | Install Misc Themes    |     | Fail             | Pass               | Not Tested  |
 | All Listed Themes      |     | Not Tested       | Not Tested         | Not Tested  |
 
@@ -105,12 +105,12 @@
 
 - Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
 
-| Menu Task   |     | Fedora 29 | Fedora 30  |
-| ----------- | --- | --------- | ---------- |
-| Atom Editor |     | Fail*     | Not Tested |
-| vscode      |     | Pass      | Pass       |
-| Git Kraken  |     |           |            |
-| Typora      |     | Pass      | Pass       |
+| Menu Task   |     | Fedora 29  | Fedora 30  |
+| ----------- | --- | ---------- | ---------- |
+| Atom Editor |     | Fail*      | Pass       |
+| vscode      |     | Pass       | Pass       |
+| Git Kraken  |     | Not Tested | Pass       |
+| Typora      |     | Pass       | Pass       |
 
 *Upgraded to Fedora 30 with a fresh install before I could test again
 
