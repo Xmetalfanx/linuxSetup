@@ -44,13 +44,13 @@
 
 ### Install/Update for the specific apps
 
-| Menu Task                         |     | Stable     | Testing    |
-| --------------------------------- | --- | ---------- | ---------- |
-| Add Common Software               |     | Not Tested | Pass       |
-| Etcher                            |     | Not Tested | Pass       |
-| Wine and/or PlayonLinux           |     | Not Tested | Pass       |
-| Build Essential Packages          |     | Not Tested | Pass       |
-| Install Fish Shell and Oh-My-Fish |     | Not Tested | Pass       |
+| Menu Task                         |     | Stable     | Testing |
+| --------------------------------- | --- | ---------- | ------- |
+| Add Common Software               |     | Not Tested | Pass    |
+| Etcher                            |     | Not Tested | Pass    |
+| Wine and/or PlayonLinux           |     | Not Tested | Pass    |
+| Build Essential Packages          |     | Not Tested | Pass    |
+| Install Fish Shell and Oh-My-Fish |     | Not Tested | Pass    |
 
 ---
 
@@ -74,7 +74,7 @@
 | Menu Task               |     | Stable     | Testing    |
 | ----------------------- | --- | ---------- | ---------- |
 | Tiny Media Manager      |     | Not Tested | Pass       |
-| makeMKV                 |     | Not Tested | Not Tested |
+| makeMKV                 |     | Not Tested | Fail       |
 | Audio Recorder          |     | Not Tested | Not Tested |
 | DeadBeef Media Player   |     | Not Tested | Not Coded* |
 | XnViewMP                |     | Not Tested | Pass       |
@@ -91,9 +91,9 @@
 
 ### Productivity/Office Apps
 
-| Menu Task   |     | Stable     | Testing    |
-| ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Not Tested | Pass       |
-| vscode      |     | Not Tested | Pass       |
-| GitKraken   |     | Not Tested | Fail       |
-| Typora      |     | Not Tested | Not Tested |
+| Menu Task   |     | Stable     | Testing   |
+| ----------- | --- | ---------- | --------- |
+| Atom Editor |     | Not Tested | Pass      |
+| vscode      |     | Not Tested | Pass      |
+| GitKraken   |     | Not Tested | Pass      |
+| Typora      |     | Not Tested | Not Coded |
