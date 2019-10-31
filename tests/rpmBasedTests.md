@@ -4,12 +4,12 @@
 
 ### Fedora
 
-| Menu Tasks                 |      | Fedora 29  | Fedora 30  |
-| -------------------------- | :--- | ---------- | ---------- |
-| Update System              |      | Pass       | Pass       |
-| Install third party repos* |      | Pass       | Pass       |
-| Install Codecs             |      | Pass       | Pass       |
-| Install Intel-Microcode    |      | Not Tested | Not Tested |
+| Menu Tasks                 |      | Fedora 29  | Fedora 30  | Fedora 31 |
+| -------------------------- | :--- | ---------- | ---------- | --------- |
+| Update System              |      | Pass       | Pass       |           |
+| Install third party repos* |      | Pass       | Pass       |           |
+| Install Codecs             |      | Pass       | Pass       |           |
+| Install Intel-Microcode    |      | Not Tested | Not Tested |           |
 
 ### OpenSuse
 
@@ -28,18 +28,18 @@
 
 ## Fedora
 
-| Menu Items           |     | Fedora 29  | Fedora 30  |
-| -------------------- | --- | ---------- | ---------- |
-| Install Adapta Theme |     | Pass       | Pass       |
-| Install Arc Theme    |     | Pass       | Pass       |
-| Install Mint Theme   |     | Pass       | Pass       |
-| Install Numix Theme  |     | Pass       | Pass       |
-| Install Plata Theme  |     | Pass       | Pass       |
-| Install Breeze Theme |     | Not Tested | Not Tested |
-| Install Yaru Theme   |     | Not Tested | Not Tested |
-| Install Misc Icons   |     | Pass       | Pass       |
-| Install Misc Themes  |     | Pass       | Fail       |
-| All Listed Themes    |     | Pass       | Fail       |
+| Menu Items           |     | Fedora 29  | Fedora 30  | Fedora 31 |
+| -------------------- | --- | ---------- | ---------- | --------- |
+| Install Adapta Theme |     | Pass       | Pass       |           |
+| Install Arc Theme    |     | Pass       | Pass       |           |
+| Install Mint Theme   |     | Pass       | Pass       |           |
+| Install Numix Theme  |     | Pass       | Pass       |           |
+| Install Plata Theme  |     | Pass       | Pass       |           |
+| Install Breeze Theme |     | Not Tested | Not Tested |           |
+| Install Yaru Theme   |     | Not Tested | Not Tested |           |
+| Install Misc Icons   |     | Pass       | Pass       |           |
+| Install Misc Themes  |     | Pass       | Fail       |           |
+| All Listed Themes    |     | Pass       | Fail       |           |
 
 ## OpenSuse
 
@@ -78,12 +78,12 @@
 
 #### Common/Various Software
 
-| Menu Task                |     | Fedora 29  | Fedora 30 |
-| ------------------------ | --- | ---------- | --------- |
-| Add Common Software      |     | Pass       | Pass      |
-| Etcher                   |     | Pass       | Pass      |
-| Wine and/or PlayonLinux  |     | Not Tested | Pass      |
-| Build Essential Packages |     | Pass       | Pass      |
+| Menu Task                |     | Fedora 29  | Fedora 30 | Fedora 31 |
+| ------------------------ | --- | ---------- | --------- | --------- |
+| Add Common Software      |     | Pass       | Pass      |           |
+| Etcher                   |     | Pass       | Pass      |           |
+| Wine and/or PlayonLinux  |     | Not Tested | Pass      |           |
+| Build Essential Packages |     | Pass       | Pass      |           |
 
 ---
 
@@ -105,12 +105,12 @@
 
 - Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I (ignore) at that step and it will install just fine
 
-| Menu Task   |     | Fedora 29  | Fedora 30  |
-| ----------- | --- | ---------- | ---------- |
-| Atom Editor |     | Fail*      | Pass       |
-| vscode      |     | Pass       | Pass       |
-| Git Kraken  |     | Not Tested | Pass       |
-| Typora      |     | Pass       | Pass       |
+| Menu Task   |     | Fedora 29  | Fedora 30 | Fedora 31 |
+| ----------- | --- | ---------- | --------- | --------- |
+| Atom Editor |     | Fail*      | Pass      |           |
+| vscode      |     | Pass       | Pass      |           |
+| Git Kraken  |     | Not Tested | Pass      |           |
+| Typora      |     | Pass       | Pass      |           |
 
 *Upgraded to Fedora 30 with a fresh install before I could test again
 
@@ -118,12 +118,12 @@
 
 #### Web Browser
 
-| Menu Items    |     | Fedora 29    | Fedora 30 |
-| ------------- | --- | ------------ | --------- |
-| Google Chrome |     | Fail         | Pass      |
-| Chromium      |     | Pass         | Pass      |
-| Firefox       |     | Preinstalled | Pass      |
-| Vivaldi       |     | Fail         | Pass      |
+| Menu Items    |     | Fedora 29    | Fedora 30 | Fedora 31 |
+| ------------- | --- | ------------ | --------- | --------- |
+| Google Chrome |     | Fail         | Pass      |           |
+| Chromium      |     | Pass         | Pass      |           |
+| Firefox       |     | Preinstalled | Pass      |           |
+| Vivaldi       |     | Fail         | Pass      |           |
 
 ---
 
