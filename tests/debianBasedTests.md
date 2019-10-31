@@ -74,7 +74,7 @@
 | Menu Task               |     | Stable     | Testing    |
 | ----------------------- | --- | ---------- | ---------- |
 | Tiny Media Manager      |     | Not Tested | Pass       |
-| makeMKV                 |     | Not Tested | Fail       |
+| makeMKV                 |     | Not Tested | Pass       |
 | Audio Recorder          |     | Not Tested | Not Tested |
 | DeadBeef Media Player   |     | Not Tested | Not Coded* |
 | XnViewMP                |     | Not Tested | Pass       |
