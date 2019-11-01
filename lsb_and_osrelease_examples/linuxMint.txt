@@ -1,0 +1,18 @@
+lsb_release command provides you with a flexibility to choose which information is most important to include as part of you version checking effort. To obtain an information about codename, release version, distributor and distribution execute:
+
+$ lsb_release -crid
+Distributor ID: LinuxMint
+Description:    Linux Mint 19.1 Tessa
+Release:        19.1
+Codename:       tessa
+
+$ cat /etc/os-release
+
+NAME='Linux Mint"
+VERSION="19.2 (Tina)"
+ID=linuxmint
+ID_LIKE=ubuntu
+PRETTY_NAME="Linux Mint 19.2"
+VERSION_ID="19.2"
+VERSION_CODENAME=tina
+UBUNTU_CODENAME=bionic
