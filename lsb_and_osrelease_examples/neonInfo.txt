@@ -1,0 +1,24 @@
+cat /etc/os-release
+
+NAME="KDE neon"
+VERSION="5.17"
+ID=neon
+ID_LIKE="ubuntu debian"
+PRETTY_NAME="KDE neon User Edition 5.17"
+VARIANT="User Edition"
+VERSION_ID="18.04"
+HOME_URL="http://neon.kde.org/"
+SUPPORT_URL="http://neon.kde.org/"
+BUG_REPORT_URL="http://bugs.kde.org/"
+LOGO=start-here-kde-neon
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+
+
+lsb_release -a                                                                                                   Thu 31 Oct 2019 11:09:07 PM EDT
+No LSB modules are available.
+Distributor ID: neon
+Description:    KDE neon User Edition 5.17
+Release:        18.04
+Codename:       bionic
