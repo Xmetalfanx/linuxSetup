@@ -122,3 +122,6 @@ s
 ## Software Tests
 - [Theming Testing ](tests/themingTests.md)
 - [Web Browser Installer Tests](tests/browserImstallerTests.md)
+
+#### Extra Notes
+- note: move this to better documentation section, later The repo used for an option to install Audio-Recorder on Debian is [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/)
