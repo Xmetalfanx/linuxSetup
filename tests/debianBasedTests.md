@@ -76,7 +76,7 @@
 | Tiny Media Manager      |     | Not Tested | Pass       |
 | makeMKV                 |     | Not Tested | Pass       |
 | Audio Recorder          |     | Not Tested | Not Tested |
-| DeadBeef Media Player   |     | Not Tested | Not Coded* |
+| DeadBeef Media Player   |     | Not Tested | Pass       |
 | XnViewMP                |     | Not Tested | Pass       |
 | Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
 | Strawberry Media Player |     | Not Tested | Pass       |
@@ -84,8 +84,6 @@
 * Menus are still an issue with TMM ...and apparently Java was already installed in my test
 
 * with Audio-Recorder on Debian ...the snap may be the only real option -  Snap also doesn't seem to be installed by default 
-
-* Deadbeef is in the [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/) repo ...not sure I want to go that route ...maybe i could include that option and/or the snap option and give the user the choice/info to choose on their own
 
 ---
 
