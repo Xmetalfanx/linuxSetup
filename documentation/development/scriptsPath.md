@@ -42,3 +42,5 @@
       - OSRELEASE_VERSION=`$(grep "^VERSION=" /etc/os-release | cut -d '=' -f 2 | sed 's/\"//g' )`
     - *Ubuntu specific check*
       - OSRELEASE_UBUNTU_CODENAME=`$(grep "^UBUNTU_CODENAME="  /etc/os-release | cut -d '=' -f 2 | sed 's/\"//g' )`
+
+- Nov 2019: The lines above have not been updated yet ... to maybe use awk instead of grep ... and tr instead of  sed 
