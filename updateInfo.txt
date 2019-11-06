@@ -4,3 +4,5 @@ Last Upgraded:	 opensuse  	11/01/19	:01:11:16 PM
 Last Upgraded:	 opensuse  	11/01/19	:01:24:49 PM
 Last Upgraded:	 opensuse  	11/05/19	:12:51:14 PM
 Last Upgraded:	 ubuntu  	11/06/19	:12:51:31 PM
+Last Upgraded:	 opensuse  	11/06/19	:04:10:31 PM
+Last Upgraded:	 opensuse  	11/06/19	:04:13:38 PM
