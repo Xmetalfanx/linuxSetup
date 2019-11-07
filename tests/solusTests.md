@@ -1,31 +1,31 @@
 ## Main Functions
 
-| Menu Tasks    |      | Solus 4.0 |
-| :------------ | :--- | :-------- |
-| Update System |      | Pass      |
+| Menu Tasks    |     | Solus 4.0 |
+| :------------ | :-- | :-------- |
+| Update System |     | Pass      |
 
 ## Solus Submenu
 
 | Menu Item                                                         | Solus 4.0 |
 | :---------------------------------------------------------------- | :-------- |
-| Switch from Stable to Unstable Branch                             |           |
-| Switch from Unstable Branch to Stable Branch                      |           |
 | Add Unstable Repo (Doesn't do anything to currently used Branch ) |           |
 | Disable Unstable Repo (only)                                      |           |
+| Switch from Stable to Unstable Branch                             |           |
+| Switch from Unstable Branch to Stable Branch                      |           |
 
 ?? How do I handle the different branches (so to speak) ?
 
 ## Software Submenu
 
-| Menu Item | Menu Task                |      | Solus 4.0  |
-| --------- | :----------------------- | :--- | :--------- |
-| 1         | Add Common Software      |      | Pass       |
-| 6         | Build Essential Packages |      | Pass       |
-| 7         | Etcher                   |      | Pass\*     |
-| 8         | Fish and Oh-My-Fish      |      |            |
-| 9         | Wine and/or PlayonLinux  |      | Not Tested |
-| 10        | Intel-Microcode package  |      | Pass       |
-| 11        | Java Support             |      | Not Tested |
+| Menu Item | Menu Task                |     | Solus 4.0  |
+| --------- | :----------------------- | :-- | :--------- |
+| 1         | Add Common Software      |     | Pass       |
+| 6         | Build Essential Packages |     | Pass       |
+| 7         | Etcher                   |     | Pass\*     |
+| 8         | Fish and Oh-My-Fish      |     |            |
+| 9         | Wine and/or PlayonLinux  |     | Not Tested |
+| 10        | Intel-Microcode package  |     | Pass       |
+| 11        | Java Support             |     | Not Tested |
 
 
 - Downloads but you need to "chmod +x" the appimage
@@ -34,21 +34,23 @@
 
 | Menu Tasks    |     | Solus 4.0    |
 | ------------- | --- | ------------ |
-| Google Chrome |     | Pass         |
 | Chromium      |     | Not in Repos |
 | Firefox       |     | Pass         |
+| Google Chrome |     | Pass         |
 | Vivaldi       |     | Pass         |
 
 ## Multimedia Apps
 
-| Menu Task               |      | Solus 4.0  |
-| :---------------------- | :--- | :--------- |
-| Tiny Media Manager      |      | Pass       |
-| makeMKV                 |      | RETEST     |
-| DeadBeef Media Player   |      | Pass       |
-| XnViewMP                |      | Not Tested |
-| Gnome-mpv/Celluloid     |      | Pass       |
-| Strawberry Media Player |      | Pass       |
+| Menu Item | Menu Task               |     | Solus 4.0  |
+| --------- | :---------------------- | :-- | :--------- |
+| 1         | makeMKV                 |     | RETEST     |
+| 2         | Audio Recorder          |     | ---        |
+| 3         | XnViewMP                |     | Not Tested |
+| 4         | DeadBeef Media Player   |     | Pass       |
+| 5         | Gnome-mpv/Celluloid     |     | Pass       |
+| 6         | Strawberry Media Player |     | Pass       |
+| 7         | Tiny Media Manager      |     | Pass       |
+| 8         | MediaElch AppImage      |     | Not Tested |
 
 ## Coding/Productivity/Office Apps
 
@@ -78,5 +80,3 @@
 | T          | miscThemes             | Pass                               |
 
 ---
-
-NOTE: some of the "fails" may indicated that I just haven't coded it for Solus yet ... I haven't gone back with each test/task i am doing to check
