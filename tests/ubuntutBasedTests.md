@@ -4,11 +4,10 @@
 
 ## Common Tasks
 
-| Menu Tasks                      | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.10     |
-|---------------------------------|------------------|------------------|------------------|
-| Update System                   | Not Tested       | Pass             | ???              |
-| Install Codecs                  | Not Coded/Tested | Not Coded/Tested | Not Coded/Tested |
-| Install Intel-Microcode package | Not Tested       | Not Tested       | Pass             |
+| Menu Tasks     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.10     |
+| -------------- | ---------------- | ---------------- | ---------------- |
+| Install Codecs | Not Coded/Tested | Not Coded/Tested | Not Coded/Tested |
+| Update System  | Not Tested       | Pass             | ???              |
 
 ---
 
@@ -18,8 +17,8 @@
 
 | Menu Tasks                                                     | Test Results |
 | -------------------------------------------------------------- | ------------ |
-| Installing PPA Support, Gnome Tweak Tools, GDebi, and Synaptic | Not Tested   |
 | (not included yet) Install elementaryTweakTool                 | Not Tested   |
+| Installing PPA Support, Gnome Tweak Tools, GDebi, and Synaptic | Not Tested   |
 
 ---
 
@@ -27,26 +26,30 @@
 
 ### Common/Various Software
 
-| Menu Task                |     | Ubuntu 16.04 | Ubuntu 18.04 |
-| ------------------------ | --- | ------------ | ------------ |
-| Add Common Software      |     | Not Tested   | Pass         |
-| Etcher                   |     | Not Tested   | Pass         |
-| Wine and/or PlayonLinux  |     | Not Tested   | Pass         |
-| Build Essential Packages |     | Not Tested   | Pass         |
+| Menu Item | Menu Task                | Ubuntu 16.04 | Ubuntu 18.04 | Ubuntu 19.10 |
+| --------- | ------------------------ | ------------ | ------------ | ------------ |
+| 1         | Add Common Software      | Not Tested   | Pass         | Not Tested   |
+| 10        | Intel-Microcode package  | Not Tested   | Not Tested   | Pass         |
+| 11        | Java Support             | Not Tested   | Not Tested   | Not Tested   |
+| 6         | Build Essential Packages | Not Tested   | Pass         | Not Tested   |
+| 7         | Etcher                   | Not Tested   | Pass         | Not Tested   |
+| 9         | Wine and/or PlayonLinux  | Not Tested   | Pass         | Not Tested   |
+
+- 2 to 5,  are submenus 
 
 ---
 
 ### Multimedia Apps
 
-| Menu Tasks              |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-| ----------------------- | --- | ---------------- | ---------------- |
-| Tiny Media Manager      |     | Not Tested       | Not Coded        |
-| makeMKV                 |     | Not Tested       | Pass             |
-| DeadBeef Media Player   |     | Not Tested       | Pass             |
-| XnViewMP                |     | Not Tested       | Pass             |
-| Audio Recorder          |     | Not Tested       | Not Tested       |
-| Celluloid/Gnome-Mpv     |     | Not Tested       | Not Tested       |
-| Strawberry Media Player |     | Not Tested       | Pass             |
+| Menu Item | Menu Tasks              |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
+| --------- | ----------------------- | --- | ---------------- | ---------------- |
+| 1         | makeMKV                 |     | Not Tested       | Pass             |
+| 2         | Audio Recorder          |     | Not Tested       | Not Tested       |
+| 3         | XnViewMP                |     | Not Tested       | Pass             |
+| 4         | DeadBeef Media Player   |     | Not Tested       | Pass             |
+| 5         | Celluloid/Gnome-Mpv     |     | Not Tested       | Not Tested       |
+| 6         | Strawberry Media Player |     | Not Tested       | Pass             |
+| 7         | Tiny Media Manager      |     | Not Tested       | Not Coded        |
 
 - listing TMM as a fail for now since java is NOT DETECTED but DOESN'T install ... issue is ... it's not that it doesn't work ... I just haven't code "install java" for Ubuntu base yet ... it's not done yet
 
@@ -54,12 +57,12 @@
 
 ### Productivity/Office Apps
 
-| Menu Tasks  |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-| ----------- | --- | ---------------- | ---------------- |
-| Atom Editor |     | Not Tested       | Pass             |
-| GitKraken   |     | Not Tested       | Pass             |
-| vscode      |     | Not Tested       | Pass             |
-| Typora      |     | Not Tested       | Not Tested       |
+| Menu Item | Menu Tasks  |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.10 |
+| --------- | ----------- | --- | ---------------- | ---------------- | ------------ |
+| 1         | Atom Editor |     | Not Tested       | Pass             |              |
+| 2         | vscode      |     | Not Tested       | Pass             |              |
+| 3         | GitKraken   |     | Not Tested       | Pass             |              |
+| 4         | Typora      |     | Not Tested       | Not Tested       |              |
 
 ---
 
@@ -71,12 +74,12 @@ Testing these on all the Ubuntu flavors and variants (Linux Lite, ElementaryOS, 
 
 ### Web Browsers
 
-| Menu Tasks    |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
-| ------------- | --- | ---------------- | ---------------- |
-| Google Chrome |     | Not Tested       | Pass             |
-| Chromium      |     | Not Tested       | Pass             |
-| Firefox       |     | Not Tested       | Pass             |
-| Vivaldi       |     | Not Tested       | Pass             |
+| Menu Item | Menu Tasks    |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS |
+| --------- | ------------- | --- | ---------------- | ---------------- |
+| 1         | Google Chrome |     | Not Tested       | Pass             |
+| 2         | Chromium      |     | Not Tested       | Pass             |
+| 3         | Firefox       |     | Not Tested       | Pass             |
+| 4         | Vivaldi       |     | Not Tested       | Pass             |
 
 ---
 
@@ -84,16 +87,18 @@ Testing these on all the Ubuntu flavors and variants (Linux Lite, ElementaryOS, 
 
 - for theming i am focusing testing on the official flavors vs "theming on Linux Lite" (like Xubuntu anyway), or Linux Mint
 
-| Menu Items           |     | Ubuntu 16.04 | Ubuntu 18.04   |
-| -------------------- | --- | ------------ | -------------- |
-| Install Adapta Theme |     | Not Tested   | Fail           |
-| Install Arc Theme    |     | Not Tested   | Pass           |
-| Install Mint-Y Theme |     | Not Tested   | Not Coded/Fail |
-| Install Numix Theme  |     | Not Tested   | Pass           |
-| Install Plata Theme  |     | Not Tested   | Fail           |
-| Install misc Icons   |     |              | Fail           |
-| Install misc Themes  |     |              |                |
-| **All Listed Themes  |     | Not Tested   | Not Tested     |
+| Menu Item | Menu Task              |     | Ubuntu 16.04 | Ubuntu 18.04   |
+| --------- | ---------------------- | --- | ------------ | -------------- |
+| 1         | Adapta Theming         |     | Not Tested   | Fail           |
+| 2         | Arc Theming            |     | Not Tested   | Pass           |
+| 3         | Mint-Y Theming         |     | Not Tested   | Not Coded/Fail |
+| 4         | Numix Theming          |     | Not Tested   | Pass           |
+| 5         | Plata Theming          |     | Not Tested   | Fail           |
+| 6         | Yaru Theming           |     | Not Tested   | Not Tested     |
+| 7         | Breeze Theming         |     | Not Tested   | Not Tested     |
+| A         | \*\*All Listed Theming |     | Not Tested   | Not Tested     |
+| I         | misc Icons             |     | Not Tested   | Fail           |
+| T         | misc Themes            |     | Not Tested   | Not Tested     |
 
 *Lubuntu 19.04 tested
 

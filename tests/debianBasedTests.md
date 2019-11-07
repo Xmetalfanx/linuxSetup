@@ -2,11 +2,10 @@
 
 ## Main Tasks
 
-| Menu Tasks                      |     | Stable     | Testing |
-| ------------------------------- | --- | ---------- | ------- |
-| Update System                   |     | Not Tested | Pass    |
-| Install Codecs                  |     | Not Tested | Pass    |
-| Install Intel Microcode Package |     | Not Tested | Pass    |
+| Menu | Menu Tasks     |     | Stable     | Testing |
+| ---- | -------------- | --- | ---------- | ------- |
+| 1    | Update System  |     | Not Tested | Pass    |
+| C    | Install Codecs |     | Not Tested | Pass    |
 
 ---
 
@@ -16,25 +15,25 @@
 
 | Menu Tasks                                               |     | Stable     | Testing |
 | -------------------------------------------------------- | --- | ---------- | ------- |
-| Install (Both Free and Non-free) Linux Firmware Packages |     | Not Tested | Pass    |
 | Add Archive Support                                      |     | Not Tested | Pass    |
+| Install (Both Free and Non-free) Linux Firmware Packages |     | Not Tested | Pass    |
 
 ---
 
 ### Themeing related
 
-| Menu Items          |     | Stable     | Testing    |
-| ------------------- | --- | ---------- | ---------- |
-| Install Adapta      |     | Not Tested | Pass       |
-| Install Arc         |     | Not Tested | Pass       |
-| Install Mint-Y      |     | Not Coded  | Not Coded  |
-| Install Numix       |     | Not Tested | Pass       |
-| Install Plata       |     | Not Coded  | Not Tested |
-| Install Yaru        |     | Not Tested | Not Coded  |
-| Install Breeze      |     | Not Tested | Pass       |
-| Install Misc Themes |     | Not Tested | Pass       |
-| Install Misc Icons  |     | Not Tested | Not Coded  |
-| All Listed Themes   |     | Not Tested | Not Tested |
+| Menu Item | Menu Items          |     | Stable     | Testing    |
+| --------- | ------------------- | --- | ---------- | ---------- |
+| 1         | Install Adapta      |     | Not Tested | Pass       |
+| 2         | Install Arc         |     | Not Tested | Pass       |
+| 3         | Install Mint-Y      |     | Not Coded  | Not Coded  |
+| 4         | Install Numix       |     | Not Tested | Pass       |
+| 5         | Install Plata       |     | Not Coded  | Not Tested |
+| 6         | Install Yaru        |     | Not Tested | Not Coded  |
+| 7         | Install Breeze      |     | Not Tested | Pass       |
+| A         | All Listed Themes   |     | Not Tested | Not Tested |
+| I         | Install Misc Icons  |     | Not Tested | Not Coded  |
+| T         | Install Misc Themes |     | Not Tested | Pass       |
 
 - numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
 
@@ -44,13 +43,15 @@
 
 ### Install/Update for the specific apps
 
-| Menu Task                         |     | Stable     | Testing |
-| --------------------------------- | --- | ---------- | ------- |
-| Add Common Software               |     | Not Tested | Pass    |
-| Etcher                            |     | Not Tested | Pass    |
-| Wine and/or PlayonLinux           |     | Not Tested | Pass    |
-| Build Essential Packages          |     | Not Tested | Pass    |
-| Install Fish Shell and Oh-My-Fish |     | Not Tested | Pass    |
+| Menu Item | Menu Task                 |     | Stable     | Testing    |
+| --------- | ------------------------- | --- | ---------- | ---------- |
+| 1         | Add Common Software       |     | Not Tested | Pass       |
+| 6         | Build Essential Packages  |     | Not Tested | Pass       |
+| 7         | Etcher                    |     | Not Tested | Pass       |
+| 8         | Fish Shell and Oh-My-Fish |     | Not Tested | Pass       |
+| 9         | Wine and/or PlayonLinux   |     | Not Tested | Pass       |
+| 10        | Intel Microcode Package   |     | Not Tested | Pass       |
+| 11        | Java Support              |     | Not Tested | Not Tested |
 
 ---
 
@@ -62,24 +63,26 @@
 
 | Menu Items    |     | Stable     | Testing |
 | ------------- | --- | ---------- | ------- |
-| Google Chrome |     | Not Tested | Pass    |
 | Chromium      |     | Not Tested | Pass    |
 | Firefox       |     | Not Tested | Pass    |
+| Google Chrome |     | Not Tested | Pass    |
 | Vivaldi       |     | Not Coded  | Pass    |
 
 ---
 
 ### Multimedia Apps
 
-| Menu Task               |     | Stable     | Testing    |
-| ----------------------- | --- | ---------- | ---------- |
-| Tiny Media Manager      |     | Not Tested | Pass       |
-| makeMKV                 |     | Not Tested | Pass       |
-| Audio Recorder          |     | Not Tested | Not Tested |
-| DeadBeef Media Player   |     | Not Tested | Pass       |
-| XnViewMP                |     | Not Tested | Pass       |
-| Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
-| Strawberry Media Player |     | Not Tested | Pass       |
+| Menu Item | Menu Task               |     | Stable     | Testing    |
+| --------- | ----------------------- | --- | ---------- | ---------- |
+| 1         | makeMKV                 |     | Not Tested | Pass       |
+| 2         | Audio Recorder          |     | Not Tested | Not Tested |
+| 3         | XnViewMP                |     | Not Tested | Pass       |
+| 4         | DeadBeef Media Player   |     | Not Tested | Pass       |
+| 5         | Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
+| 6         | Strawberry Media Player |     | Not Tested | Pass       |
+| 7         | Tiny Media Manager      |     | Not Tested | Pass       |
+| 8         | MediaElch AppImage      |     | Not Tested | Not Tested |
+
 
 * Menus are still an issue with TMM ...and apparently Java was already installed in my test
 
@@ -89,9 +92,9 @@
 
 ### Productivity/Office Apps
 
-| Menu Task   |     | Stable     | Testing   |
-| ----------- | --- | ---------- | --------- |
-| Atom Editor |     | Not Tested | Pass      |
-| vscode      |     | Not Tested | Pass      |
-| GitKraken   |     | Not Tested | Pass      |
-| Typora      |     | Not Tested | Not Coded |
+| Menu Item | Menu Task   |     | Stable     | Testing   |
+| --------- | ----------- | --- | ---------- | --------- |
+| 1         | Atom Editor |     | Not Tested | Pass      |
+| 2         | vscode      |     | Not Tested | Pass      |
+| 3         | GitKraken   |     | Not Tested | Pass      |
+| 4         | Typora      |     | Not Tested | Not Coded |
