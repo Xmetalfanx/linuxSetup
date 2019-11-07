@@ -1,16 +1,21 @@
 # Arch Tasks
 
-## Main Arch Tasks
+## Main Menu
 
-| Menu Tasks                      |      | Arch       | Manjaro    |
-| ------------------------------- | :--- | ---------- | ---------- |
-| Update System                   |      | Pass       | Not Tested |
-| Install Codecs                  |      | Pass       | Not Tested |
-| Add Sound Support (*)           |      | Pass       | Not Tested |
-| Add Archive Support             |      | Pass       | Not Tested |
-| Install Intel Microcode package |      | Pass       | Not Tested |
+| Menu Item | Menu Tasks     |     | Arch | Manjaro    |
+| --------- | :------------- | --- | ---- | ---------- |
+| 1         | Update System  |     | Pass | Not Tested |
+| C         | Install Codecs |     | Pass | Not Tested |
+
+
+| Menu Item | Menu Tasks             |      | Arch       | Manjaro |
+| --------- | :--------------------- | ---- | ---------- | ------- |
+| 4         | Add Archive Support    | Pass | Not Tested |         |
+| 5         | Add Sound Support (\*) | Pass | Not Tested |         |
+
 
 * (*) different from just installing codecs
+
 
 ---
 
@@ -27,16 +32,18 @@
 
 ## Theming Menus
 
-| Menu Items           |     | Arch      | Manjaro    |
-| -------------------- | --- | --------- | ---------- |
-| Install Adapta Theme |     | Pass      | Not Tested |
-| Install Arc Theme    |     | Pass      | Not Tested |
-| Install Mint-Y Theme |     | Not Coded | Not Tested |
-| Install Numix Theme  |     | Pass      | Not Tested |
-| Install Plata Theme  |     | Not Coded | Not Tested |
-| Install Misc Themes  |     | Pass      | Not Tested |
-| Install Misc Icons   |     | Pass      | Not Tested |
-| All Listed Themes    |     | Pass      | Not Tested |
+| Menu Item | Menu Items         |     | Arch       | Manjaro    |
+| --------- | ------------------ | --- | ---------- | ---------- |
+| 1         | Adapta             |     | Pass       | Not Tested |
+| 2         | Arc                |     | Pass       | Not Tested |
+| 3         | Mint-Y             |     | Not Coded  | Not Tested |
+| 4         | Numix theming      |     | Pass       | Not Tested |
+| 5         | Plata theming      |     | Not Coded  | Not Tested |
+| 6         | Yaru Theming       |     | Not Tested | Not Tested |
+| 7         | Breeze Theming     |     | Not Tested | Not Tested |
+| A         | All Listed theming |     | Pass       | Not Tested |
+| I         | Misc Icons         |     | Pass       | Not Tested |
+| T         | Misc theming       |     | Pass       | Not Tested |
 
 * if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
 
@@ -46,46 +53,51 @@
 
 ### Install/Update for the specific apps
 
-| Menu Task                         |     | Arch | Manjaro    |
-| --------------------------------- | --- | ---- | ---------- |
-| Add Common Software               |     | Pass | Not Tested |
-| Etcher                            |     | Pass | Not Tested |
-| Wine and/or PlayonLinux           |     | Pass | Not Tested |
-| Build Essential Packages          |     | Pass | Not Tested |
-| Install Fish Shell and Oh-My-Fish |     | Pass | Pass       |
+| Menu Item | Menu Task                         |     | Arch       | Manjaro    |
+| --------- | --------------------------------- | --- | ---------- | ---------- |
+| 1         | Add Common Software               |     | Pass       | Not Tested |
+| 10        | Intel Microcode                   |     | Pass       | Not Tested |
+| 11        | Java Support                      |     | Not Tested | Not Tested |
+| 6         | Build Essential Packages          |     | Pass       | Not Tested |
+| 7         | Etcher                            |     | Pass       | Not Tested |
+| 8         | Install Fish Shell and Oh-My-Fish |     | Pass       | Pass       |
+| 9         | Wine and/or PlayonLinux           |     | Pass       | Not Tested |
+
+---
 
 ### Browser Installer
 
-| Menu Items    |     | Arch       | Manjaro    |
-| ------------- | --- | ---------- | ---------- |
-| Google Chrome |     | Pass        | Not Tested |
-| Chromium      |     | Pass       | Not Tested |
-| Firefox       |     | Pass       | Not Tested |
-| Vivaldi       |     | Pass       | Not Tested |
+| Menu Item | Menu Items    |     | Arch | Manjaro    |
+| --------- | ------------- | --- | ---- | ---------- |
+| 1         | Google Chrome |     | Pass | Not Tested |
+| 2         | Chromium      |     | Pass | Not Tested |
+| 3         | Firefox       |     | Pass | Not Tested |
+| 4         | Vivaldi       |     | Pass | Not Tested |
 
 ---
 
 ### Multimedia Apps
 
-| Menu Task               |     | Arch | Manjaro    |
-| ----------------------- | --- | ---- | ---------- |
-| Tiny Media Manager      |     | Pass | Not Tested |
-| makeMKV                 |     | Pass | Not Tested |
-| Audio Recorder          |     | Pass | Not Tested |
-| DeadBeef Media Player   |     | Pass | Not Tested |
-| XnViewMP                |     | Pass | Not Tested |
-| Celluloid/Gnome-Mpv     |     | Pass | Not Tested |
-| Strawberry Media Player |     | Pass | Not Tested |
+| Menu Item | Menu Task               |     | Arch | Manjaro    |
+| --------- | ----------------------- | --- | ---- | ---------- |
+| 1         | makeMKV                 |     | Pass | Not Tested |
+| 2         | Audio Recorder          |     | Pass | Not Tested |
+| 3         | XnViewMP                |     | Pass | Not Tested |
+| 4         | DeadBeef Media Player   |     | Pass | Not Tested |
+| 5         | Celluloid/Gnome-Mpv     |     | Pass | Not Tested |
+| 6         | Strawberry Media Player |     | Pass | Not Tested |
+| 7         | Tiny Media Manager      |     | Pass | Not Tested |
+| 8         | MediaElch AppImage      |     |      |            |
 
 ---
 
 ### Productivity/Office Apps
 
-| Menu Task   |     | Arch   | Manjaro    |
-| ----------- | --- | ------ | ---------- |
-| Atom Editor |     | Pass   | Not Tested |
-| vscode      |     | Pass   | Not Tested |
-| GitKraken   |     | Pass   | Not Tested |
-| Typora      |     | Pass   | Not Tested |
+| Menu Item | Menu Task   |     | Arch | Manjaro    |
+| --------- | ----------- | --- | ---- | ---------- |
+| 1         | Atom Editor |     | Pass | Not Tested |
+| 2         | vscode      |     | Pass | Not Tested |
+| 3         | GitKraken   |     | Pass | Not Tested |
+| 4         | Typora      |     | Pass | Not Tested |
 
 ---

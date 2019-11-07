@@ -1,9 +1,8 @@
 ## Main Functions
 
-| Menu Tasks                      |      | Solus 4.0  |
-| :------------------------------ | :--- | :--------- |
-| Update System                   |      | Pass       |
-| Install Intel-Microcode package |      | Pass       |
+| Menu Tasks    |      | Solus 4.0 |
+| :------------ | :--- | :-------- |
+| Update System |      | Pass      |
 
 ## Solus Submenu
 
@@ -18,12 +17,16 @@
 
 ## Software Submenu
 
-| Menu Task                |      | Solus 4.0  |
-| :----------------------- | :--- | :--------- |
-| Add Common Software      |      | Pass       |
-| Etcher                   |      | Pass\*     |
-| Wine and/or PlayonLinux  |      | Not Tested |
-| Build Essential Packages |      | Pass       |
+| Menu Item | Menu Task                |      | Solus 4.0  |
+| --------- | :----------------------- | :--- | :--------- |
+| 1         | Add Common Software      |      | Pass       |
+| 6         | Build Essential Packages |      | Pass       |
+| 7         | Etcher                   |      | Pass\*     |
+| 8         | Fish and Oh-My-Fish      |      |            |
+| 9         | Wine and/or PlayonLinux  |      | Not Tested |
+| 10        | Intel-Microcode package  |      | Pass       |
+| 11        | Java Support             |      | Not Tested |
+
 
 - Downloads but you need to "chmod +x" the appimage
 
@@ -45,32 +48,34 @@
 | DeadBeef Media Player   |      | Pass       |
 | XnViewMP                |      | Not Tested |
 | Gnome-mpv/Celluloid     |      | Pass       |
-| Strawberry Media Player |      | Pass      |
+| Strawberry Media Player |      | Pass       |
 
 ## Coding/Productivity/Office Apps
 
-| Menu Task   |      | Solus 4.0  |
-| :---------- | :--- | :--------- |
-| Atom Editor |      | Pass       |
-| vscode      |      | Pass       |
-| GitKraken   |      | Pass       |
-| Typora      |      | Not Tested |
+| Menu Item | Menu Task   | Solus 4.0  |
+| --------- | :---------- | :--------- |
+| 1         | Atom Editor | Pass       |
+| 2         | vscode      | Pass       |
+| 3         | GitKraken   | Pass       |
+| 4         | Typora      | Not Tested |
 
 
 ---
 
 ## Theming Menu
 
-| Menu Items            |      | Solus 4.0                          |
-| :-------------------- | :--- | :--------------------------------- |
-| Install Adapta Theme  |      | Pass                               |
-| Install Arc Theme     |      | Pass                               |
-| Install Mint-Y Theme  |      | Not Tested/Coded                   |
-| Install Numix Theme   |      | Pass                               |
-| Install Plata Theme   |      | Plata is Solus 4.0's default theme |
-| \*\*All Listed Themes |      | Not Tested                         |
-| miscIcons             |      | Pass                               |
-| miscThemes            |      | Pass                               |
+| Menu Items | Menu Task              | Solus 4.0                          |
+| ---------- | :--------------------- | :--------------------------------- |
+| 1          | Adapta Theming         | Pass                               |
+| 2          | Arc Theming            | Pass                               |
+| 3          | Mint-Y Theming         | Not Tested/Coded                   |
+| 4          | Numix Theming          | Pass                               |
+| 5          | Plata Theming          | Plata is Solus 4.0's default theme |
+| 6          | Yaru Theming           | Not Tested                         |
+| 7          | Breeze Theming         | Not Tested                         |
+| A          | \*\*All Listed Theming | Not Tested                         |
+| I          | miscIcons              | Pass                               |
+| T          | miscThemes             | Pass                               |
 
 ---
 
