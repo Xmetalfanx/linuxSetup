@@ -51,7 +51,7 @@
 | 8         | Fish Shell and Oh-My-Fish |     | Not Tested | Pass       |
 | 9         | Wine and/or PlayonLinux   |     | Not Tested | Pass       |
 | 10        | Intel Microcode Package   |     | Not Tested | Pass       |
-| 11        | Java Support              |     | Not Tested | Not Tested |
+| 11        | Java Support              |     | Not Tested | Pass       |
 
 ---
 
@@ -81,7 +81,7 @@
 | 5         | Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
 | 6         | Strawberry Media Player |     | Not Tested | Pass       |
 | 7         | Tiny Media Manager      |     | Not Tested | Pass       |
-| 8         | MediaElch AppImage      |     | Not Tested | Fail |
+| 8         | MediaElch AppImage      |     | Not Tested | Pass       |
 
 
 * Menus are still an issue with TMM ...and apparently Java was already installed in my test
