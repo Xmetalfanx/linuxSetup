@@ -81,7 +81,7 @@
 | 5         | Celluloid/Gnome-Mpv     |     | Not Tested | Pass       |
 | 6         | Strawberry Media Player |     | Not Tested | Pass       |
 | 7         | Tiny Media Manager      |     | Not Tested | Pass       |
-| 8         | MediaElch AppImage      |     | Not Tested | Not Tested |
+| 8         | MediaElch AppImage      |     | Not Tested | Fail/ ? Not Coded |
 
 
 * Menus are still an issue with TMM ...and apparently Java was already installed in my test
