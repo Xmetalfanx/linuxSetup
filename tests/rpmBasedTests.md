@@ -93,19 +93,22 @@
 
 #### Multimedia Programs
 
-| Menu Item | Menu Task               |   | Fedora 29  | Fedora 30                     |
-|-----------|-------------------------|---|------------|-------------------------------|
-| 1         | makeMKV                 |   | Not Tested | Pass                          |
-| 2         | Audio Recorder          |   | Not Tested | Not Tested                    |
-| 3         | XnViewMP                |   | Pass       | Fail\*                        |
-| 4         | DeadBeef Media Player   |   | Not Tested | Pass                          |
-| 5         | Celluloid/Gnome MPV     |   | Not Tested | Pass                          |
-| 6         | Strawberry Media Player |   | Not Tested | Pass                          |
-| 7         | Tiny Media Manager      |   | Pass       | Pass                          |
-| 8         | MediaElch               |   |            |                               |
+| Menu Item | Menu Task               |  | Fedora 29  | Fedora 30  | Fedora 31 |
+|-----------|-------------------------|--|------------|------------|-----------|
+| 1         | makeMKV                 |  | Not Tested | Pass       |       Pass    |
+| 2         | Audio Recorder          |  | Not Tested | Not Tested |           |
+| 3         | XnViewMP                |  | Pass       | Fail\*     |           |
+| 4         | DeadBeef Media Player   |  | Not Tested | Pass       |           |
+| 5         | Celluloid/Gnome MPV     |  | Not Tested | Pass       |           |
+| 6         | Strawberry Media Player |  | Not Tested | Pass       |           |
+| 7         | Tiny Media Manager      |  | Pass       | Pass       |           |
+| 8         | MediaElch               |  |            |            |           |
 
 - TMM issue on Fedora - IT runs HOWEVER I already installed Java first ... double check (say Java is not instatlled by the standalone java support option ... that installing TMM would install Java first )
+
 - Nov 2019 Update: this issue I noted may be solved with new Java install method for Fedora (untested at the time of typing this)
+
+- MakeMKV not stopping to show the user the license info
 
 #### Coding/Office/Productivity Programs
 
