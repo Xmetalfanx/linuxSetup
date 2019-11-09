@@ -8,10 +8,10 @@
 | C         | Install Codecs |     | Pass | Not Tested |
 
 
-| Menu Item | Menu Tasks             |      | Arch       | Manjaro |
-| --------- | :--------------------- | ---- | ---------- | ------- |
-| 4         | Add Archive Support    | Pass | Not Tested |         |
-| 5         | Add Sound Support (\*) | Pass | Not Tested |         |
+| Menu Item | Menu Tasks             | Arch |  Manjaro   | 
+| --------- | :--------------------- | ---- | ---------- |
+| 4         | Add Archive Support    | Pass | Not Tested |   
+| 5         | Add Sound Support (\*) | Pass | Not Tested |   
 
 
 * (*) different from just installing codecs
@@ -56,12 +56,12 @@
 | Menu Item | Menu Task                         |     | Arch       | Manjaro    |
 | --------- | --------------------------------- | --- | ---------- | ---------- |
 | 1         | Add Common Software               |     | Pass       | Not Tested |
-| 10        | Intel Microcode                   |     | Pass       | Not Tested |
-| 11        | Java Support                      |     | Not Tested | Not Tested |
 | 6         | Build Essential Packages          |     | Pass       | Not Tested |
 | 7         | Etcher                            |     | Pass       | Not Tested |
 | 8         | Install Fish Shell and Oh-My-Fish |     | Pass       | Pass       |
 | 9         | Wine and/or PlayonLinux           |     | Pass       | Not Tested |
+| 10        | Intel Microcode                   |     | Pass       | Not Tested |
+| 11        | Java Support                      |     | Pass       | Not Tested |
 
 ---
 
