@@ -21,14 +21,13 @@
 | --------- | :----------------------- | :-- | :--------- |
 | 1         | Add Common Software      |     | Pass       |
 | 6         | Build Essential Packages |     | Pass       |
-| 7         | Etcher                   |     | Pass\*     |
-| 8         | Fish and Oh-My-Fish      |     |            |
-| 9         | Wine and/or PlayonLinux  |     | Not Tested |
+| 7         | Etcher                   |     | Pass       |
+| 8         | Fish and Oh-My-Fish      |     | Pass       |
+| 9         | Wine and/or PlayonLinux  |     | Pass       |
 | 10        | Intel-Microcode package  |     | Pass       |
-| 11        | Java Support             |     | Not Tested |
+| 11        | Java Support             |     | Pass       |
 
 
-- Downloads but you need to "chmod +x" the appimage
 
 ## Web Browser Menu
 
