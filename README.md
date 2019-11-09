@@ -14,15 +14,18 @@ While The main distributions listed are meant to be "Distro family bases", not A
 
 - Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur
 
-## Requirnmoments
+## Requirements
 Some of these are auto-installed when the script is first run ... others I may add to "auto install" later
 
 - `wget`
 - `curl`
 - `lsb` (different package names on different distros ) type packages
   - so lsb_release * can be run
-- (? if it's autoinstalled or needed) `inxi` 
+- `inxi` 
+  - (? if it's autoinstalled or needed)
   - ... even I am not 100% sure about this one, but for later "DE/Distro" detection, inxi seems needed
+- `git`
+  - this is to git clone the scripts; however, from the github or gitlab page for the scripts, there are ways to download the repo in a .zip form too ... in this case `git` is not "needed"
 
 
 ## Thanks
