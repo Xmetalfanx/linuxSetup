@@ -8,3 +8,4 @@ Last Upgraded:	 opensuse  	11/06/19	:04:10:31 PM
 Last Upgraded:	 opensuse  	11/06/19	:04:13:38 PM
 Last Upgraded:	 fedora  	11/07/19	:03:07:07 AM
 Last Upgraded:	 opensuse  	11/08/19	:04:21:07 PM
+Last Upgraded:	 fedora  	11/13/19	:05:54:56 PM
