@@ -58,7 +58,7 @@ function mainMenu() {
 
         2) optimizeRepo ;;
 
-        # Located in /functions/f_mainMenus.cfg
+        # Located in /functions/f_mainSubMenus.cfg
         3) mainArchMenu ;;
         4) mainDebianMenu ;;
         5) mainFedoraMenu ;;
