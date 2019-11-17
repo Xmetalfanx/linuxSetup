@@ -32,8 +32,6 @@ BUG_REPORT_URL="https://bugs.opensuse.org"
 HOME_URL="https://www.opensuse.org/"
 
 
-
-grep "^ID_LIKE="  /etc/os-release | sed "s/\"//g"| cut -d "=" -f 2 | cut -d " " -f 1  .... to get "opensuse"
 ######################################################################################
 
 NAME="Solus"
