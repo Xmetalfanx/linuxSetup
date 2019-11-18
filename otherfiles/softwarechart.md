@@ -5,71 +5,69 @@
 
 #### This is not taking into account things,  like snaps and flatpaks ... which i SHOULD
 
-#### Arch, Fedora, and Solus related - Combined to save space
+#### Arch, Debian, Fedora, and Solus related - Combined to save space
 
-| Program Name     | Arch    | Fedora 26    | Fedora 27    | Solus       |
-| ---------------- | ------- | ------------ | ------------ | ----------- |
-| Deadbeef         | Default | NOT Default  | NOT Default  | Default     |
-| Filezilla        | Default | Default      | Default      | Default     |
-| Smplayer         | Default | NOT Default  | NOT Default  | Default     |
-| git              | Default |              |              | Default     |
-| bleachbit        | Default | Default      | Default      | Default     |
-| Makemkv          | AUR     | NOT Default  | NOT Default  | Default     |
-| Pinta            | Default | Default      | Default      | Default     |
-| Atom             | Default | RPM Download | RPM Download | Default     |
-| Filebot          | AUR     | NOT Default  | NOT Default  | Snap        |
-| Sublime Text     |         | NOT Default  | NOT Default  | Third-Party |
-| CatFish    *     |         | Default      | Default      | Default     |
-| Sound Juicer *   |         | Default      | Default      | Default     |
-| Sound Converter* |         | Default      | Default      | Default     |
-| Variety          |         |              |              | Default     |
-| TMM              | TB+Run  | TB+Run       | TB+Run       | TB+Run      |
+| Program Name    | Arch   | Fedora 30    | Fedora 31    | Solus       | Debian   |
+| --------------- | ------ | ------------ | ------------ | ----------- | -------- |
+| Deadbeef        |        |              |              |             | DEB/Snap |
+| Filezilla       |        |              |              |             | Default  |
+| Smplayer        |        |              |              |             |          |
+| git             |        |              |              |             | Default  |
+| bleachbit       |        |        Default      | *            |             |          |
+| Makemkv         |        |              |              |             |          |
+| Pinta           |        |              |              |             |          |
+| Atom            |        | RPM Download | RPM Download |             |          |
+| Sublime Text    |        |              |              | Third-Party |          |
+| CatFish         |        |              |              |             | Default  |
+| Sound Juicer    |        |              |              |             |          |
+| Sound Converter |        |              |              |             |          |
+| Variety         |        |              |              |             | Default  |
+| TMM             | TB+Run | TB+Run       | TB+Run       | TB+Run      |          |
 
-Fedora Message:
-* = I do not see a listing for Fedora 27, though using logic if they are in the 25 and 26 repos, they "should" be in the Fedora 27 Repos
+* bleachbit's Fedora maintainer said something about this being a python issue and as soon as Bleachbit goes to Python three, they will include it on Fedora 31+ ... Fedora 30 has bleachbit in the repos though
 
-"Not Default" in Fedora will probably change as I look at RPM Fusion repos ... the status for those Not Default lists should switch to the free or nonfree RPM Fusion repos if the app is found there.
+TC = Tar file compiled (not just extracted)
 
 ---
 
 #### OpenSuse Related
 
-| Program Name    | Leap 42.2 | Leap 42.3 | Tumbleweed |
-| --------------- | --------- | --------- | ---------- |
-| Deadbeef        |           |           |            |
-| Filezilla       |           |           |            |
-| Smplayer        |           |           |            |
-| git             |           |           |            |
-| bleachbit       |           |           |            |
-| Pinta           |           |           |            |
-| Atom            |           |           |            |
-| Filebot         |           |           |            |
-| Sublime Text    |           |           |            |
-| CatFish         |           |           |            |
-| Sound Juicer    |           |           |            |
-| Sound Converter |           |           |            |
-| Variety         |           |           |            |
-| TMM             | TB+Run    | TB+Run    | TB+Run     |
+| Program Name    | Leap 15.1 | Tumbleweed |
+| --------------- | --------- | ---------- |
+| Deadbeef        |           |            |
+| Filezilla       |           |            |
+| Smplayer        |           |            |
+| git             |           |            |
+| bleachbit       |           |            |
+| Pinta           |           |            |
+| Atom            |           |            |
+| Filebot         |           |            |
+| Sublime Text    |           |            |
+| CatFish         |           |            |
+| Sound Juicer    |           |            |
+| Sound Converter |           |            |
+| Variety         |           |            |
+| TMM             | TB+Run    | TB+Run     |
 
 #### Ubuntu Base Related
 
-| Program Name    | Ubuntu 16.04                 | Ubuntu 17.10   | Ubuntu 17.10   |
-| --------------- | ---------------------------- | -------------- | -------------- |
-| Deadbeef        | DEB                          | DEB            | DEB            |
-| Filezilla       | Default                      | Default        | Default        |
-| Smplayer        | PPA for newest               | PPA for newest | PPA for newest |
-| git             | Default                      | Default        | Default        |
-| bleachbit       | Default                      | Default        | Default        |
-| Makemkv         | PPA                          | PPA            | PPA            |
-| Pinta           | Default                      | Default        | Default        |
-| Atom            | DEB                          | DEB            | DEB            |
-| Filebot         | DEB or Snap                  | DEB or Snap    | DEB or Snap    |
-| Sublime Text    | Third Party                  | Third Party    | Third Party    |
-| CatFish         | Default                      | Default        | Default        |
-| Sound Juicer    | Default                      | Default        | Default        |
-| Sound Converter | Default                      | Default        | Default        |
-| Variety         | Probably a PPA - Not Default | Default        | Default        |
-| TMM             | TB+Run                       | TB+Run         | TB+Run         |
+| Program Name    | Ubuntu 16.04 | Ubuntu 18.04 | Ubuntu 19.10 |
+| --------------- | ------------ | ------------ | ------------ |
+| Deadbeef        | Unknown      | Unknown      | Unknown      |
+| Filezilla       | Unknown      | Unknown      | Unknown      |
+| Smplayer        | Unknown      | Unknown      | Unknown      |
+| git             | Unknown      | Unknown      | Unknown      |
+| bleachbit       | Unknown      | Unknown      | Unknown      |
+| Makemkv         | Unknown      | Unknown      | Unknown      |
+| Pinta           | Unknown      | Unknown      | Unknown      |
+| Atom            | Unknown      | Unknown      | Unknown      |
+| Filebot         | Unknown      | Unknown      | Unknown      |
+| Sublime Text    | Unknown      | Unknown      | Unknown      |
+| CatFish         | Unknown      | Unknown      | Unknown      |
+| Sound Juicer    | Unknown      | Unknown      | Unknown      |
+| Sound Converter | Unknown      | Unknown      | Unknown      |
+| Variety         | Unknown      | Unknown      | Unknown      |
+| TMM             | Unknown      | Unknown      | Unknown      |
 
 ---
 TMM = Tiny Media Manager ... shortened in the chart for the Markdown Syntax
