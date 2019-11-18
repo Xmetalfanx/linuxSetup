@@ -1,3 +1,5 @@
+// Is any of this needed anymore? ... should i remove it anyway and K I S S 
+
 #For Users
 
 - Updated KDE Frameworks 5 and Plasma releases

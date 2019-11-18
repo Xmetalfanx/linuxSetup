@@ -2,8 +2,8 @@
 
 ### installApp function 
 
-'installApp' is the name of the function and take an unlimited amount of arguements.
-    - it DOES echo out those arguements in a line similar "Installing <arguements here>"
+'installApp' is the name of the function and take an unlimited amount of arguments.
+    - it DOES echo out those arguements in a line similar "Installing <arguments here>"
     - it then uses the $install var to install the selected 
 
 ### $install variable
@@ -19,4 +19,4 @@
 
 all that has to be done is ' $install <arguement> '
 
-- this does not echo out anything as it's a variable and not a standalone function 
+- this does NOT echo out anything as it's a variable and not a standalone function 
