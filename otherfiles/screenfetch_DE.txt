@@ -1,21 +1,12 @@
-## 100% Credits goes to Screenfetch for the base of this code  
-# Credit/Source: https://github.com/KittyKatt/screenFetch 
-function DECheck()
-{
+
+# DE Detection - Begin
+detectde () {
 	DE="Not Present"
 	if [[ "${distro}" == "Mac OS X" ]]; then
 		if ps -U "${USER}" | grep -q -i 'finder'; then
 			DE="Aqua"
 		fi
-	elif [[ "${distro}" == "Cygwin" || "${distro}" == "Msys" ]]; then
-		# https://msdn.microsoft.com/en-us/library/ms724832%28VS.85%29.aspx
-		if wmic os get version | grep -q '^\(6\.[01]\)'; then
-			DE="Aero"
-		elif wmic os get version | grep -q '^\(6\.[23]\|10\)'; then
-			DE="Modern UI/Metro"
-		else
-			DE="Luna"
-		fi
+
 	elif [[ -n ${DISPLAY} ]]; then
 		if type -p xprop >/dev/null 2>&1;then
 			xprop_root="$(xprop -root 2>/dev/null)"
@@ -26,7 +17,7 @@ function DECheck()
 				{
 					if ($1 ~ /^_DT_SAVE_MODE/) {
 						de = $NF
-						gsub(/\"/,"",de)
+						gsub(/"/,"",de)
 						de = toupper(de)
 						exit
 					}
@@ -116,7 +107,7 @@ function DECheck()
 				fi
 			fi
 
-			if [ -n "$DE" ]; then
+			if [[ -z "$DE" || "$DE" = "Not Present" ]]; then
 				# fallback to checking $DESKTOP_SESSION
 				case "${DESKTOP_SESSION,,}" in
 					'gnome'*)
@@ -235,6 +226,11 @@ function DECheck()
 						DE="${DE} ${DEver}"
 					fi
 				fi
+			elif [[ ${DE} == "LXQt" ]]; then
+				if type -p lxqt-about >/dev/null 2>&1; then
+					DEver=$(lxqt-about --version | awk '/^liblxqt/ {print $2}')
+					DE="${DE} ${DEver}"
+				fi
 			elif [[ ${DE} == "MATE" ]]; then
 				if type -p mate-session >/dev/null 2>&1; then
 					DEver=$(mate-session --version)
@@ -274,4 +270,6 @@ function DECheck()
 			fi
 		fi
 	fi
+	verboseOut "Finding desktop environment...found as '$DE'"
 }
+### DE Detection - End
