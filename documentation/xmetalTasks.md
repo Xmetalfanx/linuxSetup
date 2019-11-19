@@ -14,7 +14,7 @@
 
 ### 3 - Install third party repos
 
-- OpenSuse - Pacman Repos
+- OpenSuse - Packman Repos (not to be confused with pacman from arch )
 - Fedora - RPM Fusion
 
 ### 4 - (if needed) Install Codecs
