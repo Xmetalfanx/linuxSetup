@@ -8,7 +8,7 @@ function ppaBranchCheck(){
 
     if [[ $supportedBases =~ $lsbOSRelease ]]; then
         echo -e "PPA works on the Ubuntu base you are on "
-        PPASupported=yes
+        PPAsupported="yes"
 
         echo -e "$lsbOSRelease found in $supportedBases"
     
@@ -17,10 +17,10 @@ function ppaBranchCheck(){
         echo -e "It appears you are not on ubuntu , or at least a currently supported version of Ubuntu"
 
         echo -e "$lsbOSRelease not found in $supportedBases"
-        PPASupported=no
+        PPAsupported="no"
     else 
         echo "PPA not made for the Ubuntu Base you are on"
-        PPASupported=no
+        PPAsupported="no"
 
         echo -e "$OSRELEASE_UBUNTU_CODENAME not found in $supportedBases"
     fi 
