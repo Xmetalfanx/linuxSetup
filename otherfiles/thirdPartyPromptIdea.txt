@@ -1,0 +1,20 @@
+What I need to know: 
+
+1) Distro/Repo that this effects
+
+
+What I want to happen: 
+In the case of a program (VS say using a RPM or DEB file for example), I want the first thing to happen when this "case" is triggered, to have the new prompt function run ... 
+    - if the user selects "no, i dont want to add this repo" I want (idea: to have an alternative way to install the program... say perhaps the DEB or RPM file option comes in here?)
+    - if the user selects "yes" install repo: 
+        ?? do the meta third party repo install ? '
+        how would i handle say the "DEB Multimedia Debian repo" ... just call that as a separate function (vs "the metathird party" function, when needed?)
+            - what would that function need to know? 
+
+
+
+###################################################
+idea- example 
+
+thirdpartyRepo= name of repo (say RPMFusion or Packman, maybe)
+    - this would be assigned in case statements where needed .... 
