@@ -7,16 +7,10 @@ PLATFORM_ID="platform:f30"
 PRETTY_NAME="Fedora 30 (Thirty)"
 ANSI_COLOR="0;34"
 LOGO=fedora-logo-icon
-CPE_NAME="cpe:/o:fedoraproject:fedora:30"
-HOME_URL="https://fedoraproject.org/"
-DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f30/system-administrators-guide/"
-SUPPORT_URL="https://fedoraproject.org/wiki/Communicating_and_getting_help"
-BUG_REPORT_URL="https://bugzilla.redhat.com/"
 REDHAT_BUGZILLA_PRODUCT="Fedora"
 REDHAT_BUGZILLA_PRODUCT_VERSION=30
 REDHAT_SUPPORT_PRODUCT="Fedora"
 REDHAT_SUPPORT_PRODUCT_VERSION=30
-PRIVACY_POLICY_URL="https://fedoraproject.org/wiki/Legal:PrivacyPolicy"
 
 
 
@@ -33,10 +27,6 @@ PRETTY_NAME="Fedora 32 (Container Image)"
 ANSI_COLOR="0;34"
 LOGO=fedora-logo-icon
 CPE_NAME="cpe:/o:fedoraproject:fedora:32"
-HOME_URL="https://fedoraproject.org/"
-DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/rawhide/system-administrators-guide/"
-SUPPORT_URL="https://fedoraproject.org/wiki/Communicating_and_getting_help"
-BUG_REPORT_URL="https://bugzilla.redhat.com/"
 REDHAT_BUGZILLA_PRODUCT="Fedora"
 REDHAT_BUGZILLA_PRODUCT_VERSION=rawhide
 REDHAT_SUPPORT_PRODUCT="Fedora"
@@ -44,6 +34,8 @@ REDHAT_SUPPORT_PRODUCT_VERSION=rawhide
 PRIVACY_POLICY_URL="https://fedoraproject.org/wiki/Legal:PrivacyPolicy"
 VARIANT="Container Image"
 VARIANT_ID=container
+
+
 
 # lsb info
 Distributor ID:	Fedora
