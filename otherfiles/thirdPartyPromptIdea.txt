@@ -15,10 +15,9 @@ In the case of a program (VS say using a RPM or DEB file for example), I want th
 
 ###################################################
 idea- example 
-<<<<<<< HEAD
 
-thirdpartyRepo= name of repo (say RPMFusion or Packman, maybe)
-    - this would be assigned in case statements where needed .... 
-=======
 thirdpartyRepo= name of repo (say RPMFusion or Packman, maybe s)
->>>>>>> bf12df6... start of prompt for third party repo, code
+
+    - this would be assigned in case statements where needed .... .... say in the meta "DeadBeef install" function (one of the distros has deadbeef in RPMFusion or Packman ... I think ... that's why i used it as an example )
+
+    

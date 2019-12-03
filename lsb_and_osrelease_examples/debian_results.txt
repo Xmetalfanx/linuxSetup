@@ -1,9 +1,9 @@
 # Sparky Linux from Mid April 2019
 
-Dist ID:        Sparky 
+Dist ID:        Sparky
 Description:    SparkyLinux 5.7 (Nibiru)
 Release:        5.7
-Codename:       buster 
+Codename:       buster
 ############################################
 
 
