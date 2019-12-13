@@ -1,0 +1,29 @@
+
+#######################################################################
+## NO NEED for AppImages to use this
+
+function moveThirdPartyApp
+{
+  # This probably should be called by the createMenu function
+
+  # I need to know the subfolder name in ~/Downloads
+  # I need to take that and move it to /usr/local/bin
+
+    echo
+    echo -e "Moving $fileNameWEXT to /usr/local/bin"
+    
+    ######################################################
+    ## For testing only 
+    userPrompt
+    ######################################################
+
+    # mv $fileNameWEXT /usr/local/bin
+
+    ######################################
+    # Test
+    ls /usr/local/bin
+    userPrompt
+    ##############
+
+
+}
