@@ -13,6 +13,8 @@ readonly dir=$(eval pwd)
 . $dir/functions/includeBasicConfigs.cfg
 
 ########################################################################
+xmetalScriptsRoot=$(pwd)
+
 x=1
 
 # in f_common.cfg
