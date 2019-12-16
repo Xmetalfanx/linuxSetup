@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec="~/Downloads/tmm/tmm/tinyMediaManager.sh"
-Icon="~/Downloads/tmm/tmm/tmm.png"
+Exec=/home/$USER/tinyMediaManager/tinyMediaManager.sh
+Icon=/home/$USER/tinyMediaManager/tmm.png
 Type=Application
 Terminal=false
 Comment=Tiny Media Manager Media Organizer
