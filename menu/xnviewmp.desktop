@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Exec=/home/$USER/eclipse-version/eclipse/eclipse
 Icon=/home/$USER/eclipse-version/eclipse/icon.xpm
 Type=Application
