@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Media Elch
+Terminal=false
+Comment=Media Elch Media Organizer
+GenericName=mediaElch
+Categories=AudioVideo;Video;
+Icon=//home/xmetal/Programs/mediaElch/mediaelch.png
+Exec=//home/xmetal/Programs/mediaElch/mediaelch.AppImage

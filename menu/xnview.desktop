@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Comment=XnViewMP
+Name=XnViewMP
+GenericName=xnviewmp
+StartupNotify=false
+Categories=Graphics;
+Icon=//home/xmetal/Programs/xnViewMP/xnview.png
+Exec=//home/xmetal/Programs/xnViewMP/XnView_MP.glibc2.17-x86_64.AppImage

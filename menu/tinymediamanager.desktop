@@ -5,3 +5,5 @@ Terminal=false
 Comment=Tiny Media Manager Media Organizer
 GenericName=tinyMediaManager
 Categories=AudioVideo;Video;
+Icon=//home/xmetal/Programs/tinyMediaManager/tmm.png
+Exec=//home/xmetal/Programs/tinyMediaManager/tinyMediaManager.sh
