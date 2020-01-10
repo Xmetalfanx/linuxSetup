@@ -112,11 +112,11 @@ s
 
 ---
 
-# Test Results 
+# Test Results
 
 - Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i dont see it pass on an actual install, I will leave what I saw with my own eyes 
 
-## Distro Testing 
+## Distro Testing
 - [Arch Based Task ](tests/archBasedTests.md)
 - [RPM Based Distro  - Fedora and OpenSuse ](tests/rpmBasedTests.md)
 - [Solus Task ](tests/solusTests.md)
@@ -128,3 +128,6 @@ s
 
 #### Extra Notes
 - note: move this to better documentation section, later The repo used for an option to install Audio-Recorder on Debian is [https://www.deb-multimedia.org/](https://www.deb-multimedia.org/)
+
+##### Mid Jan 2020 Update
+- MediaElch, Tiny Media Manager, and XnviewMP (via AppImage) have the option that add a menu item if the user wants

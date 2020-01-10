@@ -87,7 +87,7 @@
 | 5         | Celluloid/Gnome-Mpv     |     | Pass | Not Tested |
 | 6         | Strawberry Media Player |     | Pass | Not Tested |
 | 7         | Tiny Media Manager      |     | Pass | Not Tested |
-| 8         | MediaElch AppImage      |     |      |            |
+| 8         | MediaElch AppImage      |     | Pass | Not Tested |
 
 ---
 

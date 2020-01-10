@@ -1,0 +1,7 @@
+1) Read in arch config file
+2) See if aurHelper is set
+    A) if it is set, display what is detected to the user
+        - after displaying ask the user if they want to switch?
+            - at least give the option to switch if both are installed?
+    B)[FUNCTION- isAurHelperInstalled] if not set check if an AUR Helper is installed (maybe one is installed, but the script's var may just not be set)
+        - in large part this is the code I had in the first place
