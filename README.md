@@ -110,6 +110,8 @@ s
 
 ## [Xmetal's Task Info](/documentation/xmetalTasks.md)
 
+- This is where the original idea for all of this came from ... These are "for me" where instead of "going to this menu and selecting this, and that menu and selecting another thing, I can just run this one "batch" set of tasks and do it all at once.
+
 ---
 
 # Test Results
