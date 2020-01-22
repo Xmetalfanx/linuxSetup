@@ -21,7 +21,7 @@ Some of these are auto-installed when the script is first run ... others I may a
 - `curl`
 - `lsb` (different package names on different distros ) type packages
   - so lsb_release * can be run
-- `inxi` 
+- `inxi`
   - (? if it's autoinstalled or needed)
   - ... even I am not 100% sure about this one, but for later "DE/Distro" detection, inxi seems needed
 - `git`
@@ -116,7 +116,7 @@ s
 
 # Test Results
 
-- Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i dont see it pass on an actual install, I will leave what I saw with my own eyes 
+- Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i dont see it pass on an actual install, I will leave what I saw with my own eyes
 
 ## Distro Testing
 - [Arch Based Task ](tests/archBasedTests.md)
