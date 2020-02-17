@@ -42,7 +42,7 @@
 
 | Menu Item | Menu Task               |     | Solus 4.0  |
 | --------- | :---------------------- | :-- | :--------- |
-| 1         | makeMKV                 |     | RETEST     |
+| 1         | makeMKV                 |     | Fail**     |
 | 2         | Audio Recorder          |     | ---        |
 | 3         | XnViewMP                |     | Not Tested |
 | 4         | DeadBeef Media Player   |     | Pass       |
@@ -50,6 +50,8 @@
 | 6         | Strawberry Media Player |     | Pass       |
 | 7         | Tiny Media Manager      |     | Pass       |
 | 8         | MediaElch AppImage      |     | Not Tested |
+
+** Fails due to missing Deps but a check that may fix this was just added back ... I just have not had a channce to retest this on a fresh install yet
 
 ## Coding/Productivity/Office Apps
 
