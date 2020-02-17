@@ -18,3 +18,5 @@ Last Upgraded:	 arch  	01/12/20	:02:23:21 PM
 Last Upgraded:	 ubuntu  	01/21/20	:02:33:38 PM
 Last Upgraded:	 ubuntu  	01/21/20	:03:18:12 PM
 Last Upgraded:	 arch  	01/22/20	:06:17:33 PM
+Last Upgraded:	 opensuse  	02/11/20	:01:41:18 PM
+Last Upgraded:	 arch  	02/15/20	:08:04:48 PM
