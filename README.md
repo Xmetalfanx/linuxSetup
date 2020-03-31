@@ -2,6 +2,13 @@
 
 # NOTE: THIS is under heavy construction
 
+# March 31, 2020 Update:
+
+Things may be delayed as my main rig (laptop) has a keyboard issue that needs to be repaired and with everything going on in the world,
+	A) they are very backed up
+	B) I am not sure when I can send my laptop out to get fixed, or if i even can right now
+	C) I have NO idea when it may come back if i can .... if say 3-5 extra days vs normal .. I am cool with that if it comes back fixed ... I am thinking it may be alot longer now ... just due to everything ... because of this I do not want to screw up my only other rig i was using for testing.
+
 # Xmetal's Linux Scripts
 
 ## Introduction
