@@ -1,12 +1,24 @@
 # Wine Checks
 
+## Checks
+
+### Default Repo Checks
+
+| Task/Goal                    | Debian | Linux Mint 19 | Ubuntu |
+| ---------------------------- | ------ | ------------- | ------ |
+| Default repo Install of Wine | Pass   |               | Pass   |
 
 
-| Task/Goal                          | Debian | Linux Mint 19 | Ubuntu |
-| ---------------------------------- | ------ | ------------- | ------ |
-| Install of any needed dependencies |        |               |        |
-| Default repo Install of Wine       |   Fail    |               |        |
-| WineHQ Install                     |        |               |        |
+
+
+### WineHQ Checks
+
+| Task/Goal                                     | Debian | Linux Mint 19 | Ubuntu |
+| --------------------------------------------- | ------ | ------------- | ------ |
+| Install of any needed dependencies for WineHQ |        |               |        |
+| WineHQ Install                                | Fail   |               |        |
+
+- Debian is complaining about Gdebi not being installed 
 
 ---
 
