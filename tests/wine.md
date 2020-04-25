@@ -36,6 +36,10 @@
 
 ### Debian
 
+- line that uses SU comes back as a fair no matter what i type in as the PW 
+- complaining about name of wine package 
+  - winehq-stable depends on wine-stable but it cant be installed 
+
 ### Linux Mint
 
 ### Ubuntu
