@@ -51,7 +51,16 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 ### KDE Neon Updating Output
 
+-   April 2020 update: I am not sure this is still an issue
 -   The output of the updating is not as clean as apt-get upgrade or apt upgrade ... not sure if I can really do anything as that is on the way they upgrade via the CLI and has nothing to do with my scripts
+
+### MakeMKV Compiling
+
+not sure this is an issue but IF something ever goes wrong (this is sort of a note-to-self)... check out [This commit](https://github.com/Xmetalfanx/linuxSetup/commit/58b1a2bb2e11817ffc01f8f645a5323ed4430602)
+
+### WineHQ in Debian (stable at least ... )
+
+After a bit of trial and error, I finally have it working until the last point ... wine-stable is complaining about winehq-stable and visa versa ... trying to install both spits out errors too.
 
 * * *
 
