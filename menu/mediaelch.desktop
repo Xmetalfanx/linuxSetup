@@ -6,4 +6,4 @@ Comment=Media Elch Media Organizer
 GenericName=mediaElch
 Categories=AudioVideo;Video;
 Icon=//home/xmetal/Programs/mediaElch/mediaelch.png
-Exec=//home/xmetal/Programs/mediaElch/MediaElch_2.6.2_linux.AppImage
+Exec=//home/xmetal/Programs/mediaElch/MediaElch_2.6.6_win.AppImage
