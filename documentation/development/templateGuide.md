@@ -163,7 +163,7 @@ function installAudioRecorderPPA()
     PPAPackages=""
 
     packageNames=audio-recorder
-	supportedBase="xenial bionic cosmic disco"
+	  supportedBase="xenial bionic cosmic disco"
 
     addPPAFunction $PPAName $PPASource
 

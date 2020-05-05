@@ -58,9 +58,9 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 not sure this is an issue but IF something ever goes wrong (this is sort of a note-to-self)... check out [This commit](https://github.com/Xmetalfanx/linuxSetup/commit/58b1a2bb2e11817ffc01f8f645a5323ed4430602)
 
-### WineHQ in Debian (stable at least ... )
+### Ubuntu 14.04 support MAY not be the best
 
-After a bit of trial and error, I finally have it working until the last point ... wine-stable is complaining about winehq-stable and visa versa ... trying to install both spits out errors too.
+- while it's not end of life yet... I do not beleive ... I cant say that may scripts work great with 14.04 based LTS releases ... 16.04 (at the moment...) is as far back as I am really checking 
 
 * * *
 
@@ -118,12 +118,12 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 -   Distro families to be included are
 
-        - Ubuntu
-        - OpenSuse
         - Arch
+        - Debian
         - Fedora
-
-    s
+        - OpenSuse
+        - Solus
+        - Ubuntu
 
 * * *
 
@@ -152,7 +152,3 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 #### Extra Notes
 
 -   note: move this to better documentation section, later The repo used for an option to install Audio-Recorder on Debian is <https://www.deb-multimedia.org/>
-
-##### Mid Jan 2020 Update
-
--   MediaElch, Tiny Media Manager, and XnviewMP (via AppImage) have the option that add a menu item if the user wants
