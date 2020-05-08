@@ -53,7 +53,7 @@
 
 ### Multimedia Apps
 
-| Menu Item | Menu Tasks              |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.10 |
+| Menu Item | Menu Tasks              |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 20.04 |
 | --------- | ----------------------- | --- | ---------------- | ---------------- | ------------ |
 | 1         | makeMKV                 |     | Not Tested       | Pass             |              |
 | 2         | Audio Recorder          |     | Not Tested       | Not Tested       |              |
@@ -69,7 +69,7 @@
 
 ### Productivity/Office Apps
 
-| Menu Item | Menu Tasks  |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 19.10 |
+| Menu Item | Menu Tasks  |     | Ubuntu 16.04 LTS | Ubuntu 18.04 LTS | Ubuntu 20.04 |
 | --------- | ----------- | --- | ---------------- | ---------------- | ------------ |
 | 1         | Atom Editor |     | Not Tested       | Pass             |              |
 | 2         | vscode      |     | Not Tested       | Pass             |              |
