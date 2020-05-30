@@ -8,23 +8,25 @@ This is made for me ... instead of going through menus, the idea is to be able t
 
 -   _Manjaro Rank Mirrors_
 
--   Arch Linux  is supported too
+-   Arch Linux is supported too
 
 ## 2 - Update System
 
 -   note: Updates packages ... doesn't do a dist upgrade type of task
     -   exception - OpenSuse Tumbleweed ... a "zypper dup" is done and NOT a "zypper up"
 
--   NOTE TO SELF: consider pausing here .... some updates need a system reboot first .... just ... consider this anyway
+-   NOTE TO SELF: consider pausing here .... some updates need a system reboot first
 
 ## 3 - Install third party repos
 
--   OpenSuse - Packman Repos (not to be confused with pacman from arch )
+-   OpenSuse - [Packman Repo](http://packman.links2linux.org/)
+    -   (not to be confused with pacman from arch )
 -   Fedora - RPM Fusion
 
 ## 4 - (if needed) Install Codecs
 
 -   Mainly for say Fedora and OpenSuse, if I recall
+    -   probably Arch too come to think of it
 
 ## 5 - Install Software
 
@@ -32,7 +34,7 @@ This is made for me ... instead of going through menus, the idea is to be able t
 
     massSoftwareInstall
 
-### Extra software
+### Extra software not in repos (though Fish is ... OMF isn't)
 
     - vscode, XnViewMP, Tiny Media Manager, Etcher, MakeMKV
     - fish shell + Oh-My-Fish + some extras

@@ -60,7 +60,7 @@ not sure this is an issue but IF something ever goes wrong (this is sort of a no
 
 ### Ubuntu 14.04 support MAY not be the best
 
-- while it's not end of life yet... I do not beleive ... I cant say that may scripts work great with 14.04 based LTS releases ... 16.04 (at the moment...) is as far back as I am really checking 
+-   while it's not end of life yet... I do not beleive ... I cant say that may scripts work great with 14.04 based LTS releases ... 16.04 (at the moment...) is as far back as I am really checking
 
 * * *
 

@@ -1,36 +1,12 @@
 #!/bin/bash
+javacheck="openjdk"
+var1=$(java --version)
 
-function userPrompt()
-{
-	read -p "Press [Enter] key"
-}
 
-function detectStatus()
-{
-	clear
+if [ "$var1" == *"$javacheck"* ]; then
+    echo -e "true"
+else
+    echo -e "false"
+fi
 
-	for indivdualPackage in $@
-	{
-
-		# idea: so nothing is displayed
-		which $indivdualPackage > /dev/null 2>&1
-
-		if [ $? == 0 ]; then
-			echo -e "Package $indivdualPackage, found on this system"
-
-			# for testing only
-			userPrompt
-		else
-			echo -e "Package $indivdualPackage is not detected"
-
-			echo -e "$indivdualPackage needs to be installed"
-			userPrompt
-
-			sudo zypper install $indivdualPackage
-		fi
-
-	}
-
-}
-
-detectStatus apt zypper
+read -p "Press any key to continue"
