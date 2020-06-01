@@ -1,4 +1,5 @@
 #!/bin/bash
+
 javacheck="openjdk"
 var1=$(java --version)
 
