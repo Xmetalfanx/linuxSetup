@@ -1,0 +1,33 @@
+Tumbleweed LSB results
+
+LSB Version:    n/a
+Distributor ID: openSUSE
+Description:    openSUSE Tumbleweed
+Release:        20190310
+Codename:       n/a
+
+############################################
+
+os-release from Leap 15
+
+VERSION="15.0 beta" 			# Beta atm anyway
+
+VERSION_ID="15.0"
+
+PRETTY_NAME="openSUSE Leap 15.0 beta"
+
+
+############################################
+
+
+NAME="openSUSE Tumbleweed"
+# VERSION="20190314"
+ID="opensuse-tumbleweed"
+ID_LIKE="opensuse suse"
+VERSION_ID="20190314"
+PRETTY_NAME="openSUSE Tumbleweed"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:tumbleweed:20190314"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+

@@ -1,12 +1,17 @@
 
+
 if [ "$distroBase" = "arch" ]; then
- 
+
+elif [ "$distroBase" = "debian" ]; then
+
 elif [ "$distroBase" = "fedora" ]; then
-   
+
 elif [ "$distroBase" = "opensuse" ]; then
 
-elif [ "$distroBase" = "solus" ]; then 
-  
+elif [ "$distroBase" = "solus" ]; then
+
 elif [ "$distroBase" = "ubuntu" ]; then
 
-fi 
+else
+    echo "distroBase not detected"
+fi

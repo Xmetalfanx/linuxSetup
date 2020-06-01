@@ -1,7 +1,0 @@
-lsb core (for lsb_release) not installed with bases system... i will need to check for it or go to a fallback of inxi checking and /etc/os-release
-
-LSB Version:    1.4
-Distributor ID: Arch
-Description:    Arch Linux
-Release:        rolling
-Codename:       n/a
