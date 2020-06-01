@@ -1,0 +1,33 @@
+lsb core (for lsb_release) not installed with bases system... i will need to check for it or go to a fallback of inxi checking and /etc/os-release
+
+LSB Version:    1.4
+Distributor ID: Arch
+Description:    Arch Linux
+Release:        rolling
+Codename:       n/a
+
+###################################
+Manjaro 18.04
+
+lsb_release =a
+
+ID: ManjaroLinux
+Description: Manjaro Linux
+Reelease: 18.0.4
+Codename: Illyria
+
+os-release file
+
+NAME: "Manjaro Linux" (with quotes)
+ID: manjaro
+ID_LIKE: arch
+Pretty Name: (w/ double quotes like Name) "Manjaro Linux"
+
+
+
+Anarchy (formerly Arch Anywhere)
+
+https://anarchy-linux.org/news/Anarchy-Linux-replaces-Arch-Anywhere/
+
+ID=anarchy
+ID_LIKE=anarchylinux

@@ -1,3 +1,5 @@
+# Do I still need this?
+
 if [ "lsbDistribID" == "LinuxMint" ] || [ "OSRELEASE_NAME" == "Linux Mint" ] || [ "OSRELEASE_ID" == "linuxmint" ]; then
 
     distroName="linuxMint

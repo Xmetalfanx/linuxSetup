@@ -6,5 +6,5 @@ Look for "main" and/or "main contrib nonfree" in the sources.list file (backing 
 I have to brush up on grep and sed (awk to maybe ... dont have much experience with awk)
 
 problems i am seeing:
--   searching EXACTLY for "main" without "contrib nonfree" 
--   sometimes (the way I typed it in manually?) it's not always "main contrib nonfree" but "contrib nonfree main" I have seen too 
+-   searching EXACTLY for "main" without "contrib nonfree"
+-   sometimes (the way I typed it in manually?) it's not always "main contrib nonfree" but "contrib nonfree main" I have seen too
