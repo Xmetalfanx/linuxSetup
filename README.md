@@ -1,15 +1,10 @@
+# Xmetal's Linux Scripts
+
+## Code Badge
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ad3a390ed44e4ad28b786d760b2dd5f6)](https://www.codacy.com/app/Xmetalfanx/linuxSetup?utm_source=github.com&utm_medium=referral&utm_content=Xmetalfanx/linuxSetup&utm_campaign=Badge_Grade)
 
-# NOTE: THIS is under heavy construction
-
-# March 31, 2020 Update:
-
-Things may be delayed as my main rig (laptop) has a keyboard issue that needs to be repaired and with everything going on in the world,
-	A) they are very backed up
-	B) I am not sure when I can send my laptop out to get fixed, or if i even can right now
-	C) I have NO idea when it may come back if i can .... if say 3-5 extra days vs normal .. I am cool with that if it comes back fixed ... I am thinking it may be alot longer now ... just due to everything ... because of this I do not want to screw up my only other rig i was using for testing.
-
-# Xmetal's Linux Scripts
+## NOTE: THIS is under heavy construction
 
 ## Introduction
 
@@ -30,10 +25,10 @@ Some of these are auto-installed when the script is first run ... others I may a
 -   `lsb` (different package names on different distros ) type packages
     -   so lsb_release \* can be run
 -   `inxi`
-    -   (? if it's autoinstalled or needed)
+    -   (? if it's auto-installed or needed)
     -   ... even I am not 100% sure about this one, but for later "DE/Distro" detection, inxi seems needed
 -   `git`
-    -   this is to git clone the scripts; however, from the github or gitlab page for the scripts, there are ways to download the repo in a .zip form too ... in this case `git` is not "needed"
+    -   this is to git clone the scripts; however, from the Github or Gitlab page for the scripts, there are ways to download the repo in a .zip form too ... in this case `git` is not "needed"
 
 ## Thanks
 
@@ -60,7 +55,7 @@ not sure this is an issue but IF something ever goes wrong (this is sort of a no
 
 ### Ubuntu 14.04 support MAY not be the best
 
--   while it's not end of life yet... I do not beleive ... I cant say that may scripts work great with 14.04 based LTS releases ... 16.04 (at the moment...) is as far back as I am really checking
+-   while it's not end of life yet... I do not believe ... I cant say that may scripts work great with 14.04 based LTS releases ... 16.04 (at the moment...) is as far back as I am really checking
 
 * * *
 
@@ -82,23 +77,23 @@ Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
 
 ## How to download via git
 
--   ### In Arch:
+### In Arch
 
     `sudo pacman -S git`
 
--   ### In Fedora:
+### In Fedora
 
     `sudo dnf install git`
 
--   ### In OpenSUSE:
+### In OpenSUSE
 
     `sudo zypper install git`
 
--   ### In Ubuntu:
+### In Ubuntu
 
     `sudo apt install git`
 
-    -   if that doesn't work `sudo apt-get install git`
+    - if that doesn't work `sudo apt-get install git`
 
 ## How to get the script via git method
 
@@ -110,20 +105,18 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 2.  Navigate to the root folder you extracted the LinuxScripts archive to
 3.  type `bash xmetalLinuxScripts.sh`
 
-* * *
-
 ## Goals
 
 1.  To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
 
 -   Distro families to be included are
 
-        - Arch
-        - Debian
-        - Fedora
-        - OpenSuse
-        - Solus
-        - Ubuntu
+          - Arch
+          - Debian
+          - Fedora
+          - OpenSuse
+          - Solus
+          - Ubuntu
 
 * * *
 
@@ -133,22 +126,22 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 * * *
 
-# Test Results
+## Test Results
 
--   Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i dont see it pass on an actual install, I will leave what I saw with my own eyes
+-   Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i don't see it pass on an actual install, I will leave what I saw with my own eyes
 
 ## Distro Testing
 
--   [Arch Based Task ](tests/archBasedTests.md)
--   [RPM Based Distro  - Fedora and OpenSuse ](tests/rpmBasedTests.md)
--   [Solus Task ](tests/solusTests.md)
--   [Ubuntu Task ](test/ubuntuBasedTests.md)
+-   [Arch Based Task](tests/archBasedTests.md)
+-   [RPM Based Distro  - Fedora and OpenSuse](tests/rpmBasedTests.md)
+-   [Solus Task](tests/solusTests.md)
+-   [Ubuntu Task](test/ubuntuBasedTests.md)
 
 ## Software Tests
 
--   [Theming Testing ](tests/themingTests.md)
+-   [Theming Testing](tests/themingTests.md)
 -   [Web Browser Installer Tests](tests/browserImstallerTests.md)
 
-#### Extra Notes
+### Extra Notes
 
 -   note: move this to better documentation section, later The repo used for an option to install Audio-Recorder on Debian is <https://www.deb-multimedia.org/>
