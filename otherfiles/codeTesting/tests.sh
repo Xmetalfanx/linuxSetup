@@ -1,3 +1,5 @@
+#!/bin/bash
+
 readonly dir=$(eval pwd)
 readonly functionsdir=$(eval pwd)/functions
 
@@ -6,7 +8,7 @@ readonly functionsdir=$(eval pwd)/functions
 . $functionsdir/includeBasicConfigs.cfg
 . $functionsdir/includeSpecificDistroCfg.cfg
 
-# in f_common.cfg 
+# in f_common.cfg
 intialTasks
 
 ##############################################
