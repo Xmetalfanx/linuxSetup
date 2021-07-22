@@ -27,6 +27,8 @@ Some of these are auto-installed when the script is first run ... others I may a
 - `inxi`
   - (? if it's auto-installed or needed)
   - ... even I am not 100% sure about this one, but for later "DE/Distro" detection, inxi seems needed
+
+*** if there is one thing that you may (you could always download my script's via the .zip file) "need" to install before running my script or getting them .... it'd be "git" 
 - `git`
   - this is to git clone the scripts; however, from the Github or Gitlab page for the scripts, there are ways to download the repo in a .zip form too ... in this case `git` is not "needed"
 
@@ -39,6 +41,8 @@ Some of these are auto-installed when the script is first run ... others I may a
 - Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes. Matthew Moore's Debian install guide also helped me add the Codec section for Debian... credit goes to him for that and figuring out in some cases you need to add some of the packages before others (vs having it all in one big "sudo apt install" line). Thanks Matt
 
 ## Known issues
+
+Right now if a supported version is not detected for whatever distro you are on, the scripts will not run in a sense.  I AM NOT including "pre-releases" or betas as "yes this release is supported" until they are finally released for good from the distro maintainer.   This means you may be on a beta release that is not "fully official yet" and the 'is it supported or not?" check will be a "no" ... this is by design ... if it makes better sense to change this later, I am open to the idea.
 
 ### Some RPMs are not being signed by the devs
 
