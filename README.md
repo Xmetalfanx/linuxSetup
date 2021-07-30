@@ -57,6 +57,30 @@ Right now if a supported version is not detected for whatever distro you are on,
 
 not sure this is an issue but IF something ever goes wrong (this is sort of a note-to-self)... check out [This commit](https://github.com/Xmetalfanx/linuxSetup/commit/58b1a2bb2e11817ffc01f8f645a5323ed4430602)
 
+### XnviewMP AppImage issues
+
+- [My Issue](https://github.com/Xmetalfanx/linuxSetup/issues/130)
+
+- This is happening on recent... (0.98 and newer AppImages, I think) versions but AppImages 0.97 or earlier work fine on the distros having the issues with the newer AppImage 
+- Message/error: ` "symbol lookup error: /usr/lib/libkrb5.so.3" ` when running the newer appimages on certain distros 
+
+Xnview forum links
+- [Link 1](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41879&p=169714&hilit=appimage#p169714)
+- [Link 2](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41294)
+
+note: i have the packages that the dev mentioned installed ... I checked that before even searching the forums ... others report having it installed as well, but the same issue persists 
+
+### Fedora and Bleachbit issues
+
+- A few versions back (Fedora 32 perhaps), Bleachbit was removed from the repos and it doesn't seem to be in RPMFusion either.   
+- Using wget with the RPM files downloads what is labeled as an rpm file but is really an html document with alot of scripts 
+- I am not sure how to handle this but downloading the same exact RPM link in a browwser works fine and gets the ACTUAL RPM.
+- I do not want to use anything outside the official repos (or something like RPMFusion in Fedora's case) OR the offical site's links 
+
+#### Solution to Fedora/Bleachbit issue
+
+- Download the RPM via a web browser
+
 ---
 
 ## Links to other useful projects similar to this
