@@ -18,10 +18,10 @@
         -   sudo eopkg install
     -   OpenSuse
         -   sudo zypper install
-    -   sudo dnf install
-        -   Fedora
-    -   sudo pacman -S
-        -   Arch Linux
+    -   lFedora
+        -   sudo dnf install
+    -   Arch Linux/Manjaro 
+        -   sudo pacman -S
 
 -   all that has to be done is '$install <arguement> ', though it is better to use the installApp function that uses this variable.
 
