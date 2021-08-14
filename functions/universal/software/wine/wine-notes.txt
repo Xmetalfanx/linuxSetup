@@ -1,0 +1,1 @@
+solus's repos have "wine wine-tricks wine32-bit" AND "playonlinux"
