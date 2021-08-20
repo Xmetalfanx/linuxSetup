@@ -10,7 +10,7 @@
 
 A problem SOME users, even if they are experienced have when setting up some distributions, is all the post install tasks they have to do to setup a "workable" system. The tasks may not be difficult to do, but just rather they are time consuming. These scripts can hopefully give people a "helping hand" getting different distro bases set up.
 
-While The main distributions listed are meant to be "Distro family bases", not ALL scripts are practically on all distros. For example a few of the "Fedora scripts" are already pre-done for you, if you use Korora.
+While The main distributions listed are meant to be "Distro family bases", not ALL scripts are practically on all distros.
 
 ## Disclaimer
 
@@ -28,7 +28,8 @@ Some of these are auto-installed when the script is first run ... others I may a
   - (? if it's auto-installed or needed)
   - ... even I am not 100% sure about this one, but for later "DE/Distro" detection, inxi seems needed
 
-*** if there is one thing that you may (you could always download my script's via the .zip file) "need" to install before running my script or getting them .... it'd be "git" 
+\*\*\* if there is one thing that you may (you could always download my script's via the .zip file) "need" to install before running my script or getting them .... it'd be "git"
+
 - `git`
   - this is to git clone the scripts; however, from the Github or Gitlab page for the scripts, there are ways to download the repo in a .zip form too ... in this case `git` is not "needed"
 
@@ -38,11 +39,9 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 - While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
 
-- Thanks to [Matthew Moore](https://www.youtube.com/user/MrGizmo757/undefined) for much of the Arch info in his Arch install notes. Matthew Moore's Debian install guide also helped me add the Codec section for Debian... credit goes to him for that and figuring out in some cases you need to add some of the packages before others (vs having it all in one big "sudo apt install" line). Thanks Matt
-
 ## Known issues
 
-Right now if a supported version is not detected for whatever distro you are on, the scripts will not run in a sense.  I AM NOT including "pre-releases" or betas as "yes this release is supported" until they are finally released for good from the distro maintainer.   This means you may be on a beta release that is not "fully official yet" and the 'is it supported or not?" check will be a "no" ... this is by design ... if it makes better sense to change this later, I am open to the idea.
+Right now if a supported version is not detected for whatever distro you are on, the scripts will not run in a sense. I AM NOT including "pre-releases" or betas as "yes this release is supported" until they are finally released for good from the distro maintainer. This means you may be on a beta release that is not "fully official yet" and the 'is it supported or not?" check will be a "no" ... this is by design ... if it makes better sense to change this later, I am open to the idea.
 
 ### Some RPMs are not being signed by the devs
 
@@ -61,21 +60,23 @@ not sure this is an issue but IF something ever goes wrong (this is sort of a no
 
 - [My Issue](https://github.com/Xmetalfanx/linuxSetup/issues/130)
 
-- This is happening on recent... (0.98 and newer AppImages, I think) versions but AppImages 0.97 or earlier work fine on the distros having the issues with the newer AppImage 
-- Message/error: ` "symbol lookup error: /usr/lib/libkrb5.so.3" ` when running the newer appimages on certain distros 
+- This is happening on recent... (0.98 and newer AppImages, I think) versions but AppImages 0.97 or earlier work fine on the distros having the issues with the newer AppImage
+
+- Message/error: `"symbol lookup error: /usr/lib/libkrb5.so.3"` when running the newer appimages on certain distros
 
 Xnview forum links
+
 - [Link 1](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41879&p=169714&hilit=appimage#p169714)
 - [Link 2](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41294)
 
-note: i have the packages that the dev mentioned installed ... I checked that before even searching the forums ... others report having it installed as well, but the same issue persists 
+note: i have the packages that the dev mentioned installed ... I checked that before even searching the forums ... others report having it installed as well, but the same issue persists
 
 ### Fedora and Bleachbit issues
 
-- A few versions back (Fedora 32 perhaps), Bleachbit was removed from the repos and it doesn't seem to be in RPMFusion either.   
-- Using wget with the RPM files downloads what is labeled as an rpm file but is really an html document with alot of scripts 
+- A few versions back (Fedora 32 perhaps), Bleachbit was removed from the repos and it doesn't seem to be in RPMFusion either.
+- Using wget with the RPM files downloads what is labeled as an rpm file but is really an html document with alot of scripts
 - I am not sure how to handle this but downloading the same exact RPM link in a browwser works fine and gets the ACTUAL RPM.
-- I do not want to use anything outside the official repos (or something like RPMFusion in Fedora's case) OR the offical site's links 
+- I do not want to use anything outside the official repos (or something like RPMFusion in Fedora's case) OR the offical site's links
 
 #### Solution to Fedora/Bleachbit issue
 
@@ -95,7 +96,7 @@ Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
 
 - Also thanks to [Fedora Install Script](https://gist.github.com/KingsleyOmon-Edo/711c0a79c29d532840bb5cae55b7c2d6) for ideas coming in future commits (posted this here to remember to give credit, before hand)
 
-- More thanks go to KittyKatt and screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
+- More thanks go to KittyKatt and Screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
 
 ---
 
@@ -125,22 +126,22 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 ## How to run the main script file
 
-1.  Open a Terminal
-2.  Navigate to the root folder you extracted the LinuxScripts archive to
-3.  type `bash xmetalLinuxScripts.sh`
+1. Open a Terminal
+2. Navigate to the root folder you extracted the LinuxScripts archive to
+3. type `bash linuxSetupScripts.sh`
 
 ## Goals
 
-1.  To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
+1. To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
 
 - Distro families to be included are
 
-        - Arch
-        - Debian
-        - Fedora
-        - OpenSuse
-        - Solus
-        - Ubuntu
+          - Arch
+          - Debian
+          - Fedora
+          - OpenSuse
+          - Solus
+          - Ubuntu
 
 ---
 
