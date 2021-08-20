@@ -10,7 +10,7 @@
 # This is needed here so my scripts can use this to load other needed things
 readonly dir=$(eval pwd)
 
-. $dir/functions/includeBasicConfigs.cfg
+. "$dir/functions/includeBasicConfigs.cfg"
 
 ########################################################################
 
