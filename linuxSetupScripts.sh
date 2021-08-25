@@ -19,11 +19,10 @@ x=1
 # in f_common.cfg
 intialTasks
 
+
 function mainMenu() {
 
     while [ $x=1 ]; do
-
-        #paddingBorder
 
         echo -e "${bold}${underline}Xmetal's Linux Scripts${completeReset} \n"
 
