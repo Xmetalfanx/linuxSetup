@@ -14,7 +14,7 @@ While The main distributions listed are meant to be "Distro family bases", not A
 
 ## Disclaimer
 
-- Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur
+- Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur.  ALWAYS have backups "just in case" amd even redundant backups, in case your original backups have issues.
 
 ## Requirements
 
@@ -41,22 +41,25 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 ## Known issues
 
-Right now if a supported version is not detected for whatever distro you are on, the scripts will not run in a sense. I AM NOT including "pre-releases" or betas as "yes this release is supported" until they are finally released for good from the distro maintainer. This means you may be on a beta release that is not "fully official yet" and the 'is it supported or not?" check will be a "no" ... this is by design ... if it makes better sense to change this later, I am open to the idea.
+Right now if a supported version is not detected for whatever distro you are on, the scripts will not run in a sense. I AM NOT including "pre-releases" or betas as "yes this release is supported" until they are finally released for good from the distro maintainer.
+
+This means you may be on a beta release that is not "fully official yet" and the 'is it supported or not?" check will be a "no" ... this is by design ... if it makes better sense to change this later, I am open to the idea.
 
 ### Some RPMs are not being signed by the devs
 
-- I can not say this is the case for all apps; however, to my knowledge GitKraken and Atom (see <https://github.com/atom/atom/issues/16499> for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea.
+- [August 2021 Update: I am not sure if this is still an issue]
+  - I can not say this is the case for all apps; however, to my knowledge GitKraken and Atom (see <https://github.com/atom/atom/issues/16499> for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea.
 
 ### KDE Neon Updating Output
 
-- April 2020 update: I am not sure this is still an issue
-- The output of the updating is not as clean as apt-get upgrade or apt upgrade ... not sure if I can really do anything as that is on the way they upgrade via the CLI and has nothing to do with my scripts
+- [April 2020 update: I am not sure this is still an issue]
+  - The output of the updating is not as clean as apt-get upgrade or apt upgrade ... not sure if I can really do anything as that is on the way they upgrade via the CLI and has nothing to do with my scripts
 
 ### MakeMKV Compiling
 
 not sure this is an issue but IF something ever goes wrong (this is sort of a note-to-self)... check out [This commit](https://github.com/Xmetalfanx/linuxSetup/commit/58b1a2bb2e11817ffc01f8f645a5323ed4430602)
 
-### XnviewMP AppImage issues
+### XNViewMP AppImage issues
 
 - [My Issue](https://github.com/Xmetalfanx/linuxSetup/issues/130)
 
@@ -93,8 +96,6 @@ note: i have the packages that the dev mentioned installed ... I checked that be
 - [Ubuntu Post Install Scripts](https://github.com/snwh/ubuntu-post-install)
 
 Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
-
-- Also thanks to [Fedora Install Script](https://gist.github.com/KingsleyOmon-Edo/711c0a79c29d532840bb5cae55b7c2d6) for ideas coming in future commits (posted this here to remember to give credit, before hand)
 
 - More thanks go to KittyKatt and Screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
 
@@ -134,15 +135,19 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 1. To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
 
-- Distro families to be included are
+- Distro base support
 
-          - Arch
-          - Debian
-          - Fedora
-          - OpenSuse
-          - Solus
-          - Ubuntu
 
+| Distro base    | Support                                   |
+| -------------- | ----------------------------------------- |
+| Arch / Manjaro |                                           |
+| Debian         | 10, 11                                    |
+| Fedora         | 33, 34                                    |
+| OpenSUSE       | 15.3 Leap, Tumbleweed                     |
+| Solus          | 4.x ( * )                                 |
+| Ubuntu         | 18.04 Bionic, 20.04 Focal, 21.04 Hirsuite |
+
+* not sure how far back this goes if one hasn't updated a Solus install
 ---
 
 ## [Xmetal's Task Info](/documentation/xmetalTasks.md)
