@@ -1,3 +1,0 @@
-1) Fresh Debian install ... the code to add "contrib" and/or "non-free" needs testing 
-
-2) The overall Wine code - especially Debian, Mint and Ubuntu-based related stuff needs testing 
