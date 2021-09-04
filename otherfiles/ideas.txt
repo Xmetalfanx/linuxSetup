@@ -1,16 +1,12 @@
-Idea for  addition 
+just to commit to something 
 
-(Menu)
-- Switch To Fastly CDN 
-    -- Backup Current sources.list - consider the backup filename since i am doing an undo feature 
-    -- changes the sources.list
-- Switch back from Fastly CDN sources.list
-    -- this undoes the step above of course
-        --- maybe have say the filename sources.list.preCDNSwitch or something clearer at the end 
-    -- if (in the CDN) contrib and non-free are available, just add them 
-        --- if i find a way to do (without overcomplicating things) a "check for contrib and non-free" and "only add them if the user had them in the original sources.list" later 
+- The Detection function 
+    - WILL NOT install anything ... that is handled elsewhere
+    - converts (in a sense) the return status to a var ( packageInstalled="yes" or "no") 
+    - passes that var back 
+    - ? Where is this getting called? ... I need to know     
 
 
-Flatpak
-    - (Seperate menu item in Universal Format Menu section ) Add Flathub
-        -- OBVIOUSLY check for flatpak support first 
+
+- the installApp function 
+    - This will be the default for "default repo" (+ say RPMFusion once installed) apps/packages 
