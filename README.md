@@ -2,7 +2,7 @@
 
 ## Code Badge
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ad3a390ed44e4ad28b786d760b2dd5f6)](https://www.codacy.com/app/Xmetalfanx/linuxSetup?utm_source=github.com&utm_medium=referral&utm_content=Xmetalfanx/linuxSetup&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/55ac91ee8f024afbb2d88d3f3713dc7b)](https://www.codacy.com/gh/Xmetalfanx/linuxSetup/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Xmetalfanx/linuxSetup&amp;utm_campaign=Badge_Grade)
 
 ## NOTE: THIS is under heavy construction
 
