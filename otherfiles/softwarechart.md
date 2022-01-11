@@ -32,7 +32,7 @@ TC = Tar file compiled (not just extracted)
 
 #### OpenSuse Related
 
-| Program Name    | Leap 15.1 | Tumbleweed |
+| Program Name    | Leap 15.3 | Tumbleweed |
 | --------------- | --------- | ---------- |
 | Deadbeef        |           |            |
 | Filezilla       |           |            |
