@@ -10,7 +10,6 @@
 | C         | Install Codecs              |     | Pass      | Pass      | Pass      |
 | R         | Install third party repos\* |     | Pass      | Pass      | Pass      |
 
-
 ### OpenSuse
 
 | Menu Item | Menu Tasks                  |     | Opensuse 15 | Opensuse Leap 15.1 | OpenSuse TW |
@@ -25,7 +24,7 @@
 
 - What themes are available for what distro and what "Desktop"/Window Manager makes this hard to test at times
 
-## Fedora
+### Fedora
 
 | Menu Item | Menu Items          |     | Fedora 29  | Fedora 30  | Fedora 31 |
 | --------- | ------------------- | --- | ---------- | ---------- | --------- |
@@ -40,8 +39,7 @@
 | I         | Install Misc Icons  |     | Pass       | Pass       | Pass      |
 | T         | Install Misc Themes |     | Pass       | Fail       |           |
 
-
-## OpenSuse
+### OpenSuse
 
 | Menu Item | Menu Items          |     | Opensuse Leap 15 | OpenSuse Leap 15.1 | OpenSuse Tw |
 | --------- | ------------------- | --- | ---------------- | ------------------ | ----------- |
@@ -88,7 +86,7 @@
 | 8         | Fish and Oh-my-Fish      |     | Not Tested | Not Tested | Pass      |
 | 9         | Wine and/or PlayonLinux  |     | Not Tested | Pass       | Fail      |
 
-- Intel Microcode is ASSUMING that I am using the correct (and nothing else is needed) package 
+- Intel Microcode is ASSUMING that I am using the correct (and nothing else is needed) package
 
 ---
 

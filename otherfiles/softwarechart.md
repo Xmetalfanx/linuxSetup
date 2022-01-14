@@ -1,9 +1,8 @@
-
 # Software Chart
 
-## Are the packages located in a distro's DEFAULT repos?  IF NOT where are they related to the distro
+## Are the packages located in a distro's DEFAULT repos? IF NOT where are they related to the distro
 
-#### This is not taking into account things,  like snaps and flatpaks ... which i SHOULD
+#### This is not taking into account things, like snaps and flatpaks ... which i SHOULD
 
 #### Arch, Debian, Fedora, and Solus related - Combined to save space
 
@@ -13,7 +12,7 @@
 | Filezilla       |        |              |              |             | Default  |
 | Smplayer        |        |              |              |             |          |
 | git             |        |              |              |             | Default  |
-| bleachbit       |        |        Default      | *            |             |          |
+| bleachbit       |        | Default      | \*           |             |          |
 | Makemkv         |        |              |              |             |          |
 | Pinta           |        |              |              |             |          |
 | Atom            |        | RPM Download | RPM Download |             |          |
@@ -24,7 +23,7 @@
 | Variety         |        |              |              |             | Default  |
 | TMM             | TB+Run | TB+Run       | TB+Run       | TB+Run      |          |
 
-* bleachbit's Fedora maintainer said something about this being a python issue and as soon as Bleachbit goes to Python three, they will include it on Fedora 31+ ... Fedora 30 has bleachbit in the repos though
+- bleachbit's Fedora maintainer said something about this being a python issue and as soon as Bleachbit goes to Python three, they will include it on Fedora 31+ ... Fedora 30 has bleachbit in the repos though
 
 TC = Tar file compiled (not just extracted)
 
@@ -70,8 +69,9 @@ TC = Tar file compiled (not just extracted)
 | TMM             | Unknown      | Unknown      | Unknown      |
 
 ---
+
 TMM = Tiny Media Manager ... shortened in the chart for the Markdown Syntax
 
 TB+Run = Tarball (download) + just run the main .sh file
 
-* There may be some changes coming in the future with Solus and the "third party section" ... WHEN? ... I am not sure
+- There may be some changes coming in the future with Solus and the "third party section" ... WHEN? ... I am not sure

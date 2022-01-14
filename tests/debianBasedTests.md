@@ -11,7 +11,7 @@
 
 ## Debian Specific Tasks
 
--   In the Debian submenu, that is
+- In the Debian submenu, that is
 
 | Menu Tasks                                               |  | Stable     | Testing |
 |----------------------------------------------------------|--|------------|---------|
@@ -35,7 +35,7 @@
 | I         | Install Misc Icons  |  | Not Tested | Not Coded  |
 | T         | Install Misc Themes |  | Not Tested | Pass       |
 
--   numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
+- numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
 
 * * *
 
@@ -63,10 +63,9 @@
 
 (A) Test done on Sparky Linux Stable (based on Debian Stable)
 
-
 * * *
 
--   I am not assuming anything but in some cases it seems (XNViewMP I THINK is one of them ... GitKraken appears to be another) the same DEBs can be used on Debian or Ubuntu ... HOWEVER ...until I know for each app below ... I will assume that is not the case and I know its not a good idea unless the app dev says it to be so.
+- I am not assuming anything but in some cases it seems (XNViewMP I THINK is one of them ... GitKraken appears to be another) the same DEBs can be used on Debian or Ubuntu ... HOWEVER ...until I know for each app below ... I will assume that is not the case and I know its not a good idea unless the app dev says it to be so.
 
 * * *
 
@@ -94,9 +93,9 @@
 | 7         | Tiny Media Manager      |  | Not Tested | Pass       |
 | 8         | MediaElch AppImage      |  | Not Tested | Pass       |
 
--   Menus are still an issue with TMM ...and apparently Java was already installed in my test
+- Menus are still an issue with TMM ...and apparently Java was already installed in my test
 
--   with Audio-Recorder on Debian ...the snap may be the only real option -  Snap also doesn't seem to be installed by default
+- with Audio-Recorder on Debian ...the snap may be the only real option -  Snap also doesn't seem to be installed by default
 
 * * *
 
