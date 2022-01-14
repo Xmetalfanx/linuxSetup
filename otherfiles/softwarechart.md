@@ -1,10 +1,10 @@
 # Software Chart
 
-## Are the packages located in a distro's DEFAULT repos? IF NOT where are they related to the distro
+- Are the packages located in a distro's DEFAULT repos? IF NOT where are they related to the distro
 
-#### This is not taking into account things, like snaps and flatpaks ... which i SHOULD
+- This is not taking into account things, like snaps and flatpaks ... which i SHOULD
 
-#### Arch, Debian, Fedora, and Solus related - Combined to save space
+### Arch, Debian, Fedora, and Solus related - Combined to save space
 
 | Program Name    | Arch   | Fedora 30    | Fedora 31    | Solus       | Debian   |
 | --------------- | ------ | ------------ | ------------ | ----------- | -------- |
