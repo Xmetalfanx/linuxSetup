@@ -7,15 +7,12 @@
 | 1         | Update System  |     | Pass | Not Tested |
 | C         | Install Codecs |     | Pass | Not Tested |
 
-
-| Menu Item | Menu Tasks             | Arch |  Manjaro   | 
+| Menu Item | Menu Tasks             | Arch | Manjaro    |
 | --------- | :--------------------- | ---- | ---------- |
-| 4         | Add Archive Support    | Pass | Not Tested |   
-| 5         | Add Sound Support (\*) | Pass | Not Tested |   
+| 4         | Add Archive Support    | Pass | Not Tested |
+| 5         | Add Sound Support (\*) | Pass | Not Tested |
 
-
-* (*) different from just installing codecs
-
+- (\*) different from just installing codecs
 
 ---
 
@@ -26,7 +23,7 @@
 | trizen    |     | Pass | Not Tested |
 | yay       |     | Pass | Not Tested |
 
-* both aurInstall functions (aka yay's or trizen's complains about having to pick the number)
+- both aurInstall functions (aka yay's or trizen's complains about having to pick the number)
 
 ---
 
@@ -45,7 +42,7 @@
 | I         | Misc Icons         |     | Pass       | Not Tested |
 | T         | Misc theming       |     | Pass       | Not Tested |
 
-* if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
+- if something is not coded yet, it's not failing, so i count "all themes (that ARE CODED) that work, as "all listed theming works"
 
 ---
 
@@ -53,15 +50,15 @@
 
 ### Install/Update for the specific apps
 
-| Menu Item | Menu Task                         |     | Arch       | Manjaro    |
-| --------- | --------------------------------- | --- | ---------- | ---------- |
-| 1         | Add Common Software               |     | Pass       | Not Tested |
-| 6         | Build Essential Packages          |     | Pass       | Not Tested |
-| 7         | Etcher                            |     | Pass       | Not Tested |
-| 8         | Install Fish Shell and Oh-My-Fish |     | Pass       | Pass       |
-| 9         | Wine and/or PlayonLinux           |     | Pass       | Not Tested |
-| 10        | Intel Microcode                   |     | Pass       | Not Tested |
-| 11        | Java Support                      |     | Pass       | Not Tested |
+| Menu Item | Menu Task                         |     | Arch | Manjaro    |
+| --------- | --------------------------------- | --- | ---- | ---------- |
+| 1         | Add Common Software               |     | Pass | Not Tested |
+| 6         | Build Essential Packages          |     | Pass | Not Tested |
+| 7         | Etcher                            |     | Pass | Not Tested |
+| 8         | Install Fish Shell and Oh-My-Fish |     | Pass | Pass       |
+| 9         | Wine and/or PlayonLinux           |     | Pass | Not Tested |
+| 10        | Intel Microcode                   |     | Pass | Not Tested |
+| 11        | Java Support                      |     | Pass | Not Tested |
 
 ---
 

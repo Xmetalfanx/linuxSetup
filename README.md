@@ -137,7 +137,6 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 - Distro base support
 
-
 | Distro base    | Support                                   |
 | -------------- | ----------------------------------------- |
 | Arch / Manjaro |                                           |
@@ -147,7 +146,8 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 | Solus          | 4.x ( * )                                 |
 | Ubuntu         | 18.04 Bionic, 20.04 Focal, 21.04 Hirsuite |
 
-* not sure how far back this goes if one hasn't updated a Solus install
+- not sure how far back this goes if one hasn't updated a Solus install
+
 ---
 
 ## [Xmetal's Task Info](/documentation/xmetalTasks.md)

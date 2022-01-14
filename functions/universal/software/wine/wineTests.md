@@ -18,8 +18,6 @@
 - these are "in general" tests ... i am not testing all the ubuntu respins for example ... if something works in a distro based on 20.04 ... I will call that a pass for instance
 - Leap 15.3 (at the time of me typing this)....even the Wine repos has NOTHING for Leap 15.3 (latest )
 
-
-
 ### PlayOnLinux
 
 | Distro /Distro base Name                  | PlayOnLinux |

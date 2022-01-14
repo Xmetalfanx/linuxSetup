@@ -27,8 +27,6 @@
 | 10        | Intel-Microcode package  |     | Pass       |
 | 11        | Java Support             |     | Pass       |
 
-
-
 ## Web Browser Menu
 
 | Menu Tasks    |     | Solus 4.0    |
@@ -61,7 +59,6 @@
 | 2         | vscode      | Pass       |
 | 3         | GitKraken   | Pass       |
 | 4         | Typora      | Not Tested |
-
 
 ---
 
