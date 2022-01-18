@@ -1,0 +1,13 @@
+function installApp notes
+
+- for default repo packages/software
+
+1. checks if the package is installed by passing to " detectPackageStatus"
+
+---------------------------------------------------------------------------------------
+-  detectPackageStatus takes a possible list of packages or a single package but only the package name  (aka not "flatpak or snap" ... that is a different function )
+
+- this uses the default package manager and code to set the var "alreadyInstalled"
+---------------------------------------------------------------------------------------
+
+now back with that var, the function only installs if the package is not installed already
