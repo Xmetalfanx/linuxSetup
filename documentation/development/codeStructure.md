@@ -48,7 +48,10 @@ note: any code that can be sent to somewhere in "universal" is moved there
     - f_solus.cfg - Solus specific functions
   - /ubuntu
     - /menu
+      - f_ubuntu_menus.cfg - specific menus for ubuntu based distros
+        - this is only for elementary for now ... ubuntu mate related code i had years ago was no longer needed
     - /PPAs
-    - /theming
-    - tic
+    - /tic - (Theme, Icon, Cursors)
+      - f_ubuntu_bionic_theming - a few functions SPECIFIC to Bionic (Ubuntu 18.04)
+      - f_ubuntu_theming - sort of a catch-all file with functions for various ubuntu bases (theme related)
   - /universal
