@@ -43,15 +43,55 @@ note: any code that can be sent to somewhere in "universal" is moved there
     - *f_openSUSECinnamon.cfg* - code related to installing Cinnamon (no live media for Cinnamon for openSUSE)
       - this doesn't count the spin "Gecko Linux"
     - *f_openSUSEMultimedia.cfg* - functions related to getting multimedia working on OpenSUSE
-  - /screenfetch - code related to (copy and pasted likely) from Screenfetch
-  - /solus
-    - f_solus.cfg - Solus specific functions
-  - /ubuntu
-    - /menu
-      - f_ubuntu_menus.cfg - specific menus for ubuntu based distros
+  - **/screenfetch** - code related to (copy and pasted likely) from Screenfetch
+  - **/solus**
+    - *f_solus.cfg* - Solus specific functions
+  - **/ubuntu**
+    - **/menu**
+      - *f_ubuntu_menus.cfg* - specific menus for ubuntu based distros
         - this is only for elementary for now ... ubuntu mate related code i had years ago was no longer needed
-    - /PPAs
-    - /tic - (Theme, Icon, Cursors)
-      - f_ubuntu_bionic_theming - a few functions SPECIFIC to Bionic (Ubuntu 18.04)
-      - f_ubuntu_theming - sort of a catch-all file with functions for various ubuntu bases (theme related)
-  - /universal
+    - **/PPAs**
+      - *f_multimedia_ppas.cfg*
+      - *f_ppa_maintance.cfg*
+      - *f_ubuntu_ppas.cfg*
+    - **/tic - (Theme, Icon, Cursors)**
+      - *f_ubuntu_bionic_theming* - a few functions SPECIFIC to Bionic (Ubuntu 18.04)
+      - *f_ubuntu_theming* - sort of a catch-all file with functions for various ubuntu bases (theme related)
+    - *f_ubuntu.cfg* - function
+    - *f_ubuntuSoftware.cfg* -
+  - **/universal** -
+    - all the files/folders below are "universal" ... aka they have code for various distro bases andd are NOT specific to any one base
+    - **/menus** - **f_universal_submenus.cfg** - submenus for the scripts off of the main menu
+    - **/pmanagement** -
+      - */archbased* -
+        - archBasedPMan.cfg
+          - note to self: consider renaming this file better
+      - */thirdparty*
+        - */universalApps* - function files more specific than f_universalApps.cfg
+          - note to self: should i move f_universalApps.cfg into here?
+          - f_flatpak_menus.cfg - various menus giving the user the chance to install the flatpaks they want for some popular software
+          - f_flatpak_software.cfg - like a var file, who's contents are used by other flatpak related functions
+          - f_flatpak_xmetal.cfg - functions for me that mass install the flatpaks that I use (or think I will) - this uses other functions
+          - f_flatpak.cfg
+          - f_snap.cfg - functions related to Snap packages
+        - f_thirdParty.cfg
+        - f_thirdPartyRepo.cfg
+        - f_universalApps.cfg - functions related to universal apps including snaps, flatpaks, appimages
+          - right now only has code related to appimage
+    - */software* -
+      - */multimedia*
+      - */wine*
+      - f_browsers.cfg
+      - f_cli_related.cfg
+      - f_multimediaSoftware.cfg
+      - f_productivitySoftware.cfg
+      - f_universalSoftware.cfg
+    - */tic* -
+      - */themes* -
+  - f_common.cfg
+  - f_createMenuItems.cfg
+  - f_mainSubMenu.cfg
+  - f_timeVariables.cfg
+  - f_variables.cfg
+  - includeBasicConfig.cfg
+  - includeSpecificDistroCfg.cfg
