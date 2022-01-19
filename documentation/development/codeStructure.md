@@ -1,0 +1,54 @@
+# dir/folder structure
+
+note: any code that can be sent to somewhere in "universal" is moved there
+
+- **/function**
+  - arch - arch-based distro code
+    - **/aurRelated**
+      - (combining these two may be a good idea)
+      - *f_aurHelperGeneral.cfg* - functions related to
+      - *f_aurHelperInstall.cfg* - actual functions to install trizen or yay
+    - *arch.cfg*
+      - Sound and Archive support additions
+      - Add Virtualbox
+    - *archmenus.cfg* - contains menus for stuff like adding AUR support with Trizen or Yay
+    - *manjaro.cfg* - code specific to manjaro and not arch
+  - **/check**
+    - *fcommandChecks.cfg*
+      - wget and curl check
+      - lsb related checks on the current distro
+    - *f_debianCheck.cfg, f_fedoraCheck.cfg, f_openSUSEChecks.cfg, f_ubuntuCheck.cfg* - checks distro info to determine if the distro is EOL or supported
+  - **/debian** - Debian based distro
+    - debian specific code
+  - **/fedora**
+    - *f_fedora.cfg* - general/'catch all" file for Fedora related code
+    - *f_fedoraMenu.cfg* - The Fedora menus
+    - *f_fedoraTheming.cfg* - code related to theming specifically in Fedora
+    - *f_fedyTasks.cfg* - tasks related to [Fedy](https://github.com/rpmfusion-infra/fedy)
+  - **/gitRelated**
+    - *gitfunctions.cfg* - code related to getting software or packages from git
+  - **/info**
+    - **/specific**
+      - *f_getGTKInfo.cfg* - functions to get GTK related info
+      - *getPlasmaInfo.cfg* - functions to get info about the Plasma 5 DE
+    - **/support**
+      - distrosEOL_supported.cfg
+      - distrosEOL.not_support.cfg
+    - f_DEInfo.cfg - functions to get info about the desktop environment being used
+    - *f_generalInfo.cfg* -
+      - functions and code that uses various methods (LSB related and the os_release file included) to get bits of information about the running system
+      - counts some checks for wget and curl on first run
+    - *f_infoOutput.cfg* - functions to display various output back to the user, concerning what the scripts are detecting, for example
+  - **/opensuse**
+    - *f_openSUSECinnamon.cfg* - code related to installing Cinnamon (no live media for Cinnamon for openSUSE)
+      - this doesn't count the spin "Gecko Linux"
+    - *f_openSUSEMultimedia.cfg* - functions related to getting multimedia working on OpenSUSE
+  - /screenfetch - code related to (copy and pasted likely) from Screenfetch
+  - /solus
+    - f_solus.cfg - Solus specific functions
+  - /ubuntu
+    - /menu
+    - /PPAs
+    - /theming
+    - tic
+  - /universal
