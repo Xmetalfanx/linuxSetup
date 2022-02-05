@@ -3,7 +3,8 @@
 ## Default repo Wine
 
 | Distro base | Test result |
-| A---------h | ----------- |
+| ----------- | ----------- |
+| Arch        | --          |
 | Debian      | --          |
 | Fedora      | --          |
 | Linux Mint  | --          |
@@ -11,13 +12,13 @@
 | Solus       | --          |
 | Ubuntu      | --          |
 
-
 ## WineHQ
 
 | Distro base | Stable Branch | Dev Branch |
-| A---------h | ------------- | ---------- |
+| ----------- | ------------- | ---------- |
+| Arch        | N/A           | N/A        |
 | Debian      | --            | --         |
 | Fedora      | --            | --         |
-| OpenSUSE    | --            | --         |
-| Solus       | --            | --         |
+| OpenSUSE    | N/A           | N/A        |
+| Solus       | N/A           | N/A        |
 | Ubuntu      | --            | --         |
