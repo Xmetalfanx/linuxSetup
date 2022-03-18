@@ -8,23 +8,87 @@ array=(
     6 'OpenSUSE Related'
     7 'Solus Related'
     8 'Ubuntu Related'
+	C 'Install Multimedia Codecs'
+	I 'Display Info about current install'
+	R "Install Third Party Codecs"
     S 'Install Software'
     T 'Install Theming'
-    Q 'Quit To Prompt'
+	X 'Xmetal Bulk Tasks'
+	Q 'Quit To Prompt'
 )
 
-function displayMenuEntries()(
 
-	clear
+################################################################################
+# related to echo Menu
 
-	if [ -n "$menuKey" ] && [ -n "$currentMenuText" ]; then
-		echo -en "\t$menuKey\t $currentMenuText\n"
+
+function LoopChoice(){
+
+	case $menuSelection in
+
+		1) universalUpdate
+
+            ## For updating Snaps and/or Flatpaks
+            universalAppUpdates
+            ;;
+
+        2) optimizeRepo ;;
+
+        # Located in /functions/f_mainSubMenus.cfg
+        3)
+			clear
+			mainArchMenu ;;
+        4) mainDebianMenu ;;
+        5) mainFedoraMenu ;;
+        6) mainOpenSUSEMenu ;;
+        7) mainSolusMenu ;;
+        8) mainUbuntuMenu ;;
+
+        [cC]) universalCodecInstall ;;
+        [iI]) massInfoOutput ;;
+        [rR]) thirdPartyRepoCheck ;;
+        [sS]) universalSoftwareMenu ;;
+        [tT]) universalThemingMenu ;;
+        [xX]) xmetalTasks ;;
+        [qQ])
+			quitScript
+			break
+			;;
+        *) invalidSection ;;
+
+	esac
+}
+
+
+
+# checking the element of the array against the 2 character length .. since no menuText would be less than that
+	# 2 chars checked, because of "10" or "12" posibilities
+function checkArrayElenentLength() {
+	if [ $elementLength -lt 2 ]; then
+
+		# uses the array and loops through the entries to create a menu with echo
+		# DEBUGGING SO I COMMENTED OUT
+		displayEchoMenuEntries
+
+
+		# assign menuKey to the next element
+		menuKey=$element
+
+
+		# idea: reset this here when another key is detected
+			# OTHERWISE I think it may end up doing "Fedora OpenSuse Ubuntu" just adding onto the last
+		menuText=""
+
+
 	else
-		return
+
+		# I think this is needed because of the space ... without it i see "System" "Mirror" "related" "related"
+			# where the FIRST word is cut off
+		menuText+="$element "
+
 	fi
 
-)
-
+}
 
 function mainMenuEchoType() {
 
@@ -33,76 +97,46 @@ function mainMenuEchoType() {
 	declare -A menuKey
 	declare -A menuText
 
-	echo -e "\t###############################################"
-	echo -e "\tMENUS"
-	echo -e "\t###############################################\v"
 
-	# as long as there are elements in the array
-	for element in ${array[@]}
+	clear
+	echo -e " ###############################################"
+	echo -e " MENUS"
+	echo -e " ###############################################\v"
+
+	for element in "${array[@]}"
 	do
-
-		#echo -e "element: $element"
 
 		# get the length of that element
 		elementLength=${#element}
 
-		# checking the element of the array against the 2 character length .. since no menuText would be less than that
-			# 2 chars checked, because of "10" or "12" posibilities
+		#echo -e "elementLength of $element is:\t$elementLength"
+
+
 		if [ $elementLength -lt 2 ]; then
-
-			# just trying ideas ... this may be un-needed
-			currentMenuText=$menuText
-
-
-			displayMenuEntries
-
-			#clear
-			#echo -e "Key Detected"
-			sleep 1
-
-			# assign menuKey to the next element
 			menuKey=$element
-			#echo -e "\nmenuKey now assigned as:\t $menuKey"
-
-
-			# idea reset this here when another key is detected
-				# OTHERWISE I think it may end up doing "Fedora OpenSuse Ubuntu" just adding onto the last
-			menuText=""
-
-
-
-			##################################################################
-			# worked before but out of order
-			#echo -e "\t $xmetalArrayKey:\t $xmetalArrayValue"
-
+			echo -en " $menuKey:\t"
 		else
-
-			#echo -e "menuText detected"
-			#sleep 2
-
-
-
-			menuText+="$element "
-			#echo -e "menuText here is:\t $menuText"
-			#sleep 2
-
+			menuText=$element
+			echo -en "$menuText\n"
 		fi
 
+
+		menuKey=""
+		menuText=""
 
 	done
 
 
-	#############################################################
-	# debugging "exit"
-	exit
+	echo
+	read -p "Your choice: " menuSelection
 
-
-
+	LoopChoice
 
 }
 
 ################################################################################
 
+# original working dialog (so to speak)
 function mainMenuDialogType() {
 
  	TITLE="Title"
@@ -141,22 +175,42 @@ function mainMenuDialogType() {
 
 }
 
-# i will ask in this function but a check 'command -v Dialog' will be done later and no question asked
-# this is a proof of concept below
+function mainMenuDialogType2() {
+
+ 	TITLE="Title"
+    BACKTITLE="Back Title"
+    MENU="Please Select an option"
+    HEIGHT=20
+    WIDTH=50
+    CHOICEHEIGHT=15
+
+    #choice=$(dialog --menu "menu" 0 0 0 "${array6[@]}" )
+    menuSelection=$(dialog  --menu "$MENU" 0 0 0 "${array[@]}" \
+					3>&1 1>&2 2>&3 3>&- # Swap stdout with stderr to capture returned dialog text
+					)
+
+	dialog_rc=$? # Save the dialog return code
+
+	clear # restore terminal background and clear
+
+
+	LoopChoice
+
+	#echo -e "$mainMenuChoice"
+
+
+}
+
 function testMenuChoice() {
 
-	clear
+	echo -e "debugging output: testing if dialog is installed"
 
-	echo -e "Do you want to use the Dialog (D) or Echo (E) Menu system?"
-	read -p "Your Choice? " menuTypeChoice
-
-
-	case $menuTypeChoice in
-		[dD]) mainMenuDialogType ;;
-		[eE]) mainMenuEchoType ;;
-		*) echo -e "invalid selection" ;;
-	esac
-
+	if [ $(command -v dialog) ]; then
+		echo -e "Dialog Detected"
+		mainMenuDialogType2
+	else
+		mainMenuEchoType
+	fi
 }
 
 testMenuChoice

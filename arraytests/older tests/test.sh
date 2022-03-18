@@ -43,41 +43,6 @@ assArrayTest=(
 	[Q]="Exit to Prompt"
 )
 
-assArrayTest2=(
-	1.="Update System"
-	2.="Optimize Mirrors"
-	3.="Arch Based Distros"
-	4.="Debian Based Distros"
-	5.="Fedora"
-	6.="OpenSUSE Based Distros"
-	7.="Solus"
-	8.="Ubuntu based"
-	C.="Install Third Party Codecs"
-	I.="Display info about current install"
-	R.="Install ThirdParty Repos"
-	S.="Install Software"
-	T.="Theming"
-	X.="Xmetal (Batch) Tasks"
-	Q.="Exit to Prompt"
-)
-
-assArrayTest3=(
-	"[1.]"="Update System"
-	"[2.]"="Optimize Mirrors"
-	"[3.]"="Arch Based Distros"
-	"[4.]"="Debian Based Distros"
-	"[5.]"="Fedora"
-	"[6.]"="OpenSUSE Based Distros"
-	"[7.]"="Solus"
-	"[8.]"="Ubuntu based"
-	"[C.]"="Install Third Party Codecs"
-	"[I.]"="Display info about current install"
-	"[R.]"="Install ThirdParty Repos"
-	"[S.]"="Install Software"
-	"[T.]"="Theming"
-	"[X.]"="Xmetal (Batch) Tasks"
-	"[Q.]"="Exit to Prompt"
-)
 
 function menu() {
 
