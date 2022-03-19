@@ -24,6 +24,7 @@ intialTasks
 mainMenuType
 =======
 
+<<<<<<< HEAD
 # night time note: there is no looping yet
 function dialogMenu(){
 
@@ -188,3 +189,6 @@ mainMenu
 =======
 #mainMenu
 >>>>>>> 92e2edc0 (Menu Work)
+=======
+mainMenuEcho
+>>>>>>> b121b0de (main menu redo - try 1)
