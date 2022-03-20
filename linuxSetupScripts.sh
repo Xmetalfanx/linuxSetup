@@ -20,6 +20,7 @@ x=1
 intialTasks
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # this will determine the sort of menus the scripts use
 mainMenuType
 =======
@@ -192,3 +193,10 @@ mainMenu
 =======
 mainMenuEcho
 >>>>>>> b121b0de (main menu redo - try 1)
+=======
+# this will determine the sort of menus the scripts use
+#selectMenuType
+
+# for debugging only 
+mainMenuEcho
+>>>>>>> 11543977 (menu work and code refactoring)
