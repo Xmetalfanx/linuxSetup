@@ -20,7 +20,7 @@ x=1
 intialTasks
 
 # this will determine the sort of menus the scripts use
-#selectMenuType
+mainMenuType
 
 # for debugging only 
-mainMenuEcho
+#mainMenuEcho
