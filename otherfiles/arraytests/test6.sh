@@ -66,6 +66,14 @@ function LoopChoice(){
 function checkArrayElenentLength() {
 	if [ $elementLength -lt 2 ]; then
 
+<<<<<<< HEAD
+=======
+		# uses the array and loops through the entries to create a menu with echo
+		# DEBUGGING SO I COMMENTED OUT
+		displayEchoMenuEntries
+
+
+>>>>>>> 82c2ed01 (arrayTest folder cleanup)
 		# assign menuKey to the next element
 		menuKey=$element
 
