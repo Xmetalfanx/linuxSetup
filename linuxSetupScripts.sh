@@ -195,8 +195,12 @@ mainMenuEcho
 >>>>>>> b121b0de (main menu redo - try 1)
 =======
 # this will determine the sort of menus the scripts use
-#selectMenuType
+mainMenuType
 
 # for debugging only 
+<<<<<<< HEAD
 mainMenuEcho
 >>>>>>> 11543977 (menu work and code refactoring)
+=======
+#mainMenuEcho
+>>>>>>> 975ee957 (menu work and cleanup)
