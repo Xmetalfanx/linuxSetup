@@ -67,6 +67,7 @@ function checkArrayElenentLength() {
 	if [ $elementLength -lt 2 ]; then
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		# uses the array and loops through the entries to create a menu with echo
 		# DEBUGGING SO I COMMENTED OUT
@@ -74,6 +75,8 @@ function checkArrayElenentLength() {
 
 
 >>>>>>> 82c2ed01 (arrayTest folder cleanup)
+=======
+>>>>>>> 55192081 (working vartest file)
 		# assign menuKey to the next element
 		menuKey=$element
 
