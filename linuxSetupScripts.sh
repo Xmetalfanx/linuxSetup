@@ -196,6 +196,7 @@ mainMenuEcho
 =======
 # this will determine the sort of menus the scripts use
 mainMenuType
+<<<<<<< HEAD
 
 # for debugging only 
 <<<<<<< HEAD
@@ -204,3 +205,5 @@ mainMenuEcho
 =======
 #mainMenuEcho
 >>>>>>> 975ee957 (menu work and cleanup)
+=======
+>>>>>>> 8756e7bb (menu work)
