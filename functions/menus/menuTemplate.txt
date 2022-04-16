@@ -1,0 +1,62 @@
+menu_items=(
+	1 ""
+	2 ""
+    M "Back to Main Menu"
+    Q "Quit to Prompt"
+)
+
+function MenuCaseStatement() {
+
+
+
+
+	 [mM]) echo -e "TODO" ;;
+	 [qQ])
+			quitScript
+			menuLoop=1
+			break
+			;;
+        *) invalidSection ;;
+}
+
+
+
+
+function MenuDialog() {
+
+	TITLE="Menu"
+	HEIGHT=25
+	WIDTH=65
+	CHOICEHEIGHT=15
+
+	MenuSelection=$(dialog 	--title "$TITLE" \
+						--backtitle "$BACKTITLE" \
+						--menu "$MENU" \
+						$HEIGHT $WIDTH $CHOICEHEIGHT \
+						"${mainMenuArray[@]}" \
+						3>&2 2>&1 1>&3)
+
+	MenuCaseStatement
+
+	# still needed?
+	menuLoop
+
+}
+
+
+function MenuEcho() {
+	echoMenuLoop
+}
+
+
+
+function MenuType() {
+	baseMenuName="Menu"
+	menuArrayName="_menu"
+	menuTitle="Xmetal Linux Scripts Main Menu"
+	currentMenuCaseStatementName="MenuCaseStatement"
+	currentMenuSelection="MenuSelection"
+
+
+	$menuName
+}
