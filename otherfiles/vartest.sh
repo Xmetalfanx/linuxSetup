@@ -1,61 +1,99 @@
-#!/bin/bash
-
-arch_menu_items=(
-		1 '[Sub-Menu] AUR Support Options'
-		2 '[Sub-Menu] Manjaro specific'
-		3 'Reset to Original Mirrors'
-		4 'Add Sound Support'
-		5 'Adds Archive Support'
-		M 'Return to Main Menu'
-		Q 'Exit to Prompt'
-	)
-
-debian_menu_items=(
-		1 'Install Linux Firmware Packages (Both)'
-		2 'Install Intel MicroCode Package'
-		3 'Install Archive Support'
-		4 'Add a few useful packages including Synaptic'
-		5 'Check for contrib and non-free sections in sourceslist and add them if desired'
-		6 'Check/Add if not there, sudo permissions, for the current user'
-		B 'Bulk Debian Tasks'
-		M 'Return to Main Menu'
-		Q 'Exit to Prompt'
-	)
+main_menu_items=(
+    1 'Update System'
+    2 'Optimize Mirrors'
+    3 '[MENU] Arch Related'
+    4 '[MENU] Debian Related'
+    5 '[MENU] Fedora Related'
+    6 '[MENU] OpenSUSE Related'
+    7 '[MENU] Solus Related'
+    8 '[MENU] Ubuntu Related'
+	9 '[MENU] Cleanup Linux System'
+	C 'Install Multimedia Codecs'
+	I 'Display Info about current install'
+	R "Install Third Party Repositories"
+    S '[MENU] Install Software'
+    T '[MENU] Install Theming'
+	X 'Xmetal Bulk Tasks'
+	Q 'Quit To Prompt'
+)
 
 
 
+# Idea: for either type of Menu
+function mainMenuCaseStatement() {
 
-function userPrompt() {
-  read -p "Press [Enter] to continue "
+	case $mainMenuSelection in
+
+		1) universalUpdate
+
+            ## For updating Snaps and/or Flatpaks
+            universalAppUpdates
+            ;;
+
+        2) optimizeRepo ;;
+
+        # Located in /functions/f_mainSubMenus.cfg
+        3) archMenuType ;;
+        4) debianMenuType ;;
+        5) fedoraMenuType ;;
+        6) openSUSEMenuType ;;
+        7) solusMenuType ;;
+        8) ubuntuMenuType ;;
+		9) cleanupMenuType ;;
+
+        [cC]) universalCodecInstall ;;
+        [iI])
+				massInfoOutput
+				clear
+				echo -e "about to return to main menu"
+				userPrompt
+				#echo -e "menuLoop:\t$menuLoop"
+				;;
+        [rR]) thirdPartyRepoCheck ;;
+        [sS]) MainSoftwareMenuType ;;
+        [tT]) universalThemingMenuType ;;
+        [xX]) xmetalTasks ;;
+        [qQ])
+			quitScript
+			menuLoop=1
+			break
+			;;
+        *) invalidSection ;;
+
+	esac
+
 }
 
-function setupMenu() {
 
-	currentArrayName="$1"
-	declare -n currentArray=${currentArrayName}
+function createDialogMenu() {
 
-	for element in "${currentArray[@]}"
-    do
-		
-		# get the length of that element
-		elementLength=${#element}
+	# $(dialog  --title "$TITLE" \
+	# 					--backtitle "$BACKTITLE" \
+	# 					--menu "$MENU" \
+	# 					$HEIGHT $WIDTH $CHOICEHEIGHT \
+	# 					"${main_menu_items[@]}" \
+	# 					3>&2 2>&1 1>&3)
 
-		# check the length of the element
-		if [ $elementLength -lt 2 ]; then
-			menuKey=$element
-			echo -en " $menuKey:\t"
-		else
-			menuText=$element
-			echo -en "$menuText\n"
-		fi
-
-    done
+	echo -e "foo"
 }
 
 
-# test 1
-setupMenu "arch_menu_items"
 
-echo
-# test 2
-setupMenu "debian_menu_items"
+# night time note: there is no looping yet
+function mainMenuDialog(){
+
+	TITLE="foobar title"
+	HEIGHT=20
+	WIDTH=65
+	CHOICEHEIGHT=15
+
+	mainMenuSelection=$(createDialogMenu)
+
+	mainMenuCaseStatement
+
+	# still needed?
+	menuLoop
+
+}
+
+mainMenuDialog

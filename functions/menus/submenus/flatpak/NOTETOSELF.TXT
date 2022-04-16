@@ -1,0 +1,3 @@
+for the universal menus i think the links are all broken since the menu names changed
+
+??? would the new menus to call be the "type" (in the sub files) functions? ??

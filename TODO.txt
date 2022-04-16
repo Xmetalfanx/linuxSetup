@@ -1,0 +1,27 @@
+declare -n menuArrayName=
+declare -n currentMenuSelection=
+
+
+createDialogMenu
+
+
+
+{
+	createDialogMenu
+}
+
+
+
+**** NOTE TO SELF: while I have redone the menus, I have not checked the CALLS of those menus
+
+
+
+#################################################################
+menus to still do
+
+*** menus need to be tested before merging with dev branch
+
+- Chromium / Firefox - looks done
+- Wine - seems done
+- MakeMKV - looks done
+- manjaro chroot menu
