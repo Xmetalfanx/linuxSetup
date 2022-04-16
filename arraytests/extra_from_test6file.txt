@@ -1,0 +1,105 @@
+array=(
+    1="Update System"
+    2="Optimize Mirrors"
+    3="Arch Related"
+    4="Debian Related"
+    5="Fedora Related"
+    6="OpenSUSE Related"
+    7="Solus Related"
+    8="Ubuntu Related"
+    S="Install Software"
+    T="Install Theming"
+    Q="Quit to Prompt"
+)
+array2=(
+    [1]='Update System'
+    [2]='Optimize Mirrors'
+    [3]='Arch Related'
+    [4]='Debian Related'
+    [5]='Fedora Related'
+    [6]='OpenSUSE Related'
+    [7]='Solus Related'
+    [8]='Ubuntu Related'
+    [S]='Install Software'
+    [T]='Install Theming'
+    [Q]='Quit to Prompt'
+)
+
+# array3=(
+#    "Update System"
+#    "Optimize Mirrors"
+#    "Arch Related"
+#     "Debian Related"
+#     "Fedora Related"
+#     "OpenSUSE Related"
+#     "Solus Related"
+#     "Ubuntu Related"
+#     "Install Software"
+#     "Install Theming"
+#     "Quit to Prompt"
+# )
+
+
+array4=(
+    '1' 'Update System'
+    '2' 'Optimize Mirrors'
+    '3' 'Arch Related'
+    '4' 'Debian Related'
+    '5' 'Fedora Related'
+    '6' 'OpenSUSE Related'
+    '7' 'Solus Related'
+    '8' 'Ubuntu Related'
+	'S' 'Install Software'
+    'T' 'Install Theming'
+    'Q' 'Quit To Prompt'
+)
+
+
+# https://stackoverflow.com/questions/14525296/how-do-i-check-if-variable-is-an-array
+function checkIfArray() {
+	echo -e "$@"
+	sleep 4
+
+	echo -e "Checking if $1 is an array \n "
+
+	if [[ "$(declare -p $1 )" =~ "declare -a" ]]; then
+		echo -e "$1 is an array"
+	else
+		echo -e "$1 is not an array"
+	fi
+
+	exit
+}
+
+# first working one ... sort of
+function mainMenuEchoType() {
+
+	clear
+
+	declare -A menuKey
+	declare -A menuText
+
+	echo -e "\t###############################################"
+	echo -e "\tMENUS"
+	echo -e "\t###############################################\v"
+
+
+	# displays the menu
+	for menuKey in "${!array5[@]}"
+	do
+		menuText=${array5[$menuKey]}
+		echo -e "\t$menuKey.\t$menuText"
+	done
+
+	echo
+	read -p "Your Choice?:" mainSelection
+
+    case $mainSelection in
+        1) echo -e "Update System" ;;
+        2) echo -e "Optimize Repo" ;;
+        0) echo -e "zero pressed" ;;
+        [qQ]) echo -e "Quit to Prompt" ;;
+        *) invalidSection ;;
+    esac
+
+}
