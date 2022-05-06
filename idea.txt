@@ -1,0 +1,61 @@
+Idea for DEBs 
+
+1) switch metaExternalDownload to use gdebi instead of dpkg -i (which appaerently handles depenedencies)
+2) do a check for gdebi inside the install part of the meta function 
+    - store the gdebiPresent/gdebiExits=true in a config file and check for that so the check doesn't have to keep happening, perhaps 
+
+3) What gets passed?
+    - when metaExternalDownload gets called (*** the individual gdebi install function will no longer be needed then)
+    the exact path to a deb file is what gets passed 
+
+
+----------------------------------------------------
+original 
+
+function gdebiInstall()
+{
+    # checks for gdebi and installs it if needed 
+    checkGdebi
+
+    clear 
+  
+    ## use $1 for now (vs something more descriptive )
+    packageName=$(basename $1)
+
+    # Change PWD
+    cd ~/Downloads
+
+    
+	  wget $1
+
+
+    userPrompt 
+    echo -e "Installing $packageName"
+    
+    sudo gdebi $packageName
+
+    userPrompt
+
+    # idea to clear the var
+    packageName=/dev/null
+
+}
+--------------------------------------------------
+new idea ?
+
+# shouldn't i already be in the download folder 
+
+# packageURL passed? 
+
+# pass to this function from handledownloads? 
+function gdebiInstall()
+{
+    # checks for gdebi and installs it if needed 
+    checkGdebi
+
+    sudo gdebi $packageName
+
+    # idea to clear the var
+    packageName=/dev/null
+0
+}
