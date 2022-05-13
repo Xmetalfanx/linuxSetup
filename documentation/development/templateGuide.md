@@ -77,8 +77,8 @@ The example below is a general guide
 
     function programFoobar`
     {
-        progName=""`
-        progTitle=""`
+        programName=""`
+        programTitle=""`
         programHomepage=""
         debURL=""
         rpmURL=""
@@ -172,7 +172,7 @@ This is the setup for adding a PPA function
 
   - *Snap Installs*,
 
-    - [Idea] Shouldn't i have the first argument as the _progName_ (pushing the snap name to second, and _snapType_ to third argument)
+    - [Idea] Shouldn't i have the first argument as the _programName_ (pushing the snap name to second, and _snapType_ to third argument)
     - First Argument is the snap name  (EXACTLY)
     - The Second Argument is the snap type
       - examples
@@ -186,5 +186,5 @@ This is the setup for adding a PPA function
 
   - *Third Party _(DEB, AppImage, Tarballs, ..etc)_*
 
-  - the first argument is progName/progTitle (I haven't decided  yet)
+  - the first argument is programName/programTitle (I haven't decided  yet)
     - the second argument varies but it is the link to the file, to be downloaded

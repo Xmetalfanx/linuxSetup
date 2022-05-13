@@ -1,7 +1,7 @@
 function flatpakCheck() {
-	progName=$1
+	programName=$1
 
-	flatpakExists=$(flatpak list | awk -v a="$progName" '$1 ~ a {print $1}' )
+	flatpakExists=$(flatpak list | awk -v a="$programName" '$1 ~ a {print $1}' )
 
 	# -z = "is zero?"
 	# -n = "is non-zero?"
@@ -16,9 +16,9 @@ function flatpakCheck() {
 
 function snapCheck() {
 
-	progName=$1
+	programName=$1
 
-	snapExists=$(snap list | awk -v progName="$progName" '$1 ~ progName {print $1}')
+	snapExists=$(snap list | awk -v programName="$programName" '$1 ~ programName {print $1}')
 	# this var should display something IF the flatpak is installed
 
 	# -z = "is zero?"
@@ -38,12 +38,12 @@ function snapCheck() {
 
 function checkUpackageType() {
 
-	echo -e "$progName"
+	echo -e "$programName"
 
 	if [ $uFormatType == "snap" ]; then
-		universalFormatExists=$($uFormatType list | awk -v progName="$progName" '$1 ~ progName {print $1}')
+		universalFormatExists=$($uFormatType list | awk -v programName="$programName" '$1 ~ programName {print $1}')
 	elif [ $uFormatType == "flatpak" ]; then
-		universalFormatExists=$($uFormatType list | awk -v progName="$progName" '$1 ~ progName {print $1}')
+		universalFormatExists=$($uFormatType list | awk -v programName="$programName" '$1 ~ programName {print $1}')
 	fi
 	# this var should display something IF the flatpak is installed
 
@@ -53,10 +53,10 @@ function checkUpackageType() {
 function universalPackageInstallCheck() {
 	# snap or flatpak
 	uFormatType=$1
-	progName=$2
+	programName=$2
 
 	# echo -e "debugging: uFormatType: $uFormatType"
-	# echo -e "debugging: progName: $progName"
+	# echo -e "debugging: programName: $programName"
 
 	checkUpackageType
 
