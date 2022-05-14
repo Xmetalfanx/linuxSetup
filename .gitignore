@@ -6,7 +6,6 @@
 **/*.deb
 **/*.rpm
 **/*.AppImage
-**/*.desktop
 .git-write/*
 tmm/*
 updateInfo.txt
