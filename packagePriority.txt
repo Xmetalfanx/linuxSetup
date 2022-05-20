@@ -1,0 +1,9 @@
+things to consider package priority wise 
+
+Source: (?? say does the AUR come from the source?)   AUR as an EXAMPLE ... I think even if the maintainer is not the app's developer but it's updated and it's pulling the source FROM the devolper's page, than that is ok 
+
+Does the official developer(s) reference/"support" this third party method
+
+Size: Snaps and flatpaks taking up more space 
+
+Updating: extracting tar source for example doesn't update, snaps and flatpaks do.. also appimages do not 
