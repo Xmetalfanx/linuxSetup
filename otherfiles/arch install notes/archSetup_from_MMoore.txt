@@ -1,13 +1,4 @@
-
-echo "Install Pamac - GUI Frontend to pacman"
-
-yaourt -S pamac-aur
-
-echo "Installing Kalu, an Applet for Update Notifications "
-
-yaourt -S kalu
-
-__________________________________________________________________________
+__________________________________________________________________
 
 Install Optional Fonts ( needed for Some Websites )
 
@@ -16,25 +7,3 @@ sudo pacman -S opendesktop-fonts
 yaourt -S fontconfig-ttf-ms-fonts
 
 yaourt -S ttf-google-fonts-git
-
-_________________________________________________________________________
-
-Installing Virtual Box and Enabling Full features and permissions
-
-sudo pacman -S virtualbox virtualbox-host-dkms virtualbox-host-modules
-
-yaourt -S virtualbox-ext-oracle
-
-Then load the Vbox driver with this command.
-sudo modprobe vboxdrv
-
-To give yourself permissions so virtualbox can access Shared folders and USB devices  use this command,
-
-sudo gpasswd -a $USER vboxusers
-
-To load the VirtualBox module at boot time, refer to Kernel_modules#Loading and create a *.conf with the line:
-vboxdrv
-
-in location
-/etc/modules-load.d/virtualbox.conf
-_________________________________________________________________________
