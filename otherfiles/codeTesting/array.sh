@@ -26,23 +26,6 @@ function ppaBranchCheck(){
     fi 
 }
 
-# example 
-function PPALatestLibreOffice()
-{
-
-    supportedBases="trusty xenial"
-		
-  	# ppaRepoAddition $PPAName $PPASource
-	
-    ppaBranchCheck $supportedBases
-
-    # NOTE: in this test this if statement would be in another function ... the ppa functions like this should be as SLIM as possible 
-
-    ## maybe have this in a ppa function that is the "meta add ppa function"
-}
-
-PPALatestLibreOffice
-
 
 #################################
 # Leave below this line for now 
