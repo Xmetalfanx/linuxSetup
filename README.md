@@ -2,7 +2,7 @@
 
 ## Code Badge
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/55ac91ee8f024afbb2d88d3f3713dc7b)](https://www.codacy.com/gh/Xmetalfanx/linuxSetup/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Xmetalfanx/linuxSetup&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/55ac91ee8f024afbb2d88d3f3713dc7b)](https://www.codacy.com/gh/Xmetalfanx/linuxSetup/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Xmetalfanx/linuxSetup&utm_campaign=Badge_Grade)
 
 ## NOTE: THIS is under heavy construction
 
@@ -14,7 +14,7 @@ While The main distributions listed are meant to be "Distro family bases", not A
 
 ## Disclaimer
 
-- Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur.  ALWAYS have backups "just in case" amd even redundant backups, in case your original backups have issues.
+- Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur. ALWAYS have backups "just in case" amd even redundant backups, in case your original backups have issues.
 
 ## Requirements
 
@@ -47,8 +47,8 @@ This means you may be on a beta release that is not "fully official yet" and the
 
 ### Some RPMs are not being signed by the devs
 
-- [August 2021 Update: I am not sure if this is still an issue]
-  - I can not say this is the case for all apps; however, to my knowledge GitKraken and Atom (see <https://github.com/atom/atom/issues/16499> for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea.
+- [May 2022 - still an issue with Atom]
+  - I can not say this is the case for all apps; however, to my knowledge Atom is affected (see <https://github.com/atom/atom/issues/16499> for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea.
 
 ### KDE Neon Updating Output
 
@@ -73,19 +73,6 @@ Xnview forum links
 - [Link 2](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41294)
 
 note: i have the packages that the dev mentioned installed ... I checked that before even searching the forums ... others report having it installed as well, but the same issue persists
-
-### Fedora and Bleachbit issues
-
-- A few versions back (Fedora 32 perhaps), Bleachbit was removed from the repos and it doesn't seem to be in RPMFusion either.
-- Using wget with the RPM files downloads what is labeled as an rpm file but is really an html document with alot of scripts
-- I am not sure how to handle this but downloading the same exact RPM link in a browwser works fine and gets the ACTUAL RPM.
-- I do not want to use anything outside the official repos (or something like RPMFusion in Fedora's case) OR the offical site's links
-
-#### Solution to Fedora/Bleachbit issue
-
-- Download the RPM via a web browser
-
----
 
 ## Links to other useful projects similar to this
 
@@ -137,26 +124,22 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 - Distro base support
 
-| Distro base    | Support                                   |
-| -------------- | ----------------------------------------- |
-| Arch / Manjaro |                                           |
-| Debian         | 10, 11                                    |
-| Fedora         | 33, 34                                    |
-| OpenSUSE       | 15.3 Leap, Tumbleweed                     |
-| Solus          | 4.x ( * )                                 |
-| Ubuntu         | 18.04 Bionic, 20.04 Focal, 21.04 Hirsuite |
+| Distro base    | Support                                              |
+| -------------- | ---------------------------------------------------- |
+| Arch / Manjaro |                                                      |
+| Debian         | 10, 11                                               |
+| Fedora         | 33, 34                                               |
+| OpenSUSE       | 15.3 Leap, Tumbleweed                                |
+| Solus          | 4.x ( \* )                                           |
+| Ubuntu         | 18.04 Bionic, 20.04 Focal, 21.10 Impish, 22.04 Jammy |
 
 - not sure how far back this goes if one hasn't updated a Solus install
 
 ---
 
-## [Xmetal's Task Info](/documentation/xmetalTasks.md)
-
-- This is where the original idea for all of this came from ... These are "for me" where instead of "going to this menu and selecting this, and that menu and selecting another thing, I can just run this one "batch" set of tasks and do it all at once.
-
----
-
 ## Test Results
+
+- May 2022 - I can not say for sure how much the test results apply right now ... I probably should put a general set of dates on when each test was done 
 
 - Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i don't see it pass on an actual install, I will leave what I saw with my own eyes
 
