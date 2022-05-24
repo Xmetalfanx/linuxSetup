@@ -41,19 +41,3 @@ function foobarPPA
     $install $packageNames
 
 }
-
-#####################################################
-ideas for check 
-
-# Trusty 14.04 check 
-if [ "$supportedBase = *"trusty"* ]
-
-#########################################################
-another option 
-
-# *foo* would be supportedBases
-case "$string" in 
-  *foo*)
-    # Do stuff
-    ;;
-esac
