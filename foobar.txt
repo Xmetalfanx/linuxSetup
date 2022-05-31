@@ -1,0 +1,22 @@
+
+# this searches for the file to run the app
+fullProgramPath=$(find ~+ -type f -name "$programFileName" )
+
+# based on $fullProgramPath, this gets that dir 
+programPath=$(basename $fullProgramPath)
+
+# this creates the line that will be pasted/appended to the menu file 
+execPath=$(echo -e "Exec=$fullProgramPath")
+
+# The icon file (since some are svgs and some pngs i am thinking of assigning this in say the app's install function before things get passed to any "templified" functions)
+iconPath=$(echo -e "Icon=$iconFile")
+
+
+==============================================================
+1 - Get menu file (locally in scripts) and icon file (locally) info (say the name)
+
+2 - check to see if the menu file has existing "Exec=  "  and "IconFile= " code 
+    - if yes, clear that out (note: there shouldn't be anyway)
+    
+ - Put the Exec= info into the menufile 
+ - Put Icon= info into menu file 
