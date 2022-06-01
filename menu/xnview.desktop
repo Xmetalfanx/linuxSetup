@@ -6,5 +6,3 @@ Name=XnViewMP
 GenericName=xnviewmp
 StartupNotify=false
 Categories=Graphics;
-Icon=//home/xmetal/Programs/XNViewMP/xnview.png
-Exec=//home/xmetal/Programs/XNViewMP//home/xmetal/Programs/XNViewMP/xnview.sh
