@@ -1,0 +1,11 @@
+ONCE EXTRACTED in ~/Downloads 
+
+1 - get the ~/Downloads/<path extracted to>
+
+2 - move that to ~/Programs - $programDir/$programName
+
+3 - move the icon to the same folder from #2 
+
+ - get the path to the say .sh file here 
+    - use that info to get the path name ... the first part MINUS the filename is this path 
+        - USE this NEW VAR to 
