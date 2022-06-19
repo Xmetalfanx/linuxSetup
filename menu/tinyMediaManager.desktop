@@ -5,5 +5,3 @@ Terminal=false
 Comment=Tiny Media Manager Media Organizer
 GenericName=tinyMediaManager
 Categories=AudioVideo;Video;
-Icon=//home/$USER/Programs/tinyMediaManager/tmm.png
-Exec=//home/$USER/Programs/tinyMediaManager/tmm.sh
