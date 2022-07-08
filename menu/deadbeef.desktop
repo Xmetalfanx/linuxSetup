@@ -5,5 +5,3 @@ Terminal=false
 Comment=Dead Beef Media Player 
 GenericName=deadbeef
 Categories=AudioVideo;Video;
-Icon=//home/xmetal/Programs/deadbeef/deadbeef.svg
-Exec=//home/xmetal/Programs/deadbeef/deadbeef.sh
