@@ -14,10 +14,7 @@ readonly dir=$(eval pwd)
 
 ########################################################################
 
-x=1
-
 # in f_common.cfg
 intialTasks
 
-# this will determine the sort of menus the scripts use
 mainMenuType
