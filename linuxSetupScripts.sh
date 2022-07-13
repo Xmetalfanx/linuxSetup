@@ -14,14 +14,15 @@ readonly dir=$(eval pwd)
 
 ########################################################################
 
-x=1
-
 # in f_common.cfg
 intialTasks
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # this will determine the sort of menus the scripts use
+=======
+>>>>>>> 1dbbd1a4 (removed un-needed x= variable assignments)
 mainMenuType
 =======
 
