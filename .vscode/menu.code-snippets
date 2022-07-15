@@ -45,7 +45,7 @@
       "}",
       "",
       "function $2MenuEcho() {",
-      "	echoMenuLoop",
+      "	createEchoMenu",
       "}",
       "",
       "",
