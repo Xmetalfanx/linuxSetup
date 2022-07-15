@@ -46,7 +46,7 @@
       "",
       "",
       "function flatpak$2MenuEcho() {",
-      "	echoMenuLoop",
+      "	createEchoMenu",
       "}",
       "",
       "",
