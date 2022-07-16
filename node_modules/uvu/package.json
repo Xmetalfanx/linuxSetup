@@ -1,6 +1,6 @@
 {
   "name": "uvu",
-  "version": "0.5.3",
+  "version": "0.5.6",
   "repository": "lukeed/uvu",
   "description": "uvu is an extremely fast and lightweight test runner for Node.js and the browser",
   "module": "dist/index.mjs",
@@ -12,22 +12,27 @@
   },
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     },
     "./assert": {
+      "types": "./assert/index.d.ts",
       "require": "./assert/index.js",
       "import": "./assert/index.mjs"
     },
     "./diff": {
+      "types": "./diff/index.d.ts",
       "require": "./diff/index.js",
       "import": "./diff/index.mjs"
     },
     "./parse": {
+      "types": "./parse/index.d.ts",
       "require": "./parse/index.js",
       "import": "./parse/index.mjs"
     },
     "./run": {
+      "types": "./run/index.d.ts",
       "require": "./run/index.js",
       "import": "./run/index.mjs"
     }
@@ -43,7 +48,6 @@
   ],
   "modes": {
     "diff": "src/diff.js",
-    "parse": "src/parse.js",
     "assert": "src/assert.js",
     "default": "src/index.js"
   },
