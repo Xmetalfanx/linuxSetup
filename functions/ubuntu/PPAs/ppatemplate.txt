@@ -9,7 +9,7 @@ function foobarPPA
     ppaRef=""
 
     ## the ppa:/foobar-whatever part 
-    ppaSource=""
+    PPASource=""
 
     #list of Ubuntu bases this PPA currently supports
     supportedBases=""
@@ -29,7 +29,7 @@ function foobarPPA
 {
     ppaName=""
     ppaRef=""
-    ppaSource=""
+    PPASource=""
     supportedBases=""
     packageNames=""
 
