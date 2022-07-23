@@ -1,22 +1,3 @@
-
-Debian Setup Instructions (post install) 
-By: Matthew_Moore
-
-_____________________________________________________________________________
-Enable Sudo
-
-Enter root using SU command
-
-apt-get install sudo
-
-Navigate to sudoers file /etc/sudoers and add user to list
-
-EXAMPLE:
-
-# Allow members of group sudo to execute any command
-%sudo	ALL=(ALL:ALL) ALL
-matt    ALL=(ALL:ALL) ALL
-
 ______________________________________________________________________________
 
 Enable 32bit Architecture:
@@ -27,38 +8,7 @@ sudo dpkg --add-architecture i386
 Refresh package index:
 
 sudo apt-get update
-______________________________________________________________________________
 
-Find fastest mirrors. ( Optional )
-
-install netselect-apt
-
-sudo apt-get install netselect-apt
-
-Run command:
-
-netselect-apt
-
-A list of mirrors ranked by speed will be places in your home directory
-Copy this list to  /etc/apt/sources.list
-
-Refresh package index:
-
-sudo apt-get update
-______________________________________________________________________________
-
-Enable Contrib and Non-Free packages.
-
-Open Synaptic Package manager, Select settings / repositories
-
-select each item and at the bottom of the Window under "Sections"
-Add contrib non-free. EXAMPLE: 
-
-| main contrib non-free |
-
-Repeat for each item. When finished press OK and then refresh 
-the package index by pressing the Reload button in the top left
-of synaptic package manager. 
 ______________________________________________________________________________
 
 _____________________________
