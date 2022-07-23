@@ -1,0 +1,15 @@
+logic for the user selecting an item that needs a third party repo to install correctly 
+-------------------------------------------------------------------------------------------------
+
+the user selects some package to install that needs a third party repo (say RPMFusion or Packman on Fedora or OpenSUSE ... Ubuntu has PPAs in the check function, but any idea of this question for Ubunt can come later )
+--------------------------------------------------------------------------------------------------------
+
+A) tell the user this 
+B) Ask the user what they want to do, even IF the "thirdPartyReposCanBeAdded" type var is already "yes" ...just for clarification from the user 
+
+    - this assigns a var ... if THIS var is "no", then checking if the repo exists doesn't matter anymore at this point 
+    - if user says "yes" to installing TP repos
+      - check if repo exists already ... "thirdPartyRepoCheck" (even if code from "repoCheck" is copied there into "thirdPartyRepoCheck") the check function should NOT install but just check (so i can call the check WITHOUT INSTALLING the repo elsewhere)
+        - if the repo doesn't exist at this point (repo exists = no and user says its ok to install ... then install the repo )
+
+** update: repoCheck HAS BEEN renamed now 
