@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROMPT=$(read -p "press any key to continue")
+PROMPT=$(read -r -p "press any key to continue")
 
 APPLISTFILE=$(pwd)/apps.list
 
