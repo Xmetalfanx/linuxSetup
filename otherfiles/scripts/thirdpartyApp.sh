@@ -22,7 +22,7 @@ function initSetup()
 }
 
 function userPrompt() {
-  read -p "Press [Enter] to continue "
+  read -r -p "Press [Enter] to continue "
 }
 
 function downloadFile() {

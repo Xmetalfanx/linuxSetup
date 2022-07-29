@@ -18,7 +18,7 @@ function productivitySoftwareMenu()
 	echo -e  "\vm. \tReturn to Main Menu"
 	echo -e	"q. \tExit to Prompt \n\n"
 
-	read -p "Your Choice?: " productivitySelection
+	read -r -p "Your Choice?: " productivitySelection
 
 	case $productivitySelection in
 
