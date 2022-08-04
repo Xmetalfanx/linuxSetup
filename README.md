@@ -127,14 +127,14 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 - Distro base support
 
-| Distro base    | Support                                              |
-| -------------- | ---------------------------------------------------- |
-| Arch / Manjaro |                                                      |
-| Debian         | 10, 11                                               |
-| Fedora         | 33, 34                                               |
-| OpenSUSE       | 15.3 Leap, Tumbleweed                                |
-| Solus          | 4.x ( \* )                                           |
-| Ubuntu         | 18.04 Bionic, 20.04 Focal, 21.10 Impish, 22.04 Jammy |
+| Distro base    | Support                                |
+|----------------|----------------------------------------|
+| Arch / Manjaro |                                        |
+| Debian         | 10, 11                                 |
+| Fedora         | 35, 36                                 |
+| OpenSUSE       | 15.3 Leap, Tumbleweed                  |
+| Solus          | 4.x ( \* )                             |
+| Ubuntu         | 18.04 Bionic, 20.04 Focal, 22.04 Jammy |
 
 - not sure how far back this goes if one hasn't updated a Solus install
 
