@@ -2,11 +2,11 @@
 
 | Software Name  | with deb-get installed | wo/ deb-get installed                  |
 |----------------|------------------------|----------------------------------------|
-| Audio-Recorder | Pass                   | Fail - same issue as Strawberry *      |
+| Audio-Recorder | Pass                   | Pass      |
 | Deadbeef       | Pass                   | Pass                                   |
 | GitKraken      | Fail                   | Pass                                |
 | Google Chrome  | Pass                   | Pass                                   |
-| Strawberry     | Pass                   | Fail (maybe due to Mint support issue) |
+| Strawberry     | Pass                   | Pass |
 | Vivaldi        | Pass                   | Pass                                   |
 | vscode         | Pass                   | Pass                                   |
 
