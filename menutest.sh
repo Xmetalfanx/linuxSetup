@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+
+foobarTitle="TITLE HERE"
+varTitle="${foobarTitle}"
+
+
+
 main_menu_items=(
     1 'Update System'
     2 'Optimize Mirrors'
@@ -49,25 +56,35 @@ function menu_title() {
 
 function setupMenu() {
 
-  #echo -e "inside setupMenu"
-
   for element in "${main_menu_items[@]}"
     do
 		# check the length of the element
 			# if it's 2 chars or under it has to be a key .. if over it's a menu item (text)
 		if [ "${#element}" -lt 3 ]; then
             menuKey=$element
-			echo -en "$menuKey    "
+			# make the message Sub-Menu, bold
+            echo -en "$menuKey\t"
 		else
 			menuText=$element
-			echo -e "$menuText"
+            search="[Sub-Menu]"
+            #echo -e "${menuText}"
+            if [[ "${menuText}" == *"${search}"* ]]; then
+                echo -e "${BOLD}${search}${RESET} ${menuText#\[Sub-Menu\] }"
+            else
+                echo -e "${menuText}"
+            fi
 		fi
 
     done
 }
 
-menu_title "Xmetal's Linux Setup Scripts"
-setupMenu "${main_menu_items}"
+#menu_title "Xmetal's Linux Setup Scripts"
+#setupMenu "${main_menu_items}"
+
+#var2="foobar"
+
+#echo -e "${var//bar}"
+
 
 
 ###############################################################
@@ -126,7 +143,4 @@ function fancy_message() {
     esac
 }
 
-
-# fancy_message info "Welcome to Xmetal's Linux Scripts "
-
-# fancy_message header "It's a good idea to reboot here "
+fancy_message info "${varTitle}"
