@@ -16,8 +16,8 @@ function installAppList()
         totalApps+=($currentApp)
     done < $APPLISTFILE
 
-   echo -e "Installing ${totalApps[@]}"
-   sudo pacman -S ${totalApps[@]}
+   echo -e "Installing ${totalApps[*]}"
+   sudo pacman -S ${totalApps[*]}
 }
 
 installAppList $APPLISTFILE
