@@ -1,6 +1,6 @@
 # Xmetal's Linux Scripts
 
-## Code Badges 
+## Code Badges
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/55ac91ee8f024afbb2d88d3f3713dc7b)](https://www.codacy.com/gh/Xmetalfanx/linuxSetup/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Xmetalfanx/linuxSetup&utm_campaign=Badge_Grade)
 
@@ -10,7 +10,7 @@
 
 A problem SOME users, even if they are experienced have when setting up some distributions, is all the post install tasks they have to do to setup a "workable" system. The tasks may not be difficult to do, but just rather they are time consuming. These scripts can hopefully give people a "helping hand" getting different distro bases set up.
 
-While The main distributions listed are meant to be "Distro family bases", not ALL scripts are practically on all distros.
+While the main distributions listed are meant to be "Distro family bases", not all parts of these scripts are practically on all distros bases.
 
 ## Disclaimer
 
@@ -41,53 +41,9 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 - Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their unrollURL function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys 
 
-
 ## Known issues
 
-Right now if a supported version is not detected for whatever distro you are on, the scripts will not run in a sense. I AM NOT including "pre-releases" or betas as "yes this release is supported" until they are finally released for good from the distro maintainer.
-
-This means you may be on a beta release that is not "fully official yet" and the 'is it supported or not?" check will be a "no" ... this is by design ... if it makes better sense to change this later, I am open to the idea.
-
-### Some RPMs are not being signed by the devs
-
-- [May 2022 - still an issue with Atom]
-  - I can not say this is the case for all apps; however, to my knowledge Atom is affected (see <https://github.com/atom/atom/issues/16499> for more info on Atom) ... they recommend ignoring it ... .and it still does work I can confirm but this doesn't seem like a good idea.
-
-### KDE Neon Updating Output
-
-- [April 2020 update: I am not sure this is still an issue]
-  - The output of the updating is not as clean as apt-get upgrade or apt upgrade ... not sure if I can really do anything as that is on the way they upgrade via the CLI and has nothing to do with my scripts
-
-### MakeMKV Compiling
-
-not sure this is an issue but IF something ever goes wrong (this is sort of a note-to-self)... check out [This commit](https://github.com/Xmetalfanx/linuxSetup/commit/58b1a2bb2e11817ffc01f8f645a5323ed4430602)
-
-### XNViewMP AppImage issues
-
-- [My Issue](https://github.com/Xmetalfanx/linuxSetup/issues/130)
-
-- This is happening on recent... (0.98 and newer AppImages, I think) versions but AppImages 0.97 or earlier work fine on the distros having the issues with the newer AppImage
-
-- Message/error: `"symbol lookup error: /usr/lib/libkrb5.so.3"` when running the newer appimages on certain distros
-
-Xnview forum links
-
-- [Link 1](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41879&p=169714&hilit=appimage#p169714)
-- [Link 2](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41294)
-
-note: i have the packages that the dev mentioned installed ... I checked that before even searching the forums ... others report having it installed as well, but the same issue persists
-
-## Links to other useful projects similar to this
-
-### [Mr Sam Hewitt's Main Page and Scripts](https://github.com/snwh)
-
-- [Fedora Post Install Scripts](https://github.com/snwh/fedora-post-install)
-- [Solus Post Install Scripts](https://github.com/snwh/solus-post-install)
-- [Ubuntu Post Install Scripts](https://github.com/snwh/ubuntu-post-install)
-
-Thank you to Mr. Hewitt for some code ideas, when browsing through his projects
-
-- More thanks go to KittyKatt and Screenfetch's contributors [Screenfetch on Github](https://github.com/KittyKatt/screenFetch)
+[List of Known Issues](ISSUES.md)
 
 ---
 
@@ -139,24 +95,8 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 - not sure how far back this goes if one hasn't updated a Solus install
 
 ---
-
-## Test Results
-
-- May 2022 - I can not say for sure how much the test results apply right now ... I probably should put a general set of dates on when each test was done 
-
-- Please note that I do not run all versions of all distros, so in some cases, (example) OpenSuse 15.0 Leap may say "fail" for that task, but OpenSuse Tumbleweed says "Pass" and I may have fixed the issue for Leap too ... but If i don't see it pass on an actual install, I will leave what I saw with my own eyes
-
-## Distro Testing
-
-- [Arch Based Task](tests/archBasedTests.md)
-- [RPM Based Distro - Fedora and OpenSuse](tests/rpmBasedTests.md)
-- [Solus Task](tests/solusTests.md)
-- [Ubuntu Task](test/ubuntuBasedTests.md)
-
-## Software Tests
-
-- [Theming Testing](tests/themingTests.md)
-- [Web Browser Installer Tests](tests/browserImstallerTests.md)
+# Testing related
+[Test Results](TESTING.md)
 
 ### Extra Notes
 
