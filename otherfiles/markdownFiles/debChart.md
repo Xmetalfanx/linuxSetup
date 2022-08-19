@@ -1,4 +1,4 @@
-packageURL= the DEB link  
+programURL= the DEB link  
     * chosing this to stay consistant 
 
 DEBs
