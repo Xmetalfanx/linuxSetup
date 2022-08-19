@@ -45,7 +45,7 @@ new idea ?
 
 # shouldn't i already be in the download folder 
 
-# packageURL passed? 
+# programURL passed? 
 
 # pass to this function from handledownloads? 
 function gdebiInstall()
