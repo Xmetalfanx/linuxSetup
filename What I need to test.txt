@@ -1,0 +1,14 @@
+What I need to test 
+
+1) OcenAudio on all bases (maybe not Solus .. Arch is not coded yet so that will come last anyway)
+    - openSUSE Leap - 
+    - Fedora 36 - 
+    - Debian - 
+    - Ubuntu - 
+
+2) Strawberry on Leap 15 (openSUSE) and Fedora (retest ... test 1 worked) - randomy on Leap 15.4 it did not work though .. have to troubleshoot this 
+3) Strawberry on Debian
+4) ??? Strawberry on Ubuntu or did i not touch the Ubuntu code for this? 
+
+5) overall gdebi work HOWEVER I think that will sort itself out with tests 1 to 4.  (sort of a dual test)
+6) overall RPM code work (same message as test 5, .. a dual test can be done)
