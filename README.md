@@ -39,29 +39,43 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 - While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
 
-- Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their unrollURL function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys 
+- Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their unrollURL function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys
 
 ## Known issues
 
 [List of Known Issues](ISSUES.md)
 
----
+## How to download
 
-## How to download via git
+### Download from the Release Page
 
-### In Arch
+1. Go To [Xmetal's Linux Setup Script Release Page (there are links on the right as well)](https://github.com/Xmetalfanx/linuxSetup/releases/tag/1.01)
+2. Download either the tar.gz or zip file and extract it
+3. Enter the extracted directory
+
+### Download with git
+
+Please Note: this apparently gets a large amount of git history (my code changes) that is not needed really
+
+Also the git package MAYBE preinstalled in some distros... I am assuming it's not with the instructions below
+
+#### In Arch
 
     `sudo pacman -S git`
 
-### In Fedora
+#### In Fedora
 
     `sudo dnf install git`
 
-### In OpenSUSE
+#### In OpenSUSE
 
     `sudo zypper install git`
 
-### In Ubuntu
+#### In Solus
+
+	`sudo eopkg install git`
+
+#### In Ubuntu
 
     `sudo apt install git`
 
@@ -94,8 +108,8 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 - not sure how far back this goes if one hasn't updated a Solus install
 
----
-# Testing related
+### Testing related
+
 [Test Results](TESTING.md)
 
 ### Extra Notes
