@@ -5,7 +5,7 @@
     "remark-stringify": "^10.0.0"
   },
   "devDependencies": {
-    "dictionary-en": "^3.1.0",
+    "dictionary-en": "^3.2.0",
     "remark": "^14.0.2",
     "remark-cli": "^10.0.1",
     "remark-frontmatter": "^4.0.1",
@@ -16,9 +16,8 @@
     "remark-retext": "^5.0.1",
     "retext-repeated-words": "^4.2.0",
     "retext-sentence-spacing": "^5.2.0",
-    "retext-spell": "^5.1.0",
+    "retext-spell": "^5.3.0",
     "retext-syntax-urls": "^3.1.2",
-    "retext-usage": "^0.5.0",
-    "unified": "^10.1.1"
+    "unified": "^10.1.2"
   }
 }
