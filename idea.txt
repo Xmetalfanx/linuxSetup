@@ -1,0 +1,3 @@
+can i use an array for exceptions in getting the url in awk?
+
+"dbgsym", "debug" would be included 
