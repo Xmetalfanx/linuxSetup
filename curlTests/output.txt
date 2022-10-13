@@ -1,0 +1,89 @@
+- https://github.com/ is in a var
+- the repo (the two fields after the https://github.com/ part) are also in a var
+
+- i want to check for the codename for deb releases (debian and Ubuntu)
+- ?? how do i do the rpm releases?
+
+###################################################################################################
+
+https://github.com/wimpysworld/deb-get/releases/download/0.3.6/deb-get_0.3.6-1_all.deb
+
+
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-bionic_amd64.ddeb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-bookworm_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-bullseye_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-buster_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-focal_amd64.ddeb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-jammy_amd64.ddeb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-dbgsym_1.0.9-kinetic_amd64.ddeb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debuginfo-1.0.9-1-omv4003.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debuginfo-1.0.9-1.fc35.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debuginfo-1.0.9-1.fc36.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debuginfo-1.0.9-1.lp153.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debuginfo-1.0.9-1.lp154.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debuginfo-1.0.9-1.mga8.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debugsource-1.0.9-1-omv4003.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debugsource-1.0.9-1.fc35.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debugsource-1.0.9-1.fc36.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debugsource-1.0.9-1.lp153.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debugsource-1.0.9-1.lp154.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry-debugsource-1.0.9-1.mga8.x86_64.rpm
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-bionic_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-bookworm_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-bullseye_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-buster_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-focal_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-jammy_amd64.deb
+https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.9/strawberry_1.0.9-kinetic_amd64.deb
+
+https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.deb
+
+https://github.com/atom/atom/releases/download/v1.60.0/atom.x86_64.rpm
+
+https://github.com/yuliskov/SmartTubeNext/releases/download/15.99/STubeNext_stbeta_v15.99_r.apk
+
+
+#################################################################3
+# Example functions that get these results ^
+
+function strawberry() {
+   programName="strawberry"
+   repo="strawberrymusicplayer/strawberry"
+   fileFormat="deb"
+
+}
+
+function atomDEB() {
+   programName="atom"
+   repo="atom/atom"
+   fileFormat="deb"
+
+   gitDownload
+}
+
+function atomRPM() {
+   programName="atom"
+   repo="atom/atom"
+   fileFormat="rpm"
+
+   gitDownload
+}
+
+function ublock() {
+   programName="ublock"
+   repo="gorhill/uBlock"
+   fileFormat="xpi"
+
+   gitDownload
+}
+
+function smartTubeNext() {
+   programName="smartTubeNext"
+   repo="yuliskov/SmartTubeNext"
+   fileFormat="apk"
+
+   gitDownload
+}
+
+# End Sample software functions
+################################################################################
