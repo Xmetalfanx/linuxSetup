@@ -1,0 +1,2 @@
+https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.deb
+https://github.com/atom/atom/releases/download/v1.60.0/atom.x86_64.rpm

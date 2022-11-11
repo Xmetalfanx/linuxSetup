@@ -1,0 +1,3 @@
+should i look for "$appname_$version" ?  THEN i look for maybe the arch type or codename (if ubuntu)
+
+for the format i need, i think deb-get functions maybe a big help
