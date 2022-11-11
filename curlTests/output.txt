@@ -1,6 +1,3 @@
-- https://github.com/ is in a var
-- the repo (the two fields after the https://github.com/ part) are also in a var
-
 - i want to check for the codename for deb releases (debian and Ubuntu)
 - ?? how do i do the rpm releases?
 
@@ -87,3 +84,22 @@ function smartTubeNext() {
 
 # End Sample software functions
 ################################################################################
+
+#################################################################################
+# issues
+
+- naming scheme ... some are "name_version_codename.fileformat", some are "name.fileformat" some have obsecure names (see SmartTubeNext's name), some are say "name_aritecture.fileformat" with no version
+
+########################################################################
+
+# goal: to download the correct file for a distro based on info provided by the "software function" while still keeping the "gitDownload" function in sort of a template format so anything can be passed.
+
+- IF Debian or Ubuntu (or really RPM distros can be included here too)... detect if their is a codename 
+
+   issue: say atom's DEB is the same DEB for "all" but Strawberry's are specific to distro versions 
+
+- also i dont want a list to filter out stuff like "strawberry-debugging-foobar-amd64.rpm" ... if i search for "deb" the "deb" in debugging is triggering the filter.
+
+#################################################################
+- idea 
+   look for the file format at the end of the line and possible use a "name_format" sort of var that is passed to the gitDownload... problem is i can use $version in that var SINCE at the point of the software function ... the version is not known 
