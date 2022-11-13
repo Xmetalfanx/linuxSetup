@@ -1,4 +1,22 @@
-new idea ... i need to grep for a pattern (what i have been pondering lately)... CAN i grep for a var name BUT in each software function pass what that var is? ... so in the gitDownload function the var name would be the same but since each repo has a different "naming scheme" .. THAT is PASSED into "gitDownload" from the software function 
+Idea: put/leave a display of the downloadLink in the gitDownload function just for debugging
 
-- i can keep gitDownload "templified" 
-- i can customize what is being searched for based on whaet i need for that repo 
+maybe "exit" after that 
+
+
+# example idea 1 
+softwareTest() {
+    programName=""
+    repoName=""
+    nameFormat=""
+    
+    case $distroBase in 
+        debian|fedora|opensuse|ubuntu)
+            fileFormat=$defaultFileFormat
+            
+            gitDownload
+            
+            ;;    
+    
+    esac 
+
+}

@@ -1,0 +1,12 @@
+when the internet comes back, consider cherry picking commits (and removing from "gitDownloadTrial")
+
+commits 
+    - Updated Message about test results
+    - Added defaultFileFormat ... 
+    - Var Name Fix 
+    - ???? (maybe not this one) - Simplified Bleachbit code 
+    - (this one may result in merge conflicts, if moved down now) Simplifying TinyMediaManager Code 
+    
+    
+##########################################33#####33
+  releasePage="https://github.com/${repoName}/releases/latest" is the same so ... is there a way to put this in MAYBE "gitDownload"'s function and NOT have it in every software function that will call "gitDownload" ... that is redundant code for no reason 
