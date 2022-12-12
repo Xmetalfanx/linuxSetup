@@ -6,9 +6,7 @@ function setVars() {
     ############################################################################################
     # Vars
 
-    exampleFile1="curlTests/gitexample.txt"
-    exampleFile2="curlTests/gitexample2.txt"
-    exampleFile3="curlTests/gitexample3.txt"
+    exampleFile_all="curlTests/gitexamples_all.txt"
 
     # vars from os-release
     os_release_ubuntu_codename=$(cat /etc/os-release | awk -F\= '/UBUNTU_CODENAME/ { print $2}' )
@@ -19,77 +17,87 @@ function setVars() {
     uname_machine=$(uname -m)
     uname_hardware_platform=$(uname -m)
 
-    # for testing when i am not on an Ubuntu base 
-    #codename="jammy"
+    ############################################
+    # DEBUGGING
+    distroBase="ubuntu"
+    UBUNTU_CODENAME="focal"
+    ######################################################3
 
 }
 setVars
 
-# the idea is if there is more than one line than other checks are needed and it cant be the file download link
-# i need to maybe do a search and look for the NUMBER OF matches .. if > 1, then .... its not the download link (say more than one "https")
-function lineTestIdea() {
-
-    # what if it's not a newline in the output but a carrage return? 
-    # carrage return is \r ... i think 
-    if [[ ${possibleDownloadLinks} == *"\r"* ]]; then
-        echo "newline found"
-    else 
-        echo "no newline found"
-    fi 
-
-}
-
+# Gets version info
+# if i remove the first part commented out, this doesn't REALLY need to be its own function
 function getVersionInfo() {
-    # ?? why is this sed not working
-    #version=$(echo -e ${possibleDownloadLinks} | sed 's/${gitURLStart}//g' )
 
     # ?? why is this command substitution not working ? it looks like it should work
     #version=${possibleDownloadLinks##download/}
 
-    echo -e "possible Links:\t ${possibleDownloadLinks}"
-    version=$(echo -e  ${possibleDownloadLinks} | awk -F\/ ' { print $8}' )
+    # sed to remove non-numeric characters on some results 
+    version=$(echo -e  ${possibleDownloadLinks} | awk -F\/ ' { print $8}' | sed 's/[[:alpha:]]//g' )
 
-    echo -e "\vversion: ${version}"
+}
 
+# (If needed) further sorting of the possible links 
+function gitDownloadSort() {
+
+	case $distroBase in
+		debian) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${debianBranch}" ) ;;
+		fedora) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "f${fedoraVersion}"  ) ;;
+		opensuse) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${leapVersion}" )  ;;
+        ubuntu) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep ${UBUNTU_CODENAME} ) ;;
+	esac
+
+}
+
+
+function displayDownloadLink() {
+    echo -e "programName:\t\t${programName}"
+    echo -e "fileFormat:\t\t${fileFormat}"
+
+    # debugging
+	echo -e "final download link:\t${finalDownloadLink}"
+
+    echo -e "baseName:\t\t${gitDownloadFileName}"
+    echo -e "version:\t\t${version}\v"
 }
 
 function gitDownloadLink() {
-    clear
-    
-    # idea for this next var is to be able to use it to slim down where i am getting
-    # the version number, better
-    gitURLStart="https://github.com/${repoName}/releases/download/"
 
     #depending on repo, list of possible download links OR the download link
-    # idea: can i check to see if this var (?? has a newline ... aka multiple lines .. IF NOT then this IS the download link)
-    
-    #echo -e "${nameFormat}"
-    possibleDownloadLinks=$(cat ${exampleFile3} | grep -E "${fileFormat}"$ )
+    possibleDownloadLinks=$(grep -E "${fileFormat}$" ${exampleFile_all} | grep -E "${nameFormat}" )
 
-    #lineTestIdea
+    # the var used to determine if there are likely multiple links listed 
+    possibleLinkLength=$(echo -e "${possibleDownloadLinks}" | awk '{ print NR}' )
 
-    name=$(echo -e ${possibleDownloadLinks} | awk -F\/ ' { print $9}' )
-    echo -e "name:\n$name\n\v"
-    exit
+    # if more than one link (likely) detected, pass to sort function 
+        # remove this echo later 
+    [[ "${possibleLinkLength}" > 1 ]] && gitDownloadSort || finalDownloadLink=${possibleDownloadLinks} || echo -e "link likely is: \n${finalDownloadLink}"
 
-
+    # get version number
     getVersionInfo "${possibleDownloadLinks}"
 
+    # get base name of file
+    gitDownloadFileName=$(basename ${finalDownloadLink})
+
+    displayDownloadLink
 }
-
-
 
 ########################################################################################
-# Tests 
-function atomTest() {
+# Tests
+# the file var is only for local tests
+
+clear
+
+function atomDEBTest() {
     programName="atom"
     repoName="atom/atom"
-    fileformat="deb"
+    fileFormat="deb"
     nameFormat="${programName}-"
-    
+
     gitDownloadLink
 }
-atomTest
+atomDEBTest
 
 function debgetTest() {
     programName="deb-get"
@@ -99,16 +107,26 @@ function debgetTest() {
 
     gitDownloadLink
 }
-#debgetTest
+debgetTest
 
 function strawberryTest() {
     programName="strawberry"
     repoName="strawberrymusicplayer/strawberry"
-    fileFormat="deb"
+    fileFormat=".deb"
 
-    # forseen problem: version is not known at this point
+    # forseen problem if i use "version" here : version is not known at this point
     nameFormat="${programName}_"
 
     gitDownloadLink
 }
-#strawberryTest
+strawberryTest
+
+function atomRPMtest() {
+    programName="atom"
+    repoName="atom/atom"
+    fileFormat="rpm"
+    nameFormat="${programName}.*"
+
+    gitDownloadLink
+}
+atomRPMtest
