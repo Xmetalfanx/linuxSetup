@@ -43,7 +43,7 @@ function gitDownloadSort() {
 
 	case $distroBase in
 		debian) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${debianBranch}" ) ;;
-		fedora) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "f${fedoraVersion}"  ) ;;
+		fedora) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "f${fedoraBranch}"  ) ;;
 		opensuse) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${leapVersion}" )  ;;
         ubuntu) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep ${UBUNTU_CODENAME} ) ;;
 	esac
