@@ -9,8 +9,8 @@ function setVars() {
     exampleFile_all="curlTests/gitexamples_all.txt"
 
     # vars from os-release
-    os_release_ubuntu_codename=$(cat /etc/os-release | awk -F\= '/UBUNTU_CODENAME/ { print $2}' )
-    os_release_version_codename=$(cat /etc/os-release | awk -F\= '/VERSION_CODENAME/ { print $2}' )
+    os_release_ubuntu_codename=$(awk -F= '/UBUNTU_CODENAME/ { print $2}' /etc/os-release )
+    os_release_version_codename=$(awk -F= '/VERSION_CODENAME/ { print $2}' /etc/os-release )
 
     # uname vars
     uname_processor=$(uname -p)
@@ -33,18 +33,18 @@ function getVersionInfo() {
     # ?? why is this command substitution not working ? it looks like it should work
     #version=${possibleDownloadLinks##download/}
 
-    # sed to remove non-numeric characters on some results 
-    version=$(echo -e  ${possibleDownloadLinks} | awk -F\/ ' { print $8}' | sed 's/[[:alpha:]]//g' )
+    # sed to remove non-numeric characters on some results
+    version=$(echo -e  ${possibleDownloadLinks} | awk -F/ ' { print $8}' | sed 's/[[:alpha:]]//g' )
 
 }
 
-# (If needed) further sorting of the possible links 
+# (If needed) further sorting of the possible links
 function gitDownloadSort() {
 
 	case $distroBase in
 		debian) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${debianBranch}" ) ;;
 		fedora) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "f${fedoraBranch}"  ) ;;
-		opensuse) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${leapVersion}" )  ;;
+		opensuse) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep "${leapBranch}" )  ;;
         ubuntu) finalDownloadLink=$(echo -e ${possibleDownloadLinks} | tr " " "\n" | grep ${UBUNTU_CODENAME} ) ;;
 	esac
 
@@ -67,11 +67,11 @@ function gitDownloadLink() {
     #depending on repo, list of possible download links OR the download link
     possibleDownloadLinks=$(grep -E "${fileFormat}$" ${exampleFile_all} | grep -E "${nameFormat}" )
 
-    # the var used to determine if there are likely multiple links listed 
+    # the var used to determine if there are likely multiple links listed
     possibleLinkLength=$(echo -e "${possibleDownloadLinks}" | awk '{ print NR}' )
 
-    # if more than one link (likely) detected, pass to sort function 
-        # remove this echo later 
+    # if more than one link (likely) detected, pass to sort function
+        # remove this echo later
     [[ "${possibleLinkLength}" > 1 ]] && gitDownloadSort || finalDownloadLink=${possibleDownloadLinks} || echo -e "link likely is: \n${finalDownloadLink}"
 
     # get version number

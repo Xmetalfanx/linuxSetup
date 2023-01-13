@@ -1,5 +1,5 @@
 CPU_TYPE=$(lscpu | awk '/Architecture/ { print $2 }' )
-UBUNTU_CODENAME=$(cat /etc/os-release | awk -F\= '/UBUNTU_CODENAME/ {print $2}' )
+UBUNTU_CODENAME=$(awk -F= '/UBUNTU_CODENAME/ {print $2}' /etc/os-release )
 
 clear
 
