@@ -10,8 +10,8 @@ function setVars() {
     sourceFile="curlTests/gitexample2.txt"
 
     # vars from os-release
-    os_release_ubuntu_codename=$(cat /etc/os-release | awk -F\= '/UBUNTU_CODENAME/ { print $2}' )
-    os_release_version_codename=$(cat /etc/os-release | awk -F\= '/VERSION_CODENAME/ { print $2}' )
+    os_release_ubuntu_codename=$(awk -F= '/UBUNTU_CODENAME/ { print $2}' /etc/os-release)
+    os_release_version_codename=$(awk -F= '/VERSION_CODENAME/ { print $2}'  /etc/os-release)
 
     # uname vars
     uname_processor=$(uname -p)
@@ -58,19 +58,19 @@ function gitDownloadLink() {
     #fileNameFormat="${programName}_${version}*.${fileFormat}"
 
     #possibleDownload=$(curl -s $githubAPILink | awk -v format="${fileFormat}" -v codeName=${codename} '/browser_download_url/ && $2 ~ format && $2 !~ /(debug|dbg)/ { print $2 }' | cut -d\" -f2)
-    
-    
+
+
     #possibleDownloadLinks=$(curl -s $githubAPILink | awk -v format=$fileFormat '/browser_download_url/ && $2 ~ format { print $2} ' | tr -d \" )
-    
+
     possibleDownloadLinks=$(curl -s gitexample.txt | awk '/browser_download_url/ { print $2} ' | grep -E "${programName}*${fileFormat}" | tr -d \" )
-    
+
     echo -e "${possibleDownloadLinks}"
-   
+
 }
 
 
 ########################################################################################
-# Tests 
+# Tests
 function atomTest() {
     programName="atom"
     repoName="atom/atom"
