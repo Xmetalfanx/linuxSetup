@@ -1,12 +1,20 @@
+clear
+
+# changes based on what distro i am booted into
+distroBase="ubuntu"
+
 # app_version-somethingelse.fileFormat does seem to be the naming systems
 
+function userPrompt() {
+  read -r -p "Press [Enter] to continue "
+}
 
 # Set Variables
 function setVars() {
 
     # vars from os-release
-    os_release_ubuntu_codename=$(cat /etc/os-release | awk -F\= '/UBUNTU_CODENAME/ { print $2}' )
-    os_release_version_codename=$(cat /etc/os-release | awk -F\= '/VERSION_CODENAME/ { print $2}' )
+    os_release_ubuntu_codename=$(awk -F= '/UBUNTU_CODENAME/ { print $2}'/etc/os-release )
+    os_release_version_codename=$(awk -F= '/VERSION_CODENAME/ { print $2}' /etc/os-release)
 
     # for a possible idea to do supported distro/versions in an array... i think
     supportedUbuntu=(
@@ -23,31 +31,78 @@ function setVars() {
 }
 setVars
 
+# idea: function to sort out specific names
+# here we know the list of possible links is more than one
+function gitDownloadSort() {
+
+	# I need to refactor this down i think ... like putting the tr and grep statements into a "sort" var or something
+
+    # I should change to say debianVersion or Fedora/leapBranch ... whatever.. stay consistant i mean
+    case $distroBase in
+
+		debian) branchFilter=${debianBranch} ;;
+		fedora) branchFilter=${fedoraBranch} ;;
+		opensuse) branchFilter=${leapBranch} ;;
+		# changed since that code is not in my test scripts
+        ubuntu) branchFilter="jammy" ;;
+
+	esac
+
+    # if possibl... contains branchfilter
+    [[ "${possibleDownloadLinks}" == *"${branchFilter}"* ]] && echo "branchfilter detected" && programURL=$(echo -e  "${possibleDownloadLinks}" | grep -E "${branchFilter}" )
+
+	#echo -e "\vprogramURL:\t${programURL}"
+
+}
+
+function getVersionNumber() {
+
+    github_API_URL="https://api.github.com/repos/${repoName}/releases/latest"
+
+    version=$(curl -s "${github_API_URL}" | awk -F \" '/tag_name/ { print $4}' )
+
+    echo -e "version:\t${version}"
+}
+
+function calcNumOfLinks() {
+    possibleLinkLength=$(echo -e "${possibleDownloadLinks}" | awk 'END { print NR }' )
+
+    ####################################
+    # Debugging
+    #echo -e "possibleLinkLength: ${possibleLinkLength}"
+    #userPrompt
+    #########################################
+
+    # if the list of possible links is more than one, pass to the sorting function
+	[[ "${possibleLinkLength}" == 1 ]] && programURL=${possibleDownloadLinks} || gitDownloadSort
+
+}
+
+function displayFinalLink() {
+    echo -e "\vprogramURL:\t${programURL}"
+    echo -e "###################################################################"
+	userPrompt
+    clear
+}
+
 
 function gitDownloadLink() {
+    echo -e "programName:\t${programName}"
 
-	# for Debugging
-	#echo -e "\v${programName}"
+	possibleDownloadLinks=$(curl -s "${github_API_URL}" | awk '/browser_download_url/  { print $2 }' | tr -d \"  | grep -E "${fileFormat}"$ | grep -E "${nameFormat}" )
 
-    githubAPILink="https://api.github.com/repos/${repoName}/releases/latest"
+	####################################
+    # Debugging
+	echo -e "\vpossibleDownloadLinks:\n${possibleDownloadLinks}"
+    userPrompt
+    ###########################################
 
-	# To get Version number
-    #version=$(curl -s $githubAPILink | awk '$0 ~ "tag_name" { print $2}' | sed 's/\"//g;s/,//')
-    #echo -e "${version}"
+    # error - if zero is the string length
+    [ -z "${possibleDownloadLinks}"  ] && echo -e "error getting links for ${programName}" && return
 
-    # debugging 
-    #echo -e "programName:\t$programName"
-    #echo -e "fileFormat:\t $fileFormat"
-    #echo -e "codeName:\t$codeName"
-    #sleep 4
+	calcNumOfLinks
 
-    #possibleDownloadLinks=$(curl -s $githubAPILink | grep "${fileFormat}\"$" | awk '{ print $2 }' | tr -d '"' )
-
-    possibleDownloadLinks=$(curl -s $githubAPILink | awk -v format=$fileFormat '/browser_download_url/ && $2 ~ format { print $2}' | tr -d '"' )
-
-    #echo -e "$possibleDownloadLinks\v"
-    ######################################################################################
-
+	displayFinalLink
 }
 
 
@@ -56,60 +111,57 @@ function gitDownloadLink() {
 function atomTest() {
     programName="atom"
     repoName="atom/atom"
+    fileFormat="rpm"
+
+    getVersionNumber
+
+    nameFormat="${programName}"
 
     gitDownloadLink "${repoName}"
 }
 atomTest
 
-# results
-# https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.deb
-
-
 function debgetTest(){
     programName="deb-get"
     repoName="wimpysworld/deb-get"
+    fileFormat="deb"
+
+    getVersionNumber
+
+    nameFormat="${programName}_${version}"
+
     gitDownloadLink "${repoName}"
+
+
 }
 debgetTest
-
-#results
-# https://github.com/wimpysworld/deb-get/releases/download/0.3.6/deb-get_0.3.6-1_all.deb
-
 
 function strawberryTest() {
     programName="strawberry"
     repoName="strawberrymusicplayer/strawberry"
+    fileFormat="deb"
 
-    gitDownloadLink "${repoName}"
+    getVersionNumber
+
+    nameFormat="${programName}_${version}"
+
+    gitDownloadLink ${repoName} ${fileFormat}
 }
 strawberryTest
 
-# "debug" is getting caught in the "deb" ($fileFormat) search 
 
-# Results
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-bionic_amd64.ddeb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-bookworm_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-bullseye_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-buster_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-focal_amd64.ddeb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-jammy_amd64.ddeb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-dbgsym_1.0.10-kinetic_amd64.ddeb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debuginfo-1.0.10-1-omv4003.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debuginfo-1.0.10-1.fc35.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debuginfo-1.0.10-1.fc36.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debuginfo-1.0.10-1.lp153.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debuginfo-1.0.10-1.lp154.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debuginfo-1.0.10-1.mga8.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debugsource-1.0.10-1-omv4003.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debugsource-1.0.10-1.fc35.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debugsource-1.0.10-1.fc36.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debugsource-1.0.10-1.lp153.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debugsource-1.0.10-1.lp154.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry-debugsource-1.0.10-1.mga8.x86_64.rpm
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-bionic_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-bookworm_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-bullseye_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-buster_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-focal_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-jammy_amd64.deb
-# https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.10/strawberry_1.0.10-kinetic_amd64.deb
+function czkawkaTest () {
+    programName="czkawka"
+    repoName="qarmin/czkawka"
+    fileFormat="AppImage"
+
+    getVersionNumber
+
+    nameFormat="linux_${programName}_gui.${fileFormat}"
+
+    gitDownloadLink ${repoName}
+}
+
+czkawkaTest
+
+

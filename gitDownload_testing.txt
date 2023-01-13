@@ -1,0 +1,23 @@
+What needs to be tested for the intial gitDownload to "pass" and a sync to master?
+
+- Etcher - Works on 22.04 - remove debugging code
+- mediaElch - its still in the Downloads folder ... i need to say move this to ~/Programs and ... what happened to the "add it to the menu" step?
+- Atom - WOrks on Neon 22.04
+- Stacer - works on Neon 22.04
+- Strawberry - DEB using the PPA (probably a good idea since the dev recommends it i guess) - doesn't install ? (tested on Neon 22.04)
+
+
+## I have decided to retest what i have above
+
+- Atom - gets correct URL for openSUSE (RPM link), totally ok on openSUSE
+ and works fine on Neon 
+
+- Etcher - gets correct URL for openSUSE (appImage), downloads and gets marked as executable ok, but no menu entry added, doesn't get moved to ~/Programs (stays in ~/Downloads)
+NEON install deb fine 
+
+
+- mediaElch - gets correct URL for openSUSE, same with Neon 
+
+- Stacer - gets correct URL for openSUSE (AppImage), gets and install the DEB on Neon 
+
+- Strawberry - fails/loops on OpenSUSE , 
