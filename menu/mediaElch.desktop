@@ -1,6 +1,5 @@
 [Desktop Entry]
 Categories=AudioVideo;Video;
-Comment[en_US]=Media Elch Media Organizer
 Comment=Media Elch Media Organizer
 GenericName[en_US]=mediaElch
 GenericName=mediaElch
@@ -10,7 +9,3 @@ Name=Media Elch
 StartupNotify=true
 Terminal=false
 Type=Application
-X-DBUS-ServiceName=
-X-DBUS-StartupType=
-X-KDE-SubstituteUID=false
-X-KDE-Username=
