@@ -3,7 +3,7 @@
 ## Tests before next sync to mater
 
 | Action            | Arch | Debian | Fedora | OpenSUSE | Solus | Ubuntu    |
-|-------------------|------|--------|--------|----------|-------|-----------|
+| ----------------- | ---- | ------ | ------ | -------- | ----- | --------- |
 | Custom Menus      |      |        |        |          |       | TMM works |
 | Fix for yay error | Done | N/A    | N/A    | N/A      | N/A   | N/A       |
 
@@ -13,15 +13,14 @@
 
 ## Third party tests before next sync to master
 
-| Action                | Arch | Debian | Fedora | OpenSUSE | Solus | Ubuntu              |
-|-----------------------|------|--------|--------|----------|-------|---------------------|
-| Add Czhawka           | Pass | NT     | NT     | Pass        | NT    | Pass                |
-| Tiny Media Manager \* | Pass | NT     | NT     | NT       | NT    | Pass                |
-| Deb-Get               | N/A  | NT     | N/A    | N/A      | N/A   |                     |
-| Stacer                | N/A  | NT     | NT     | NT       | NT    | Pass                |
-| Strawberry            | N/A  | NT     | NT     | NT       | NT    | PPA - Doesn't count |
-
+| Action             | Arch | Debian | Fedora | OpenSUSE | Solus | Ubuntu              |
+| ------------------ | ---- | ------ | ------ | -------- | ----- | ------------------- |
+| Add Czhawka        | Pass | NT     | NT     | Pass     | NT    | Pass                |
+| Tiny Media Manager | Pass | NT     | NT     | NT       | NT    | Pass                |
+| Deb-Get            | N/A  | NT     | N/A    | N/A      | N/A   | Pass                |
+| Stacer             | ?    | NT     | NT     | Pass     | NT    | Pass                |
+| Strawberry         | N/A  | NT     | NT     | NT       | NT    | PPA - Doesn't count |
+| MediaElch          | NT   | NT     | NT     | Pass       | NT    | Pass                |
 
 NT = Not Tested
 
-Czhawka downloads and gets set to +X ... its the menu adding part that needs work 
