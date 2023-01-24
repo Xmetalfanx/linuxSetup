@@ -12,3 +12,4 @@ updateInfo.txt
 otherfiles/gitsetup.sh
 node_modules/*
 yarn.lock
+setting/*
