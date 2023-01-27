@@ -1,0 +1,8 @@
+idea
+
+1) move app (extracted tarball if needed) to ~/Programs/${programName} - i THINK the programFile (the "exe" type file ... sh file or appimage) should be moved here
+2) move $iconFile (the actual icon file) to ~/Programs/${programName}
+
+
+# create the dynamic menu file
+3)
