@@ -1,3 +1,5 @@
+#!/bin/bash
+
 clear
 
 URL="http://www.example.com/foo.tar.gz"
