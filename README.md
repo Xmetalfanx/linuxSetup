@@ -73,7 +73,7 @@ Also the git package MAYBE preinstalled in some distros... I am assuming it's no
 
 #### In Solus
 
-	`sudo eopkg install git`
+  `sudo eopkg install git`
 
 #### In Ubuntu
 
