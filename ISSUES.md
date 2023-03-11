@@ -13,21 +13,10 @@ This means you may be on a beta release that is not "fully official yet" and the
 - [April 2020 update: I am not sure this is still an issue]
   - The output of the updating is not as clean as apt-get upgrade or apt upgrade ... not sure if I can really do anything as that is on the way they upgrade via the CLI and has nothing to do with my scripts
 
-### MakeMKV Compiling
+## MakeMKV Compiling
 
 not sure this is an issue but IF something ever goes wrong (this is sort of a note-to-self)... check out [This commit](https://github.com/Xmetalfanx/linuxSetup/commit/58b1a2bb2e11817ffc01f8f645a5323ed4430602)
 
-### XNViewMP AppImage issues
+## Czhawka needing gtk4 support
 
-- [My Issue](https://github.com/Xmetalfanx/linuxSetup/issues/130)
-
-- This is happening on recent... (0.98 and newer AppImages, I think) versions but AppImages 0.97 or earlier work fine on the distros having the issues with the newer AppImage
-
-- Message/error: `"symbol lookup error: /usr/lib/libkrb5.so.3"` when running the newer appimages on certain distros
-
-Xnview forum links
-
-- [Link 1](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41879&p=169714&hilit=appimage#p169714)
-- [Link 2](https://newsgroup.xnview.com/viewtopic.php?f=82&t=41294)
-
-note: i have the packages that the dev mentioned installed ... I checked that before even searching the forums ... others report having it installed as well, but the same issue persists
+Post 4.1.0 versions of Czhawka need gtk4 packages and not every distro (Debian, OpenSUSE for example) may have this ... not wanting to hardcode version 4.1.0 in NOR wanting to add alot of extra code for certain versions of certain distros over a single app's AppImage... I have decided to, hardcode the last gtk3 version in as that is what the developer recommends for older distros.  I may come back to this later and when all distros seem to have better gtk4 support ... I will switch back to using "whatever the latest version on Github" is
