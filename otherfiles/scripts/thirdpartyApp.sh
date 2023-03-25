@@ -2,13 +2,13 @@
 
 
 # programFileName="xnview.sh"
-# fullProgramPath=$(find ~+ -type f -name "$programFileName" )
-# programPathOnly=$( echo -e "$fullProgramPath" | sed 's/xnview.sh//g' )
+# fullExecPath=$(find ~+ -type f -name "$programFileName" )
+# programPathOnly=$( echo -e "$fullExecPath" | sed 's/xnview.sh//g' )
 # execPath=$(echo -e "$programPath$programFileName" )
 
 
 # echo $execPath  >> foobar.txt
-# echo -e "exec=$fullProgramPath" >> foobar.txt
+# echo -e "exec=$fullExecPath" >> foobar.txt
 ############################################################
 
 function initSetup()

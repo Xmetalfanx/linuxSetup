@@ -1,12 +1,12 @@
 
 # this searches for the file to run the app
-fullProgramPath=$(find ~+ -type f -name "$programFileName" )
+fullExecPath=$(find ~+ -type f -name "$programFileName" )
 
-# based on $fullProgramPath, this gets that dir 
-programPath=$(basename $fullProgramPath)
+# based on $fullExecPath, this gets that dir 
+programPath=$(basename $fullExecPath)
 
 # this creates the line that will be pasted/appended to the menu file 
-execPath=$(echo -e "Exec=$fullProgramPath")
+execPath=$(echo -e "Exec=$fullExecPath")
 
 # The icon file (since some are svgs and some pngs i am thinking of assigning this in say the app's install function before things get passed to any "templified" functions)
 iconPath=$(echo -e "Icon=$iconFile")
