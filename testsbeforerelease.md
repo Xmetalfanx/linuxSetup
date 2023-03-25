@@ -5,6 +5,7 @@
 | Program Tested (type)      | Arch Base | OpenSUSE Base       | Ubuntu Base |
 | -------------------------- | --------- | ------------------- | ----------- |
 | czhawka (AppImage)         | Pass      | fail  (1)  pass (2) | Pass        |
+| mediaElch                  |           |                     | Pass        |
 | TinyMediaManager (sh file) | Pass      | fail (1) pass (2)   | Pass        |
 
 (1) - fails on Plasma 5.... is this a DE specific issue? 
