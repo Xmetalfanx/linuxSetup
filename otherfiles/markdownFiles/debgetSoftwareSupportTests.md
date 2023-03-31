@@ -15,7 +15,9 @@ Issue is it knows Mint is ubuntu based but nowhere in the os-release file do i s
 * says the ppa is not for jammy when there is jammy ppa support
 
 # RPM related due to refactoring
-## This may be too many tests but I rather be sure 
+
+## This may be too many tests but I rather be sure
+
 | Software Name  | RPM Install |
 |----------------|-------------|
 | GitKraken      |             |
