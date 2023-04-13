@@ -21,3 +21,7 @@ not sure this is an issue but IF something ever goes wrong (this is sort of a no
 ## Czhawka needing gtk4 support
 
 Post 4.1.0 versions of Czhawka need gtk4 packages and not every distro (Debian, OpenSUSE for example) may have this ... not wanting to hardcode version 4.1.0 in NOR wanting to add alot of extra code for certain versions of certain distros over a single app's AppImage... I have decided to, hardcode the last gtk3 version in as that is what the developer recommends for older distros.  I may come back to this later and when all distros seem to have better gtk4 support ... I will switch back to using "whatever the latest version on Github" is
+
+## Solus issues
+
+Not to start drama, but with so many issues with Solus lately and no real news from from project, the code that adds the Dev branch of Solus shouldn't be used.  The infostructure for Solus has been having issues and is not always "online", so support for Solus is iffy 
