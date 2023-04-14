@@ -106,10 +106,10 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 - Distro base support
 
 | Distro base    | Support                                |
-|----------------|----------------------------------------|
+| -------------- | -------------------------------------- |
 | Arch / Manjaro |                                        |
-| Debian         | 10, 11                                 |
-| Fedora         | 36,37                                 |
+| Debian/Devuan  | Debian 11's base                       |
+| Fedora         | 36, 37                                 |
 | OpenSUSE       | 15.4 Leap, Tumbleweed                  |
 | Ubuntu         | 18.04 Bionic, 20.04 Focal, 22.04 Jammy |
 
