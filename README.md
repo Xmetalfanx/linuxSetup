@@ -103,17 +103,15 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 1. To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
 
-- Distro base support
+## Distro base support
 
-| Distro base    | Support                                |
-| -------------- | -------------------------------------- |
-| Arch / Manjaro |                                        |
-| Debian/Devuan  | Debian 11's base                       |
+| Distro base | Support   | Including                           |
+|-------------|-----------|-------------------------------------|
+| Arch        |           | EndeovourOS, Manjaro                |
+| Debian      | Debian 11 | Devuan, Peppermint, Sparky, MXLinux |
 | Fedora         | 36, 37                                 |
-| OpenSUSE       | 15.4 Leap, Tumbleweed                  |
-| Ubuntu         | 18.04 Bionic, 20.04 Focal, 22.04 Jammy |
-
-- not sure how far back this goes if one hasn't updated a Solus install
+| OpenSUSE       | 15.4 Leap, Tumbleweed                  | Gecko Linux |
+| Ubuntu         | 18.04 Bionic, 20.04 Focal, 22.04 Jammy | Elementary, Linux Lite, Linux Mint, "*buntu Spins"
 
 ### Testing related
 
