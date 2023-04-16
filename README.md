@@ -47,7 +47,7 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 ### Author/Committer fix caused issues
 
-This is also important ... i knew this was only my own repo and no other contributors ... i had a few old commits where i had to change the author .. some had "xmetal" some had "xmetalfanx@yahoo.com" when it should have been "Xmetalfanx@yahoo.com" for all of them ... I fixed this issue far too late but this means say with old issues where i linked to commits, those commits are not part of the branch anymore.  
+This is also important ... i knew this was only my own repo and no other contributors ... i had a few old commits where i had to change the author .. some had "xmetal" some had "xmetalfanx@yahoo.com" when it should have been "Xmetalfanx@yahoo.com" for all of them ... I fixed this issue far too late but this means say with old issues where i linked to commits, those commits are not part of the branch anymore.
 
 The commit content I linked to is the same and the "wrong author name/wrong committer" name is the  ONLY thing that REALLY changed.  If you see "This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository." ignore that ... the changes you see are still valid and exactly the same.
 
@@ -85,9 +85,9 @@ Also the git package MAYBE preinstalled in some distros... I am assuming it's no
 
 #### In Ubuntu
 
-  `sudo apt install git`
+`sudo apt install git`
 
-  - if that doesn't work `sudo apt-get install git`
+- if that doesn't work `sudo apt-get install git`
 
 ## How to get the script via git method
 

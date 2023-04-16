@@ -4,9 +4,9 @@
 
 ### Default Repo Checks
 
-| Task/Goal                    | Debian | Linux Mint 19 | Ubuntu |
+| Task/Goal                    | Debian | Linux Mint 21 | Ubuntu |
 | ---------------------------- | ------ | ------------- | ------ |
-| Default repo Install of Wine | Pass   | Pass          | Pass   |
+| Default repo Install of Wine | Pass   |           | Pass   |
 
 ### WineHQ Checks
 
