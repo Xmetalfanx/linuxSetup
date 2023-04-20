@@ -109,7 +109,7 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 |-------------|-----------|-------------------------------------|
 | Arch        |           | EndeovourOS, Manjaro                |
 | Debian      | Debian 11 | Devuan, Peppermint, Sparky, MXLinux |
-| Fedora         | 36, 37                                 |
+| Fedora         | 36, 37, 38                                 |
 | OpenSUSE       | 15.4 Leap, Tumbleweed                  | Gecko Linux |
 | Ubuntu         | 18.04 Bionic, 20.04 Focal, 22.04 Jammy | Elementary, Linux Lite, Linux Mint, "*buntu Spins"
 
