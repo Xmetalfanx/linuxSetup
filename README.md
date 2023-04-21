@@ -117,7 +117,7 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 ### Testing related
 
-[Test Results](TESTING.md)
+[Test Results](/tests/old_pre_menu_redo_tests/TESTING.md)
 
 ### Extra Notes
 
