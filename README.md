@@ -49,7 +49,7 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 This is also important ... i knew this was only my own repo and no other contributors ... i had a few old commits where i had to change the author .. some had "xmetal" some had "xmetalfanx@yahoo.com" when it should have been "Xmetalfanx@yahoo.com" for all of them ... I fixed this issue far too late but this means say with old issues where i linked to commits, those commits are not part of the branch anymore.
 
-The commit content I linked to is the same and the "wrong author name/wrong committer" name is the  ONLY thing that REALLY changed.  If you see "This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository." ignore that ... the changes you see are still valid and exactly the same.
+The commit content I linked to is the same and the "wrong author name/wrong committer" name is the ONLY thing that REALLY changed. If you see "This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository." ignore that ... the changes you see are still valid and exactly the same.
 
 bad git etiquette, I know
 
@@ -69,19 +69,19 @@ Also the git package MAYBE preinstalled in some distros... I am assuming it's no
 
 #### In Arch
 
-  `sudo pacman -S git`
+`sudo pacman -S git`
 
 #### In Fedora
 
-  `sudo dnf install git`
+`sudo dnf install git`
 
 #### In OpenSUSE
 
-  `sudo zypper install git`
+`sudo zypper install git`
 
 #### In Solus
 
-  `sudo eopkg install git`
+`sudo eopkg install git`
 
 #### In Ubuntu
 
@@ -105,13 +105,15 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 
 ## Distro base support
 
-| Distro base | Support   | Including                           |
-|-------------|-----------|-------------------------------------|
-| Arch        |           | EndeovourOS, Manjaro                |
-| Debian      | Debian 11 | Devuan, Peppermint, Sparky, MXLinux |
-| Fedora         | 36, 37, 38                                 |
-| OpenSUSE       | 15.4 Leap, Tumbleweed                  | Gecko Linux |
-| Ubuntu         | 18.04 Bionic, 20.04 Focal, 22.04 Jammy | Elementary, Linux Lite, Linux Mint, "*buntu Spins"
+| Distro base | Support                    | Including                                           |
+| ----------- | -------------------------- | --------------------------------------------------- |
+| Arch        |                            | EndeovourOS, Manjaro                                |
+| Debian      | Debian 11                  | Devuan, Peppermint, Sparky, MXLinux                 |
+| Fedora      | 36, 37, 38                 |
+| OpenSUSE    | 15.4 Leap, Tumbleweed      | Gecko Linux                                         |
+| Ubuntu      | 18.04, 20.04, 22.04, 23.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
+
+- Ubuntu: 18.04 Bionic, 20.04 Focal, 22.04 Jammy, 23.04 Lunar
 
 ### Testing related
 
