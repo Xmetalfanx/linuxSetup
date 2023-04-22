@@ -33,25 +33,13 @@ Some of these are auto-installed when the script is first run ... others I may a
 - `git`
   - this is to git clone the scripts; however, from the Github or Gitlab page for the scripts, there are ways to download the repo in a .zip form too ... in this case `git` is not "needed"
 
-## Thanks
+## Goals
 
-- Too many to list them all
-
-- While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
-
-- Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their unrollURL function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys
+ To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
 
 ## Known issues
 
 - [List of Known Issues](ISSUES.md)
-
-### Author/Committer fix caused issues
-
-This is also important ... i knew this was only my own repo and no other contributors ... i had a few old commits where i had to change the author .. some had "xmetal" some had "xmetalfanx@yahoo.com" when it should have been "Xmetalfanx@yahoo.com" for all of them ... I fixed this issue far too late but this means say with old issues where i linked to commits, those commits are not part of the branch anymore.
-
-The commit content I linked to is the same and the "wrong author name/wrong committer" name is the ONLY thing that REALLY changed. If you see "This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository." ignore that ... the changes you see are still valid and exactly the same.
-
-bad git etiquette, I know
 
 ## How to download
 
@@ -99,10 +87,6 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 2. Navigate to the root folder you extracted the LinuxScripts archive to
 3. type `bash linuxSetupScripts.sh`
 
-## Goals
-
-1. To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
-
 ## Distro base support
 
 | Distro base | Support                    | Including                                           |
@@ -123,3 +107,11 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 ### Extra Notes
 
 - note: move this to better documentation section, later The repo used for an option to install Audio-Recorder on Debian is <https://www.deb-multimedia.org/>
+
+## Thanks
+
+- Too many to list them all
+
+- While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
+
+- Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their *unrollURL* function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys
