@@ -31,9 +31,3 @@ not sure this is an issue but IF something ever goes wrong (this is sort of a no
 ## Czhawka needing gtk4 support
 
 Post 4.1.0 versions of Czhawka need gtk4 packages and not every distro (Debian, OpenSUSE for example) may have this ... not wanting to hardcode version 4.1.0 in NOR wanting to add alot of extra code for certain versions of certain distros over a single app's AppImage... I have decided to, hardcode the last gtk3 version in as that is what the developer recommends for older distros.  I may come back to this later and when all distros seem to have better gtk4 support ... I will switch back to using "whatever the latest version on Github" is
-
-## Solus
-
-Solus support was removed with the project seeming dead/dying and no life or direction; HOWEVER, with [This development - "Righing the Ship" on Reddit](https://www.reddit.com/r/SolusProject/comments/12ndrvt/righting_the_ship/), Solus support WILL BE returning.  I think for now, I will NOT bring back the Solus menus to (via menu items) switch between the regular branch and test branches (I coded this back when i'd test things all the way back when Ikey was at the helm of Solus) and/or back again.  But just the basic support.
-
-Support removal, not counting what I said earlier was just basically a var that had its value changed.  REFERENCES to Solus were NOT removed in case something like this happened
