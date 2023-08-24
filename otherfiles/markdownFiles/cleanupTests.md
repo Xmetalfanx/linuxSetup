@@ -1,1 +1,0 @@
-Purge OpenSUSE Kernels works

@@ -1,9 +1,0 @@
-__________________________________________________________________
-
-Install Optional Fonts ( needed for Some Websites )
-
-sudo pacman -S opendesktop-fonts
-
-yaourt -S fontconfig-ttf-ms-fonts
-
-yaourt -S ttf-google-fonts-git
