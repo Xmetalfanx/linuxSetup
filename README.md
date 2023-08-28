@@ -98,7 +98,7 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 | Solus       |                            |                                                     |
 | Ubuntu      | 18.04, 20.04, 22.04, 23.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
 
-- Ubuntu: 18.04 Bionic, 20.04 Focal, 22.04 Jammy, 23.04 Lunar
+- Ubuntu: 20.04 Focal, 22.04 Jammy, 23.04 Lunar
 
 ### Testing related
 

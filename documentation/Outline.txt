@@ -12,7 +12,7 @@ Script runs
 What info I know from lsb_release?
     - Codename: 
         - mainly useful with ubuntu releases, detecting the version 
-        - also if some codenames are detected ... say "bionic" here ... it can be safely assumed that you ARE ON an Ubuntu release 
+        - also if some codenames are detected ... say "focal" here ... it can be safely assumed that you ARE ON an Ubuntu release 
     
     -Release: 
         - some distros like arch have "rolling" 

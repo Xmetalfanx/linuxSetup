@@ -13,3 +13,4 @@ otherfiles/gitsetup.sh
 node_modules/*
 yarn.lock
 setting/*
+apt.txt
