@@ -37,49 +37,13 @@ Some of these are auto-installed when the script is first run ... others I may a
 
  To have scripts I can run on various distros that automate many of the post install "out of the box" tasks that I always perform anyway.
 
+- [Various Tasks these scripts can do](/documentation/tasks.md)
+
 ## Known issues
 
-- [List of Known Issues](ISSUES.md)
+- [List of Known Issues](/documentation/ISSUES.md)
 
-## How to download
-
-### Download from the Release Page
-
-1. Go To [Xmetal's Linux Setup Script Release Page (there are links on the right as well)](https://github.com/Xmetalfanx/linuxSetup/releases/tag/1.01)
-2. Download either the tar.gz or zip file and extract it
-3. Enter the extracted directory
-
-### Download with git
-
-Please Note: this apparently gets a large amount of git history (my code changes) that is not needed really
-
-Also the git package MAYBE preinstalled in some distros... I am assuming it's not with the instructions below
-
-#### In Arch
-
-`sudo pacman -S git`
-
-#### In Fedora
-
-`sudo dnf install git`
-
-#### In OpenSUSE
-
-`sudo zypper install git`
-
-#### In Solus
-
-`sudo eopkg install git`
-
-#### In Ubuntu
-
-`sudo apt install git`
-
-- if that doesn't work `sudo apt-get install git`
-
-## How to get the script via git method
-
-In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && cd linuxscripts`
+## [How to download](/documentation/download.md)
 
 ## How to run the main script file
 
@@ -96,17 +60,14 @@ In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && c
 | Fedora      | 36, 37, 38                 |                                                     |
 | OpenSUSE    | 15.4 Leap, Tumbleweed      | Gecko Linux                                         |
 | Solus       |                            |                                                     |
-| Ubuntu      | 18.04, 20.04, 22.04, 23.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
+| Ubuntu      | 20.04, 22.04, 23.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
 
 - Ubuntu: 20.04 Focal, 22.04 Jammy, 23.04 Lunar
 
 ### Testing related
 
+- September 2023 - This info is out of date ... some tests may not reflect the current results seen.
 [Test Results](/tests/old_pre_menu_redo_tests/TESTING.md)
-
-### Extra Notes
-
-- note: move this to better documentation section, later The repo used for an option to install Audio-Recorder on Debian is <https://www.deb-multimedia.org/>
 
 ## Thanks
 
