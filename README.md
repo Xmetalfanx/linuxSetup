@@ -39,9 +39,7 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 - [Various Tasks these scripts can do](/documentation/tasks.md)
 
-## Known issues
-
-- [List of Known Issues](/documentation/ISSUES.md)
+## [Known issues](/documentation/ISSUES.md)
 
 ## [How to download](/documentation/download.md)
 
@@ -56,7 +54,7 @@ Some of these are auto-installed when the script is first run ... others I may a
 | Distro base | Support                    | Including                                           |
 | ----------- | -------------------------- | --------------------------------------------------- |
 | Arch        |                            | EndeovourOS, Manjaro                                |
-| Debian      | Debian 11                  | Devuan, Peppermint, Sparky, MXLinux                 |
+| Debian      | Debian 11, 12                  | Devuan, Peppermint, Sparky, MXLinux                 |
 | Fedora      | 36, 37, 38                 |                                                     |
 | OpenSUSE    | 15.4 Leap, Tumbleweed      | Gecko Linux                                         |
 | Solus       |                            |                                                     |
