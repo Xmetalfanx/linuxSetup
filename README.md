@@ -55,7 +55,7 @@ Some of these are auto-installed when the script is first run ... others I may a
 | ----------- | -------------------------- | --------------------------------------------------- |
 | Arch        |                            | EndeovourOS, Manjaro                                |
 | Debian      | Debian 11, 12                  | Devuan, Peppermint, Sparky, MXLinux                 |
-| Fedora      | 36, 37, 38                 |                                                     |
+| Fedora      | 37, 38, 39            |                                                     |
 | OpenSUSE    | 15.4 Leap, Tumbleweed      | Gecko Linux                                         |
 | Solus       |                            |                                                     |
 | Ubuntu      | 20.04, 22.04, 23.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
