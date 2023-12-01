@@ -12,26 +12,28 @@
    - Works on Manjaro or Arch
      - Different code (I think) for Manjaro or Arch
 
-3. Add Third Party Repos
+3. (Menu) [Arch-based](#arch-script)
 
-   - Universal function
-     - Fedora - Adds both RPM Fusion Repos
-     - OpenSuse - Adds Pacman Repo(s)
+4. (Menu) [Debian](#debian)
 
-4. Adds Codecs
+5. (Menu} [Fedora](#fedora-script)
+
+6. (Menu} OpenSUSE
+
+7. (Menu} [Ubuntu based](#ubuntu-script)
+
+8. (Menu} [Cleanup](#cleanup-scripts)
+
+C. Adds Codecs
 
    - Adds needed Codecs on Arch, Fedora, and OpenSuse
      - Idea/note to self: only use third party repos if i have to ... just in case the user doesn't want to add them
 
-5. [Menu] Arch-based
+R. Add Third Party Repos
 
-6. [Menu] Fedora
-
-7. [Menu] OpenSUSE
-
-8. [Menu] Ubuntu based
-
-9. [Menu] Solus
+   - Universal function
+     - Fedora - Adds both RPM Fusion Repos
+     - OpenSuse - Adds Pacman Repo(s)
 
 ---
 
@@ -52,6 +54,19 @@
 
 ---
 
+## Debian Script
+
+1. Install Linux Firmware (both free and non-free packages)
+2. Install Intel Microcode package
+3. Install Archive support (may not be totally complete)
+4. Add a few useful packages
+   - Like Synaptic 
+   - TODO: get names of other packages
+5. Check for/add "contrib" and/or "non-free" in sourcelist line.
+6. Check/Add sudo permissions to sudoers file
+7. Bulk Debian tasks (all of the above tasks, without having to come back to this menu after each one)
+
+
 ## Fedora Script
 
 1. Add Fedy
@@ -65,17 +80,11 @@
       4. Improve Font Rendering
           - note to self: this all needs testing
 
-## OpenSuse Script - no longer in Menu, but planned for later
+## OpenSuse Script
 
-## Solus Scripts
+- no longer in Menu
 
-1. Switch from Stable Repo to Unstable Repo
-2. Switch from Unstable Repo to Stable Repo
-3. Add Unstable Repo (DOES NOT disable the default repo or ENABLE Unstable repos)
-4. Disable Unstable Repo (useful for when the Solus Team says "Dont Update, if you're using the Unstable Repo")
-    - (note to self: What is the difference between this and #2? .... this seems redundent)
-
----
+- I am keeping this in case i add it back later
 
 ## Ubuntu Script
 
@@ -85,10 +94,21 @@
 - Different tasks like "automatically setting up a number of tasks, post ElementaryOS install, will likely go here
 
 ---
+## Cleanup Scripts
+
+1. (Arch Based) Clean Orphan Pacman packages
+2. (Arch Based) CLean all but two of the most recent versions of a packages
+   - this is from the cache of packages downloaded when using Pacman
+3. (Debian/Ubuntu Based) Clean orphan packages from cache
+4. (OpenSUSE) Clean out old kernels
+    - I think this is automated and it keeps a few old but still useful kernels... this is for people with TONS of old kernels, if i am not mistaken
+5. Clean unused Flatpaks
+    - I have seen distros like Linux Mint hold some Flatpaks back when i try this ... that is normal .. I'd let Linux Mint do what it wants to avoid breakages
+6. Clean Flatpak Cache
+
+---
 
 ## Software Menu
-
-- When done/working the tasks below should NOT depend on what distro you are running ... just (when done) "is it still supported or not"
 
 1. Install mass software located in the $software variable in the f_variables.cfg file
 
@@ -130,7 +150,7 @@
 
 5. [Sub-Menu] Distro Specific tasks
 
-    1. (Example) setup synaptic, gdebi and stuff like that in ElementaryOS
+    1. (Example) setup synaptic, gdebi and stuff like that
         - This is for commonly done tasks that people do post-install, for specific distros
 
 ---

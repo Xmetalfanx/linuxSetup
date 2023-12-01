@@ -22,12 +22,12 @@
   - Add/Installs Intel Microcode packages
 
 - (For Fedora)
-    - Either install Fedy or manually apply various Fedy tasks
-      - Install Archive support
-      - Install Microsoft Fonts
-      - Install Codecs
-      - Install Theme Engines
-      - Improve font rendering
+  - Either install Fedy or manually apply various Fedy tasks
+    - Install Archive support
+    - Install Microsoft Fonts
+    - Install Codecs
+    - Install Theme Engines
+    - Improve font rendering
 
 - (For OpenSUSE)
   - Install Cinnamon
