@@ -12,6 +12,10 @@ A problem SOME users, even if they are experienced have when setting up some dis
 
 While the main distributions listed are meant to be "Distro family bases", not all parts of these scripts are practically on all distros bases.
 
+## Tasks these scripts can perform
+
+- [Tasks](/documentation/tasks.md)
+
 ## Disclaimer
 
 - Standard Disclaimer about how I am not responsible about what scripts you run on your own computer or what mistakes may occur. ALWAYS have backups "just in case" amd even redundant backups, in case your original backups have issues.
