@@ -45,9 +45,11 @@ Some of these are auto-installed when the script is first run ... others I may a
 
 ## [Known issues](/documentation/ISSUES.md)
 
-## [How to download](/documentation/download.md)
+## Downloading and running these scripts 
 
-## How to run the main script file
+### [How to download](/documentation/download.md)
+
+### How to run the main script file
 
 1. Open a Terminal
 2. Navigate to the root folder you extracted the LinuxScripts archive to
@@ -78,3 +80,18 @@ Some of these are auto-installed when the script is first run ... others I may a
 - While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, though this entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
 
 - Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their *unrollURL* function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys
+
+## Choice to remove Snap support and code
+
+- Resources:
+  - [Alan Pope Blog](https://popey.com/blog/2024/03/exodus-wallet-part-three/)
+  - [Canonical Keeps Shipping Malware Snaps - Brodie Robertson](https://www.youtube.com/watch?v=kzB6fHL_2Pg)
+  - [Snapcraft Forum, with Alan Pope remarks](https://forum.snapcraft.io/t/stop-the-line/39357/11?u=popey)
+
+- Right now despite my view of snaps (I dont use them), I just do not trust Canonical and the snapstore.   Things are dangerous and ... I just dont want it in my scripts.   I have not (yet) removed the code, but commented stuff out.   The fact this has been going on for years and already with another issue involving the KDE store ... The KDE team is already handling that much better (only time will tell, long term, if they act on the issue)
+
+  - Here is a response from one member (if i understand correctly) of the KDE team talking about the KDE Store "issue" [Trusting content on the KDE Store](https://blog.davidedmundson.co.uk/blog/kde-store-content/)
+
+- To me, it's not just the issue, it's the way things get handled and ... I am losing trust in Canonical. As some may know, and some may not... Mr. Pope is a former (I think former) Canonical employee, and knows what he is doing.
+
+
