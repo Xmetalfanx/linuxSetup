@@ -45,6 +45,12 @@ To have scripts I can run on various distros that automate many of the post inst
 
 ## [Known issues](/documentation/ISSUES.md)
 
+### Additional Known issues
+
+- May 9, 2024
+  - Vivaldi install and Strawberry Music Player may have problems ... I want to get the current release i have been delaying out .. these two issues are top priority for the NEXT release
+  - MakeMKV Compile from source is having issues on some distros where it seems dev packages are missing or no longer available
+
 ## Downloading and running these scripts
 
 ### [How to download](/documentation/download.md)
