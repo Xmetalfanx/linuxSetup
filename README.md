@@ -67,7 +67,7 @@ To have scripts I can run on various distros that automate many of the post inst
 | ----------- | --------------------- | --------------------------------------------------- |
 | Arch        |                       | EndeovourOS, Manjaro                                |
 | Debian      | Debian 11, 12         | Devuan, Peppermint, Sparky, MXLinux                 |
-| Fedora      | 38, 39                |                                                     |
+| Fedora      | 38, 39, 40            |                                                     |
 | OpenSUSE    | 15.5 Leap, Tumbleweed | Gecko Linux                                         |
 | Solus       |                       |                                                     |
 | Ubuntu      | 20.04, 22.04, 23.04   | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
