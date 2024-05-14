@@ -63,16 +63,16 @@ To have scripts I can run on various distros that automate many of the post inst
 
 ## Distro base support
 
-| Distro base | Support               | Including                                           |
-| ----------- | --------------------- | --------------------------------------------------- |
-| Arch        |                       | EndeovourOS, Manjaro                                |
-| Debian      | Debian 11, 12         | Devuan, Peppermint, Sparky, MXLinux                 |
-| Fedora      | 39, 40            |                                                     |
-| OpenSUSE    | 15.5 Leap, Tumbleweed | Gecko Linux                                         |
-| Solus       |                       |                                                     |
-| Ubuntu      | 20.04, 22.04, 23.04   | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
+| Distro base | Support                    | Including                                           |
+| ----------- | -------------------------- | --------------------------------------------------- |
+| Arch        |                            | EndeovourOS, Manjaro                                |
+| Debian      | Debian 11, 12              | Devuan, Peppermint, Sparky, MXLinux                 |
+| Fedora      | 39, 40                     |                                                     |
+| OpenSUSE    | 15.5 Leap, Tumbleweed      | Gecko Linux                                         |
+| Solus       |                            |                                                     |
+| Ubuntu      | 20.04, 22.04, 23.04, 24.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
 
-- Ubuntu: 20.04 Focal, 22.04 Jammy, 23.04 Lunar
+- Ubuntu: 20.04 Focal, 22.04 Jammy, 24.04 Noble
 
 ### Testing related
 
