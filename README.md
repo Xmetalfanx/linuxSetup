@@ -47,9 +47,11 @@ To have scripts I can run on various distros that automate many of the post inst
 
 ### Additional Known issues
 
-- May 9, 2024
-  - Vivaldi install and Strawberry Music Player may have problems ... I want to get the current release i have been delaying out .. these two issues are top priority for the NEXT release
-  - MakeMKV Compile from source is having issues on some distros where it seems dev packages are missing or no longer available
+- May 2024 - Known issues in 1.046 release
+  - [Strawberry Music Player](https://github.com/Xmetalfanx/linuxSetup/issues/300)
+  - [Vivaldi](https://github.com/Xmetalfanx/linuxSetup/issues/293)
+  - [MakeMKV Compile from source is having issues on some distros where it seems dev packages are missing or no longer available](https://github.com/Xmetalfanx/linuxSetup/issues/304)
+  - [AppImage Launcher code needs refactoring, after years of no updating](https://github.com/Xmetalfanx/linuxSetup/issues/319)
 
 ## Downloading and running these scripts
 
