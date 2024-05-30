@@ -9,8 +9,7 @@
 | 3         | Install Adapta           |     |     |     |
 | 4         | Install Arc              |     |     |     |
 | 5         | Install Numix            |     |     |     |
-| 6         | Install Plata            |     |     |     |
-| 7         | Install Breeze           |     |     |     |
+| 6         | Install Breeze           |     |     |     |
 | A         | All Listed Themes        |     |     |     |
 | I         | Install Misc Icons       |     |     |     |
 | T         | Install Misc Themes      |     |     |     |

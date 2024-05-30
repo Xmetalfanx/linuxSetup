@@ -205,9 +205,10 @@ R. Add Third Party Repos
 2. Install [Adapta Theming](https://github.com/adapta-project)
 3. Install [Arc Theming](https://github.com/horst3180/arc-theme)
 4. Install [Numix Theming](https://github.com/numixproject)
-5. Install [Plata Theming](https://gitlab.com/tista500/plata-theme)
-6. Install Misc. Icons
-7. Install Misc Themes
+
+
+5. Install Misc. Icons
+6. Install Misc Themes
 
 A. All of the Above
 

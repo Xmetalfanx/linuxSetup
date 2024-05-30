@@ -168,8 +168,7 @@
 | 3         | Install Adapta         |     |           | removed   |
 | 4         | Install Arc            |     |           | Pass      |
 | 5         | Install Numix          |     |           | Pass      |
-| 6         | Install Plata          |     |           | Removed   |
-| 7         | Install Breeze         |     |           | Pass      |
+| 6        | Install Breeze         |     |           | Pass      |
 | A         | All Listed Themes      |     |           |           |
 | I         | Install Misc Icons     |     |           | Pass      |
 | T         | Install Misc Themes    |     |           | Pass      |

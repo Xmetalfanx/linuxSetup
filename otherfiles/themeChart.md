@@ -8,7 +8,6 @@
 | Arc             | --           | --     | --     | --       | --     |
 | Mint (X and Y)  | --           | --     | --     | --       | --     |
 | Numix           | No/ AUR only | --     | --     | --       | --     |
-| Plata           | --           | --     | --     | --       | --     |
 | Yaru            | --           | --     | --     | --       | --     |
 
 - 'Yes' means that they are at least in some form (some distros more than others) in default repo

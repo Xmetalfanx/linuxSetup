@@ -26,8 +26,7 @@
 | 3         | Install Adapta         |     | Pass                       |           |            |
 | 4         | Install Arc            |     |                            |           |            |
 | 5         | Install Numix          |     | Passes but ..?? \1         |           |            |
-| 6         | Install Plata          |     | Fail (Plata even exist?)   |           |            |
-| 7         | Install Breeze         |     | Pass                       |           |            |
+| 6         | Install Breeze         |     | Pass                       |           |            |
 | A         | All Listed Themes      |     |                            |           |            |
 | I         | Install Misc Icons     |     | Pass                       |           |            |
 | T         | Install Misc Themes    |     | N/A (nothing for OpenSUSE) |           |            |

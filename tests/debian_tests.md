@@ -24,15 +24,13 @@
 | 3         | Install Adapta         |     |        |           | packages removed |
 | 4         | Install Arc            |     |        |           | Pass             |
 | 5         | Install Numix          |     |        |           | Pass             |
-| 6         | Install Plata          |     | N/A    | N/A       | N/A              |
-| 7         | Install Breeze         |     |        |           | Pass             |
+| 6         | Install Breeze         |     |        |           | Pass             |
 | A         | All Listed Themes      |     |        |           |                  |
 | I         | Install Misc Icons     |     |        | Not Coded | NEEDS TESTING    |
 | T         | Install Misc Themes    |     |        |           | NEEDS TESTING    |
 
 - numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
 
-- no plata packages for Debian - note: i think Plata hasn't been updated in a bit so this seems normal that they'd be removed
 
 #### Mint Theming Sub-menu
 
