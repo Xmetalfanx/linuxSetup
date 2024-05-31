@@ -10,6 +10,10 @@ This means you may be on a beta release that is not "fully official yet" and the
 
 ### Theming section
 
+- Much of the theming I have included are ment for GTK desktops, and at least not Plasma.  I have not tested what may appear or not on LXQT which is .. QT too, along with Plasma.  If you install this theming and are on Plasma, but do not see any of the themes, that is not a bug. 
+- Please look in the appearance sections of Plasma settings for theming related to QT. 
+- Not really sure if there is a LXQT location to download themes .. if i start to see "theme_name_qt" packages, I may add that to the theming section if i feel the theme is good.
+
 ## Issues
 
 ### Author/Committer fix caused issues
