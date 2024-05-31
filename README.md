@@ -76,8 +76,7 @@ To have scripts I can run on various distros that automate many of the post inst
 
 ### Testing related
 
-- September 2023 - This info is out of date ... some tests may not reflect the current results seen.
-  [Test Results](/tests/old_pre_menu_redo_tests/TESTING.md)
+- [Test Results](tests/TESTING.md)
 
 ## Thanks
 
