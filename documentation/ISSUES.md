@@ -34,6 +34,12 @@ This is bad git etiquette, I know
 
 - May 2024: this is an issue and due to some dev packages needed and in the instructionschanging or getting removed in distro repos, this doesn't work .. I will HOPEFULLY address this if i can.
 
-### Czhawka on some distros results in gtk4 related issues 
+### Czhawka
+
+#### On some distros results in gtk4 related issues
 
 On some distros I have seen errors but it works without issues on others.  One that comes to mind is OpenSUSE Leap 15.5 which is End of Life, December 2024.   I have not figured out how to get this appimage working without gtk4 issues, though a fresh install of OpenSUSE Leap 15.6, the AppImage "works out of the box"
+
+#### MXLinux Default theme
+
+I saw this not working on MXlinux and from a terminal i saw gtk.css messages... I (randomly picked) changed the theme to arc or adapta (if i recall), and tried again ... the appimage loaded no problem 
