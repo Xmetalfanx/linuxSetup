@@ -4,11 +4,11 @@
 
 #### OpenSuse
 
-| Menu Item | Menu Tasks                  |     | Opensuse 15.5 | Opensuse Leap 15.6 | OpenSuse TW |
-| --------- | --------------------------- | --- | ------------- | ------------------ | ----------- |
-| 1         | Update System               |     |               |                    |             |
-| C         | Install Codecs              |     |               |                    |             |
-| R         | Install third party repos\* |     |               |                    |             |
+| Menu Item | Menu Tasks                  |     | Opensuse 15.5 | Opensuse Leap 15.6      | OpenSuse TW |
+| --------- | --------------------------- | --- | ------------- | ----------------------- | ----------- |
+| 1         | Update System               |     |               | Pass                    |             |
+| C         | Install Codecs              |     |               | Fail due to fail, below |             |
+| R         | Install third party repos\* |     |               | ??? Fail                |             |
 
 ---
 
@@ -19,29 +19,31 @@
 
 ##### Theming related
 
-| Menu Item | Menu Items             |     | Leap 15.5                  | Leap 15.6 | Tumbleweed |
-| --------- | ---------------------- | --- | -------------------------- | --------- | ---------- |
-| 1         | Mint Themeing Sub-menu | --- | ----                       | ----      | ----       |
-| 2         | Yaru Themeing Sub-menu | --- | ----                       | ----      | ----       |
-| 3         | Install Adapta         |     | Pass                       |           |            |
-| 4         | Install Arc            |     |                            |           |            |
-| 5         | Install Numix          |     | Passes but ..?? \1         |           |            |
-| 6         | Install Breeze         |     | Pass                       |           |            |
-| A         | All Listed Themes      |     |                            |           |            |
-| I         | Install Misc Icons     |     | Pass                       |           |            |
-| T         | Install Misc Themes    |     | N/A (nothing for OpenSUSE) |           |            |
+| Menu Item | Menu Items             |     | Leap 15.5                  | Leap 15.6             | Tumbleweed |
+| --------- | ---------------------- | --- | -------------------------- | --------------------- | ---------- |
+| 1         | Mint Themeing Sub-menu | --- | ----                       | ----                  | ----       |
+| 2         | Yaru Themeing Sub-menu | --- | ----                       | ----                  | ----       |
+| 3         | Install Adapta         |     | Pass                       | Pass                  |            |
+| 4         | Install Arc            |     |                            | Pass                  |            |
+| 5         | Install Numix          |     | Passes \1                  | Pass \1               |            |
+| 6         | Install Breeze         |     | Pass                       | Pass                  |            |
+| A         | All Listed Themes      |     |                            |                       |            |
+| I         | Install Misc Icons     |     | Pass                       | 1/2 - no Fazena (sp)  |            |
+| T         | Install Misc Themes    |     | N/A (nothing for OpenSUSE) | ??? fail or not coded |            |
 
 - \1 why is numix pulling in Cinnamon?
 
 #### Mint Theming Sub-menu
 
-| Menu Item | Menu Items                               |     | Leap 15.5 | Leap 15.6 | Tumbleweed |
-| --------- | ---------------------------------------- | --- | --------- | --------- | ---------- |
-| 1         | Mint Themes - (from distro repos)        | --- | Pass      | ---       |            |
-| 2         | Current Mint themes - from Mint's Github |     |           | ---       |            |
-| 3         | Legacy Mint themes - from Mint's Github  |     |           | ---       |            |
-| 4         | Mint-Y Icons - from Mint's Github        |     |           | ---       |            |
-| 5         | MintYZ themes - from github              |     |           | ---       |            |
+| Menu Item | Menu Items                               |     | Leap 15.5 | Leap 15.6                | Tumbleweed |
+| --------- | ---------------------------------------- | --- | --------- | ------------------------ | ---------- |
+| 1         | Mint Themes - (from distro repos)        | --- | Pass      | Pass                     |            |
+| 2         | Current Mint themes - from Mint's Github |     |           |                          |            |
+| 3         | Legacy Mint themes - from Mint's Github  |     |           |                          |            |
+| 4         | Mint-Y Icons - from Mint's Github        |     |           |                          |            |
+| 5         | MintYZ themes - from github              |     |           | Fail - no sassc package? |            |
+
+- \1 sassc package not in default repos but in an experimental or community repo
 
 #### Yaru Theming Sub-menu
 
@@ -62,10 +64,10 @@
 
 ##### Common/Various Software
 
-| Menu Item | Menu Task                |     | OpensuseLeap 15.5 | Opensuse Leap 15.6 | Opensuse TW |
-| --------- | ------------------------ | --- | ----------------- | ------------------ | ----------- |
-| 1         | Add Common Software      |     | Pass              |                    |             |
-| 6         | Build Essential Packages |     | Pass              |                    |             |
+| Menu Item | Menu Task                |     | OpensuseLeap 15.5 | Opensuse Leap 15.6          | Opensuse TW |
+| --------- | ------------------------ | --- | ----------------- | --------------------------- | ----------- |
+| 1         | Add Common Software      |     | Pass              | Pass                        |             |
+| 6         | Build Essential Packages |     | Pass              | Pass - installed by default |             |
 
 ---
 ##### Web Browsers
@@ -79,7 +81,7 @@
 | 3   | Ungoogled Chromium (FP) |     |                       |           |                      |
 | 4   | [Sub-Menu] Firefox      |     | ---                   | ---       | ---                  |
 | 5   | Librewolf (FP)          |     |                       |           |                      |
-| 6   | Vivaldi                 |     |                       |           | redo in next release |
+| 6   | Vivaldi                 |     |                       | Pass      | redo in next release |
 
 - did i forget to refresh repos on vivaldi step?
 
@@ -157,7 +159,7 @@
 | --------- | ------------------------------- | --- | --------- | --------- | ---------- |
 | 1         | [Sub-Menu] Download Ventoy      |     | ---       | ---       | ---        |
 | 2         | [Debian/Ubuntu] Install deb-get |     |           |           |            |
-| 3         | [OpenSUSE ] Install opi \3      |     |           |           |            |
+| 3         | [OpenSUSE] Install opi \3      |     |           |  Pass         |            |
 | 4         | Install-Extract Etcher          |     |           |           |            |
 | 5         | Intel Microcode support         |     |           |           |            |
 | 6         | Java support                    |     |           |           |            |
