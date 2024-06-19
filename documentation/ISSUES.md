@@ -34,6 +34,6 @@ This is bad git etiquette, I know
 
 - May 2024: this is an issue and due to some dev packages needed and in the instructionschanging or getting removed in distro repos, this doesn't work .. I will HOPEFULLY address this if i can.
 
-### Czhawka needing gtk4 support
+### Czhawka on some distros results in gtk4 related issues 
 
-Post 4.1.0 versions of Czhawka need gtk4 packages and not every distro (Debian, OpenSUSE for example) may have this ... not wanting to hardcode version 4.1.0 in NOR wanting to add alot of extra code for certain versions of certain distros over a single app's AppImage... I have decided to, hardcode the last gtk3 version in as that is what the developer recommends for older distros.  I may come back to this later and when all distros seem to have better gtk4 support ... I will switch back to using "whatever the latest version on Github" is
+On some distros I have seen errors but it works without issues on others.  One that comes to mind is OpenSUSE Leap 15.5 which is End of Life, December 2024.   I have not figured out how to get this appimage working without gtk4 issues, though a fresh install of OpenSUSE Leap 15.6, the AppImage "works out of the box"

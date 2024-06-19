@@ -4,11 +4,11 @@
 
 #### OpenSuse
 
-| Menu Item | Menu Tasks                  |     | Opensuse 15.5 | Opensuse Leap 15.6 | OpenSuse TW |
-| --------- | --------------------------- | --- | ------------- | ------------------ | ----------- |
-| 1         | Update System               |     |               |                    |             |
-| C         | Install Codecs              |     |               |                    |             |
-| R         | Install third party repos\* |     |               |                    |             |
+| Menu Item | Menu Tasks                  |     | Opensuse 15.5 | Opensuse Leap 15.6      | OpenSuse TW |
+| --------- | --------------------------- | --- | ------------- | ----------------------- | ----------- |
+| 1         | Update System               |     |               | Pass                    |             |
+| C         | Install Codecs              |     |               | Fail due to fail, below |             |
+| R         | Install third party repos\* |     |               | ??? Fail                |             |
 
 ---
 
@@ -23,10 +23,10 @@
 | --------- | ---------------------- | --- | -------------------------- | --------- | ---------- |
 | 1         | Mint Themeing Sub-menu | --- | ----                       | ----      | ----       |
 | 2         | Yaru Themeing Sub-menu | --- | ----                       | ----      | ----       |
-| 3         | Install Adapta         |     | Pass                       |           |            |
-| 4         | Install Arc            |     |                            |           |            |
+| 3         | Install Adapta         |     | Pass                       | Pass      |            |
+| 4         | Install Arc            |     |                            | Pass      |            |
 | 5         | Install Numix          |     | Passes but ..?? \1         |           |            |
-| 6         | Install Breeze         |     | Pass                       |           |            |
+| 6         | Install Breeze         |     | Pass                       | Pass      |            |
 | A         | All Listed Themes      |     |                            |           |            |
 | I         | Install Misc Icons     |     | Pass                       |           |            |
 | T         | Install Misc Themes    |     | N/A (nothing for OpenSUSE) |           |            |
@@ -64,7 +64,7 @@
 
 | Menu Item | Menu Task                |     | OpensuseLeap 15.5 | Opensuse Leap 15.6 | Opensuse TW |
 | --------- | ------------------------ | --- | ----------------- | ------------------ | ----------- |
-| 1         | Add Common Software      |     | Pass              |                    |             |
+| 1         | Add Common Software      |     | Pass              | Pass               |             |
 | 6         | Build Essential Packages |     | Pass              |                    |             |
 
 ---
@@ -79,7 +79,7 @@
 | 3   | Ungoogled Chromium (FP) |     |                       |           |                      |
 | 4   | [Sub-Menu] Firefox      |     | ---                   | ---       | ---                  |
 | 5   | Librewolf (FP)          |     |                       |           |                      |
-| 6   | Vivaldi                 |     |                       |           | redo in next release |
+| 6   | Vivaldi                 |     |                       |   Pass        | redo in next release |
 
 - did i forget to refresh repos on vivaldi step?
 
