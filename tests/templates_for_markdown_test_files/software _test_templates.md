@@ -70,7 +70,7 @@
 | 6         | Java support                    |     |     |     |     |
 | 7         | Stacer                          |     |     |     |     |
 | 8         | ImageLauncher                   |     |     |     |     |
-| 9         | Czhawka 4.1.0 \*                |     |     |     |     |
+| 9         | czhawka                |     |     |     |     |
 
 #### Ventoy Submenu
 

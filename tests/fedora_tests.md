@@ -148,7 +148,7 @@
 | 6         | Java support                    |     |           |                                     |
 | 7         | Stacer                          |     |           | Pass                                |
 | 8         | ImageLauncher                   |     |           | Fail - last release version in 2020 |
-| 9         | Czhawka 4.1.0 \*                |     |           |                                     |
+| 9         | czhawka                |     |           |                                     |
 
 - WHERE IS build essentials at?
 

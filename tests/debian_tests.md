@@ -164,11 +164,10 @@
 | 6         | Java support                    |     |        |         |           |
 | 7         | Stacer                          |     |        |         | Pass      |
 | 8         | ImageLauncher                   |     |        |         | Fail \2   |
-| 9         | Czhawka 4.1.0 \*                |     |        |         |           |
+| 9         | czhawka                |     |        |         |           |
 
 - WHERE IS build essentials at?
 
-- \* (newer versions need gtk4 packages, which not all distros have)
 
 - \2 - nothing displayed
 - \3 - Open Package Installer

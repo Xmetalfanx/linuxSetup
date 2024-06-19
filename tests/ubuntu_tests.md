@@ -172,7 +172,7 @@
 | 6         | Java support                    |     |              |              |              |
 | 7         | Stacer                          |     |              |              | Pass         |
 | 8         | ImageLauncher                   |     |              |              | Fail?        |
-| 9         | Czhawka 4.1.0 \*                |     |              |              |              |
+| 9         | czhawka                |     |              |              |              |
 |           | Build Essential Packages        |     |              |              | Pass         |
 
 
