@@ -94,7 +94,7 @@
 | 2         | Audio Recorder           |     |           |                                        |
 | 3         | XnViewMP                 |     |           |                                        |
 | 4         | DeadBeef Media Player    |     |           | Pass - including adding RPMFusion      |
-| 5         | Celluloid/Gnome-Mpv      |     |           |                                        |
+| 5         | Celluloid      |     |           |                                        |
 | 6         | Strawberry Media Player  |     | ----      | Fails (redoing in next release anyway) |
 | 7         | Tiny Media Manager       |     |           | Pass                                   |
 | 8         | MediaElch AppImage       |     |           |                                        |

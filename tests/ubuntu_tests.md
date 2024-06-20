@@ -123,7 +123,7 @@
 | 2         | Audio Recorder           |     |              |              |                    |
 | 3         | XnViewMP                 |     |              |              | Pass               |
 | 4         | DeadBeef Media Player    |     |              |              | Pass               |
-| 5         | Celluloid/Gnome-Mpv      |     |              |              | Fail - patch added |
+| 5         | Celluloid      |     |              |              | Fail - patch added |
 | 6         | Strawberry Media Player  |     | ----         | ---          | ----               |
 | 7         | Tiny Media Manager       |     |              |              |                    |
 | 8         | MediaElch AppImage       |     |              |              |                    |

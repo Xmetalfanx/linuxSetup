@@ -118,7 +118,7 @@
 | 2         | Audio Recorder           |     |        |         | Support removed - \2       |
 | 3         | XnViewMP                 |     |        |         | Pass                       |
 | 4         | DeadBeef Media Player    |     |        |         | Pass                       |
-| 5         | Celluloid/Gnome-Mpv      |     |        |         | Pass                       |
+| 5         | Celluloid      |     |        |         | Pass                       |
 | 6         | Strawberry Media Player  |     |        |         | MAJOR REDO IN NEXT RELEASE |
 | 7         | Tiny Media Manager       |     |        |         | Pass                       |
 | 8         | MediaElch AppImage       |     |        |         | Pass                       |
