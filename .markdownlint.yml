@@ -1,45 +1,51 @@
+# Default state for all rules
+default: true
+
+# MD013/line-length - Line length
+MD013:
+  line_length: 100
+  tables: false
 code-block-style:
-    style: fenced
+  style: fenced
 code-fence-style:
-    style: backtick
+  style: backtick
 emphasis-style:
-    style: asterisk
+  style: asterisk
 fenced-code-language:
-    allowed_languages:
-        - ini
-        - json
-        - jsonc
-        - markdown
-    language_only: true
+  allowed_languages:
+    - ini
+    - json
+    - jsonc
+    - markdown
+  language_only: true
 heading-style:
-    style: atx
+  style: atx
 hr-style:
-    style: '---'
-line-length: true
+  style: "---"
 link-image-style:
-    autolink: false
-    collapsed: false
-    shortcut: false
-    url_inline: false
+  autolink: false
+  collapsed: false
+  shortcut: false
+  url_inline: false
 no-duplicate-heading:
-    siblings_only: true
+  siblings_only: true
 ol-prefix:
-    style: ordered
+  style: ordered
 proper-names:
-    code_blocks: false
-    names:
-        - CommonMark
-        - Ctrl
-        - JavaScript
-        - Markdown
-        - markdown-it
-        - markdownlint
-        - Node.js
-        - Shift
-        - Visual Studio Code
+  code_blocks: false
+  names:
+    - CommonMark
+    - Ctrl
+    - JavaScript
+    - Markdown
+    - markdown-it
+    - markdownlint
+    - Node.js
+    - Shift
+    - Visual Studio Code
 strong-style:
-    style: asterisk
+  style: asterisk
 table-pipe-style:
-    style: leading_and_trailing
+  style: leading_and_trailing
 ul-style:
-    style: dash
+  style: dash
