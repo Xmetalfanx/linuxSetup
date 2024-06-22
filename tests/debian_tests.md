@@ -31,7 +31,6 @@
 
 - numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
 
-
 #### Mint Theming Sub-menu
 
 | Menu Item | Menu Items                               |     | Stable | Testing | Devuan             |
@@ -167,7 +166,6 @@
 | 9         | czhawka                |     |        |         |           |
 
 - WHERE IS build essentials at?
-
 
 - \2 - nothing displayed
 - \3 - Open Package Installer

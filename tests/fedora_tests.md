@@ -2,7 +2,7 @@
 
 ## Main Tasks - Test Redo - May 2024
 
-- Result - Fedora 40 detected and supported = pass 
+- Result - Fedora 40 detected and supported = pass
 
 ### Distro
 
@@ -14,9 +14,7 @@
 | C         | Install Codecs              |     |           | Pass      |
 | R         | Install third party repos\* |     |           | Pass      |
 
-
 ---
-
 
 | Menu Item | Menu Tasks                                      |     | Fedora 39 | Fedora 40 |
 | --------- | ----------------------------------------------- | --- | --------- | --------- |
@@ -24,7 +22,7 @@
 | 2         | Add Fedy                                        |     |           | Pass      |
 | 3         | Perform Common Fedy Tasks (wo/ installing Fedy) |     |           |           |
 
-- #3 here is a batch option of what is listed in #1's menu 
+- #3 here is a batch option of what is listed in #1's menu
 
 | Menu Item | Menu Tasks                |     | Fedora 39 | Fedora 40                             |
 | --------- | ------------------------- | --- | --------- | ------------------------------------- |
@@ -34,8 +32,8 @@
 | 4         | Install Theme Engines     |     |           | Pass                                  |
 | A         | Complete All Listed Tasks |     |           |                                       |
 
-- isn't A redundent from #3 on the last (parent) menu? 
-- these tasks PASS when used IN fedy on Fedora 40 ... i need to investigate 
+- isn't A redundent from #3 on the last (parent) menu?
+- these tasks PASS when used IN fedy on Fedora 40 ... i need to investigate
 ---
 
 - Third Party Repo Info
@@ -103,14 +101,13 @@
 | 11        | ocenAudio                |     |           | Pass                                   |
 | K         | MakeMKV Key              |     |           |                                        |
 
-- \1 - Almost pass ... not SEEING created menu on Mate, passes completely works and appears on xfce 
+- \1 - Almost pass ... not SEEING created menu on Mate, passes completely works and appears on xfce
 
 ---
 
 ##### Coding/Office/Productivity Programs
 
 - Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I **ignore** at that step and it will install just fine
-
 
 | Menu Item | Menu Task         |     | Fedora 39 | Fedora 40 |
 | --------- | ----------------- | --- | --------- | --------- |
@@ -125,7 +122,7 @@
 
 ---
 
-##### Shells 
+##### Shells
 | Menu Item | Menu Task                                  |     | Fedora 39 | Fedora 40 |
 | --------- | ------------------------------------------ | --- | --------- | --------- |
 | 1         | Install fish, & Oh-My-Fish                 |     |           | Pass      |
@@ -133,8 +130,6 @@
 | 3         | Install zsh & a extra items (no Oh-My-Zsh) |     |           |           |
 | 4         | Install zsh & Oh-My-ZSH                    |     |           |           |
 | 5         | Install zsh & Zap Plugin Manager           |     |           | Pass      |
-
-
 
 ### System Tools
 
@@ -157,7 +152,6 @@
 ## Theming Installation
 
 - What themes are available for what distro and what "Desktop"/Window Manager makes this hard to test at times
-
 
 ##### Theming related
 

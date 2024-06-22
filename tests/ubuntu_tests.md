@@ -28,7 +28,6 @@
 
 ## Software
 
-
 ## Theming Installation
 
 ### Theming related
@@ -73,7 +72,6 @@
 
 ## Software Menus
 
-
 ##### Common/Various Software
 
 | Menu Item | Menu Task           |     | Ubuntu 20.04 | Ubuntu 22.04 | Ubuntu 24.04 |
@@ -81,6 +79,7 @@
 | 1         | Add Common Software |     |              |              | Pass         |
 
 ---
+
 ##### Web Browsers
 
 ### Browser Installer
@@ -93,7 +92,6 @@
 | 4   | [Sub-Menu] Firefox      |     | ---          | ---          | ---                          |
 | 5   | Librewolf (FP)          |     |              |              | Pass (w/ adding FP support ) |
 | 6   | Vivaldi                 |     |              |              | redo in next release         |
-
 
 #### Chromium Sub-Menu
 
@@ -136,7 +134,6 @@
 
 ##### Coding/Office/Productivity Programs
 
-
 | Menu Item | Menu Task         |     | Ubuntu 20.04 | Ubuntu 22.04 | Ubuntu 24.04 |
 | --------- | ----------------- | --- | ------------ | ------------ | ------------ |
 | 1         | Atom Editor       |     |              |              |              |
@@ -159,7 +156,6 @@
 | 4         | Install zsh & Oh-My-ZSH                  |     |       |       |       |
 | 5         | Install zsh & Zap Plugin Manager         |     |       |       |    Pass   |
 
-
 ### System Tools
 
 | Menu Item | Menu Task                       |     | Ubuntu 20.04 | Ubuntu 22.04 | Ubuntu 24.04 |
@@ -175,14 +171,11 @@
 | 9         | czhawka                |     |              |              |              |
 |           | Build Essential Packages        |     |              |              | Pass         |
 
-
-
 - WHERE IS build essentials at?
 
 ---
 
 ## PPA Menu
-
 
 | Menu Item | Menu Task                     |     | Ubuntu 20.04 | Ubuntu 22.04 | Ubuntu 24.04 |
 | --------- | ----------------------------- | --- | ------------ | ------------ | ------------ |
@@ -195,5 +188,3 @@
 | 7         | [System-Tools] Boot-Repair    |     |              |              |              |
 | 8         | [System-Tools] Pantheon Tweak |     |              |              |              |
 | 9         | Kubuntu Backport PPA          |     |              |              |              |
-
-
