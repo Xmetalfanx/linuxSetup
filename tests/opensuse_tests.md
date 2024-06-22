@@ -2,7 +2,7 @@
 
 ## Main Tasks - Test Redo
 
-#### OpenSuse
+### OpenSuse
 
 | Menu Item | Menu Tasks                  |     | Opensuse 15.5 | Opensuse Leap 15.6 | OpenSuse TW |
 | --------- | --------------------------- | --- | ------------- | ------------------ | ----------- |
@@ -16,8 +16,7 @@
 
 - What themes are available for what distro and what "Desktop"/Window Manager makes this hard to test at times
 
-
-##### Theming related
+### Theming related
 
 | Menu Item | Menu Items             |     | Leap 15.5                  | Leap 15.6       | Tumbleweed |
 | --------- | ---------------------- | --- | -------------------------- | --------------- | ---------- |
@@ -52,7 +51,7 @@
 | 2         | YaruColors - from Github           |     |           |           |            |
 | 1         | Yaru Theming - (from distro repos) | --- | Fail \1   | fail - \1 |            |
 
-- \1 Fails to detect .icon dir 
+- \1 Fails to detect .icon dir
 
 ---
 
@@ -63,8 +62,7 @@
 
 ## Software Menus
 
-
-##### Common/Various Software
+### Common/Various Software
 
 | Menu Item | Menu Task                |     | OpensuseLeap 15.5 | Opensuse Leap 15.6  | Opensuse TW |
 | --------- | ------------------------ | --- | ----------------- | ------------------- | ----------- |
@@ -72,7 +70,8 @@
 | 6         | Build Essential Packages |     | Pass              | Pass - preinstalled |             |
 
 ---
-##### Web Browsers
+
+## Web Browsers
 
 ### Browser Installer
 
@@ -105,7 +104,6 @@
 
 - \* (for Ubuntu)
 
-
 ---
 
 ##### Multimedia Programs
@@ -131,7 +129,6 @@
 
 - Atom Devs are not signing the rpm (that is what the zypper warning is about)... no way of installing the RPM gets around this fact ... just hit I **ignore** at that step and it will install just fine
 
-
 | Menu Item | Menu Task         |     | Leap 15.5 | Leap 15.6 | Tumbleweed |
 | --------- | ----------------- | --- | --------- | --------- | ---------- |
 | 1         | Atom Editor       |     | Pass      |           |            |
@@ -145,7 +142,8 @@
 
 ---
 
-##### Shells 
+##### Shells
+
 | Menu Item | Menu Task                                  |     | Leap 15.5 | Leap 15.6 | Tumbleweed |
 | --------- | ------------------------------------------ | --- | --------- | --------- | ---------- |
 | 1         | Install fish, & Oh-My-Fish                 |     |           | Pass      |            |
@@ -153,7 +151,6 @@
 | 3         | Install zsh & a extra items (no Oh-My-Zsh) |     |           |           |            |
 | 4         | Install zsh & Oh-My-ZSH                    |     |           |           |            |
 | 5         | Install zsh & Zap Plugin Manager           |     | Pass      | Pass      |            |
-
 
 ### System Tools
 
