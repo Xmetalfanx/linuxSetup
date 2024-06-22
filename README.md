@@ -8,11 +8,13 @@
 
 ## Introduction
 
-The Problem: While not hard, setting up a fresh install of Linux for those that customize things, can take some time.
+The Problem: Setting up a fresh install of Linux for those that customize things, can take some time.
 
 The Solution: This is the point of these scripts, to help cut down on that time.
 
-While the main distributions listed are meant to be "Distro family bases", not all parts of these scripts are practical on all distros bases.
+Notice:
+
+- While the main distributions listed are meant to be "Distro family bases", not all parts of these scripts are practical on all distros bases.
 
 ## Disclaimer
 
@@ -35,7 +37,7 @@ Some of these are auto-installed when the script is first ran.
 
 ## Goals
 
-To have scripts that can run on various distros that assist in many of the post install tasks that users run, setting up Linux.
+To have scripts that can run on various distros that assist in many of the post install tasks.
 
 - [Tasks these scripts can perform](/documentation/tasks.md)
 
@@ -77,10 +79,15 @@ To have scripts that can run on various distros that assist in many of the post 
 
 - Too many to list them all
 
-- While I was likely to do this anyway, it is people like [Midfngr](https://www.youtube.com/user/midfingr/undefined) that inspire me to help other, 
-- This entire idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks, the idea this could help others is why it has grown so much
+- While I was likely to do this anyway, it is people like Midfngr on Youtube that inspired me to help other
+  - [Midfngr](https://www.youtube.com/user/midfingr/undefined)
+  - This idea started with no menus, and just a way for ME TO AUTOMATE some post distro install tasks
+  - this being able to help others is why it has grown so much
 
-- Thanks to [deb-apt](https://github.com/wimpysworld/deb-get) for their *unrollURL* function (renamed in my code to unpackURL) ... I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge WITHOUT hard coding the link in, but this solution seems to work perfectly for my code. Thanks guys
+- Thanks to [deb-apt](https://github.com/wimpysworld/deb-get)
+  - their *unrollURL* function (renamed in my code to unpackURL) ...
+  - I was struggling with how to get direct links, the way i wanted to from sites like Sourceforge.
+    - WITHOUT hard coding the link in, but this solution seems to work perfectly for my code.
 
 ## Choice to remove Snap support and code
 
@@ -93,7 +100,7 @@ To have scripts that can run on various distros that assist in many of the post 
 Right now despite my view of snaps (I dont use them), I just do not trust Canonical and the Snapstore.
 The KDE team is already handling an issue that came up with the KDE store, much better.
 
-- Ref: Here is a response from one member (if i understand correctly) of the KDE team talking about the KDE Store "issue"
+- Ref: A response from one member (if i understand correctly) of the KDE team talking about the KDE Store "issue"
   - [Trusting content on the KDE Store](https://blog.davidedmundson.co.uk/blog/kde-store-content/)
 
 To me, it's not just the issue with the Snapstore Malware, but the way Canonical, HASN'T handled it
