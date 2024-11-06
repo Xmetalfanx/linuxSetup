@@ -72,6 +72,8 @@ To have scripts I can run on various distros that automate many of the post inst
 
 ### Testing related
 
+- note some of these tests maybe out of date (I do test things before doing a release and syncing to Master), i know for instance i still have "appimagelauncher" listed but I recently removed that ... as one example as a test that no longer applies 
+
 - [Test Results](tests/TESTING.md)
 
 ## Thanks
