@@ -10,8 +10,8 @@ This means you may be on a beta release that is not "fully official yet" and the
 
 ### Theming section
 
-- Much of the theming I have included are ment for GTK desktops, and at least not Plasma.  I have not tested what may appear or not on LXQT which is .. QT too, along with Plasma.  If you install this theming and are on Plasma, but do not see any of the themes, that is not a bug. 
-- Please look in the appearance sections of Plasma settings for theming related to QT. 
+- Much of the theming I have included are ment for GTK desktops, and at least not Plasma.  I have not tested what may appear or not on LXQT which is .. QT too, along with Plasma.  If you install this theming and are on Plasma, but do not see any of the themes, that is not a bug.
+- Please look in the appearance sections of Plasma settings for theming related to QT.
 - Not really sure if there is a LXQT location to download themes .. if i start to see "theme_name_qt" packages, I may add that to the theming section if i feel the theme is good.
 
 ## Issues
@@ -23,7 +23,6 @@ This is also important ... i knew this was only my own repo and no other contrib
 The commit content I linked to is the same and the "wrong author name/wrong committer" name is the ONLY thing that REALLY changed. If you see "This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository." ignore that ... the changes you see are still valid and exactly the same.
 
 This is bad git etiquette, I know
-
 
 ### Some RPMs are not being signed by the devs
 
@@ -42,4 +41,4 @@ On some distros I have seen errors but it works without issues on others.  One t
 
 #### MXLinux Default theme
 
-I saw this not working on MXlinux and from a terminal i saw gtk.css messages... I (randomly picked) changed the theme to arc or adapta (if i recall), and tried again ... the appimage loaded no problem 
+I saw this not working on MXlinux and from a terminal i saw gtk.css messages... I (randomly picked) changed the theme to arc or adapta (if i recall), and tried again ... the appimage loaded no problem
