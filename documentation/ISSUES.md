@@ -37,7 +37,9 @@ This is bad git etiquette, I know
 
 #### On some distros results in gtk4 related issues
 
-On some distros I have seen errors but it works without issues on others.  One that comes to mind is OpenSUSE Leap 15.5 which is End of Life, December 2024.   I have not figured out how to get this appimage working without gtk4 issues, though a fresh install of OpenSUSE Leap 15.6, the AppImage "works out of the box"
+- [ October 2025: this may no longer be an issue]
+
+- On some distros I have seen errors but it works without issues on others.  One that comes to mind is OpenSUSE Leap 15.5 which is End of Life, December 2024.   I have not figured out how to get this appimage working without gtk4 issues, though a fresh install of OpenSUSE Leap 15.6, the AppImage "works out of the box"
 
 #### MXLinux Default theme
 
