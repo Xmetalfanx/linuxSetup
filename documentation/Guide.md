@@ -14,15 +14,15 @@
 
 3. (Menu) [Arch-based](#arch-script)
 
-4. (Menu) [Debian](#debian)
+4. (Menu) [Debian](#debian-script)
 
-5. (Menu} [Fedora](#fedora-script)
+5. (Menu) [Fedora](#fedora-script)
 
-6. (Menu} OpenSUSE
+6. (Menu) OpenSUSE
 
-7. (Menu} [Ubuntu based](#ubuntu-script)
+7. (Menu) [Ubuntu based](#ubuntu-script)
 
-8. (Menu} [Cleanup](#cleanup-scripts)
+8. (Menu) [Cleanup](#cleanup-scripts)
 
 C. Adds Codecs
 
@@ -114,6 +114,7 @@ R. Add Third Party Repos
       - nothing is installed when the PPA is added, let the user decide
 
 ---
+
 ## Cleanup Scripts
 
 1. (Arch Based) Clean Orphan Pacman packages
@@ -153,14 +154,13 @@ R. Add Third Party Repos
           - in both cases I have it downloading the RPM but in the case of zypper and Opensuse anyway, it complains the RPM is not signed (which it isn't, and after multiple people keep bringing it up to the devs, they basically say they are not doing to sign the RPM)
           - I am not sure but i do not think the DEB and Debian/Ubuntu have this issue ... it's totally on the Atom Devs by the way .. NOT the distro ... I have no idea if this effects Fedora either ... if it does (you'd see a similar message from dnf), just do the same thing
           - SOLUTION: if it asks/prompts you about this, click "I" for Ignore and it will still install. This is NOT the way I wanted it (I want to script things the right way), but this issue is entirely out of my hands and out of say OpenSuse's hands too.
-
-    2. [Microsoft VSCode]()
+  
+    2. [Microsoft VSCode](https://code.visualstudio.com/)
     3. [VSCodium](https://vscodium.com/)
-       - Open Source, telemetry removed version of VSCode 
+       - Open Source, telemetry removed version of VSCode
     4. [GitKraken](https://www.gitkraken.com/)
     5. [Typora](https://typora.io/)
     6. [Micro Terminal Text Editor](https://micro-editor.github.io/)
-
 
 4. [Sub-Menu] Multimedia Apps
 
@@ -201,11 +201,9 @@ R. Add Third Party Repos
    4. Install Mint-Y Icons - From Linux Mint's Github
    5. Install [MintYZ](https://github.com/SebastJava/mint-yz-theme) (not officially Mint's but based on Mint's) Themes - from Github
   
-
 2. Install [Adapta Theming](https://github.com/adapta-project)
 3. Install [Arc Theming](https://github.com/horst3180/arc-theme)
 4. Install [Numix Theming](https://github.com/numixproject)
-
 
 5. Install Misc. Icons
 6. Install Misc Themes
