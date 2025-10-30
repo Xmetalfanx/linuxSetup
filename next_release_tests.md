@@ -6,6 +6,4 @@
 | Homebrew (install itself) | Pass   |
 | Homebrew Software         |        |
 
-
-
 ** The Homebrew software options should prompt to/install Homebrew itself if it's not detected
