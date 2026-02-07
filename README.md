@@ -59,13 +59,13 @@ To have scripts I can run on various distros that automate many of the post inst
 
 ## Distro base support
 
-| Distro base | Support                    | Including                                             |
-|-------------|----------------------------|-------------------------------------------------------|
-| Arch        |                            | EndeovourOS, Manjaro                                  |
-| Debian      | Debian 11, 12              | Devuan, Peppermint, Sparky, MXLinux                   |
-| Fedora      | 41, 42                     |                                                       |
-| OpenSUSE    | Leap 15.6 and 16, Tumbleweed      | Gecko Linux (may get removed - possible dead project) |
-| Solus       |                            |                                                       |
+| Distro base | Support                      | Including                                             |
+|-------------|------------------------------|-------------------------------------------------------|
+| Arch        |                              | EndeovourOS, Manjaro                                  |
+| Debian      | Debian 11, 12                | Devuan, Peppermint, Sparky, MXLinux                   |
+| Fedora      | 42, 43                       |                                                       |
+| OpenSUSE    | Leap 15.6 and 16, Tumbleweed | Gecko Linux (may get removed - possible dead project) |
+| Solus       |                              |                                                       |
 | Ubuntu      | 20.04, 22.04, 24.04          | Elementary, Linux Lite, Linux Mint, "\*buntu Spins"   |
 
 - Ubuntu: 20.04 Focal, 22.04 Jammy, 24.04 Noble
