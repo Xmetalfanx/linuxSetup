@@ -38,6 +38,11 @@
 ## tldr
 - Github URL: 
 - Homebrew URL: https://formulae.brew.sh/formula/tldr
+## QMan
+
+- Homepage: [QMan Homepage]()
+- Github URL: [QMan Github Page]()
+- Homebrew URL: [Qman Homebrew Page](https://formulae.brew.sh/formula/qman)
 - Description: Man Page summerizer
 
 ## yazi
