@@ -1,3 +1,12 @@
+.git-write/*
+tmm/*
+updateInfo.txt
+otherfiles/gitsetup.sh
+node_modules/*
+setting/*
+apt.txt
+
+# Possible Downloaded files 
 **/*.zip
 **/*.key
 **/*.tar.gz
@@ -6,11 +15,10 @@
 **/*.deb
 **/*.rpm
 **/*.AppImage
-.git-write/*
-tmm/*
-updateInfo.txt
-otherfiles/gitsetup.sh
-node_modules/*
+
+# Yarn Related 
+# Yarn (Berry)
+.yarn/install-state.gz
+.yarn/unplugged/
+.yarn/cache/
 yarn.lock
-setting/*
-apt.txt
