@@ -11,12 +11,12 @@
 	},
 	"devDependencies": {
 		"biome": "^0.3.3",
-		"dictionary-en": "^3.2.0",
+		"dictionary-en": "^4.0.0",
 		"retext-repeated-words": "^4.2.0",
 		"retext-sentence-spacing": "^5.2.0",
 		"retext-spell": "^5.3.0",
 		"retext-syntax-urls": "^3.1.2",
-		"unified": "^10.1.2"
+		"unified": "^11.0.5"
 	},
 	"packageManager": "yarn@4.2.2"
 }
