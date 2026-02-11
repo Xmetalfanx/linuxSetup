@@ -38,6 +38,13 @@
 ## tldr
 - Github URL: 
 - Homebrew URL: https://formulae.brew.sh/formula/tldr
+## gdu
+
+- Homepage: [gdu Homepage]()
+- Github URL: [gdu Github Page]()
+- Homebrew URL:  [gdu Homebrew Page]()
+- Description:
+
 - Description: Man Page summerizer
 
 ## yazi
