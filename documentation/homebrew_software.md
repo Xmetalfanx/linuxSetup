@@ -1,28 +1,38 @@
-q# Software in my Homebrew section 
+# Software in my Homebrew section
 
 ## Atuin
-- Homepage: https://atuin.sh/
-- Homebrew URL: https://formulae.brew.sh/formula/atuin
+
+- Homepage: [Avuin Homepage](https://atuin.sh/)
+- Github URL:
+- Homebrew URL: [Atuin Homebrew Page](https://formulae.brew.sh/formula/atuin)
 - Description: Better Bash History tool
 
 ## bat
-- Github URL: https://github.com/sharkdp/bat
-- Homebrew URL: https://formulae.brew.sh/formula/bat
+
+- Homepage: [bat Homepage](https://github.com/sharkdp/bat)
+- Github URL: [bat Github Page](https://github.com/sharkdp/bat)
+- Homebrew URL: [bat Homebrew Page](https://formulae.brew.sh/formula/bat)
 - Description: 'cat' alternative with syntax highlighting and git integration
 
 ## dust
-- Github URL: https://github.com/bootandy/dust
-- Homebrew URL: https://formulae.brew.sh/formula/dust
+
+- Homepage: [dust Homepage](https://github.com/bootandy/dust)
+- Github URL: [dust Github Page](https://github.com/bootandy/dust)
+- Homebrew URL: [dust Homebrew Page](https://formulae.brew.sh/formula/dust)
 - Description: 'du'/'df' alternative
 
 ## eza
-- Github URL: https://github.com/eza-community/eza
-- Homebrew URL: https://formulae.brew.sh/formula/eza
+
+- Homepage: [eza Homepage](https://eza.rocks/)
+- Github URL: [eza Github Page](https://github.com/eza-community/eza)
+- Homebrew URL: [eza Homebrew Page](https://formulae.brew.sh/formula/eza)
 - Description: 'ls' alternative with improved UI/display... has icons, git status support, and more 
 
 ## fzf
-- Github URL: https://github.com/junegunn/fzf
-- Homebrew URL:  https://formulae.brew.sh/formula/fzf
+
+- Homepage: [fzf Homepage](https://junegunn.github.io/fzf/)
+- Github URL: [fzf Github Page](https://github.com/junegunn/fzf)
+- Homebrew URL:  [fzf Homebrew Page](https://formulae.brew.sh/formula/fzf)
 - Description: Fuzzy Finder Search tool
 
 ## tldr
@@ -31,13 +41,15 @@ q# Software in my Homebrew section
 - Description: Man Page summerizer
 
 ## yazi
-- Github URL: https://github.com/sxyazi/yazi
-- Homebrew URL: 
+
+- Homepage: [yazi Homepage](https://yazi-rs.github.io/)
+- Github URL: [yazi GIthub Page](https://github.com/sxyazi/yazi)
+- Homebrew URL: [yazi Homebrew Page](https://formulae.brew.sh/formula/yazi)
 - Description: Powerful Terminal File Manager
 
-
 ## Zoxide
-- Github URL: https://github.com/ajeetdsouza/zoxide
-- Homebrew URL:
-- Description: Helps navigate your FS, easier
 
+- Homepage: [zoxide Homepage](https://crates.io/crates/zoxide)
+- Github URL: [zoxide Github Page](https://github.com/ajeetdsouza/zoxide)
+- Homebrew URL: [zoxide Homebrew Page](https://formulae.brew.sh/formula/zoxide)
+- Description: Helps navigate your FS, easier
