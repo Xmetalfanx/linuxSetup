@@ -1,14 +1,19 @@
-### Download from the Release Page
+# Download options
 
-1. Go To [Xmetal's Linux Setup Script Release Page (there are links on the right as well)](https://github.com/Xmetalfanx/linuxSetup/releases/latest)
+## Download from the Release Page
+
+1. Go To [Xmetal's Linux Setup Script Release Page](https://github.com/Xmetalfanx/linuxSetup/releases/latest)
+   - There is links on the right, as well
 2. Download either the tar.gz or zip file and extract it
 3. Enter the extracted directory
 
-### Download with git
+## Download with git
 
-Please Note: this apparently gets a large amount of git history (my code changes) that is not needed really
+Please Note: this apparently gets a large amount of git history (my code changes)
+that is not needed really
 
-Also the git package MAYBE preinstalled in some distros... I am assuming it's not with the instructions below
+Also the git package MAYBE preinstalled in some distros ...
+I am assuming it's not with the instructions below
 
 #### In Arch
 
@@ -34,4 +39,5 @@ Also the git package MAYBE preinstalled in some distros... I am assuming it's no
 
 ## How to get the script via git method
 
-In a Terminal run `git clone https://github.com/xmetalfanx/linuxscripts.git && cd linuxscripts`
+In a Terminal run
+`git clone https://github.com/xmetalfanx/linuxscripts.git && cd linuxscripts`
