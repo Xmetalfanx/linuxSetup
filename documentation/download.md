@@ -15,6 +15,8 @@ that is not needed really
 Also the git package MAYBE preinstalled in some distros ...
 I am assuming it's not with the instructions below
 
+### Per Distro base
+
 #### In Arch
 
 `sudo pacman -S git`
