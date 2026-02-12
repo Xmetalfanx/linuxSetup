@@ -94,8 +94,8 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 ### OpenSUSE Related Support
 
-| Distro base | Support                      | Including     |
-|-------------|------------------------------|---------------|
+| Distro base | Support                      | Including      |
+|-------------|------------------------------|----------------|
 | OpenSUSE    | Leap 15.6 and 16, Tumbleweed | Gecko Linux \* |
 
 - \* (may get removed - possible dead project)
@@ -108,11 +108,13 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 ### Ubuntu related support
 
-| Distro base | Support             | Including                     |
-|-------------|---------------------|-------------------------------------|
-| Ubuntu      | 20.04, 22.04, 24.04 | Elementary, Linux Lite,
-                                      Linux Mint, "\*buntu Spins" |
+<!-- markdownlint-disable MD013 -->
 
+| Distro base | Support             | Including                                           |
+|-------------|---------------------|-----------------------------------------------------|
+| Ubuntu      | 20.04, 22.04, 24.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
+
+<!-- markdownlint-enable MD013 -->
 - Ubuntu: 20.04 Focal, 22.04 Jammy, 24.04 Noble
 
 ---
