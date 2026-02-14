@@ -27,7 +27,8 @@
 C. Adds Codecs
 
 - Adds needed Codecs on Arch, Fedora, and OpenSuse
-  - Idea/note to self: only use third party repos if i have to ... just in case the user doesn't want to add them
+  - Idea/note to self: only use third party repos if i have to ...
+  just in case the user doesn't want to add them
 
 R. Add Third Party Repos
 
@@ -61,11 +62,13 @@ R. Add Third Party Repos
 3. Install Archive support (may not be totally complete)
 4. Add a few useful packages
    - Packages
-     - synaptic apt-xapian-index policykit-1-gnome software-properties-common dirmngr apt-transport-https lsb-release ca-certificates apt-transport-https dirmngr
+     - synaptic apt-xapian-index policykit-1-gnome software-properties-common
+       dirmngr apt-transport-https lsb-release ca-certificates apt-transport-https
 5. Check for/add "contrib" and/or "non-free" in sourcelist line.
 6. Check/Add sudo permissions to sudoers file
 7. Bulk Debian tasks
-    - (all of the above tasks, without having to come back to this menu after each one)
+    - (all of the above tasks, without having to come back to this menu,
+      after each one)
 
 ## Fedora Script
 
@@ -103,13 +106,15 @@ R. Add Third Party Repos
     - System Tools PPAs
       - Boot Repair
       - Grub-Customizer
-        - (note: consider removing this as many users have messed up their system with this)
+        - (note: consider removing this as many users have messed up their
+          system with this)
       - Pantheon Tweak (for Elementary)
       - TeeJeePPA - For Timeshift on distros based on Ubuntu without Timeshift
         - (TODO: check Ubuntu repos .. this may no longer be needed)
       - Kubuntu Backport PPA
 
-2. Decide if common (note: not all) apps associated with a particular PPA are installed by default when the PPA is added
+2. Decide if common (note: not all) apps associated with a particular PPA are
+   installed by default when the PPA is added
     - Default = No
       - nothing is installed when the PPA is added, let the user decide
 
@@ -122,20 +127,28 @@ R. Add Third Party Repos
    - this is from the cache of packages downloaded when using Pacman
 3. (Debian/Ubuntu Based) Clean orphan packages from cache
 4. (OpenSUSE) Clean out old kernels
-    - I think this is automated and it keeps a few old but still useful kernels... this is for people with TONS of old kernels, if i am not mistaken
+    - I think this is automated and it keeps a few old but still useful kernels
+      ... this is for people with TONS of old kernels, if i am not mistaken
 5. Clean unused Flatpaks
-    - I have seen distros like Linux Mint hold some Flatpaks back when i try this ... that is normal .. I'd let Linux Mint do what it wants to avoid breakages
+    - I have seen distros like Linux Mint hold some Flatpaks back when i try
+      this ... that is normal .. I'd let Linux Mint do what it wants to avoid breakages
 6. Clean Flatpak Cache
 
 ---
 
 ## Software Menu
 
-1. Install mass software located in the $software variable in the f_variables.cfg file
+1. Install mass software located in the $software variable in the
+   f_variables.cfg file
 
     - Variety Wallpaper Changer/Gnome Note:
       - Tip Source: from [Variety/Gnome Github issue](https://github.com/varietywalls/variety/issues/12)
-      - Install a Gnome Extention such as [KStatusNotifierItem/AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/). I can tell you from first-hand experience, this works ... the only issue I see is sometimes when Gnome does a major version update, some extensions break until they can get updated ... you MAY run into that, but overall this solution works
+        - Install a Gnome Extention such as
+      [KStatusNotifierItem/AppIndicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+        I can tell you from first-hand experience, this works ...
+        the only issue I see is sometimes when Gnome does a major
+        version update, some extensions break until they can get updated ...
+        you MAY run into that, but overall this solution works
 
 2. [Sub-Menu] Web Browsers
 
@@ -151,9 +164,21 @@ R. Add Third Party Repos
     1. [Atom (Text/Code) Editor](https://github.com/atom/atom)
 
         - OpenSuse/(?) Fedora note:
-          - in both cases I have it downloading the RPM but in the case of zypper and Opensuse anyway, it complains the RPM is not signed (which it isn't, and after multiple people keep bringing it up to the devs, they basically say they are not doing to sign the RPM)
-          - I am not sure but i do not think the DEB and Debian/Ubuntu have this issue ... it's totally on the Atom Devs by the way .. NOT the distro ... I have no idea if this effects Fedora either ... if it does (you'd see a similar message from dnf), just do the same thing
-          - SOLUTION: if it asks/prompts you about this, click "I" for Ignore and it will still install. This is NOT the way I wanted it (I want to script things the right way), but this issue is entirely out of my hands and out of say OpenSuse's hands too.
+          - in both cases I have it downloading the RPM but in the case of zypper
+            and Opensuse anyway, it complains the RPM is not signed
+            (which it isn't, and after multiple people keep bringing
+            it up to the devs, they basically say they are not doing to
+            sign the RPM)
+          - I am not sure but i do not think the DEB and Debian/Ubuntu have
+            this issue ... it's totally on the Atom Devs by the way ..
+            NOT the distro ... I have no idea if this effects Fedora either ...
+            if it does (you'd see a similar message from dnf), just do the same
+            thing.
+          - SOLUTION:
+            - if it asks/prompts you about this, click "I" for Ignore and it will
+              still install. This is NOT the way I wanted it
+              (I want to script things the right way), but this issue is
+              entirely out of my hands and out of say OpenSuse's hands too.
   
     2. [Microsoft VSCode](https://code.visualstudio.com/)
     3. [VSCodium](https://vscodium.com/)
@@ -177,8 +202,10 @@ R. Add Third Party Repos
     9. (Audio Editor) Tenecity (Audacity Fork)
     10. (Ubuntu only) Anoise - White Noise App
     11. (Audio Editor) [ocenAudio](https://www.ocenaudio.com/)
-    K. Show info (without installing or compiling anything) about MakeMKV Key and when it expires
-        - the app is free but you have to keep changing the key from month to month or on upgrades (I think)
+    K. Show info (without installing or compiling anything)
+        about MakeMKV Key and when it expires
+            - the app is free but you have to keep changing the key
+              from month to month or on upgrades (I think)
 5. [Sub-Menu] Shell Menu
    1. Install [Fish shell](https://fishshell.com/) and Oh-My-Fish
    2. Install [zsh](https://www.zsh.org/) (vanilla install)
@@ -188,7 +215,8 @@ R. Add Third Party Repos
 6. [Sub-Menu] Distro Specific tasks
 
     1. (Example) setup synaptic, gdebi and stuff like that
-        - This is for commonly done tasks that people do post-install, for specific distros
+        - This is for commonly done tasks that people do post-install,
+          for specific distros
 
 ---
 
@@ -199,7 +227,8 @@ R. Add Third Party Repos
    2. Install current Linux Mint Themes - From Linux Mint's Github
    3. Install Legacy Linux Mint Themes - From Linux Mint's Github
    4. Install Mint-Y Icons - From Linux Mint's Github
-   5. Install [MintYZ](https://github.com/SebastJava/mint-yz-theme) (not officially Mint's but based on Mint's) Themes - from Github
+   5. Install [MintYZ](https://github.com/SebastJava/mint-yz-theme)
+        - (not officially Mint's but based on Mint's) Themes - from Github
   
 2. Install [Adapta Theming](https://github.com/adapta-project)
 3. Install [Arc Theming](https://github.com/horst3180/arc-theme)
@@ -210,6 +239,9 @@ R. Add Third Party Repos
 
 A. All of the Above
 
-- Tasks 6 and 7 are customized to each distro base based on what is in the repos and "what i find cool"
+- Tasks 6 and 7 are customized to each distro base based on what is in the repos
+  and "what i find cool"
 
-- Should (if available), work on any distro base ... whether I have all the needed packages for "all possible DEs/WMs" ... that is a work in progress
+- Should (if available), work on any distro base ...
+  whether I have all the needed packages for "all possible DEs/WMs" ...
+  that is a work in progress.
