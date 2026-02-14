@@ -82,9 +82,9 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 ### Debian based support
 
-| Distro base | Support       | Including                           |
-|-------------|---------------|-------------------------------------|
-| Debian      | Debian 11, 12 | Devuan, Peppermint, Sparky, MXLinux |
+| Distro base | Support                  | Including                           |
+|-------------|--------------------------|-------------------------------------|
+| Debian      | Debian 11 (some), 12, 13 | Devuan, Peppermint, Sparky, MXLinux |
 
 ### Fedora Based support
 
