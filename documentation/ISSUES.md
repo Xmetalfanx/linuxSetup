@@ -1,5 +1,23 @@
 # Known Issues/Notes
 
+## [Added: March 2026] Tumbleweed (?) permission issues
+
+### possible root cause
+
+- seems to be related to Tumbleweed going toward the direction of
+  systemd's "run0" or "run", versus the more traditional 'sudo'
+
+### Homebrew
+
+- due to this issue, Homebrew just is not installing via the typical install script.
+- There are ways around this but it seems overcomplicated for my goals here.
+
+### AM/Appman
+
+- Whether selecting AM (system-wide) or appman, when you actually run
+  appman or am, things do not work and you get stuck in a loop of am/
+  appman asking for your user password over and over.
+
 ## NON-issue
 
 ### Beta releases
