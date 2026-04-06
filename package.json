@@ -10,7 +10,7 @@
 		"remark-stringify": "^11.0.0"
 	},
 	"devDependencies": {
-		"biome": "^0.3.3",
+		"@biomejs/biome": "2.4.10",
 		"dictionary-en": "^4.0.0",
 		"retext-repeated-words": "^4.2.0",
 		"retext-sentence-spacing": "^5.2.0",
