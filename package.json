@@ -4,11 +4,6 @@
 		"bfix": "biome lint --write",
 		"bformat": "biome format --write"
 	},
-	"dependencies": {
-		"rehype-parse": "^9.0.1",
-		"rehype-remark": "^10.0.1",
-		"remark-stringify": "^11.0.0"
-	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.10",
 		"dictionary-en": "^4.0.0",
