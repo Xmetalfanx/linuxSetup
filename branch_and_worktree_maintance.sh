@@ -11,7 +11,7 @@ function git_create_worktree(){
     git_name="${1}"
     
     echo -e "Creating worktree for $git_name"
-    git worktree add "${git_name}" "${git_name}"
+    git worktree add ../"${git_name}" "${git_name}"
     user_prompt
 }
 
@@ -19,7 +19,7 @@ function git_remove_worktree() {
     git_name="${1}"
     
     echo -e "Removing worktree ${git_name}"
-    git worktree remove "${git_name}"
+    git worktree remove ../"${git_name}"
     user_prompt
 }
 
