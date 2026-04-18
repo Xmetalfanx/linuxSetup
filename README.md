@@ -112,7 +112,7 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 | Distro base | Support             | Including                                           |
 |-------------|---------------------|-----------------------------------------------------|
-| Ubuntu      | 20.04, 22.04, 24.04 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
+| Ubuntu      | 22.04, 24.04, 25.10 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
 
 <!-- markdownlint-enable MD013 -->
 - Ubuntu: 20.04 Focal, 22.04 Jammy, 24.04 Noble
