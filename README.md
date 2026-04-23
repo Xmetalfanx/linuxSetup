@@ -10,7 +10,7 @@
 
 A problem SOME users, even if they are experienced have when setting up some distributions,
 is all the post install tasks they have to do to setup a "workable" system.
-The tasks may not be difficult to do, but just rather they are time consuming.  
+The tasks may not be difficult to do, but just rather they are time consuming.
 These scripts can hopefully give people a "helping hand"
 getting different distro bases set up.
 
@@ -77,45 +77,49 @@ many of the post install "out of the box" tasks that I always perform anyway.
 ### Arch based support
 
 | Distro base | Including                                           |
-|-------------|-----------------------------------------------------|
+| ----------- | --------------------------------------------------- |
 | Arch        | EndeovourOS, Manjaro, (untested but likely) CachyOS |
 
 ### Debian based support
 
-| Distro base | Support                  | Including                           |
-|-------------|--------------------------|-------------------------------------|
-| Debian      | Debian 11 (some), 12, 13 | Devuan, Peppermint, Sparky, MXLinux |
+| Distro base | Support                  |
+| ----------- | ------------------------ |
+| Debian      | Debian 11 (some), 12, 13 |
+
+- Including: Anti-x, Devuan, Peppermint, Sparky, MXLinux
 
 ### Fedora Based support
 
-| Distro base | Support | Including |
-|-------------|---------|-----------|
-| Fedora      | 42, 43  |           |
+| Distro base | Support |
+| ----------- | ------- |
+| Fedora      | 42, 43  |
 
 ### OpenSUSE Related Support
 
 | Distro base | Support                      | Including      |
-|-------------|------------------------------|----------------|
+| ----------- | ---------------------------- | -------------- |
 | OpenSUSE    | Leap 15.6 and 16, Tumbleweed | Gecko Linux \* |
 
 - \* (may get removed - possible dead project)
 
 ### Solus Related support
 
-| Distro base | Support | Including |
-|-------------|---------|-----------|
-| Solus       | Solus   |           |
+| Distro base | Support |
+| ----------- | ------- |
+| Solus       | Solus   |
 
 ### Ubuntu related support
 
 <!-- markdownlint-disable MD013 -->
 
-| Distro base | Support             | Including                                           |
-|-------------|---------------------|-----------------------------------------------------|
-| Ubuntu      | 22.04, 24.04, 25.10 | Elementary, Linux Lite, Linux Mint, "\*buntu Spins" |
+| Distro base | Support                    |
+| ----------- | -------------------------- |
+| Ubuntu      | 22.04, 24.04, 25.10, 26.04 |
 
 <!-- markdownlint-enable MD013 -->
-- Ubuntu: 20.04 Focal, 22.04 Jammy, 24.04 Noble
+- Versions: Ubuntu: 22.04 Jammy, 24.04 Noble, 25.10 Questing, 26.04 Resolute
+
+- Distros including: Elementary, Linux Lite, Linux Mint, "\*buntu Spins", Zorin
 
 ---
 
