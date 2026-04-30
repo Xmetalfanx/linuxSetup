@@ -1,0 +1,8 @@
+#!/bin/bash
+
+touch f_git_vj_mcmojave_theming_menu.cfg
+touch f_git_vj_whitesur_theming_menu.cfg
+touch f_git_vj_fluent_theming_menu.cfg
+touch f_git_vj_vimix_theming_menu.cfg
+touch f_git_vj_orchis_theming_menu.cfg
+touch f_git_vj_qogir_theming_menu.cfg
