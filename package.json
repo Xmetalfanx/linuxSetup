@@ -12,6 +12,5 @@
 		"retext-spell": "^5.3.0",
 		"retext-syntax-urls": "^3.1.2",
 		"unified": "^11.0.5"
-	},
-	"packageManager": "yarn@4.2.2"
+	}
 }
