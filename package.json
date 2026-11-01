@@ -5,7 +5,7 @@
 		"bformat": "biome format --write"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.10",
+		"@biomejs/biome": "2.6.4",
 		"dictionary-en": "^4.0.0",
 		"retext-repeated-words": "^4.2.0",
 		"retext-sentence-spacing": "^5.2.0",
