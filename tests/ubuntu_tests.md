@@ -28,7 +28,6 @@
 
 ## Software
 
-
 ## Theming Installation
 
 ### Theming related
@@ -67,12 +66,11 @@
 ---
 
 - Third Party Repo Info
-  - Pacman Repos
+    - Pacman Repos
 
 ---
 
 ## Software Menus
-
 
 ##### Common/Various Software
 
@@ -81,6 +79,7 @@
 | 1         | Add Common Software |     |              |              | Pass         |
 
 ---
+
 ##### Web Browsers
 
 ### Browser Installer
@@ -93,7 +92,6 @@
 | 4   | [Sub-Menu] Firefox      |     | ---          | ---          | ---                          |
 | 5   | Librewolf (FP)          |     |              |              | Pass (w/ adding FP support ) |
 | 6   | Vivaldi                 |     |              |              | redo in next release         |
-
 
 #### Chromium Sub-Menu
 
@@ -123,7 +121,7 @@
 | 2         | Audio Recorder           |     |              |              |                    |
 | 3         | XnViewMP                 |     |              |              | Pass               |
 | 4         | DeadBeef Media Player    |     |              |              | Pass               |
-| 5         | Celluloid      |     |              |              | Fail - patch added |
+| 5         | Celluloid                |     |              |              | Fail - patch added |
 | 6         | Strawberry Media Player  |     | ----         | ---          | ----               |
 | 7         | Tiny Media Manager       |     |              |              |                    |
 | 8         | MediaElch AppImage       |     |              |              |                    |
@@ -135,7 +133,6 @@
 ---
 
 ##### Coding/Office/Productivity Programs
-
 
 | Menu Item | Menu Task         |     | Ubuntu 20.04 | Ubuntu 22.04 | Ubuntu 24.04 |
 | --------- | ----------------- | --- | ------------ | ------------ | ------------ |
@@ -151,14 +148,14 @@
 ---
 
 ##### Shells
+
 | Menu Item | Menu Task                                |     | 20.04 | 22.04 | 24.04 |
 | --------- | ---------------------------------------- | --- | ----- | ----- | ----- |
 | 1         | Install fish, & Oh-My-Fish               |     |       |       |       |
 | 2         | Install zsh (Vanilla)                    |     |       |       |       |
 | 3         | Install zsh & extra items (no Oh-My-Zsh) |     |       |       |       |
 | 4         | Install zsh & Oh-My-ZSH                  |     |       |       |       |
-| 5         | Install zsh & Zap Plugin Manager         |     |       |       |    Pass   |
-
+| 5         | Install zsh & Zap Plugin Manager         |     |       |       | Pass  |
 
 ### System Tools
 
@@ -172,17 +169,14 @@
 | 6         | Java support                    |     |              |              |              |
 | 7         | Stacer                          |     |              |              | Pass         |
 | 8         | ImageLauncher                   |     |              |              | Fail?        |
-| 9         | czhawka                |     |              |              |              |
+| 9         | czhawka                         |     |              |              |              |
 |           | Build Essential Packages        |     |              |              | Pass         |
-
-
 
 - WHERE IS build essentials at?
 
 ---
 
 ## PPA Menu
-
 
 | Menu Item | Menu Task                     |     | Ubuntu 20.04 | Ubuntu 22.04 | Ubuntu 24.04 |
 | --------- | ----------------------------- | --- | ------------ | ------------ | ------------ |
@@ -195,5 +189,3 @@
 | 7         | [System-Tools] Boot-Repair    |     |              |              |              |
 | 8         | [System-Tools] Pantheon Tweak |     |              |              |              |
 | 9         | Kubuntu Backport PPA          |     |              |              |              |
-
-

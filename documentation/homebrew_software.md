@@ -27,20 +27,20 @@
 - Github URL: [eza Github Page](https://github.com/eza-community/eza)
 - Homebrew URL: [eza Homebrew Page](https://formulae.brew.sh/formula/eza)
 - Description: 'ls' alternative with improved UI/display...
-    has icons, git status support, and more
+  has icons, git status support, and more
 
 ## fzf
 
 - Homepage: [fzf Homepage](https://junegunn.github.io/fzf/)
 - Github URL: [fzf Github Page](https://github.com/junegunn/fzf)
-- Homebrew URL:  [fzf Homebrew Page](https://formulae.brew.sh/formula/fzf)
+- Homebrew URL: [fzf Homebrew Page](https://formulae.brew.sh/formula/fzf)
 - Description: Fuzzy Finder Search tool
 
 ## starship
 
 - Homepage: [starship Homepage](https://starship.rs/)
 - Github URL: [starship Github Page](https://github.com/Homebrew/homebrew-core)
-- Homebrew URL:  [starship Homebrew Page](https://formulae.brew.sh/formula/starship)
+- Homebrew URL: [starship Homebrew Page](https://formulae.brew.sh/formula/starship)
 - Description: Cross-platform shell Prompt
 
 ## tlrc

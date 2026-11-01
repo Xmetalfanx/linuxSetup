@@ -12,6 +12,6 @@
 - \*\* think it passed but add a pause to be sure
 - \*\*\* "rar" is failing ... it says its in the non-free repos so maybe look at that code ("non-free" not being added?)
 
-  - update: THAT IS EXACTLY the problem
+    - update: THAT IS EXACTLY the problem
 
 - Untested here just means in Sept 2023 during the refactoring ... I may have tested this before and it worked fine. I should probably redo all of these tests though to make sure

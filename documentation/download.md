@@ -3,7 +3,7 @@
 ## Download from the Release Page
 
 1. Go To [Xmetal's Linux Setup Script Release Page](https://github.com/Xmetalfanx/linuxSetup/releases/latest)
-   - There is links on the right, as well
+    - There is links on the right, as well
 2. Download either the tar.gz or zip file and extract it
 3. Enter the extracted directory
 

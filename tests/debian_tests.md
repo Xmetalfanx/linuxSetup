@@ -31,7 +31,6 @@
 
 - numix-gtk-theme is in Debian stable/Buster (I am not running Buster), but NOT in Testing/Bullseye
 
-
 #### Mint Theming Sub-menu
 
 | Menu Item | Menu Items                               |     | Stable | Testing | Devuan             |
@@ -118,7 +117,7 @@
 | 2         | Audio Recorder           |     |        |         | Support removed - \2       |
 | 3         | XnViewMP                 |     |        |         | Pass                       |
 | 4         | DeadBeef Media Player    |     |        |         | Pass                       |
-| 5         | Celluloid      |     |        |         | Pass                       |
+| 5         | Celluloid                |     |        |         | Pass                       |
 | 6         | Strawberry Media Player  |     |        |         | MAJOR REDO IN NEXT RELEASE |
 | 7         | Tiny Media Manager       |     |        |         | Pass                       |
 | 8         | MediaElch AppImage       |     |        |         | Pass                       |
@@ -164,10 +163,9 @@
 | 6         | Java support                    |     |        |         |           |
 | 7         | Stacer                          |     |        |         | Pass      |
 | 8         | ImageLauncher                   |     |        |         | Fail \2   |
-| 9         | czhawka                |     |        |         |           |
+| 9         | czhawka                         |     |        |         |           |
 
 - WHERE IS build essentials at?
-
 
 - \2 - nothing displayed
 - \3 - Open Package Installer

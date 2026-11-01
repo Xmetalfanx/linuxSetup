@@ -34,17 +34,17 @@ if it makes better sense to change this later, I am open to the idea.
 ### Theming section
 
 - Much of the theming I have included are ment for GTK desktops, and at least not
-Plasma.  I have not tested what may appear or not on LXQT which is .. QT too,
-along with Plasma.  
-If you install this theming and are on Plasma, but do not see any of the themes,
-that is not a bug.
+  Plasma. I have not tested what may appear or not on LXQT which is .. QT too,
+  along with Plasma.  
+  If you install this theming and are on Plasma, but do not see any of the themes,
+  that is not a bug.
 
 - Please look in the appearance sections of Plasma settings for theming related
-to QT.
+  to QT.
 
 - Not really sure if there is a LXQT location to download themes ..
-if i start to see "theme_name_qt" packages, I may add that to the theming section
-if i feel the theme is good.
+  if i start to see "theme_name_qt" packages, I may add that to the theming section
+  if i feel the theme is good.
 
 ## Issues
 
@@ -69,17 +69,17 @@ This is bad git etiquette, I know
 ### Some RPMs are not being signed by the devs
 
 - [May 2022 - still an issue with Atom]
-  - I can not say this is the case for all apps;
-  however, to my knowledge Atom is affected
-  (see <[https://github.com/atom/atom/issues/16499](https://github.com/atom/atom/issues/16499)>
-  for more info on Atom) ... they recommend ignoring it ...
-  and it still does work I can confirm but this doesn't seem like a good idea.
+    - I can not say this is the case for all apps;
+      however, to my knowledge Atom is affected
+      (see <[https://github.com/atom/atom/issues/16499](https://github.com/atom/atom/issues/16499)>
+      for more info on Atom) ... they recommend ignoring it ...
+      and it still does work I can confirm but this doesn't seem like a good idea.
 
 ### MakeMKV Compiling
 
 - May 2024: this is an issue and due to some dev packages needed and in the
-instructions changing or getting removed in distro repos, this doesn't work ..
-I will HOPEFULLY address this if i can.
+  instructions changing or getting removed in distro repos, this doesn't work ..
+  I will HOPEFULLY address this if i can.
 
 ### Czhawka
 

@@ -18,10 +18,10 @@
 | 3   | YaruColor (no Yaru theming installed)           |                     |
 | 4   | YaruColor (Yaru theming of some kind installed) | Pass                |
 
-- \1  it installs anyway? (default repo packages installed during test)  
-  - Update: i think the redirect of &> to /dev/null MAY have caused this entire
-    problem
-- \2  download happened (? part of \1? )
+- \1 it installs anyway? (default repo packages installed during test)
+    - Update: i think the redirect of &> to /dev/null MAY have caused this entire
+      problem
+- \2 download happened (? part of \1? )
 
 ## 3rd Test - to make SURE it works on a fresh system even if test 2 stuff all passes
 
