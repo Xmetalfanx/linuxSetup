@@ -96,9 +96,9 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 ### OpenSUSE Related Support
 
-| Distro base | Support                      | Including      |
-| ----------- | ---------------------------- | -------------- |
-| OpenSUSE    | Leap 15.6 and 16, Tumbleweed | Gecko Linux \* |
+| Distro base | Support             | Including      |
+| ----------- | ------------------- | -------------- |
+| OpenSUSE    | Leap 16, Tumbleweed | Gecko Linux \* |
 
 - \* (may get removed - possible dead project)
 
