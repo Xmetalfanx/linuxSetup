@@ -114,7 +114,7 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 | Distro base | Support                    |
 | ----------- | -------------------------- |
-| Ubuntu      | 22.04, 24.04, 25.10, 26.04 |
+| Ubuntu      | 22.04, 24.04, 26.04, 26.10 |
 
 <!-- markdownlint-enable MD013 -->
 
