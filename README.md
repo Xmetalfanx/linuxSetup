@@ -92,7 +92,7 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 | Distro base | Support |
 | ----------- | ------- |
-| Fedora      | 42, 43  |
+| Fedora      | 43, 44  |
 
 ### OpenSUSE Related Support
 
@@ -118,7 +118,7 @@ many of the post install "out of the box" tasks that I always perform anyway.
 
 <!-- markdownlint-enable MD013 -->
 
-- Versions: Ubuntu: 22.04 Jammy, 24.04 Noble, 25.10 Questing, 26.04 Resolute
+- Versions: Ubuntu: 22.04 Jammy, 24.04 Noble, 26.04 Resolute, 26.10 Stonking
 
 - Distros including: Elementary, Linux Lite, Linux Mint, "\*buntu Spins", Zorin
 
