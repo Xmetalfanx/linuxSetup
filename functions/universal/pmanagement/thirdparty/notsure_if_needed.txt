@@ -11,10 +11,10 @@ function moveThirdPartyApp
 
     echo
     echo -e "Moving $fileNameWEXT to /usr/local/bin"
-    
+
     ######################################################
-    ## For testing only 
-    userPrompt
+    ## For testing only
+    user_prompt
     ######################################################
 
     # mv $fileNameWEXT /usr/local/bin
@@ -22,7 +22,7 @@ function moveThirdPartyApp
     ######################################
     # Test
     ls /usr/local/bin
-    userPrompt
+    user_prompt
     ##############
 
 
