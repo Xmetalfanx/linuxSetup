@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #Title :          Xmetal's Linux Post Setup Script
 #Description :    This script will setup some common things afer

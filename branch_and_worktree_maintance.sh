@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function user_prompt() {
 	read -r -p "Press [Enter] to continue "
