@@ -1,17 +1,17 @@
 {
-	"scripts": {
-		"bcheck": "biome check --write",
-		"bfix": "biome lint --write",
-		"bformat": "biome format --write",
-		"prepare": "vp config"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.6.4",
-		"dictionary-en": "^4.0.0",
-		"vite-plus": "catalog:"
-	},
-	"resolutions": {
-		"vite": "npm:@voidzero-dev/vite-plus-core@1.4.0"
-	},
-	"packageManager": "pnpm@12.16.1"
+    "scripts": {
+        "bcheck": "biome check --write",
+        "bfix": "biome lint --write",
+        "bformat": "biome format --write",
+        "prepare": "vp config"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.6.4",
+        "dictionary-en": "^4.0.0",
+        "vite-plus": "catalog:"
+    },
+    "resolutions": {
+        "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0"
+    },
+    "packageManager": "pnpm@12.16.1"
 }
